@@ -1,0 +1,46 @@
+@use "global"as *;
+
+// button
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24rem;
+  height: 5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  background: $color_light-orange;
+  border-radius: 2.5rem;
+
+  &.-brown {
+    background: $color_light-brown;
+  }
+
+  &.-white {
+    color: $color_font;
+    background: #fff;
+  }
+}
+
+// heading
+.c-h2 {
+  color: $color_dark-brown;
+  font-weight: bold;
+  @include fontsize(24, 28);
+}
+
+.c-h3 {
+  color: $color_dark-brown;
+  font-weight: bold;
+  @include fontsize(18, 22);
+}
+
+// box
+.c-white-box {
+  background: #fff;
+  border-radius: 1rem;
+
+  @include media(tb) {
+    border-radius: 3rem;
+  }
+}
