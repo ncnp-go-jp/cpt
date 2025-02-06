@@ -70,7 +70,7 @@
           </ul>
           <div class="p-gnav__btn-box">
             <a href="<?php echo home_url() . '/expert/login'; ?>" class="c-btn p-gnav__btn">ログイン</a>
-            <a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="c-btn -brown p-gnav__btn">会員登録</a>
+            <a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="c-btn -brown p-gnav__btn">利用登録</a>
           </div>
         </div>
       </nav>

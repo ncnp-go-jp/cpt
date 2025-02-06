@@ -82,3 +82,54 @@
     }
   }
 }
+
+.c-small-box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+  padding-bottom: 4rem;
+
+  @include media(tb) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem 4rem;
+    padding-bottom: 6rem;
+  }
+
+  >* {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2.5rem 2.5rem 3rem;
+
+    @include media(tb) {
+      border-radius: 3rem;
+      width: calc((100% - 4rem) / 2);
+      padding: 3.5rem 4.5rem 3rem;
+    }
+
+    .c-btn {
+      margin-top: auto;
+    }
+  }
+
+  &__h1 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    @include media(tb) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__txt-box {
+    margin-bottom: 2.5rem;
+
+    @include media(tb) {
+      margin-bottom: 5rem;
+    }
+  }
+}

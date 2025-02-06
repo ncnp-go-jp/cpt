@@ -206,6 +206,37 @@ main {
   font-size: 1.8rem;
 }
 
+.c-small-box-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 2rem 0;
+  padding-bottom: 4rem;
+}
+.c-small-box-list > * {
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 1rem;
+  padding: 2.5rem 2.5rem 3rem;
+}
+.c-small-box-list > * .c-btn {
+  margin-top: auto;
+}
+.c-small-box-list__h1 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.c-small-box-list__txt-box {
+  margin-bottom: 2.5rem;
+}
+
 /*---------- Project ----------*/
 .p-hdr {
   background: #FAF6F0;
@@ -939,6 +970,25 @@ main {
   }
   .c-white-box-l__h1{
     margin-bottom: 3rem;
+  }
+  .c-small-box-list{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 4rem 4rem;
+    padding-bottom: 6rem;
+  }
+  .c-small-box-list > *{
+    border-radius: 3rem;
+    width: calc((100% - 4rem) / 2);
+    padding: 3.5rem 4.5rem 3rem;
+  }
+  .c-small-box-list__h1{
+    margin-bottom: 1rem;
+  }
+  .c-small-box-list__txt-box{
+    margin-bottom: 5rem;
   }
   .p-hdr h1{
     font-size: 3.6rem;
