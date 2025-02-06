@@ -8,7 +8,6 @@
   width: 24rem;
   height: 5rem;
   color: #fff;
-  font-size: 1.6rem;
   background: $color_light-orange;
   border-radius: 2.5rem;
   position: relative;
@@ -20,8 +19,14 @@
   }
 
   &.-white {
-    color: $color_font;
+    color: $color_light-brown;
     background: #fff;
+
+    &.-circle-right {
+      &::after {
+        color: $color_light-brown;
+      }
+    }
   }
 
   &.-circle-right {
@@ -128,8 +133,10 @@
   &__txt-box {
     margin-bottom: 2.5rem;
 
-    @include media(tb) {
-      margin-bottom: 5rem;
+    p {
+      &+p {
+        margin-top: 1.5em;
+      }
     }
   }
 }

@@ -12,6 +12,12 @@ if (is_page('about')) {
   $img_url_sp .= 'about/about-topview-sp.jpg';
   $txt = '「知識は、ちから。」生きていれば、誰しも、傷つくことがあります。<br>傷ついたとき、どうしたらよいか。傷ついた心を抱えて、どう生きていこうか。<br>そんな問いを考える時、歩みをすすめる力になる情報を提供することが、<br class="u-pc">このサイトの志です。';
   $is_parent_page = true;
+} else if (is_page('experienced-person')) {
+  $tag = 'サイトについて';
+  $ttl = 'トラウマを<br class="u-sp">経験した方へ';
+  $img_url_pc .= 'about/about-topview-pc.jpg';
+  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
 } else if (is_page('thought')) {
   $tag = 'サイトについて';
   $ttl = '想い';
@@ -40,7 +46,7 @@ if (is_page('about')) {
   } ?>"><?php echo $ttl; ?></h1>
   <picture class="p-mv__img">
     <source media="(min-width: 834px)" srcset="<?php echo $img_url_pc; ?>">
-    <img src="<?php echo $img_url_sp; ?>" alt="<?php echo $ttl; ?>">
+    <img src="<?php echo $img_url_sp; ?>" alt="<?php the_title(); ?>">
   </picture>
   <p class="p-mv__txt"><?php echo $txt; ?></p>
 </div>

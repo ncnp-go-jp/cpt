@@ -873,6 +873,70 @@
   }
 }
 
+.p-abt-common {
+  padding: 2.8rem 0 4rem;
+
+  @include media(tb) {
+    padding: 3rem 0 5rem;
+  }
+
+  &__h1 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    @include fontsize(18, 28);
+
+    @include media(tb) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__txt-box {
+    margin-bottom: 2.5rem;
+    color: #fff;
+
+    @include media(tb) {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      @include media(tb) {
+        text-align: center;
+      }
+
+      &+p {
+        margin-top: 1.5em;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem 3rem;
+    padding: 0 1.8rem;
+
+    @include media(tb) {
+      flex-direction: row;
+      padding: 0;
+    }
+
+    li {
+      text-align: center;
+
+      img {
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    width: 26rem;
+  }
+}
+
 .p-thought-intro {
   padding-bottom: 3rem;
 
