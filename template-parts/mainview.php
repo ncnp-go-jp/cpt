@@ -18,6 +18,12 @@ if (is_page('about')) {
   $img_url_pc .= 'about/about-topview-pc.jpg';
   $img_url_sp .= 'about/about-topview-sp.jpg';
   $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
+} else if (is_page('family-friends')) {
+  $tag = 'サイトについて';
+  $ttl = 'トラウマを<br class="u-sp">経験した方の<br class="u-sp">ご家族やご友人へ';
+  $img_url_pc .= 'about/about-topview-pc.jpg';
+  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
 } else if (is_page('thought')) {
   $tag = 'サイトについて';
   $ttl = '想い';
