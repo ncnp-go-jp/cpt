@@ -243,6 +243,10 @@ main {
   width: 100%;
   z-index: 9;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+.p-gnav::-webkit-scrollbar {
+  display: none;
 }
 .p-gnav__inner {
   background: #fff;
@@ -250,17 +254,33 @@ main {
 .p-gnav__list > li {
   position: relative;
 }
-.p-gnav__list > li > span,
-.p-gnav__list > li > a {
+.p-gnav__list a {
+  color: #555555;
+}
+.p-gnav__parent {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   border-bottom: 1px solid #EDE8E1;
+}
+.p-gnav__parent > a {
   font-size: 1.6rem;
   padding: 1.5rem 1rem;
   display: block;
-  width: 100%;
-  position: relative;
-  cursor: pointer;
 }
-.p-gnav__list > li > span:after {
+.p-gnav__parent button {
+  height: 6.2rem;
+  width: 6.2rem;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  margin: 0;
+  background: none;
+  display: block;
+  position: relative;
+}
+.p-gnav__parent button:after {
   content: "\f107";
   right: 2rem;
   color: #FF9D26;
@@ -274,20 +294,17 @@ main {
   top: 50%;
   transform: translateY(-50%);
 }
-.p-gnav__list > li > span.active:after {
+.p-gnav__parent button.active:after {
   transform: rotate(180deg) translateY(50%);
-}
-.p-gnav__list a {
-  color: #555555;
 }
 .p-gnav__sub-list {
   display: none;
+  border-bottom: 1px solid #EDE8E1;
 }
 .p-gnav__sub-list > li > a {
   display: block;
   padding: 1.2rem 1rem 1.1rem 0;
   margin-left: 3rem;
-  border-bottom: 1px solid #EDE8E1;
   position: relative;
   white-space: nowrap;
 }
@@ -301,6 +318,9 @@ main {
   font-family: "Font Awesome 6 Free";
   display: inline-block;
   font-weight: 900;
+}
+.p-gnav__sub-list > li + li a {
+  border-top: 1px solid #EDE8E1;
 }
 .p-gnav__bg {
   background: rgba(85, 85, 85, 0.8);
@@ -832,9 +852,6 @@ main {
   .p-hdr h1{
     font-size: 3.6rem;
   }
-  .p-gnav__list > li > span{
-    padding: 1.5rem 2rem 1.5rem 1rem;
-  }
   .p-front-mv{
     padding: 5rem 0 0;
     position: relative;
@@ -1154,19 +1171,28 @@ main {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    gap: 0 1.5rem;
+    gap: 0 2rem;
   }
   .p-gnav__list > li:hover .p-gnav__sub-list{
     visibility: visible;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
-  .p-gnav__list > li > span,
-  .p-gnav__list > li > a{
+  .p-gnav__list > li:hover .p-gnav__parent button:after{
+    transform: rotate(180deg) translateY(50%);
+  }
+  .p-gnav__parent{
     border-bottom: none;
     width: auto;
   }
-  .p-gnav__list > li > span:after{
+  .p-gnav__parent > a{
+    padding: 1.5rem 0.5rem 1.5rem 1rem;
+  }
+  .p-gnav__parent button{
+    height: auto;
+    width: auto;
+  }
+  .p-gnav__parent button:after{
     right: 0;
   }
   .p-gnav__sub-list{
@@ -1185,6 +1211,7 @@ main {
     transform: translateY(100%);
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.3)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    border-bottom: none;
   }
   .p-gnav__sub-list:before{
     content: "";
@@ -1197,7 +1224,6 @@ main {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   .p-gnav__sub-list > li > a{
-    border-bottom: none;
     margin-left: 0;
     padding: 0.4rem 1rem 0.4rem 1.5rem;
   }
@@ -1205,6 +1231,9 @@ main {
     top: 0.5rem;
     right: auto;
     left: 0;
+  }
+  .p-gnav__sub-list > li + li a{
+    border-top: none;
   }
 }
 

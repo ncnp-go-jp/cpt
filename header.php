@@ -22,42 +22,55 @@
         <div class="p-gnav__inner">
           <ul class="p-gnav__list">
             <li>
-              <span class="js-sub-list-toggle">サイトについて</span>
+              <div class="p-gnav__parent">
+                <a href="<?php echo home_url() . '/about'; ?>">サイトについて</a>
+                <button class="js-sub-list-toggle"></button>
+              </div>
               <ul class="p-gnav__sub-list">
-                <li><a href="">想い</a></li>
-                <li><a href="">トラウマを経験した方へ</a></li>
-                <li><a href="">トラウマを経験した方のご家族やご友人へ</a></li>
-                <li><a href="">トラウマ経験者の支援を行う方へ</a></li>
+                <li><a href="<?php echo home_url() . '/about/thought'; ?>">想い</a></li>
+                <li><a href="<?php echo home_url() . '/about/experienced-person'; ?>">トラウマを経験した方へ</a></li>
+                <li><a href="<?php echo home_url() . '/about/family-friends'; ?>">トラウマを経験した方のご家族やご友人へ</a></li>
+                <li><a href="<?php echo home_url() . '/about/supporter'; ?>">トラウマ経験者の支援を行う方へ</a></li>
               </ul>
             </li>
             <li>
-              <span class="js-sub-list-toggle">トラウマについて学ぶ</span>
+              <div class="p-gnav__parent">
+                <a href="<?php echo home_url() . '/learn'; ?>">トラウマについて学ぶ</a>
+                <button class="js-sub-list-toggle"></button>
+              </div>
               <ul class="p-gnav__sub-list">
-                <li><a href="">トラウマとは</a></li>
-                <li><a href="">トラウマの影響</a></li>
-                <li><a href="">PTSDとは</a></li>
+                <li><a href="<?php echo home_url() . '/learn/about-trauma'; ?>">トラウマとは</a></li>
+                <li><a href="<?php echo home_url() . '/learn/influence'; ?>">トラウマの影響</a></li>
+                <li><a href="<?php echo home_url() . '/learn/about-ptsd'; ?>">PTSDとは</a></li>
               </ul>
             </li>
             <li>
-              <span class="js-sub-list-toggle">治療を知る</span>
+              <div class="p-gnav__parent">
+                <a href="<?php echo home_url() . '/treatment'; ?>">治療を知る</a>
+                <button class="js-sub-list-toggle"></button>
+              </div>
               <ul class="p-gnav__sub-list">
-                <li><a href="">PTSDの治療</a></li>
-                <li><a href="">CPTとは</a></li>
-                <li><a href="">CPTの進め方</a></li>
-                <li><a href="">CPTに親しむ</a></li>
-                <li><a href="">治療を受けた人の声</a></li>
+                <li><a href="<?php echo home_url() . '/treatment/treatment-ptsd'; ?>">PTSDの治療</a></li>
+                <li><a href="<?php echo home_url() . '/treatment/about-cpt'; ?>">CPTとは</a></li>
+                <li><a href="<?php echo home_url() . '/treatment/steps'; ?>">CPTの進め方</a></li>
+                <li><a href="<?php echo home_url() . '/treatment/familiarize'; ?>">CPTに親しむ</a></li>
+                <li><a href="<?php echo home_url() . '/treatment/voice'; ?>">治療を受けた人の声</a></li>
               </ul>
             </li>
             <li>
-              <a href="">情報資源を得る</a>
+              <div class="p-gnav__parent">
+                <a href="<?php echo home_url() . '/resources'; ?>">情報資源を得る</a>
+              </div>
             </li>
             <li>
-              <a href="">お知らせ</a>
+              <div class="p-gnav__parent">
+                <a href="<?php echo home_url() . '/news'; ?>">お知らせ</a>
+              </div>
             </li>
           </ul>
           <div class="p-gnav__btn-box">
-            <a href="" class="c-btn p-gnav__btn">ログイン</a>
-            <a href="" class="c-btn -brown p-gnav__btn">会員登録</a>
+            <a href="<?php echo home_url() . '/expert/login'; ?>" class="c-btn p-gnav__btn">ログイン</a>
+            <a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="c-btn -brown p-gnav__btn">会員登録</a>
           </div>
         </div>
       </nav>

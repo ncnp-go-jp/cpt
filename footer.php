@@ -8,37 +8,37 @@
 
 			<dl class=" p-ftr__list-01">
 				<dd>
-					<h3 class="p-ftr__ttl">サイトについて</h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/about'; ?>">サイトについて</a></h3>
 					<ul class="p-ftr__sub-list">
-						<li><a href="">想い</a></li>
-						<li><a href="">トラウマを経験した方へ</a></li>
-						<li><a href="">トラウマを経験した方のご家族やご友人へ</a></li>
-						<li><a href="">トラウマ経験者の支援を行う方へ</a></li>
+						<li><a href="<?php echo home_url() . '/about/thought'; ?>">想い</a></li>
+						<li><a href="<?php echo home_url() . '/about/experienced-person'; ?>">トラウマを経験した方へ</a></li>
+						<li><a href="<?php echo home_url() . '/about/family-friends'; ?>">トラウマを経験した方のご家族やご友人へ</a></li>
+						<li><a href="<?php echo home_url() . '/about/supporter'; ?>">トラウマ経験者の支援を行う方へ</a></li>
 					</ul>
-					<h3 class="p-ftr__ttl">トラウマについて学ぶ</h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/learn'; ?>">トラウマについて学ぶ</a></h3>
 					<ul class="p-ftr__sub-list">
-						<li><a href="">トラウマとは</a></li>
-						<li><a href="">トラウマの影響</a></li>
-						<li><a href="">PTSDとは</a></li>
+						<li><a href="<?php echo home_url() . '/learn/about-trauma'; ?>">トラウマとは</a></li>
+						<li><a href="<?php echo home_url() . '/learn/influence'; ?>">トラウマの影響</a></li>
+						<li><a href="<?php echo home_url() . '/learn/about-ptsd'; ?>">PTSDとは</a></li>
 					</ul>
 				</dd>
 
 				<dd>
-					<h3 class="p-ftr__ttl">治療を知る</h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/treatment'; ?>">治療を知る</a></h3>
 					<ul class="p-ftr__sub-list">
-						<li><a href="">PTSDの治療</a></li>
-						<li><a href="">CPTとは</a></li>
-						<li><a href="">CPTの進め方</a></li>
-						<li><a href="">CPTに親しむ</a></li>
-						<li><a href="">治療を受けた人の声</a></li>
+						<li><a href="<?php echo home_url() . '/treatment/treatment-ptsd'; ?>">PTSDの治療</a></li>
+						<li><a href="<?php echo home_url() . '/treatment/about-cpt'; ?>">CPTとは</a></li>
+						<li><a href="<?php echo home_url() . '/treatment/steps'; ?>">CPTの進め方</a></li>
+						<li><a href="<?php echo home_url() . '/treatment/familiarize'; ?>">CPTに親しむ</a></li>
+						<li><a href="<?php echo home_url() . '/treatment/voice'; ?>">治療を受けた人の声</a></li>
 					</ul>
-					<h3 class="p-ftr__ttl"><a href="">情報資源を得る</a></h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/resources'; ?>">情報資源を得る</a></h3>
 				</dd>
 			</dl>
 
 			<dl class="p-ftr__list-02">
 				<dd>
-					<h3 class="p-ftr__ttl">お知らせ</h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/news'; ?>">お知らせ</a></h3>
 					<ul class="p-ftr__sub-list">
 						<li><a href="">カテゴリ1</a></li>
 						<li><a href="">カテゴリ2</a></li>
@@ -46,7 +46,7 @@
 					</ul>
 				</dd>
 				<dd>
-					<h3 class="p-ftr__ttl">コラム</h3>
+					<h3 class="p-ftr__ttl"><a href="<?php echo home_url() . '/column'; ?>">コラム</a></h3>
 					<ul class="p-ftr__sub-list">
 						<li><a href="">カテゴリ1</a></li>
 						<li><a href="">カテゴリ2</a></li>
@@ -68,9 +68,9 @@
 
 		<div class="p-ftr__btm-box">
 			<ul class="p-ftr__btm-list">
-				<li><a href="">プライバシーポリシー</a></li>
-				<li><a href="">サイトポリシー</a></li>
-				<li><a href="">サイトマップ</a></li>
+				<li><a href="<?php echo home_url() . '/privacy'; ?>">プライバシーポリシー</a></li>
+				<li><a href="<?php echo home_url() . '/sitepolicy'; ?>">サイトポリシー</a></li>
+				<li><a href="<?php echo home_url() . '/sitemap'; ?>">サイトマップ</a></li>
 			</ul>
 			<p class="p-ftr__cr">Copyright © National Center of Neurology and Psychiatry All rights reserved.</p>
 		</div>

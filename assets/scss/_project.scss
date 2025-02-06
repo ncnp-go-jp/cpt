@@ -61,6 +61,11 @@
   width: 100%;
   z-index: 9;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @include media(header) {
     display: block;
@@ -83,7 +88,7 @@
     @include media(header) {
       display: flex;
       align-items: center;
-      gap: 0 1.5rem;
+      gap: 0 2rem;
     }
 
     >li {
@@ -95,48 +100,13 @@
             visibility: visible;
             opacity: 1;
           }
-        }
-      }
 
-      >span,
-      >a {
-        border-bottom: 1px solid $color_light-gray;
-        font-size: 1.6rem;
-        padding: 1.5rem 1rem;
-        display: block;
-        width: 100%;
-        position: relative;
-        cursor: pointer;
-
-        @include media(header) {
-          border-bottom: none;
-          width: auto;
-        }
-      }
-
-      >span {
-        @include media(tb) {
-          padding: 1.5rem 2rem 1.5rem 1rem;
-        }
-
-        &::after {
-          content: '\f107';
-          right: 2rem;
-          color: $color_dark-orange;
-          font-size: 1.6rem;
-          transition: transform 0.3s;
-          transform-origin: 50% 50%;
-          @include fontAwesome__sol;
-          @include center(y);
-
-          @include media(header) {
-            right: 0;
-          }
-        }
-
-        &.active {
-          &::after {
-            transform: rotate(180deg) translateY(50%);
+          .p-gnav__parent {
+            button {
+              &::after {
+                transform: rotate(180deg) translateY(50%);
+              }
+            }
           }
         }
       }
@@ -147,8 +117,68 @@
     }
   }
 
+  &__parent {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color_light-gray;
+
+    @include media(header) {
+      border-bottom: none;
+      width: auto;
+    }
+
+    >a {
+      font-size: 1.6rem;
+      padding: 1.5rem 1rem;
+      display: block;
+
+      @include media(header) {
+        padding: 1.5rem 0.5rem 1.5rem 1rem;
+      }
+    }
+
+    button {
+      height: 6.2rem;
+      width: 6.2rem;
+      cursor: pointer;
+      appearance: none;
+      border: none;
+      margin: 0;
+      background: none;
+      display: block;
+      position: relative;
+
+      @include media(header) {
+        height: auto;
+        width: auto;
+      }
+
+      &::after {
+        content: '\f107';
+        right: 2rem;
+        color: $color_dark-orange;
+        font-size: 1.6rem;
+        transition: transform 0.3s;
+        transform-origin: 50% 50%;
+        @include fontAwesome__sol;
+        @include center(y);
+
+        @include media(header) {
+          right: 0;
+        }
+      }
+
+      &.active {
+        &::after {
+          transform: rotate(180deg) translateY(50%);
+        }
+      }
+    }
+  }
+
   &__sub-list {
     display: none;
+    border-bottom: 1px solid $color_light-gray;
 
     @include media(header) {
       display: block;
@@ -164,6 +194,7 @@
       border-radius: 1rem;
       transform: translateY(100%);
       filter: drop-shadow(0 0 10px rgb(0 0 0 / .3));
+      border-bottom: none;
     }
 
     &::before {
@@ -184,12 +215,10 @@
         display: block;
         padding: 1.2rem 1rem 1.1rem 0;
         margin-left: 3rem;
-        border-bottom: 1px solid $color_light-gray;
         position: relative;
         white-space: nowrap;
 
         @include media(header) {
-          border-bottom: none;
           margin-left: 0;
           padding: 0.4rem 1rem 0.4rem 1.5rem;
         }
@@ -207,6 +236,16 @@
             top: 0.5rem;
             right: auto;
             left: 0;
+          }
+        }
+      }
+
+      &+li {
+        a {
+          border-top: 1px solid $color_light-gray;
+
+          @include media(header) {
+            border-top: none;
           }
         }
       }

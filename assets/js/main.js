@@ -47,8 +47,10 @@ jQuery(function ($) {
 
   // スマホ：メインメニュー：タッチ時の開閉
   $('.js-sub-list-toggle').on('click', function () {
-    $(this).toggleClass('active');
-    $(this).next('.p-gnav__sub-list').slideToggle();
+    if (windowW < 1200) {
+      $(this).toggleClass('active');
+      $(this).parent().next('.p-gnav__sub-list').slideToggle();
+    }
   });
 
   // メニューをクリック時に誤ってメニュー全体が閉じないようにする
