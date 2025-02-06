@@ -707,12 +707,8 @@
 
 .p-breadcrumb {
   padding: 0.8rem 0 0;
-  margin-left: -0.5rem;
+  min-height: 5.6rem;
   @include fontsize(12, 14);
-
-  @include media(tb) {
-    margin-left: 0;
-  }
 
   a {
     color: $color_font;
@@ -730,7 +726,7 @@
   text-align: center;
 
   @include media(tb) {
-    padding: 3.7rem 0 5rem;
+    padding: 1.5rem 0 5rem;
   }
 
   &__sec {
@@ -872,6 +868,87 @@
 
       @include media(tb) {
         margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+.p-thought-intro {
+  padding-bottom: 3rem;
+
+  @include media(tb) {
+    padding-bottom: 5rem;
+  }
+
+  &__note {
+    text-align: right;
+    margin-top: 3rem;
+
+    @include media(tb) {
+      margin-top: 2.5rem;
+      line-height: 1.5;
+    }
+
+    p {
+      display: inline-block;
+    }
+  }
+}
+
+.p-thought-mem {
+  padding: 2.5rem 0 4rem;
+  text-align: center;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+
+  &__h1 {
+    color: $color_dark-brown;
+    font-weight: bold;
+    @include fontsize(18, 28);
+  }
+
+  &__txt {
+    text-align: left;
+    margin: 1.5rem 0 1.7rem;
+
+    @include media(tb) {
+      text-align: center;
+      margin: 2rem 0 3.7rem;
+    }
+  }
+
+  &__table {
+    width: 100%;
+
+    tr {
+      display: block;
+      text-align: left;
+    }
+
+    th {
+      display: block;
+      background: $color_light-brown;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.7rem 1rem;
+
+      @include media(tb) {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    td {
+      display: block;
+      padding: 0.7rem 2rem;
+
+      @include media(tb) {
+        padding: 0.4rem 2rem;
+      }
+
+      &:nth-of-type(even) {
+        background: $color_orange-gray;
       }
     }
   }

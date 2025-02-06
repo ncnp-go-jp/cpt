@@ -21,13 +21,13 @@ get_template_part('template-parts/mainview');
       <a href="" class="c-btn p-abt-intro__btn">私たちの想いについて　<i class="fas fa-angle-right"></i></a>
     </section>
 
-    <section class="c-white-box p-abt-intro__box">
+    <section class="c-white-box-s p-abt-intro__box">
       <h3 class="c-h3 p-abt-intro__h2">運営元</h3>
       <p><span class="u-orange-marker">国立研究開発法人国立精神・神経医療研究センター認知行動療法センター</span>では、設立された2011年より認知行動療法の臨床研究・人材育成・社会実装につとめて参りました。<br>
         研究開発部では、認知処理療法（Cognitive Processing Therapy；CPT）の基礎・臨床研究に励んでおります。</p>
     </section>
 
-    <section class="c-white-box p-abt-intro__box">
+    <section class="c-white-box-s p-abt-intro__box">
       <h3 class="c-h3 p-abt-intro__h2">Funding</h3>
       <p>このサイトは、三菱財団社会福祉事業・研究助成を受けて作成されました。<br>
         これまで私たちが行ってきたCPT研究は、日本学術振興会科学研究費助成事業等に支えられて参りました。<br>
