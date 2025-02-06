@@ -151,6 +151,9 @@ main {
   font-size: 1.6rem;
   background: #FABA6B;
   border-radius: 2.5rem;
+  position: relative;
+  line-height: 1.25;
+  font-weight: bold;
 }
 .c-btn.-brown {
   background: #A68563;
@@ -158,6 +161,18 @@ main {
 .c-btn.-white {
   color: #555555;
   background: #fff;
+}
+.c-btn.-circle-right:after {
+  content: "\f138";
+  color: #fff;
+  font-size: 1.8rem;
+  right: 1.1rem;
+  font-family: "Font Awesome 6 Free";
+  display: inline-block;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .c-h2 {
@@ -494,6 +509,137 @@ main {
   left: 0;
 }
 
+.p-mv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1.6rem auto auto;
+      grid-template-rows: 1.6rem auto auto;
+  grid-template-areas: "tag img" "ttl img" "txt txt";
+  column-gap: 1rem;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding: 1.5rem 0.5rem 2rem;
+  min-height: 34rem;
+}
+.p-mv__tag {
+  grid-area: tag;
+}
+.p-mv__ttl {
+  grid-area: ttl;
+  font-weight: bold;
+  color: #806346;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+.p-mv__txt {
+  grid-area: txt;
+  margin-top: 1.5rem;
+}
+.p-mv__img {
+  grid-area: img;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.p-breadcrumb {
+  padding: 0.8rem 0 0;
+  margin-left: -0.5rem;
+  font-size: 1.2rem;
+}
+.p-breadcrumb a {
+  color: #555555;
+}
+.p-breadcrumb i {
+  margin: 0 0.3rem;
+  color: #FF9D26;
+}
+
+.p-abt-intro {
+  padding: 2.5rem 0 3rem;
+  text-align: center;
+}
+.p-abt-intro__sec {
+  margin-bottom: 4rem;
+}
+.p-abt-intro__h1 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #806346;
+  font-size: 1.8rem;
+}
+.p-abt-intro__btn {
+  margin-top: 2.5rem;
+}
+.p-abt-intro__list {
+  border-top: 1px solid #C4A07C;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.p-abt-intro__list li {
+  border-bottom: 1px solid #C4A07C;
+  padding: 1rem 0 1.1rem;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 0.5rem;
+  line-height: 1.67;
+  text-align: left;
+}
+.p-abt-intro__list li:before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #806346;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 0.7rem;
+}
+.p-abt-intro__box {
+  padding: 2.5rem 2.5rem 3rem;
+}
+.p-abt-intro__box + .p-abt-intro__box {
+  margin-top: 3rem;
+}
+.p-abt-intro__h2 {
+  margin-bottom: 1.5rem;
+}
+
+.p-abt-howto {
+  padding: 2.5rem 0 4rem;
+  text-align: center;
+}
+.p-abt-howto__sec {
+  padding: 0 0.5rem;
+}
+.p-abt-howto__h1 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #806346;
+  font-size: 1.8rem;
+}
+.p-abt-howto__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 2rem 3rem;
+  margin: 2.5rem 1.8rem 0;
+}
+.p-abt-howto__list li {
+  text-align: center;
+}
+.p-abt-howto__list img {
+  border-radius: 1rem;
+  margin-bottom: 1.8rem;
+}
+.p-abt-howto__list p {
+  margin-top: 1.5rem;
+}
+
 .p-ftr {
   padding: 1.5rem 0;
 }
@@ -651,6 +797,11 @@ main {
   background: #A68563;
 }
 
+.u-orange-marker {
+  text-decoration: underline;
+  color: #FF9D26;
+}
+
 @media only screen and (min-width: 834px){
   /* tablet-size */
   body{
@@ -801,6 +952,85 @@ main {
   }
   .p-front-info__h2{
     margin-bottom: 2rem;
+  }
+  .p-mv{
+    -ms-grid-columns: 1fr 36%;
+        grid-template-columns: 1fr 36%;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-template-areas: "tag img" "ttl img" "txt img";
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    min-height: 33rem;
+  }
+  .p-mv__ttl{
+    font-size: 3.6rem;
+  }
+  .p-mv__ttl{
+    margin-top: 0;
+  }
+  .p-mv__txt{
+    margin-top: 2rem;
+  }
+  .p-breadcrumb{
+    font-size: 1.4rem;
+  }
+  .p-breadcrumb{
+    margin-left: 0;
+  }
+  .p-abt-intro{
+    padding: 3.7rem 0 5rem;
+  }
+  .p-abt-intro__sec{
+    margin-bottom: 7rem;
+  }
+  .p-abt-intro__h1{
+    font-size: 2.8rem;
+  }
+  .p-abt-intro__h1{
+    margin-bottom: 1.3rem;
+  }
+  .p-abt-intro__btn{
+    margin-top: 3.5rem;
+  }
+  .p-abt-intro__list{
+    font-size: 1.4rem;
+  }
+  .p-abt-intro__list{
+    margin: 1rem 0;
+  }
+  .p-abt-intro__list li{
+    padding: 1rem 0 1.2rem;
+  }
+  .p-abt-intro__box{
+    padding: 3.5rem 4.5rem 2.5rem;
+  }
+  .p-abt-intro__box + .p-abt-intro__box{
+    margin-top: 4rem;
+  }
+  .p-abt-intro__h2{
+    margin-bottom: 1rem;
+  }
+  .p-abt-howto{
+    padding: 4.2rem 0 4rem;
+  }
+  .p-abt-howto__h1{
+    font-size: 2.8rem;
+  }
+  .p-abt-howto__h1{
+    margin-bottom: 0.5rem;
+  }
+  .p-abt-howto__txt{
+    text-align: center;
+  }
+  .p-abt-howto__list{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 3.5rem 0 0;
+  }
+  .p-abt-howto__list p{
+    margin-top: 0.8rem;
   }
   .p-ftr{
     display: -ms-flexbox;

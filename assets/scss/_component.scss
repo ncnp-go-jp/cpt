@@ -11,6 +11,9 @@
   font-size: 1.6rem;
   background: $color_light-orange;
   border-radius: 2.5rem;
+  position: relative;
+  line-height: 1.25;
+  font-weight: bold;
 
   &.-brown {
     background: $color_light-brown;
@@ -19,6 +22,17 @@
   &.-white {
     color: $color_font;
     background: #fff;
+  }
+
+  &.-circle-right {
+    &::after {
+      content: '\f138';
+      color: #fff;
+      font-size: 1.8rem;
+      right: 1.1rem;
+      @include fontAwesome__sol;
+      @include center(y);
+    }
   }
 }
 
