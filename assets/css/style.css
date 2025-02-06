@@ -534,8 +534,8 @@ main {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1.6rem auto auto;
-      grid-template-rows: 1.6rem auto auto;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   grid-template-areas: "tag img" "ttl img" "txt txt";
   column-gap: 1rem;
   -ms-flex-line-pack: start;
@@ -543,8 +543,25 @@ main {
   padding: 1.5rem 0.5rem 2rem;
   min-height: 34rem;
 }
+.p-mv.-parent-page {
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  grid-template-areas: "ttl img" "txt txt";
+}
 .p-mv__tag {
   grid-area: tag;
+  font-weight: bold;
+  color: #fff;
+  background: #A68563;
+  line-height: 1;
+  padding: 0.2rem 0.8rem;
+  display: inline-block;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 .p-mv__ttl {
   grid-area: ttl;
@@ -554,9 +571,13 @@ main {
   margin-top: 0.5rem;
   font-size: 2rem;
 }
+.p-mv__ttl.-large {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
 .p-mv__txt {
   grid-area: txt;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 .p-mv__img {
   grid-area: img;
@@ -973,19 +994,35 @@ main {
   .p-mv{
     -ms-grid-columns: 1fr 36%;
         grid-template-columns: 1fr 36%;
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
+    -ms-grid-rows: auto auto 1fr;
+        grid-template-rows: auto auto 1fr;
     grid-template-areas: "tag img" "ttl img" "txt img";
-    -ms-flex-line-pack: center;
-        align-content: center;
     padding: 0;
     min-height: 33rem;
   }
+  .p-mv.-parent-page{
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    grid-template-areas: "ttl img" "txt img";
+  }
+  .p-mv__tag{
+    font-size: 1.8rem;
+  }
+  .p-mv__tag{
+    padding: 0.2rem 1.2rem;
+    margin-top: 3.5rem;
+  }
   .p-mv__ttl{
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
   .p-mv__ttl{
     margin-top: 0;
+  }
+  .p-mv__ttl.-large{
+    font-size: 3.6rem;
+  }
+  .p-mv__ttl.-large{
+    margin-top: 7rem;
   }
   .p-mv__txt{
     margin-top: 2rem;

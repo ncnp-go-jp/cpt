@@ -1,0 +1,40 @@
+<?php
+$tag = ''; // タグ内のテキスト
+$ttl = ''; // 見出し
+$img_url_pc = THEME_DIR_URI; // 画像
+$img_url_sp = THEME_DIR_URI; // 画像
+$txt = ''; // テキスト
+$is_parent_page = false; // 親ページか否か
+
+if (is_page('about')) {
+  $ttl = 'サイトについて';
+  $img_url_pc .= 'about/about-topview-pc.jpg';
+  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $txt = '「知識は、ちから。」生きていれば、誰しも、傷つくことがあります。<br>傷ついたとき、どうしたらよいか。傷ついた心を抱えて、どう生きていこうか。<br>そんな問いを考える時、歩みをすすめる力になる情報を提供することが、<br class="u-pc">このサイトの志です。';
+  $is_parent_page = true;
+} else if (is_page('thought')) {
+  $tag = 'サイトについて';
+  $ttl = '想い';
+  $img_url_pc .= 'about/about-topview-pc.jpg';
+  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $txt = '私たちはこれまで、認知処理療法の科学的な検証を慎重に進めてまいりました。<br>これまでの取り組みをもとに、今後は、トラウマティックな体験にあわれ、心的外傷後ストレス症や関連症状で苦しまれている方々に、認知処理療法を少しでも知っていただき、活用していただけたらと願っております。';
+}
+?>
+
+<div class="l-base p-mv
+  <?php if ($is_parent_page) {
+    echo '-parent-page';
+  } ?>">
+  <?php if ($tag): ?>
+    <span class="p-mv__tag"><?php echo $tag; ?></span>
+  <?php endif ?>
+  <h1 class="p-mv__ttl 
+  <?php if (!$tag) {
+    echo '-large';
+  } ?>"><?php echo $ttl; ?></h1>
+  <picture class="p-mv__img">
+    <source media="(min-width: 834px)" srcset="<?php echo $img_url_pc; ?>">
+    <img src="<?php echo $img_url_sp; ?>" alt="<?php echo $ttl; ?>">
+  </picture>
+  <p class="p-mv__txt"><?php echo $txt; ?></p>
+</div>

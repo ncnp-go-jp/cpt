@@ -1,19 +1,18 @@
 <?php
 get_header();
 ?>
-<div class="l-base p-mv">
-  <h1 class="p-mv__ttl">サイトについて</h1>
-  <picture class="p-mv__img">
-    <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>about/about-topview-pc.jpg">
-    <img src="<?php echo THEME_DIR_URI; ?>about/about-topview-sp.jpg" alt="">
-  </picture>
-  <p class="p-mv__txt">「知識は、ちから。」生きていれば、誰しも、傷つくことがあります。<br>
-    傷ついたとき、どうしたらよいか。傷ついた心を抱えて、どう生きていこうか。<br>
-    そんな問いを考える時、歩みをすすめる力になる情報を提供することが、<br class="u-pc">このサイトの志です。</p>
-</div>
+
+<?php
+// メインビューをテンプレート化。
+// 表示内容はtenplate-parts/mainview.phpにて設定
+get_template_part('template-parts/mainview');
+?>
 
 <div class="u-bg-orange-gray">
-  <?php get_template_part('template-parts/breadcrumb'); ?>
+  <?php
+  // パンくずリスト
+  get_template_part('template-parts/breadcrumb');
+  ?>
 
   <article class="l-base p-abt-intro">
     <section class="p-abt-intro__sec">
