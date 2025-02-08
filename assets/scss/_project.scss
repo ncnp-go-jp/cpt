@@ -1105,41 +1105,64 @@
     }
   }
 
-  &__sec {
+  &__item {
     padding: 0 1rem;
+    display: none;
 
     @include media(tb) {
       padding: 0;
     }
+
+    &:not(:first-of-type) {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+
+      .p-tab-box__inner {
+        animation: fadeinAnime 2s forwards;
+      }
+    }
+  }
+}
+
+@keyframes fadeinAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
 .p-img-right-btm-box {
   display: flex;
-  overflow: hidden;
-  resize: horizontal;
 
-  &__float {
+  &__img {
     float: right;
+    width: 7.8rem;
     height: 100%;
-    display: flex;
-    align-items: flex-end;
-    shape-outside: inset(calc(100% - 13.2rem) 0 0);
-    margin-left: 2rem;
+    shape-outside: inset(calc(100% - 15rem) 0 0 0);
+    object-fit: contain;
+    object-position: bottom;
+    margin: 0 0 0 3rem;
 
     @include media(tb) {
-      shape-outside: inset(calc(100% - 22rem) 0 0);
-      margin-left: 4rem;
-      margin-right: 3rem;
+      float: none;
+      width: 13rem;
+      height: auto;
+      shape-outside: none;
+      margin: 0 3rem 0 0;
     }
+  }
 
-    img {
-      height: 13.2rem;
-      width: auto;
-
-      @include media(tb) {
-        height: 22rem;
-      }
+  &__inner {
+    @include media(tb) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 0 4.5rem;
     }
   }
 }

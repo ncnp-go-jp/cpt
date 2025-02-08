@@ -76,4 +76,17 @@ jQuery(function ($) {
       $(element2).css("flex-grow", ratioCss / 10);
     });
   });
+
+  // タブの切り替え
+  $('[data-tag]').on('click', function (event) {
+    var tagNum = $(this).data('tag');
+    // 一度全てを非表示に
+    $('[data-targetTag]').removeClass('active');
+    $('[data-tag]').removeClass('active');
+
+    // 該当のコンテンツを表示
+    $('[data-tag="' + tagNum + '"]').addClass('active');
+    $('[data-targetTag="' + tagNum + '"]').addClass('active');
+  });
+
 });
