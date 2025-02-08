@@ -1,6 +1,6 @@
 <div class="u-bg-ligh-brown">
   <article class="p-abt-common l-base">
-    <h2 class="p-abt-common__h1">中見出し</h2>
+    <h2 class="c-h2 p-abt-common__h1">中見出し</h2>
     <div class="p-abt-common__txt-box">
       <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー</p>
     </div>

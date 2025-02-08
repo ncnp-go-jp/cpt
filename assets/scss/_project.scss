@@ -336,6 +336,12 @@
     padding: 12rem 0 8rem;
   }
 
+  &__h1 {
+    color: $color_dark-brown;
+    font-weight: bold;
+    @include fontsize(24, 28);
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -739,9 +745,6 @@
 
   &__h1 {
     margin-bottom: 2rem;
-    font-weight: bold;
-    color: $color_dark-brown;
-    @include fontsize(18, 28);
 
     @include media(tb) {
       margin-bottom: 1.3rem;
@@ -828,9 +831,6 @@
 
   &__h1 {
     margin-bottom: 1.5rem;
-    font-weight: bold;
-    color: $color_dark-brown;
-    @include fontsize(18, 28);
 
     @include media(tb) {
       margin-bottom: 0.5rem;
@@ -882,10 +882,8 @@
 
   &__h1 {
     color: #fff;
-    font-weight: bold;
     margin-bottom: 1.5rem;
     text-align: center;
-    @include fontsize(18, 28);
 
     @include media(tb) {
       margin-bottom: 0.5rem;
@@ -967,12 +965,6 @@
     padding: 4rem 0 6rem;
   }
 
-  &__h1 {
-    color: $color_dark-brown;
-    font-weight: bold;
-    @include fontsize(18, 28);
-  }
-
   &__txt {
     text-align: left;
     margin: 1.5rem 0 1.7rem;
@@ -1013,6 +1005,140 @@
 
       &:nth-of-type(even) {
         background: $color_orange-gray;
+      }
+    }
+  }
+}
+
+.p-abt-trauma {
+  padding: 3rem 0;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+
+  &__h1 {
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+
+    @include media(tb) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__txt-box {
+    margin-bottom: 2.5rem;
+
+    @include media(tb) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.p-tab-box {
+  background: $color_orange-gray;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 3rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  @include media(tb) {
+    border-radius: 3rem;
+    padding: 4rem 5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__tab-list {
+    height: 4rem;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+
+    &:last-of-type {
+      margin-bottom: 2.5rem;
+    }
+
+    @include media(tb) {
+      height: 5rem;
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: inherit;
+      color: $color_light-brown;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 1rem;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      @include fontsize(12.5, 16);
+
+      &:hover,
+      &.active {
+        background: $color_light-brown;
+        color: #fff;
+      }
+    }
+  }
+
+  &__h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    @include media(tb) {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__btn-box {
+    margin-top: 2.5rem;
+    text-align: center;
+
+    @include media(tb) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__sec {
+    padding: 0 1rem;
+
+    @include media(tb) {
+      padding: 0;
+    }
+  }
+}
+
+.p-img-right-btm-box {
+  display: flex;
+  overflow: hidden;
+  resize: horizontal;
+
+  &__float {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    shape-outside: inset(calc(100% - 13.2rem) 0 0);
+    margin-left: 2rem;
+
+    @include media(tb) {
+      shape-outside: inset(calc(100% - 22rem) 0 0);
+      margin-left: 4rem;
+      margin-right: 3rem;
+    }
+
+    img {
+      height: 13.2rem;
+      width: auto;
+
+      @include media(tb) {
+        height: 22rem;
       }
     }
   }

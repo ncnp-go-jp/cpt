@@ -80,7 +80,7 @@ get_header();
 </div>
 
 <article class="l-base p-news-col">
-  <h2 class="c-h2">お知らせ</h2>
+  <h2 class="p-front-sec__h1">お知らせ</h2>
 
   <ul class="p-news-col__list">
     <li><a href="">
@@ -106,7 +106,7 @@ get_header();
 
 <div class="u-bg-orange-gray">
   <article class="l-base p-column-slide">
-    <h2 class="c-h2">コラム</h2>
+    <h2 class="p-front-sec__h1">コラム</h2>
 
     <ul class="p-column-slide__list">
       <li><a href="">

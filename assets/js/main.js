@@ -57,4 +57,23 @@ jQuery(function ($) {
   $('.p-gnav__inner').on('click', function (event) {
     event.stopPropagation();
   });
+
+  // タブ一覧の個々のタブの横幅を調整する
+  $('.p-tab-box__tab-list').each(function (index, element) {
+    var listChildren = $(element).children(),
+      totalLength = 0;
+
+    // タブ一覧のテキストの総文字数を計算
+    listChildren.each(function (index2, element2) {
+      totalLength += $(element2).text().length;
+    });
+
+    // 各タブの文字数を元に、横の比率を取得し、設定
+    listChildren.each(function (index2, element2) {
+      var txtLength = $(element2).text().length,
+        ratio = txtLength / totalLength,
+        ratioCss = Math.round(ratio * 100, 1);
+      $(element2).css("flex-grow", ratioCss / 10);
+    });
+  });
 });

@@ -16,7 +16,7 @@ get_template_part('template-parts/mainview');
 
   <article class="l-base p-abt-intro">
     <section class="p-abt-intro__sec">
-      <h3 class="p-abt-intro__h1">安全で有効な治療を届けるために</h3>
+      <h3 class="c-h2 p-abt-intro__h1">安全で有効な治療を届けるために</h3>
       <p>私たちはこれまで、認知処理療法の科学的な検証を慎重に進めてまいりました。これまでの取り組みをもとに、今後は、トラウマティックな体験にあわれ、心的外傷後ストレス症や関連症状で苦しまれている方々に、認知処理療法を少しでも知っていただき、活用していただけたらと願っております。</p>
       <a href="./thought" class="c-btn p-abt-intro__btn">私たちの想いについて　<i class="fas fa-angle-right"></i></a>
     </section>
@@ -48,7 +48,7 @@ get_template_part('template-parts/mainview');
 <article class="l-base p-abt-howto">
 
   <section class="p-abt-howto__sec">
-    <h3 class="p-abt-howto__h1">サイトの使い方</h3>
+    <h3 class="c-h2 p-abt-howto__h1">サイトの使い方</h3>
     <p class="p-abt-howto__txt">このサイトを訪れていただき、ありがとうございます。<br>
       ご覧になっているあなたは、どのようなこと知りたくて、訪れてくださったのでしょうか。<br>
       本当は、お一人おひとりにとって必要な情報をお手渡しできれば良いのですが、現実的な制約から、それが叶いません。<br>

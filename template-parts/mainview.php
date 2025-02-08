@@ -42,6 +42,12 @@ if (is_page('about')) {
   $img_url_sp .= 'learn/learn-topview-sp.jpg';
   $txt = '生きていれば、誰しも、傷つくことがあります。もし、自分の力では対処できないような大きな出来事を経験したら、動揺し、混乱します。そこから抜け出す鍵の一つは、知識をもって、何が起こったのかをできるだけ冷静な目で見ることです。<br>ここでは、トラウマとは何か、トラウマが生活にどのような影響を及ぼすのかを紹介します。';
   $is_parent_page = true;
+} else if (is_page('about-trauma')) {
+  $tag = 'トラウマについて学ぶ';
+  $ttl = 'トラウマとは';
+  $img_url_pc .= 'learn/learn-topview-pc.jpg';
+  $img_url_sp .= 'learn/learn-topview-sp.jpg';
+  $txt = '人生では、自分の力では対処できないような、とても大きな出来事を体験することがあります。<br>個人で対処できないほどの圧倒されるような体験によってもたらされる心の傷を「トラウマ」といいます。';
 }
 ?>
 

@@ -15,7 +15,7 @@ get_template_part('template-parts/mainview');
   ?>
   <div class="l-base p-thought-intro">
     <article class="c-white-box-l">
-      <h2 class="c-white-box-l__h1">私たちの想い</h2>
+      <h2 class="c-h2 c-white-box-l__h1">私たちの想い</h2>
       <p>このウェブサイトへと訪れていただきまして、誠にありがとうございます。<br>
         認知処理療法は、日本では20年ほど前に研究がはじまりました。<br>
         米国の病院や研究機関で長年、臨床心理の実践と研究にとり組まれてきた堀越勝さんが、当時、犯罪被害にあわれた方への支援のひとつとして日本に紹介したのがはじまりです。<br>
@@ -31,13 +31,12 @@ get_template_part('template-parts/mainview');
           伊藤　正哉</p>
       </div>
     </article>
-
   </div>
 
 </div>
 
 <article class="l-base p-thought-mem">
-  <h2 class="p-thought-mem__h1">CPTの研究・実践に取り組むメンバー</h2>
+  <h2 class="c-h2">CPTの研究・実践に取り組むメンバー</h2>
   <p class="p-thought-mem__txt">科学研究に取り組んできた20年、皆で力を合わせながら、ほんとうに多くの方々に助けていただきながら、歩んできました。<br>
     ここではそのほんの一部、現在CBTセンターと密に関わりながら活動しているメンバーを紹介します。<br>
     このメンバーがハブとなり、CPTの研究・実践をますます拡げていけたらと考えています。</p>

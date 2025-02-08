@@ -13,6 +13,11 @@
   position: relative;
   line-height: 1.25;
   font-weight: bold;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  @include fontsize(16, 16);
 
   &.-brown {
     background: $color_light-brown;
@@ -45,7 +50,7 @@
 .c-h2 {
   color: $color_dark-brown;
   font-weight: bold;
-  @include fontsize(24, 28);
+  @include fontsize(18, 28);
 }
 
 .c-h3 {
@@ -71,19 +76,24 @@
 
   @include media(tb) {
     border-radius: 3rem;
-    padding: 4.5rem 8rem 5rem;
+    padding: 4.5rem 5rem 5rem;
   }
 
   &__h1 {
-    font-weight: bold;
-    color: $color_dark-brown;
     line-height: 1.56;
     text-align: center;
     margin-bottom: 2rem;
-    @include fontsize(18, 28);
 
     @include media(tb) {
       margin-bottom: 3rem;
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 3rem;
+
+    @include media(tb) {
+      padding-bottom: 5rem;
     }
   }
 }

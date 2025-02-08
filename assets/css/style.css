@@ -153,6 +153,11 @@ main {
   position: relative;
   line-height: 1.25;
   font-weight: bold;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
 }
 .c-btn.-brown {
   background: #A68563;
@@ -180,7 +185,7 @@ main {
 .c-h2 {
   color: #806346;
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 .c-h3 {
@@ -200,12 +205,12 @@ main {
   padding: 2.5rem;
 }
 .c-white-box-l__h1 {
-  font-weight: bold;
-  color: #806346;
   line-height: 1.56;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+}
+.c-white-box-l__wrapper {
+  padding-bottom: 3rem;
 }
 
 .c-small-box-list {
@@ -421,6 +426,11 @@ main {
 .p-front-sec {
   padding: 0 0 5rem;
   overflow: hidden;
+}
+.p-front-sec__h1 {
+  color: #806346;
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 .p-front-sec__item {
   display: -ms-flexbox;
@@ -658,9 +668,6 @@ main {
 }
 .p-abt-intro__h1 {
   margin-bottom: 2rem;
-  font-weight: bold;
-  color: #806346;
-  font-size: 1.8rem;
 }
 .p-abt-intro__btn {
   margin-top: 2.5rem;
@@ -708,9 +715,6 @@ main {
 }
 .p-abt-howto__h1 {
   margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #806346;
-  font-size: 1.8rem;
 }
 .p-abt-howto__list {
   display: -ms-flexbox;
@@ -736,10 +740,8 @@ main {
 }
 .p-abt-common__h1 {
   color: #fff;
-  font-weight: bold;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1.8rem;
 }
 .p-abt-common__txt-box {
   margin-bottom: 2.5rem;
@@ -782,11 +784,6 @@ main {
   padding: 2.5rem 0 4rem;
   text-align: center;
 }
-.p-thought-mem__h1 {
-  color: #806346;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
 .p-thought-mem__txt {
   text-align: left;
   margin: 1.5rem 0 1.7rem;
@@ -811,6 +808,90 @@ main {
 }
 .p-thought-mem__table td:nth-of-type(even) {
   background: #FAF6F0;
+}
+
+.p-abt-trauma {
+  padding: 3rem 0;
+}
+.p-abt-trauma__h1 {
+  text-align: center;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+.p-abt-trauma__txt-box {
+  margin-bottom: 2.5rem;
+}
+
+.p-tab-box {
+  background: #FAF6F0;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 3rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.p-tab-box__tab-list {
+  height: 4rem;
+  border-radius: 2.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #fff;
+}
+.p-tab-box__tab-list:last-of-type {
+  margin-bottom: 2.5rem;
+}
+.p-tab-box__tab-list li {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: inherit;
+  color: #A68563;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1.25rem;
+}
+.p-tab-box__tab-list li:hover, .p-tab-box__tab-list li.active {
+  background: #A68563;
+  color: #fff;
+}
+.p-tab-box__h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.p-tab-box__btn-box {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.p-tab-box__sec {
+  padding: 0 1rem;
+}
+
+.p-img-right-btm-box {
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  resize: horizontal;
+}
+.p-img-right-btm-box__float {
+  float: right;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  shape-outside: inset(calc(100% - 13.2rem) 0 0);
+  margin-left: 2rem;
+}
+.p-img-right-btm-box__float img {
+  height: 13.2rem;
+  width: auto;
 }
 
 .p-ftr {
@@ -954,6 +1035,10 @@ main {
   color: #FABA6B;
 }
 
+.u-dark-orange {
+  color: #FF9D26;
+}
+
 .u-tac {
   text-align: center;
 }
@@ -993,6 +1078,9 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
+  .c-btn{
+    font-size: 1.6rem;
+  }
   .c-h2{
     font-size: 2.8rem;
   }
@@ -1004,13 +1092,13 @@ main {
   }
   .c-white-box-l{
     border-radius: 3rem;
-    padding: 4.5rem 8rem 5rem;
-  }
-  .c-white-box-l__h1{
-    font-size: 2.8rem;
+    padding: 4.5rem 5rem 5rem;
   }
   .c-white-box-l__h1{
     margin-bottom: 3rem;
+  }
+  .c-white-box-l__wrapper{
+    padding-bottom: 5rem;
   }
   .c-small-box-list{
     -ms-flex-direction: row;
@@ -1059,6 +1147,9 @@ main {
   }
   .p-front-sec{
     padding: 12rem 0 8rem;
+  }
+  .p-front-sec__h1{
+    font-size: 2.8rem;
   }
   .p-front-sec__item{
     -ms-flex-direction: row;
@@ -1195,9 +1286,6 @@ main {
     margin-bottom: 7rem;
   }
   .p-abt-intro__h1{
-    font-size: 2.8rem;
-  }
-  .p-abt-intro__h1{
     margin-bottom: 1.3rem;
   }
   .p-abt-intro__btn{
@@ -1225,9 +1313,6 @@ main {
     padding: 4.2rem 0 4rem;
   }
   .p-abt-howto__h1{
-    font-size: 2.8rem;
-  }
-  .p-abt-howto__h1{
     margin-bottom: 0.5rem;
   }
   .p-abt-howto__txt{
@@ -1243,9 +1328,6 @@ main {
   }
   .p-abt-common{
     padding: 3rem 0 5rem;
-  }
-  .p-abt-common__h1{
-    font-size: 2.8rem;
   }
   .p-abt-common__h1{
     margin-bottom: 0.5rem;
@@ -1271,9 +1353,6 @@ main {
   .p-thought-mem{
     padding: 4rem 0 6rem;
   }
-  .p-thought-mem__h1{
-    font-size: 2.8rem;
-  }
   .p-thought-mem__txt{
     text-align: center;
     margin: 2rem 0 3.7rem;
@@ -1283,6 +1362,45 @@ main {
   }
   .p-thought-mem__table td{
     padding: 0.4rem 2rem;
+  }
+  .p-abt-trauma{
+    padding: 4rem 0 6rem;
+  }
+  .p-abt-trauma__h1{
+    margin-bottom: 2.5rem;
+  }
+  .p-abt-trauma__txt-box{
+    margin-bottom: 3.5rem;
+  }
+  .p-tab-box{
+    border-radius: 3rem;
+    padding: 4rem 5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .p-tab-box__tab-list{
+    height: 5rem;
+  }
+  .p-tab-box__tab-list li{
+    font-size: 1.6rem;
+  }
+  .p-tab-box__h1{
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .p-tab-box__btn-box{
+    margin-top: 2rem;
+  }
+  .p-tab-box__sec{
+    padding: 0;
+  }
+  .p-img-right-btm-box__float{
+    shape-outside: inset(calc(100% - 22rem) 0 0);
+    margin-left: 4rem;
+    margin-right: 3rem;
+  }
+  .p-img-right-btm-box__float img{
+    height: 22rem;
   }
   .p-ftr{
     display: -ms-flexbox;
