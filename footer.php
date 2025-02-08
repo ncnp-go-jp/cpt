@@ -4,7 +4,7 @@
 	<div class="l-wide">
 		<div class="p-ftr">
 
-			<h2 class="p-ftr__h1"><a href="">CPT</a></h2>
+			<h2 class="p-ftr__h1"><a href="<?php echo home_url(); ?>">CPT</a></h2>
 
 			<dl class=" p-ftr__list-01">
 				<dd>

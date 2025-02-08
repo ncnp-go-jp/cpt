@@ -21,8 +21,11 @@
   }
 
   h1 {
-    color: $color_font;
     @include fontsize(31, 36);
+
+    a {
+      color: $color_font;
+    }
   }
 
   &__btn {
@@ -622,7 +625,7 @@
 
 .p-mv {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 46%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "tag img"
     "ttl img"
@@ -639,6 +642,7 @@
       "ttl img"
       "txt img";
     padding: 0;
+    column-gap: 2rem;
     min-height: 33rem;
   }
 
@@ -652,6 +656,10 @@
       grid-template-areas: "ttl img"
         "txt img";
     }
+  }
+
+  &.-learn {
+    grid-template-columns: auto 35%;
   }
 
   &__tag {
@@ -679,7 +687,7 @@
     font-weight: bold;
     color: $color_dark-brown;
     line-height: 1.2;
-    margin-top: 0.5rem;
+    margin-top: -1.5rem;
     @include fontsize(20, 30);
 
     @include media(tb) {
@@ -687,7 +695,7 @@
     }
 
     &.-large {
-      margin-top: 3rem;
+      margin-top: 4rem;
       @include fontsize(20, 36);
 
       @include media(tb) {
@@ -698,7 +706,7 @@
 
   &__txt {
     grid-area: txt;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     @include media(tb) {
       margin-top: 2rem;
@@ -728,7 +736,7 @@
 
 // abt = about
 .p-abt-intro {
-  padding: 2.5rem 0 3rem;
+  padding: 0rem 0 3rem;
   text-align: center;
 
   @include media(tb) {
@@ -861,6 +869,7 @@
     img {
       border-radius: 1rem;
       margin-bottom: 1.8rem;
+      background: $color_orange-gray;
     }
 
     p {
@@ -926,6 +935,7 @@
       img {
         border-radius: 1rem;
         margin-bottom: 1.5rem;
+        background: #fff;
       }
     }
   }

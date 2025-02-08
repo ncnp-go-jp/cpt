@@ -267,8 +267,10 @@ main {
   height: 6rem;
 }
 .p-hdr h1 {
-  color: #555555;
   font-size: 3.1rem;
+}
+.p-hdr h1 a {
+  color: #555555;
 }
 .p-hdr__btn {
   background: none;
@@ -593,8 +595,8 @@ main {
 .p-mv {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: auto 46%;
+      grid-template-columns: auto 46%;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   grid-template-areas: "tag img" "ttl img" "txt txt";
@@ -608,6 +610,10 @@ main {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   grid-template-areas: "ttl img" "txt txt";
+}
+.p-mv.-learn {
+  -ms-grid-columns: auto 35%;
+      grid-template-columns: auto 35%;
 }
 .p-mv__tag {
   grid-area: tag;
@@ -629,16 +635,16 @@ main {
   font-weight: bold;
   color: #806346;
   line-height: 1.2;
-  margin-top: 0.5rem;
+  margin-top: -1.5rem;
   font-size: 2rem;
 }
 .p-mv__ttl.-large {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 2rem;
 }
 .p-mv__txt {
   grid-area: txt;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .p-mv__img {
   grid-area: img;
@@ -661,7 +667,7 @@ main {
 }
 
 .p-abt-intro {
-  padding: 2.5rem 0 3rem;
+  padding: 0rem 0 3rem;
   text-align: center;
 }
 .p-abt-intro__sec {
@@ -731,6 +737,7 @@ main {
 .p-abt-howto__list img {
   border-radius: 1rem;
   margin-bottom: 1.8rem;
+  background: #FAF6F0;
 }
 .p-abt-howto__list p {
   margin-top: 1.5rem;
@@ -765,6 +772,7 @@ main {
 .p-abt-common__list li img {
   border-radius: 1rem;
   margin-bottom: 1.5rem;
+  background: #fff;
 }
 .p-abt-common__btn {
   width: 26rem;
@@ -1261,6 +1269,7 @@ main {
         grid-template-rows: auto auto 1fr;
     grid-template-areas: "tag img" "ttl img" "txt img";
     padding: 0;
+    column-gap: 2rem;
     min-height: 33rem;
   }
   .p-mv.-parent-page{

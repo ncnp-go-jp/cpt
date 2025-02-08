@@ -54,7 +54,11 @@ if (is_page('about')) {
 <div class="l-base p-mv
   <?php if ($is_parent_page) {
     echo '-parent-page';
-  } ?>">
+  } ?>
+  <?php if (is_page('learn') || is_parent_slug() == 'learn') {
+    echo ' -learn';
+  } ?>
+  ">
   <?php if ($tag): ?>
     <span class="p-mv__tag"><?php echo $tag; ?></span>
   <?php endif ?>

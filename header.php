@@ -14,7 +14,7 @@
   <?php wp_body_open(); ?>
   <header class="p-hdr">
     <div class="l-wide p-hdr__inner">
-      <h1>CPT</h1>
+      <h1><a href="<?php echo home_url(); ?>">CPT</a></h1>
 
       <button class="p-hdr__btn js-gnav-toggle"></button>
 

@@ -58,17 +58,17 @@ get_template_part('template-parts/mainview');
 
   <ul class="p-abt-howto__list">
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-howto-01.jpg" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-01.png" alt="">
       <a href="./experienced-person" class="c-btn -circle-right">トラウマを<br>経験した方へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-howto-02.jpg" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-02.png" alt="">
       <a href="./family-friends" class="c-btn -circle-right">トラウマを経験した方の<br>ご家族やご友人へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-howto-03.jpg" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-03.png" alt="">
       <a href="/supporter" class="c-btn -circle-right">トラウマ経験者の<br>支援を行う方へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
