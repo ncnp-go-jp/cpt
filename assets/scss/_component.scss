@@ -13,7 +13,7 @@
   position: relative;
   line-height: 1.25;
   font-weight: bold;
-  border: none;
+  border: 2px solid $color_light-orange;
   padding: 0;
   margin: 0;
   font-family: inherit;
@@ -22,17 +22,24 @@
 
   &.-brown {
     background: $color_light-brown;
+    border-color: $color_light-brown;
   }
 
   &.-white {
     color: $color_light-brown;
     background: #fff;
+    border-color: #fff;
 
     &.-circle-right {
       &::after {
         color: $color_light-brown;
       }
     }
+  }
+
+  &.-orange-rev {
+    background: #fff;
+    color: $color_light-orange;
   }
 
   &.-circle-right {

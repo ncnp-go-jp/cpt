@@ -1123,10 +1123,6 @@
       padding: 0;
     }
 
-    &:not(:first-of-type) {
-      display: none;
-    }
-
     &.active {
       display: block;
 
@@ -1174,6 +1170,93 @@
       flex-direction: row-reverse;
       gap: 0 4.5rem;
     }
+  }
+}
+
+.p-modal {
+  display: none;
+
+  &__ttl {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color_dark-brown;
+    @include fontsize(18, 30);
+
+    @include media(tb) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__txt-box {
+    p+p {
+      margin-top: 1.5em;
+    }
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 0 1rem;
+    margin-top: 2rem;
+
+    @include media(tb) {
+      margin-top: 3.5rem;
+    }
+  }
+
+  &__btn {
+    width: min(calc(50% - 0.5rem), 14rem);
+
+    @include media(tb) {
+      width: 24rem;
+    }
+  }
+
+  &__inner {
+    display: none;
+    animation: fadeinAnime 2s forwards;
+    text-align: center;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__input-txt {
+    border: 1px solid #999999;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2rem;
+    font-family: inherit;
+    margin-top: 2rem;
+    @include fontsize(14, 16);
+
+    &::placeholder {
+      color: #999999;
+    }
+
+    @include media(tb) {
+      width: 40rem;
+      padding: 3rem 2rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.modaal-container {
+  border-radius: 1rem;
+
+  @include media(tb) {
+    border-radius: 3rem;
+  }
+}
+
+.modaal-content-container {
+  padding: 2.5rem 2rem 4rem;
+
+  @include media(tb) {
+    padding: 2.5rem 6rem 4rem;
   }
 }
 

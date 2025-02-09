@@ -38,6 +38,14 @@ function mytheme_enqueue()
     null
   );
 
+  // モーダルのCSS読み込み
+  wp_enqueue_style(
+    'modaal',
+    get_theme_file_uri('assets/css/modaal.min.css'),
+    array(),
+    null
+  );
+
   // サイトオリジナルのCSS読み込み
   wp_enqueue_style(
     'style',
@@ -56,6 +64,14 @@ function mytheme_enqueue()
   wp_enqueue_script(
     'matchHeight',
     get_theme_file_uri('assets/js/vendor/jquery.matchHeight.js'),
+    array('jquery'),
+    ''
+  );
+
+  // モーダルライブラリ[modaal.js]
+  wp_enqueue_script(
+    'modaal',
+    get_theme_file_uri('assets/js/vendor/modaal.min.js'),
     array('jquery'),
     ''
   );

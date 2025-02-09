@@ -72,7 +72,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal01">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section>
       </div>
@@ -91,7 +91,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal02">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section>
       </div>
@@ -110,7 +110,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal03">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section class="p-tab-box__inner">
       </div>
@@ -129,7 +129,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal04">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section>
       </div>
@@ -148,7 +148,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal05">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section>
       </div>
@@ -167,12 +167,192 @@ get_template_part('template-parts/mainview');
           </div>
 
           <div class="p-tab-box__btn-box">
-            <button class="c-btn">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></button>
+            <a class="c-btn js-modal-button-target" href="#modal06">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
+        </section>
       </div>
-  </section>
-  </div>
 
+    </div>
   </section>
 </article>
+
+<!-- モーダルの内容　START -->
+<!-- モーダルの各IDは呼び出しボタンの[href]に設定されたIDと一致する -->
+
+<div id="modal01" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">はい</button>
+      <button class="c-btn -orange-rev p-modal__btn js-modal-button-next">いいえ</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="modal02" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマ経験をした人のうち、どれくらいの割合の人がどれくらいの期間、PTSDを患ったと思いますか？</p>
+    </div>
+    <input type="text" placeholder="回答を入力する" class="p-modal__input-txt">
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">送信</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。また、PTSDを患っていた期間の平均は、９年４ヶ月余りでした。罹病期間は人によって大きく異なりますが、時に、ごく長い期間にわたり症状が続くことがわかっています。</p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="modal03" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">はい</button>
+      <button class="c-btn -orange-rev p-modal__btn js-modal-button-next">いいえ</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="modal04" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマ経験をした人のうち、どれくらいの割合の人がどれくらいの期間、PTSDを患ったと思いますか？</p>
+    </div>
+    <input type="text" placeholder="回答を入力する" class="p-modal__input-txt">
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">送信</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。また、PTSDを患っていた期間の平均は、９年４ヶ月余りでした。罹病期間は人によって大きく異なりますが、時に、ごく長い期間にわたり症状が続くことがわかっています。</p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="modal05" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">はい</button>
+      <button class="c-btn -orange-rev p-modal__btn js-modal-button-next">いいえ</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>テキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+        テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+      </p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="modal06" class="p-modal">
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマ経験をした人のうち、どれくらいの割合の人がどれくらいの期間、PTSDを患ったと思いますか？</p>
+    </div>
+    <input type="text" placeholder="回答を入力する" class="p-modal__input-txt">
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-button-next">送信</button>
+    </div>
+  </div>
+
+  <div class="p-modal__inner">
+    <h3 class="p-modal__ttl">クイズ　結果</h3>
+    <div class="p-modal__txt-box">
+      <p>何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。また、PTSDを患っていた期間の平均は、９年４ヶ月余りでした。罹病期間は人によって大きく異なりますが、時に、ごく長い期間にわたり症状が続くことがわかっています。</p>
+    </div>
+    <div class="p-modal__btn-box">
+      <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- モーダルの内容　END -->
+
 <?php get_footer(); ?>
