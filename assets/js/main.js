@@ -59,7 +59,7 @@ jQuery(function ($) {
   });
 
   // タブ一覧の個々のタブの横幅を調整する
-  $('.p-tab-box__tab-list').each(function (index, element) {
+  $('.p-tab-box__tab-list.js-fit').each(function (index, element) {
     var listChildren = $(element).children(),
       totalLength = 0;
 
@@ -120,5 +120,4 @@ jQuery(function ($) {
   $('.js-modal-close').on('click', function () {
     $('.js-modal-button-target').modaal('close');
   });
-
 });

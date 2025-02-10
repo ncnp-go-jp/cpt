@@ -880,6 +880,7 @@ main {
   padding: 1.5rem 1.5rem 3rem;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+  text-align: center;
 }
 .p-tab-box__tab-list {
   height: 4rem;
@@ -914,7 +915,10 @@ main {
   color: #fff;
 }
 .p-tab-box__h1 {
-  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.p-tab-box__h2 {
+  text-align: left;
   margin-bottom: 1.5rem;
 }
 .p-tab-box__btn-box {
@@ -931,6 +935,15 @@ main {
 .p-tab-box__item.active .p-tab-box__inner {
   animation: fadeinAnime 2s forwards;
 }
+.p-tab-box__top-txt {
+  margin-bottom: 3.5rem;
+}
+.p-tab-box__btm-txt {
+  margin-top: 8rem;
+}
+.p-tab-box__btn-box {
+  margin-top: 2.5rem;
+}
 
 @keyframes fadeinAnime {
   from {
@@ -946,14 +959,34 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
+.p-img-right-btm-box + .p-img-right-btm-box {
+  margin-top: 5rem;
+}
+.p-img-right-btm-box__space {
+  float: right;
+  height: calc(100% - 15rem);
+  /*画像上の余白の高さ*/
+}
+.p-img-right-btm-box__space.-influence {
+  height: calc(100% - 12rem);
+  /*画像上の余白の高さ*/
+}
+.p-img-right-btm-box__space.-influence03 {
+  height: calc(100% - 12rem);
+  /*画像上の余白の高さ*/
+}
 .p-img-right-btm-box__img {
   float: right;
-  width: 7.8rem;
-  height: 100%;
-  shape-outside: inset(calc(100% - 15rem) 0 0 0);
-  object-fit: contain;
-  object-position: bottom;
+  clear: both;
+  height: 13rem;
   margin: 0 0 0 3rem;
+  width: auto;
+}
+.p-img-right-btm-box__img.-influence01 {
+  height: 14rem;
+}
+.p-img-right-btm-box__img.-influence02 {
+  height: 14rem;
 }
 
 .p-modal {
@@ -1511,8 +1544,21 @@ main {
   .p-tab-box__tab-list li{
     font-size: 1.6rem;
   }
+  .p-tab-box__tab-list.-influence{
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .p-tab-box__tab-list.-influence li{
+    padding: 0 3rem;
+  }
   .p-tab-box__h1{
     font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .p-tab-box__h2{
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   .p-tab-box__btn-box{
@@ -1521,19 +1567,42 @@ main {
   .p-tab-box__item{
     padding: 0;
   }
-  .p-img-right-btm-box__img{
-    float: none;
-    width: 13rem;
-    height: auto;
-    shape-outside: none;
-    margin: 0 3rem 0 0;
+  .p-tab-box__top-txt{
+    margin-bottom: 6rem;
   }
-  .p-img-right-btm-box__inner{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    gap: 0 4.5rem;
+  .p-tab-box__btm-txt{
+    margin-top: 5.5rem;
+  }
+  .p-tab-box__btn-box{
+    margin-top: 4rem;
+  }
+  .p-img-right-btm-box + .p-img-right-btm-box{
+    margin-top: 6rem;
+  }
+  .p-img-right-btm-box.-influence03{
+    margin-bottom: 3rem;
+  }
+  .p-img-right-btm-box__space{
+    height: calc(100% - 22rem);
+  }
+  .p-img-right-btm-box__space.-influence{
+    height: calc(100% - 24rem);
+  }
+  .p-img-right-btm-box__space.-influence03{
+    height: calc(100% - 26rem);
+  }
+  .p-img-right-btm-box__img{
+    height: 22rem;
+    margin: 0 3rem 0 4.5rem;
+  }
+  .p-img-right-btm-box__img.-influence01{
+    height: 24rem;
+    margin-right: 4rem;
+  }
+  .p-img-right-btm-box__img.-influence02{
+    height: 24rem;
+    margin-right: 5rem;
+    margin-top: -1rem;
   }
   .p-modal__ttl{
     font-size: 3rem;

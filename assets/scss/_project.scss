@@ -1057,6 +1057,7 @@
   padding: 1.5rem 1.5rem 3rem;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+  text-align: center;
 
   @include media(tb) {
     border-radius: 3rem;
@@ -1099,14 +1100,36 @@
         color: #fff;
       }
     }
+
+    &.-influence {
+      @include media(tb) {
+        display: inline-flex;
+        justify-content: center;
+      }
+
+      li {
+        @include media(tb) {
+          padding: 0 3rem;
+        }
+      }
+    }
   }
 
   &__h1 {
-    text-align: center;
     margin-bottom: 1.5rem;
 
     @include media(tb) {
       font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+
+    @include media(tb) {
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
   }
@@ -1136,6 +1159,30 @@
       }
     }
   }
+
+  &__top-txt {
+    margin-bottom: 3.5rem;
+
+    @include media(tb) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__btm-txt {
+    margin-top: 8rem;
+
+    @include media(tb) {
+      margin-top: 5.5rem;
+    }
+  }
+
+  &__btn-box {
+    margin-top: 2.5rem;
+
+    @include media(tb) {
+      margin-top: 4rem;
+    }
+  }
 }
 
 @keyframes fadeinAnime {
@@ -1151,29 +1198,77 @@
 .p-img-right-btm-box {
   display: flex;
 
-  &__img {
-    float: right;
-    width: 7.8rem;
-    height: 100%;
-    shape-outside: inset(calc(100% - 15rem) 0 0 0);
-    object-fit: contain;
-    object-position: bottom;
-    margin: 0 0 0 3rem;
+  &+& {
+    margin-top: 5rem;
 
     @include media(tb) {
-      float: none;
-      width: 13rem;
-      height: auto;
-      shape-outside: none;
-      margin: 0 3rem 0 0;
+      margin-top: 6rem;
     }
   }
 
-  &__inner {
+  &.-influence03 {
     @include media(tb) {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 0 4.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__space {
+    float: right;
+    height: calc(100% - 15rem);
+
+    /*画像上の余白の高さ*/
+    @include media(tb) {
+      height: calc(100% - 22rem);
+    }
+
+    &.-influence {
+      height: calc(100% - 12rem);
+
+      /*画像上の余白の高さ*/
+      @include media(tb) {
+        height: calc(100% - 24rem);
+      }
+    }
+
+    &.-influence03 {
+      height: calc(100% - 12rem);
+
+      /*画像上の余白の高さ*/
+      @include media(tb) {
+        height: calc(100% - 26rem);
+      }
+    }
+  }
+
+  &__img {
+    float: right;
+    clear: both;
+    height: 13rem;
+    margin: 0 0 0 3rem;
+    width: auto;
+
+    @include media(tb) {
+      height: 22rem;
+      margin: 0 3rem 0 4.5rem;
+    }
+
+    &.-influence01 {
+      height: 14rem;
+
+      @include media(tb) {
+        height: 24rem;
+        margin-right: 4rem;
+      }
+    }
+
+    &.-influence02 {
+      height: 14rem;
+
+      @include media(tb) {
+        height: 24rem;
+        margin-right: 5rem;
+        margin-top: -1rem;
+      }
     }
   }
 }
