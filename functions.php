@@ -76,6 +76,22 @@ function mytheme_enqueue()
     ''
   );
 
+  // ツールチップのライブラリ[popper.js]
+  wp_enqueue_script(
+    'popper',
+    'https://unpkg.com/@popperjs/core@2',
+    array('jquery'),
+    ''
+  );
+
+  // ツールチップのライブラリ[tippy.js] ※popper.jsと合わせて必要
+  wp_enqueue_script(
+    'tippy',
+    'https://unpkg.com/tippy.js@6',
+    array('jquery'),
+    ''
+  );
+
   // サイトオリジナルのJS読み込み
   wp_enqueue_script(
     'main',

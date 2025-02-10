@@ -54,6 +54,44 @@
   }
 }
 
+.c-tooltip {
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url('../images/common/circle-question-regular.svg') no-repeat center / contain;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tippy-box[data-theme~='white'] {
+  background: #fff;
+  line-height: 1.5;
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / .3));
+  color: $color_font;
+  padding: 2rem;
+  border-radius: 1rem;
+  @include fontsize(14, 14);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    width: 2rem;
+    height: 1rem;
+    transform: translateX(-50%);
+    background: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}
+
 // heading
 .c-h2 {
   color: $color_dark-brown;

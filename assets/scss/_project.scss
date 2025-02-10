@@ -660,6 +660,11 @@
 
   &.-learn {
     grid-template-columns: auto 35%;
+
+    @include media(tb) {
+      grid-template-columns: 62% 28%;
+      column-gap: 10%;
+    }
   }
 
   &__tag {
