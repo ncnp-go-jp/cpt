@@ -667,6 +667,15 @@
     }
   }
 
+  &.-treatment {
+    grid-template-columns: auto 35%;
+
+    @include media(tb) {
+      grid-template-columns: 62% 29%;
+      column-gap: 9%;
+    }
+  }
+
   &__tag {
     grid-area: tag;
     font-weight: bold;
@@ -1313,6 +1322,7 @@
     @include media(tb) {
       flex-direction: row;
       align-items: flex-start;
+      justify-content: space-around;
       gap: 0 3rem;
     }
   }
