@@ -54,6 +54,12 @@ if (is_page('about')) {
   $img_url_pc .= 'learn/learn-topview-pc.jpg';
   $img_url_sp .= 'learn/learn-topview-sp.jpg';
   $txt = 'トラウマを経験すると、多くの人は、体の反応や、考えや気持ちの変化など、さまざまな心身の反応を経験します。これは正常なストレス反応で、「心が弱い人間だから」起こるのではありません。<br>そして、トラウマを経験した後の反応は、出来事から時間が経つに従って、次第に落ち着いてきます。';
+} else if (is_page(array('about-ptsd', 'result'))) {
+  $tag = 'トラウマについて学ぶ';
+  $ttl = 'PTSDとは';
+  $img_url_pc .= 'learn/learn-topview-pc.jpg';
+  $img_url_sp .= 'learn/learn-topview-sp.jpg';
+  $txt = 'トラウマを経験した後、長い期間反応が続く場合は、特別なケアが必要かもしれません。<br>症状が1か月以上続き、生活に支障をきたしている場合は、心的外傷後ストレス症（PTSD）を患っている可能性があります。';
 }
 
 ?>

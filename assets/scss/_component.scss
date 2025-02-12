@@ -196,3 +196,15 @@
     }
   }
 }
+
+.c-list-disc {
+  li {
+    display: flex;
+
+    &::before {
+      content: '・';
+      display: inline-block;
+      gap: 0 1rem;
+    }
+  }
+}
