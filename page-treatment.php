@@ -49,9 +49,4 @@ get_template_part('template-parts/mainview');
 
 </div>
 
-<?php
-// 「サイトについて」の子画面共通パーツ
-get_template_part('template-parts/about-common-area');
-?>
-
 <?php get_footer(); ?>
