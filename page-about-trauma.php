@@ -100,20 +100,20 @@ get_template_part('template-parts/mainview');
             </div>
           </div>
 
+          <script>
+            tippy('.tippy02', {
+              content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+              placement: 'bottom',
+              arrow: false,
+              theme: 'white',
+            });
+          </script>
+
           <div class="p-tab-box__btn-box">
             <a class="c-btn js-modal-button-target" href="#modal02">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
           </div>
         </section>
       </div>
-
-      <script>
-        tippy('.tippy02', {
-          content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
-          placement: 'bottom',
-          arrow: false,
-          theme: 'white',
-        });
-      </script>
 
       <div class="p-tab-box__item" data-targetTag="tag03">
         <section class="p-tab-box__inner">

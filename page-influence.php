@@ -36,7 +36,7 @@ get_template_part('template-parts/mainview');
       </ul>
     </div>
     <div class="u-pc">
-      <ul class="p-tab-box__tab-list -influence">
+      <ul class="p-tab-box__tab-list -fixed-padding">
         <li class="active" data-tag="tag01">身体の反応</li>
         <li data-tag="tag02">考えの反応</li>
         <li data-tag="tag03">気持ちの反応</li>

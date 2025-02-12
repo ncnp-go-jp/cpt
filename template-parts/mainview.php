@@ -66,6 +66,12 @@ if (is_page('about')) {
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = 'けがをした時と同じように、心が傷ついた時にも、手当てが必要です。トラウマの経験によって傷ついたとしても、多くの人は数週間で回復に向かっていきます。もし、自然には癒えない痛みを抱えているなら、専門的な治療が役に立つかもしれません。 ';
   $is_parent_page = true;
+} else if (is_page('treatment-ptsd')) {
+  $tag = '治療を知る';
+  $ttl = 'PTSDとは';
+  $img_url_pc .= 'learn/learn-topview-pc.jpg';
+  $img_url_sp .= 'learn/learn-topview-sp.jpg';
+  $txt = 'けがをした時と同じように、心が傷ついた時にも、手当てが必要です。トラウマの経験によって傷ついたとしても、多くの人は数週間で回復に向かっていきます。もし、自然には癒えない痛みを抱えているなら、専門的な治療が役に立つかもしれません。';
 }
 
 ?>
