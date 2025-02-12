@@ -27,12 +27,12 @@ get_template_part('template-parts/mainview');
 
   <section class="p-tab-box">
     <div class="u-sp">
-      <ul class="p-tab-box__tab-list">
+      <ul class="p-tab-box__tab-list -fixed-width">
         <li class="active" data-tag="tag01">薬物療法</li>
         <li data-tag="tag02">CPT</li>
         <li data-tag="tag03">PE</li>
       </ul>
-      <ul class="p-tab-box__tab-list ">
+      <ul class="p-tab-box__tab-list -fixed-width">
         <li data-tag="tag04">EMDR</li>
         <li data-tag="tag05">その他の治療</li>
       </ul>

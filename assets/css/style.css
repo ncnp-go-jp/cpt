@@ -928,6 +928,12 @@ main {
   background: #A68563;
   color: #fff;
 }
+.p-tab-box__tab-list.-fixed-width {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 .p-tab-box__tab-list.-fixed-width li {
   width: 10.5rem;
 }
@@ -1704,12 +1710,6 @@ main {
   }
   .p-tab-box__tab-list.-fixed-padding li{
     padding: 0 3rem;
-  }
-  .p-tab-box__tab-list.-fixed-width{
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
   .p-tab-box__tab-list.-fixed-width li{
     width: 14rem;

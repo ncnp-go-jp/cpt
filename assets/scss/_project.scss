@@ -1124,10 +1124,8 @@
     }
 
     &.-fixed-width {
-      @include media(tb) {
-        display: inline-flex;
-        justify-content: center;
-      }
+      display: inline-flex;
+      justify-content: center;
 
       li {
         width: 10.5rem;
