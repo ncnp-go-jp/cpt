@@ -125,6 +125,14 @@
     padding: 4.5rem 5rem 5rem;
   }
 
+  >picture {
+    margin-top: 1.5rem;
+
+    @include media(tb) {
+      margin-top: 3rem;
+    }
+  }
+
   &__h1 {
     line-height: 1.56;
     text-align: center;
@@ -206,5 +214,15 @@
       display: inline-block;
       gap: 0 1rem;
     }
+  }
+}
+
+.c-note {
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  @include fontsize(10, 12);
+
+  @include media(tb) {
+    text-align: center;
   }
 }

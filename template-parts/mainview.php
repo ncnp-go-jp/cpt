@@ -69,9 +69,15 @@ if (is_page('about')) {
 } else if (is_page('treatment-ptsd')) {
   $tag = '治療を知る';
   $ttl = 'PTSDとは';
-  $img_url_pc .= 'learn/learn-topview-pc.jpg';
-  $img_url_sp .= 'learn/learn-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
+  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = 'けがをした時と同じように、心が傷ついた時にも、手当てが必要です。トラウマの経験によって傷ついたとしても、多くの人は数週間で回復に向かっていきます。もし、自然には癒えない痛みを抱えているなら、専門的な治療が役に立つかもしれません。';
+} else if (is_page('about-cpt')) {
+  $tag = '治療を知る';
+  $ttl = 'CPTとは';
+  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
+  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $txt = '認知処理療法（CPT）は、心的外傷後ストレス症（PTSD）や関連症状に対する認知行動療法（思考や感情に焦点を当てた治療）です。PTSDの症状やその他の問題からの回復を滞らせる可能性のある「考え」の傾向に気づき、対処する術を身につけます。';
 }
 
 ?>

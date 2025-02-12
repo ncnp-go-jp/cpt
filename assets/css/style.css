@@ -248,6 +248,9 @@ main {
   border-radius: 1rem;
   padding: 2.5rem;
 }
+.c-white-box-l > picture {
+  margin-top: 1.5rem;
+}
 .c-white-box-l__h1 {
   line-height: 1.56;
   text-align: center;
@@ -299,6 +302,12 @@ main {
   content: "・";
   display: inline-block;
   gap: 0 1rem;
+}
+
+.c-note {
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  font-size: 1rem;
 }
 
 /*---------- Project ----------*/
@@ -887,6 +896,10 @@ main {
 .p-abt-trauma__txt-box {
   margin-bottom: 2.5rem;
 }
+.p-abt-trauma > picture {
+  width: 93%;
+  margin: 2rem auto 0;
+}
 
 .p-tab-box {
   background: #FAF6F0;
@@ -965,6 +978,34 @@ main {
   margin-top: 8rem;
 }
 .p-tab-box__btn-box {
+  margin-top: 2.5rem;
+}
+.p-tab-box__2col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 1.5rem 3rem;
+}
+.p-tab-box__2col img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.p-ttl-txt-box {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.p-ttl-txt-box__ttl {
+  font-weight: bold;
+  color: #806346;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.p-ttl-txt-box__btn-box {
   margin-top: 2.5rem;
 }
 
@@ -1172,11 +1213,6 @@ main {
   display: inline-block;
   font-weight: 400;
 }
-.p-checklist__note {
-  line-height: 1.6;
-  margin-top: 1.5rem;
-  font-size: 1rem;
-}
 
 .p-result__txt-box {
   border: 2px solid #FABA6B;
@@ -1347,6 +1383,10 @@ main {
   text-align: center;
 }
 
+.u-tar {
+  text-align: right !important;
+}
+
 .u-bg-light-gray {
   background: #EDE8E1;
 }
@@ -1357,6 +1397,10 @@ main {
 
 .u-bg-ligh-brown {
   background: #A68563;
+}
+
+.u-bg-white {
+  background: #fff;
 }
 
 .u-orange-marker {
@@ -1401,6 +1445,9 @@ main {
     border-radius: 3rem;
     padding: 4.5rem 5rem 5rem;
   }
+  .c-white-box-l > picture{
+    margin-top: 3rem;
+  }
   .c-white-box-l__h1{
     margin-bottom: 3rem;
   }
@@ -1422,6 +1469,12 @@ main {
   }
   .c-small-box-list__h1{
     margin-bottom: 1rem;
+  }
+  .c-note{
+    font-size: 1.2rem;
+  }
+  .c-note{
+    text-align: center;
   }
   .p-hdr h1{
     font-size: 3.6rem;
@@ -1690,6 +1743,10 @@ main {
   .p-abt-trauma__txt-box{
     margin-bottom: 3.5rem;
   }
+  .p-abt-trauma > picture{
+    width: 100%;
+    margin-top: 4rem;
+  }
   .p-tab-box{
     border-radius: 3rem;
     padding: 4rem 5rem;
@@ -1736,6 +1793,25 @@ main {
   }
   .p-tab-box__btn-box{
     margin-top: 4rem;
+  }
+  .p-tab-box__2col{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  .p-tab-box__2col img{
+    width: 22rem;
+    margin: 0;
+  }
+  .p-ttl-txt-box{
+    margin-top: 4.5rem;
+  }
+  .p-ttl-txt-box__ttl{
+    font-size: 2rem;
+  }
+  .p-ttl-txt-box__ttl{
+    margin-bottom: 0.5rem;
   }
   .p-img-right-btm-box + .p-img-right-btm-box{
     margin-top: 6rem;
@@ -1850,12 +1926,6 @@ main {
   }
   .p-checklist__item .icon{
     font-size: 3.6rem;
-  }
-  .p-checklist__note{
-    font-size: 1.2rem;
-  }
-  .p-checklist__note{
-    text-align: center;
   }
   .p-result__txt-box{
     font-size: 2.4rem;

@@ -63,6 +63,10 @@
   text-align: center;
 }
 
+.u-tar {
+  text-align: right !important;
+}
+
 // background
 .u-bg-light-gray {
   background: $color_light-gray;
@@ -74,6 +78,10 @@
 
 .u-bg-ligh-brown {
   background: $color_light-brown;
+}
+
+.u-bg-white {
+  background: #fff;
 }
 
 // marker

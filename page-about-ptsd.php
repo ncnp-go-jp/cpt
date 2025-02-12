@@ -76,7 +76,7 @@ get_template_part('template-parts/mainview');
 
     <input type="submit" class="c-btn" value='症状をチェックする'>
   </form>
-  <p class="p-checklist__note">※【引用元】プライマリ・ケアのための PTSD スクリーニング尺度（ DSM 5 版 日本語版）より一部改変：伊藤正哉・宮前光宏・蟹江絢子・横山 知加 (2019）</p>
+  <p class="c-note">※【引用元】プライマリ・ケアのための PTSD スクリーニング尺度（ DSM 5 版 日本語版）より一部改変：伊藤正哉・宮前光宏・蟹江絢子・横山 知加 (2019）</p>
 
 </article>
 
