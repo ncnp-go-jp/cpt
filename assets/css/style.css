@@ -294,14 +294,18 @@ main {
   margin-top: 1.5em;
 }
 
-.c-list-disc li {
+.c-list li {
   display: -ms-flexbox;
   display: flex;
 }
-.c-list-disc li:before {
-  content: "・";
-  display: inline-block;
-  gap: 0 1rem;
+.c-list.-margin {
+  margin: 1.5em 0;
+}
+
+.c-flex {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5em;
 }
 
 .c-note {
@@ -1408,6 +1412,10 @@ main {
   color: #FF9D26;
 }
 
+.u-bold {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 834px){
   /* tablet-size */
   body{
@@ -1469,6 +1477,12 @@ main {
   }
   .c-small-box-list__h1{
     margin-bottom: 1rem;
+  }
+  .c-list.-margin{
+    margin: 1em 0;
+  }
+  .c-flex{
+    margin-top: 1em;
   }
   .c-note{
     font-size: 1.2rem;

@@ -68,16 +68,22 @@ if (is_page('about')) {
   $is_parent_page = true;
 } else if (is_page('treatment-ptsd')) {
   $tag = '治療を知る';
-  $ttl = 'PTSDとは';
+  $ttl = 'PTSDの治療';
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
-  $txt = 'けがをした時と同じように、心が傷ついた時にも、手当てが必要です。トラウマの経験によって傷ついたとしても、多くの人は数週間で回復に向かっていきます。もし、自然には癒えない痛みを抱えているなら、専門的な治療が役に立つかもしれません。';
+  $txt = 'これまでの研究から、トラウマに焦点を当てた心理療法と薬物療法の両方が、PTSDの治療に有効であることが証明されています。<br>治療によって、症状が治癒・軽快する可能性があり、PTSDが日常生活や人間関係に与えていた影響が軽減できる可能性があります。';
 } else if (is_page('about-cpt')) {
   $tag = '治療を知る';
   $ttl = 'CPTとは';
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = '認知処理療法（CPT）は、心的外傷後ストレス症（PTSD）や関連症状に対する認知行動療法（思考や感情に焦点を当てた治療）です。PTSDの症状やその他の問題からの回復を滞らせる可能性のある「考え」の傾向に気づき、対処する術を身につけます。';
+} else if (is_page('steps')) {
+  $tag = '治療を知る';
+  $ttl = 'CPTの進め方';
+  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
+  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $txt = 'CPTは、全12回の各セッションの中で、どんなことに取り組むかが決まっている療法です。支援を求める人にとって、今、CPTに取り組むことが役立つかを判断したうえで、決まった手順に則り実施することで、PTSDや関連する症状の改善に効果を発揮します。';
 }
 
 ?>

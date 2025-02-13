@@ -205,15 +205,26 @@
   }
 }
 
-.c-list-disc {
+.c-list {
   li {
     display: flex;
+  }
 
-    &::before {
-      content: '・';
-      display: inline-block;
-      gap: 0 1rem;
+  &.-margin {
+    margin: 1.5em 0;
+
+    @include media(tb) {
+      margin: 1em 0;
     }
+  }
+}
+
+.c-flex {
+  display: flex;
+  margin-top: 1.5em;
+
+  @include media(tb) {
+    margin-top: 1em;
   }
 }
 

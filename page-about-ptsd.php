@@ -151,10 +151,10 @@ get_template_part('template-parts/mainview');
         <p><b>症状の説明：</b><br>
           トラウマとなる出来事の記憶や体験が、自分の意思とは関係なく、よみがえってきます。「再体験症状」とも呼ばれます。</p>
         <p><b>症状の例：</b></p>
-        <ul class="c-list-disc">
-          <li>悪夢を見る</li>
-          <li>その出来事を再び経験しているようにかんじ、行動する（フラッシュバック）</li>
-          <li>その出来事を追体験させるようなものを見たり、聞いたり、匂いをかいだりすることをきっかけに、強い苦痛を感じる</li>
+        <ul class="c-list">
+          <li><span>・</span>悪夢を見る</li>
+          <li><span>・</span>その出来事を再び経験しているようにかんじ、行動する（フラッシュバック）</li>
+          <li><span>・</span>その出来事を追体験させるようなものを見たり、聞いたり、匂いをかいだりすることをきっかけに、強い苦痛を感じる</li>
         </ul>
       </div>
       <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
@@ -175,9 +175,9 @@ get_template_part('template-parts/mainview');
         <p><b>症状の説明：</b><br>
           トラウマとなる出来事を思い出すことを避けたり、思い出させるものを避けるようになります。</p>
         <p><b>症状の例：</b></p>
-        <ul class="c-list-disc">
-          <li>トラウマとなる出来事とむすびつく人や場所を避ける</li>
-          <li>出来事について話すことや考えることを避ける</li>
+        <ul class="c-list">
+          <li><span>・</span>トラウマとなる出来事とむすびつく人や場所を避ける</li>
+          <li><span>・</span>出来事について話すことや考えることを避ける</li>
         </ul>
       </div>
       <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
@@ -198,13 +198,13 @@ get_template_part('template-parts/mainview');
         <p><b>症状の説明：</b><br>
           トラウマとなる出来事を経験する前よりも、否定的な考えや感情を持つようになります。</p>
         <p><b>症状の例：</b></p>
-        <ul class="c-list-disc">
-          <li>ポジティブな感情を感じなくなる</li>
-          <li>感覚が麻痺したように感じる</li>
-          <li>以前は楽しめていたことへの興味を失う</li>
-          <li>世の中は完全に危険であり、誰も信用できないと考える</li>
-          <li>出来事について罪悪感や恥ずかしさを感じる</li>
-          <li>もっと何かをしていれば出来事を防げたのではないかと考える</li>
+        <ul class="c-list">
+          <li><span>・</span>ポジティブな感情を感じなくなる</li>
+          <li><span>・</span>感覚が麻痺したように感じる</li>
+          <li><span>・</span>以前は楽しめていたことへの興味を失う</li>
+          <li><span>・</span>世の中は完全に危険であり、誰も信用できないと考える</li>
+          <li><span>・</span>出来事について罪悪感や恥ずかしさを感じる</li>
+          <li><span>・</span>もっと何かをしていれば出来事を防げたのではないかと考える</li>
         </ul>
       </div>
       <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
@@ -226,11 +226,11 @@ get_template_part('template-parts/mainview');
           神経が高ぶったり、過敏になったりします。
           過覚醒とも呼ばれます。</p>
         <p><b>症状の例：</b></p>
-        <ul class="c-list-disc">
-          <li>常に警戒していなければならないような感覚</li>
-          <li>怒りっぽくなったり、いらだちやすくなる</li>
-          <li>なかなか眠れない</li>
-          <li>集中することが難しい</li>
+        <ul class="c-list">
+          <li><span>・</span>常に警戒していなければならないような感覚</li>
+          <li><span>・</span>怒りっぽくなったり、いらだちやすくなる</li>
+          <li><span>・</span>なかなか眠れない</li>
+          <li><span>・</span>集中することが難しい</li>
         </ul>
       </div>
       <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
