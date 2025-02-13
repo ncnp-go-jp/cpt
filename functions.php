@@ -142,33 +142,21 @@ define('THEME_DIR_URI', get_template_directory_uri() . '/assets/images/');
  */
 function create_post_type()
 {
-  // register_post_type(
-  //   'information',
-  //   array(
-  //     'label' => 'お知らせ',
-  //     'public' => true,
-  //     'has_archive' => true,
-  //     'show_in_rest' => true,
-  //     'menu_position' => 5,
-  //     'supports' => array(
-  //       'title',
-  //       'editor',
-  //       'thumbnail',
-  //       'revisions',
-  //     ),
-  //   )
-  // );
-
-  // register_taxonomy(
-  //   'info-cat',  // カテゴリーの名前
-  //   'information', // カテゴリーを追加したいカスタム投稿タイプ名
-  //   array(
-  //     'label' => 'カテゴリー',
-  //     'hierarchical' => true,
-  //     'public' => true,
-  //     'show_in_rest' => true,
-  //   )
-  // );
+  register_post_type(
+    'documents',
+    array(
+      'label' => '教材',
+      'public' => true,
+      'has_archive' => true,
+      'show_in_rest' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'revisions',
+      ),
+    )
+  );
 
   // register_post_type(
   //   'column',
@@ -232,28 +220,28 @@ add_action('init', 'create_post_type');
 /**
  * 管理画面のカスタム投稿一覧にタクソノミー（カテゴリ）の列を表示 START
  */
-function add_custom_column($defaults)
-{
-  // global $post_type;
-  // if ('news' == $post_type) {
-  //   $defaults['news-cat'] = 'カテゴリ';
-  // } elseif ('column' == $post_type) {
-  //   $defaults['column-cat'] = 'カテゴリ';
-  // }
-  // return $defaults;
-}
-add_filter('manage_posts_columns', 'add_custom_column');
+// function add_custom_column($defaults)
+// {
+// global $post_type;
+// if ('news' == $post_type) {
+//   $defaults['news-cat'] = 'カテゴリ';
+// } elseif ('column' == $post_type) {
+//   $defaults['column-cat'] = 'カテゴリ';
+// }
+// return $defaults;
+// }
+// add_filter('manage_posts_columns', 'add_custom_column');
 
-function add_custom_column_id($column_name, $id)
-{
-  // if ($column_name == 'news-cat') {
-  //   echo get_the_term_list($id, 'news-cat', '', ', ');
-  // } elseif ($column_name == 'column-cat') {
-  //   echo get_the_term_list($id, 'column-cat', '', ', ');
-  // }
-}
-add_action('manage_case_posts_custom_column', 'add_custom_column_id', 10, 2);
-add_action('manage_facility_posts_custom_column', 'add_custom_column_id', 10, 2);
+// function add_custom_column_id($column_name, $id)
+// {
+// if ($column_name == 'news-cat') {
+//   echo get_the_term_list($id, 'news-cat', '', ', ');
+// } elseif ($column_name == 'column-cat') {
+//   echo get_the_term_list($id, 'column-cat', '', ', ');
+// }
+// }
+// add_action('manage_case_posts_custom_column', 'add_custom_column_id', 10, 2);
+// add_action('manage_facility_posts_custom_column', 'add_custom_column_id', 10, 2);
 // カスタム投稿一覧にタクソノミー（カテゴリ）の列を表示 END
 
 
