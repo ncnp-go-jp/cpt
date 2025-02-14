@@ -84,6 +84,12 @@ if (is_page('about')) {
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = 'CPTは、全12回の各セッションの中で、どんなことに取り組むかが決まっている療法です。支援を求める人にとって、今、CPTに取り組むことが役立つかを判断したうえで、決まった手順に則り実施することで、PTSDや関連する症状の改善に効果を発揮します。';
+} else if (is_page('familiarize') || is_singular('documents')) {
+  $tag = '治療を知る';
+  $ttl = 'CPTに親しむ';
+  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
+  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $txt = '当サイトをご覧になって、CPTを活用したい・より詳しく知りたいと思われた方は、下記の資料もご覧ください。自分自身でCPTを理解するほか、PTSDやトラウマにお悩みの方への支援の一助としてもご活用いただけると幸いです。';
 }
 
 ?>
@@ -95,7 +101,7 @@ if (is_page('about')) {
   <?php if (is_page('learn') || is_parent_slug() == 'learn') {
     echo ' -learn';
   } ?>
-  <?php if (is_page('treatment') || is_parent_slug() == 'treatment') {
+  <?php if (is_page('treatment') || is_parent_slug() == 'treatment' || is_singular('documents')) {
     echo ' -treatment';
   } ?>
   ">

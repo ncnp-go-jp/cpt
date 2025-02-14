@@ -20,6 +20,10 @@
   cursor: pointer;
   @include fontsize(16, 16);
 
+  & {
+    @include hover;
+  }
+
   &.-brown {
     background: $color_light-brown;
     border-color: $color_light-brown;
@@ -40,6 +44,12 @@
   &.-orange-rev {
     background: #fff;
     color: $color_light-orange;
+  }
+
+  &.-brown-rev {
+    background: #fff;
+    color: $color_dark-brown;
+    border-color: $color_dark-brown;
   }
 
   &.-circle-right {

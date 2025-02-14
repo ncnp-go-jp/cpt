@@ -120,4 +120,42 @@ jQuery(function ($) {
   $('.js-modal-close').on('click', function () {
     $('.js-modal-button-target').modaal('close');
   });
+
+  //「CPTに親しむ」：教材のカテゴリボタンクリックによる表示切り替え
+  $('[data-target]').on('click', function (event) {
+    $.when(
+      // ボタンカラーを変更
+      $('[data-target].active').removeClass('active'),
+      $(this).addClass('active')
+    ).done(function () {
+      // 一覧の表示切り替え
+      showCaseList();
+    });
+  });
+
+  //教材一覧の表示切り替え
+  function showCaseList() {
+    // 表示中の目印であるCSSクラスを一旦削除
+    $('.p-doc-list li').removeClass('active')
+
+    // アクティブな選択ボタンから、表示対象の名称を抽出
+    var $target_class = $('[data-target].active').data('target'),
+      $target_el;
+
+    // 表示対象の名称に一致するコンテンツを抽出
+    if ($target_class != 'all') {
+      $target_el = $('.p-doc-list li' + '.' + $target_class);
+    } else {
+      $target_el = $('.p-doc-list li');
+    }
+
+    // 対象のコンテンツに目印用のCSSクラスを付与
+    $target_el.addClass('active');
+
+    // 一旦全てを非表示にしてから、対象を表示
+    $('.p-doc-list li').fadeOut('fast');
+    setTimeout(function () {
+      $target_el.fadeIn();
+    }, 500);
+  }
 });

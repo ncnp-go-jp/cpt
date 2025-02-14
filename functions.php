@@ -158,6 +158,17 @@ function create_post_type()
     )
   );
 
+  register_taxonomy(
+    'documents-cat',  // カテゴリーの名前
+    'documents', // カテゴリーを追加したいカスタム投稿タイプ名
+    array(
+      'label' => '動画カテゴリ',
+      'hierarchical' => true,
+      'public' => true,
+      'show_in_rest' => true,
+    )
+  );
+
   // register_post_type(
   //   'column',
   //   array(
