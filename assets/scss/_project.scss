@@ -1902,6 +1902,69 @@
   }
 }
 
+.p-voice {
+  padding-bottom: 3rem;
+
+  @include media(tb) {
+    padding-bottom: 8rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+
+    @include media(tb) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem 4rem;
+    }
+
+    li {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: #fff;
+      @include clearfix;
+
+      @include media(tb) {
+        padding: 2rem 2.5rem;
+        width: calc((100% - 4rem) / 2);
+      }
+
+      p {
+        line-height: 1.86;
+
+        @include media(tb) {
+          line-height: 1.75;
+        }
+      }
+    }
+  }
+
+  &__figure {
+    float: left;
+    margin: 1rem 2rem 0 1.5rem;
+
+    @include media(tb) {
+      margin: 0.5rem 2rem 0 0;
+    }
+
+    img {
+      width: 8.1rem;
+      border-radius: 50%;
+
+      @include media(tb) {
+        width: 10rem;
+      }
+    }
+
+    figcaption {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
 // footer
 .p-ftr {
   padding: 1.5rem 0;

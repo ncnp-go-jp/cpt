@@ -90,6 +90,12 @@ if (is_page('about')) {
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = '当サイトをご覧になって、CPTを活用したい・より詳しく知りたいと思われた方は、下記の資料もご覧ください。自分自身でCPTを理解するほか、PTSDやトラウマにお悩みの方への支援の一助としてもご活用いただけると幸いです。';
+} else if (is_page('voice')) {
+  $tag = '治療を知る';
+  $ttl = '治療を受けた人の声';
+  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
+  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $txt = '私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTに取り組む体験をイメージする一助としていただければ幸いです。';
 }
 
 ?>

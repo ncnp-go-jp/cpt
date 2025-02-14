@@ -1432,6 +1432,42 @@ main {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
+.p-voice {
+  padding-bottom: 3rem;
+}
+.p-voice__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 1.5rem 0;
+}
+.p-voice__list li {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+}
+.p-voice__list li:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.p-voice__list li p {
+  line-height: 1.86;
+}
+.p-voice__figure {
+  float: left;
+  margin: 1rem 2rem 0 1.5rem;
+}
+.p-voice__figure img {
+  width: 8.1rem;
+  border-radius: 50%;
+}
+.p-voice__figure figcaption {
+  display: block;
+  text-align: center;
+}
+
 .p-ftr {
   padding: 1.5rem 0;
 }
@@ -2232,6 +2268,29 @@ main {
   .p-manga-pagination .next,
   .p-manga-pagination .prev{
     font-size: 1.8rem;
+  }
+  .p-voice{
+    padding-bottom: 8rem;
+  }
+  .p-voice__list{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem 4rem;
+  }
+  .p-voice__list li{
+    padding: 2rem 2.5rem;
+    width: calc((100% - 4rem) / 2);
+  }
+  .p-voice__list li p{
+    line-height: 1.75;
+  }
+  .p-voice__figure{
+    margin: 0.5rem 2rem 0 0;
+  }
+  .p-voice__figure img{
+    width: 10rem;
   }
   .p-ftr{
     display: -ms-flexbox;
