@@ -1273,7 +1273,7 @@ main {
 .p-doc-list a img {
   margin-bottom: 0.5rem;
   aspect-ratio: 300/225;
-  object-fit: cover;
+  object-fit: contain;
 }
 .p-doc-list dl {
   font-size: 1.2rem;
