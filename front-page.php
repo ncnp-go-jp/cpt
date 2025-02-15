@@ -82,26 +82,29 @@ get_header();
 <article class="l-base p-news-col">
   <h2 class="p-front-sec__h1">お知らせ</h2>
 
-  <ul class="p-news-col__list">
-    <li><a href="">
-        <time datetime="2021-01-01">2024.00.00</time>
-        <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-      </a></li>
-    <li><a href="">
-        <time datetime="2021-01-01">2024.00.00</time>
-        <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-      </a></li>
-    <li><a href="">
-        <time datetime="2021-01-01">2024.00.00</time>
-        <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-      </a></li>
-    <li><a href="">
-        <time datetime="2021-01-01">2024.00.00</time>
-        <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-      </a></li>
-  </ul>
+  <?php
+  $the_query = new WP_Query(
+    array(
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'posts_per_page' => 4, // 表示件数
+    )
+  );
+  if ($the_query->have_posts()) : ?>
+    <ul class="p-news-col__list">
+      <?php
+      while ($the_query->have_posts()) : $the_query->the_post();
+      ?>
+        <li><a href="<?php the_permalink(); ?>">
+            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+            <p><?php the_title(); ?></p>
+          </a></li>
+      <?php endwhile; ?>
+    </ul>
+  <?php endif; ?>
+  <?php wp_reset_postdata(); ?>
 
-  <a href="" class="c-btn">お知らせ一覧　<i class="fas fa-angle-right"></i></a>
+  <a href="<?php echo home_url() . '/news'; ?>" class="c-btn">お知らせ一覧　<i class="fas fa-angle-right"></i></a>
 </article>
 
 <div class="u-bg-orange-gray">
