@@ -20,12 +20,23 @@
       </span>
 
     <?php
+    elseif (is_archive()):
+    ?>
+
+      <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="CPTへ移動する" href="<?php echo home_url(); ?>" class="home"><span property="name">HOME</span></a>
+        <meta property="position" content="1">
+        <i class="fas fa-angle-right"></i><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-documents current-item">お知らせ</span>
+          <meta property="url" content="<?php echo home_url() . '/news'; ?>">
+          <meta property="position" content="2">
+        </span>
+
+      <?php
     else:
       if (function_exists('bcn_display')) {
         bcn_display();
       }
     endif;
-    ?>
+      ?>
 
   </div>
 </div>

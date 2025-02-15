@@ -484,6 +484,10 @@
       margin: 1.5rem 0 4rem;
     }
 
+    &.-archive {
+      background: #fff;
+    }
+
     li {
       border-bottom: 1px solid #C4A07C;
 
@@ -2068,6 +2072,98 @@
     figcaption {
       display: block;
       text-align: center;
+    }
+  }
+}
+
+.p-sv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+
+  @include media(tb) {
+    padding: 0;
+  }
+
+  &__img {
+    width: 12rem;
+
+    @include media(tb) {
+      width: 16.7rem;
+    }
+  }
+
+  &__ttl {
+    font-weight: bold;
+    color: $color_dark-brown;
+    @include fontsize(20, 36);
+  }
+}
+
+.p-wp-pagination {
+  padding-bottom: 3.5rem;
+
+  @include media(tb) {
+    padding-bottom: 5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+    font-weight: bold;
+    @include fontsize(16, 16);
+
+    .page-numbers {
+      &:not(.prev, .next, .dots) {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $color_light-brown;
+        background: #fff;
+        color: $color_dark-brown;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background: $color_dark-brown;
+          color: #fff;
+        }
+
+        &.current {
+          background: $color_dark-brown;
+          color: #fff;
+          cursor: auto;
+        }
+      }
+
+      &.prev,
+      &.next {
+        color: $color_light-brown;
+        @include fontsize(28, 18);
+
+        & {
+          @include hover;
+        }
+      }
+
+      &.prev {
+        @include media(tb) {
+          margin-right: 1rem;
+        }
+      }
+
+      &.next {
+        @include media(tb) {
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
