@@ -96,6 +96,12 @@ if (is_page('about')) {
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
   $txt = '私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTに取り組む体験をイメージする一助としていただければ幸いです。';
+} else if (is_page('resources')) {
+  $ttl = '情報資源を得る';
+  $img_url_pc .= 'resources/resources-topview-pc.webp';
+  $img_url_sp .= 'resources/resources-topview-sp.webp';
+  $txt = '心の傷に触れることや、回復に向けて一歩踏みだすことは、誰にとっても勇気が要ることです。不安なときには、まずは、情報を集めることが役立ちます。<br class="u-pc">ご参考まで、科学的な根拠を示す記事や、理論を詳述する書籍、さまざまな支援団体やその他の資源を示しました。納得するまで知り、あなたにとって必要なアクションへの準備を整える一助にしていただけたら幸いです。';
+  $is_parent_page = true;
 }
 
 ?>
@@ -109,6 +115,9 @@ if (is_page('about')) {
   } ?>
   <?php if (is_page('treatment') || is_parent_slug() == 'treatment' || is_singular('documents')) {
     echo ' -treatment';
+  } ?>
+  <?php if (is_page('resources')) {
+    echo ' -resources';
   } ?>
   ">
   <?php if ($tag): ?>

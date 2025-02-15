@@ -207,13 +207,12 @@ main {
   position: relative;
 }
 .c-tooltip:after {
-  content: "";
+  content: "\f059";
   display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  background: url("../images/common/circle-question-regular.svg") no-repeat center/contain;
-  vertical-align: middle;
-  margin-bottom: 0.5rem;
+  color: #FABA6B;
+  font-family: "Font Awesome 6 Free";
+  display: inline-block;
+  font-weight: 400;
 }
 
 .tippy-box[data-theme~=white] {
@@ -697,6 +696,10 @@ main {
   -ms-grid-columns: auto 35%;
       grid-template-columns: auto 35%;
 }
+.p-mv.-resources {
+  -ms-grid-columns: auto 35%;
+      grid-template-columns: auto 35%;
+}
 .p-mv__tag {
   grid-area: tag;
   font-weight: bold;
@@ -888,7 +891,7 @@ main {
 }
 .p-thought-mem__table th {
   display: block;
-  background: #A68563;
+  background: #C4A07C;
   color: #fff;
   font-weight: bold;
   padding: 0.7rem 1rem;
@@ -899,6 +902,47 @@ main {
 }
 .p-thought-mem__table td:nth-of-type(even) {
   background: #FAF6F0;
+}
+
+.p-table-2col + .p-table-2col {
+  margin-top: 2.5rem;
+}
+.p-table-2col__h {
+  text-align: center;
+  font-weight: bold;
+  color: #806346;
+  margin-bottom: 1rem;
+  line-height: 1.33;
+  font-size: 1.8rem;
+}
+.p-table-2col__table {
+  width: 100%;
+  color: #707070;
+}
+.p-table-2col__table tr:nth-of-type(odd) td {
+  background: #FAF6F0;
+}
+.p-table-2col__table th,
+.p-table-2col__table td {
+  width: 50%;
+  vertical-align: middle;
+  line-height: 1.33;
+  font-size: 1.2rem;
+}
+.p-table-2col__table th {
+  background: #A68563;
+  color: #fff;
+  text-align: left;
+  padding: 0.7rem 1rem;
+}
+.p-table-2col__table th + th {
+  border-left: 1px solid #fff;
+}
+.p-table-2col__table td {
+  padding: 0.7rem 1rem;
+}
+.p-table-2col__table td + td {
+  border-left: 1px solid #C4A07C;
 }
 
 .p-abt-trauma {
@@ -1418,8 +1462,8 @@ main {
 .p-manga-pagination .next,
 .p-manga-pagination .prev {
   line-height: 1;
-  font-size: 2.8rem;
   margin: 0 1rem;
+  font-size: 2.8rem;
 }
 .p-manga-pagination .next a,
 .p-manga-pagination .prev a {
@@ -1646,6 +1690,14 @@ main {
   font-weight: bold;
 }
 
+.u-black-link {
+  color: #555555;
+  transition: opacity linear 0.3s;
+}
+.u-black-link:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
 @media only screen and (min-width: 834px){
   /* tablet-size */
   body{
@@ -1869,6 +1921,11 @@ main {
         grid-template-columns: 62% 29%;
     column-gap: 9%;
   }
+  .p-mv.-resources{
+    -ms-grid-columns: 62% 30%;
+        grid-template-columns: 62% 30%;
+    column-gap: 8%;
+  }
   .p-mv__tag{
     font-size: 1.8rem;
   }
@@ -1978,6 +2035,29 @@ main {
   .p-thought-mem__table td{
     padding: 0.4rem 2rem;
   }
+  .p-table-2col + .p-table-2col{
+    margin-top: 5rem;
+  }
+  .p-table-2col__h{
+    font-size: 2.4rem;
+  }
+  .p-table-2col__h{
+    margin-bottom: 1.5rem;
+  }
+  .p-table-2col__table th,
+  .p-table-2col__table td{
+    font-size: 1.6rem;
+  }
+  .p-table-2col__table th,
+  .p-table-2col__table td{
+    line-height: 1.75;
+  }
+  .p-table-2col__table th{
+    padding: 0.6rem 1rem;
+  }
+  .p-table-2col__table td{
+    padding: 0.6rem 2rem;
+  }
   .p-abt-trauma{
     padding: 4rem 0 6rem;
   }
@@ -2051,6 +2131,9 @@ main {
   .p-tab-box__2col img{
     width: 22rem;
     margin: 0;
+  }
+  .p-tab-box__2col.-resources img{
+    width: 30rem;
   }
   .p-ttl-txt-box{
     margin-top: 4.5rem;
@@ -2380,11 +2463,9 @@ main {
     display: inline-block;
   }
 }
-
 @media only screen and (min-width: 1000px){
   /* pc-size */
 }
-
 @media only screen and (min-width: 1200px){
   /* header-size */
   main{
@@ -2479,7 +2560,6 @@ main {
     border-top: none;
   }
 }
-
 @media only screen and (min-width: 1366px){
   /* pc-max-size */
 }

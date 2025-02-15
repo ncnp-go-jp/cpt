@@ -94,3 +94,9 @@
 .u-bold {
   font-weight: bold;
 }
+
+// text-link
+.u-black-link {
+  color: $color_font;
+  @include hover;
+}

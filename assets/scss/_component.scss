@@ -70,13 +70,10 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: '\f059';
     display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
-    background: url('../images/common/circle-question-regular.svg') no-repeat center / contain;
-    vertical-align: middle;
-    margin-bottom: 0.5rem;
+    color: $color_light-orange;
+    @include fontAwesome__reg;
   }
 }
 
