@@ -348,6 +348,11 @@ main {
 }
 .p-hdr h1 a {
   color: #555555;
+  transition: opacity linear 0.3s;
+}
+.p-hdr h1 a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-hdr__btn {
   background: none;
@@ -404,6 +409,13 @@ main {
   padding: 1.5rem 1rem;
   display: block;
 }
+.p-gnav__parent > a {
+  transition: opacity linear 0.3s;
+}
+.p-gnav__parent > a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
 .p-gnav__parent button {
   height: 6.2rem;
   width: 6.2rem;
@@ -442,6 +454,13 @@ main {
   margin-left: 3rem;
   position: relative;
   white-space: nowrap;
+}
+.p-gnav__sub-list > li > a {
+  transition: opacity linear 0.3s;
+}
+.p-gnav__sub-list > li > a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-gnav__sub-list > li > a:after {
   content: "\f107";
@@ -580,6 +599,13 @@ main {
   display: block;
   padding: 1.3rem 5.5rem 1.3rem 0.8rem;
   position: relative;
+}
+.p-news-col__list li a {
+  transition: opacity linear 0.3s;
+}
+.p-news-col__list li a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-news-col__list li a:after {
   content: "\f138";
@@ -745,6 +771,11 @@ main {
 }
 .p-breadcrumb a {
   color: #555555;
+  transition: opacity linear 0.3s;
+}
+.p-breadcrumb a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-breadcrumb i {
   margin: 0 0.3rem;
@@ -1523,6 +1554,11 @@ main {
 .p-ftr__h1 a {
   display: inline-block;
   color: inherit;
+  transition: opacity linear 0.3s;
+}
+.p-ftr__h1 a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-ftr__list-01 {
   display: -ms-flexbox;
@@ -1548,6 +1584,11 @@ main {
 }
 .p-ftr__ttl a {
   color: inherit;
+  transition: opacity linear 0.3s;
+}
+.p-ftr__ttl a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-ftr__sub-list li {
   position: relative;
@@ -1557,6 +1598,11 @@ main {
 }
 .p-ftr__sub-list li a {
   color: inherit;
+  transition: opacity linear 0.3s;
+}
+.p-ftr__sub-list li a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-ftr__sub-list li:before {
   content: "-";
@@ -1608,6 +1654,11 @@ main {
 }
 .p-ftr__btm-list li a {
   color: inherit;
+  transition: opacity linear 0.3s;
+}
+.p-ftr__btm-list li a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-ftr__cr {
   text-align: center;

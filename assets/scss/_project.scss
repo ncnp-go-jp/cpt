@@ -25,6 +25,7 @@
 
     a {
       color: $color_font;
+      @include hover;
     }
   }
 
@@ -138,6 +139,10 @@
       @include media(header) {
         padding: 1.5rem 0.5rem 1.5rem 1rem;
       }
+
+      & {
+        @include hover;
+      }
     }
 
     button {
@@ -224,6 +229,10 @@
         @include media(header) {
           margin-left: 0;
           padding: 0.4rem 1rem 0.4rem 1.5rem;
+        }
+
+        & {
+          @include hover;
         }
 
         &::after {
@@ -485,6 +494,10 @@
 
         @include media(tb) {
           padding: 1rem 15% 2rem 1.5rem;
+        }
+
+        & {
+          @include hover;
         }
 
         &::after {
@@ -749,6 +762,7 @@
 
   a {
     color: $color_font;
+    @include hover;
   }
 
   i {
@@ -2085,6 +2099,7 @@
     a {
       display: inline-block;
       color: inherit;
+      @include hover;
     }
   }
 
@@ -2134,6 +2149,7 @@
 
     a {
       color: inherit;
+      @include hover;
     }
   }
 
@@ -2146,6 +2162,7 @@
 
       a {
         color: inherit;
+        @include hover;
       }
 
       &::before {
@@ -2230,6 +2247,7 @@
 
       a {
         color: inherit;
+        @include hover;
       }
     }
   }
