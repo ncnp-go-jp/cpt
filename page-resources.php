@@ -133,7 +133,6 @@ get_template_part('template-parts/mainview');
       </div>
     </article>
   </div>
-
 </div>
 
 <article class="l-base p-abt-trauma">
