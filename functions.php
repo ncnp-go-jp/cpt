@@ -145,7 +145,7 @@ function create_post_type()
   register_post_type(
     'documents',
     array(
-      'label' => '教材',
+      'label' => 'CPTに親しむ',
       'public' => true,
       'has_archive' => true,
       'show_in_rest' => true,
