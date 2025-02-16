@@ -488,3 +488,26 @@ function my_resetpassword_args($args)
   return $args;
 }
 add_filter('wpmem_inc_resetpassword_args', 'my_resetpassword_args');
+
+/**
+ * WP-Membersのログイン画面のカスタマイズ
+ */
+function my_login_inputs($default_inputs)
+{
+
+  $default_inputs[0]['name'] = 'ユーザーIDまたはメールアドレス';
+  $default_inputs[1]['name'] = 'パスワード';
+
+  return $default_inputs;
+}
+add_filter('wpmem_inc_login_inputs', 'my_login_inputs');
+
+/**
+ * WP-Membersのログイン後のリダイレクト先指定
+ */
+function my_login_redirect($redirect_to, $user_id)
+{
+
+  return home_url() . '/expert';
+}
+add_filter('wpmem_login_redirect', 'my_login_redirect', 10, 2);
