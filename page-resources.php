@@ -81,11 +81,11 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td>PTSDの薬物療法ガイドライン・初期対応マニュアル （JSTSS）</td>
+        <td><a href="https://www.jstss.org/docs/2013090600351/" target="_blank" class="u-black-link">PTSDの薬物療法ガイドライン・初期対応マニュアル （JSTSS） <i class="fa-regular fa-window-restore"></i></a></td>
         <td>日本トラウマティック・ストレス学会が2013年に発刊したガイドライン</td>
       </tr>
       <tr>
-        <td>日本語版：PTSD治療ガイドライン</td>
+        <td><a href="https://www.kongoshuppan.co.jp/book/b616260.html" target="_blank" class="u-black-link">日本語版：PTSD治療ガイドライン <i class="fa-regular fa-window-restore"></i></a></td>
         <td>国際トラウマティック・ストレスが発刊したガイドラインの第３版の邦訳</td>
       </tr>
     </table>
@@ -99,19 +99,19 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td>ISTSS：ISTSS Prevention and Treatment Guidelines</td>
-        <td>国際トラウマティック・ストレスが発刊したガイドラインの第３版の邦訳</td>
+        <td><a href="https://istss.org/clinical-resources/trauma-treatment/new-istss-prevention-and-treatment-guidelines/" target="_blank" class="u-black-link">ISTSS：ISTSS Prevention and Treatment Guidelines <i class="fa-regular fa-window-restore"></i></a></td>
+        <td>国際トラウマティック・ストレスが発刊したガイドラインの第３版</td>
       </tr>
       <tr>
-        <td>NICE：NICE guideline（Post-traumatic stress disorder）</td>
+        <td><a href="https://www.nice.org.uk/guidance/ng116" target="_blank" class="u-black-link">NICE：NICE guideline（Post-traumatic stress disorder） <i class="fa-regular fa-window-restore"></i></a></td>
         <td>イギリスの国立保健医療研究所が発表しているガイドライン</td>
       </tr>
       <tr>
-        <td>Phoenix：Australian PTSD Guidelines</td>
+        <td><a href="https://www.phoenixaustralia.org/australian-guidelines-for-ptsd/" target="_blank" class="u-black-link">Phoenix：Australian PTSD Guidelines <i class="fa-regular fa-window-restore"></i></a></td>
         <td>Phoenix Australia（オーストラリアの心的外傷後メンタルヘルスセンター）によるガイドライン</td>
       </tr>
       <tr>
-        <td>VADoD：VA/DoD 2023 Clinical Practice Guideline for the　Management of PTSD</td>
+        <td><a href="https://www.ptsd.va.gov/professional/treat/txessentials/cpg_ptsd_management.asp" target="_blank" class="u-black-link">VADoD：VA/DoD 2023 Clinical Practice Guideline for the Management of PTSD <i class="fa-regular fa-window-restore"></i></a></td>
         <td>アメリカの退役軍人局による臨床実践ガイドライン</td>
       </tr>
     </table>
@@ -133,7 +133,6 @@ get_template_part('template-parts/mainview');
       </div>
     </article>
   </div>
-
 </div>
 
 <article class="l-base p-abt-trauma">
@@ -159,35 +158,35 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td>久留米大学 心理教育テキスト</td>
+        <td><a href="https://neuropsy-kurume.jp/archives/766" target="_blank" class="u-black-link">久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a></td>
         <td>心理教育テキスト等これまで久留米大学医学部神経精神医学講座関係者が作成した資料を公開しているページ</td>
       </tr>
       <tr>
-        <td>兵庫県こころのケアセンター</td>
+        <td><a href="https://www.j-hits.org" target="_blank" class="u-black-link">兵庫県こころのケアセンター <i class="fa-regular fa-window-restore"></i></a></td>
         <td>研究や研修、相談・診療など「こころのケア」に関する多様な機能を有する全国初の拠点施設</td>
       </tr>
       <tr>
-        <td>子ども情報ステーション</td>
+        <td><a href="https://kidsinfost.net" target="_blank" class="u-black-link">子ども情報ステーション <i class="fa-regular fa-window-restore"></i></a></td>
         <td>精神障がいやこころの不調などをかかえた親と家族、その’子ども’を応援するサイト</td>
       </tr>
       <tr>
-        <td>ぷれいす東京</td>
+        <td><a href="https://ptokyo.org" target="_blank" class="u-black-link">ぷれいす東京 <i class="fa-regular fa-window-restore"></i></a></td>
         <td>HIV/エイズとともに生きる人たちがありのままに生きられる環境（コミュニティ）を創り出すことをめざして活動するNPO法人</td>
       </tr>
       <tr>
-        <td>HIV Futures Japanプロジェクト</td>
+        <td><a href="https://futures-japan.jp/about/" target="_blank" class="u-black-link">HIV Futures Japanプロジェクト <i class="fa-regular fa-window-restore"></i></a></td>
         <td>HIV陽性者のための総合情報サイト</td>
       </tr>
       <tr>
-        <td>OVA</td>
+        <td><a href="https://ova-japan.org" target="_blank" class="u-black-link">OVA <i class="fa-regular fa-window-restore"></i></a></td>
         <td>「『助けて』と言えない」を解決するNPO</td>
       </tr>
       <tr>
-        <td>一緒にトラウマについて知ろう</td>
+        <td><a href="https://cpc.musashino-u.ac.jp/trauma_support/" target="_blank" class="u-black-link">一緒にトラウマについて知ろう <i class="fa-regular fa-window-restore"></i></a></td>
         <td>武蔵野大学心理臨床センターが運営する、トラウマについての知識と対処法を紹介するサイト</td>
       </tr>
       <tr>
-        <td>安全・安心な暮らしをしたい</td>
+        <td><a href="https://www.gender.go.jp/policy/sokushin/ouen/safe/" target="_blank" class="u-black-link">安全・安心な暮らしをしたい <i class="fa-regular fa-window-restore"></i></a></td>
         <td>男女共同参画局による女性応援ポータルサイト。女性が安心して暮らせる社会の実現をめざし、女性を狙った犯罪や配偶者からのＤＶ、ストーカーの防止、対処策を紹介している。</td>
       </tr>
     </table>
