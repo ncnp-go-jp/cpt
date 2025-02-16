@@ -2445,6 +2445,24 @@
   }
 }
 
+.p-comp {
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 0;
+
+  &__h1 {
+    color: $color_dark-brown;
+    text-align: center;
+    margin-bottom: 3rem;
+    @include fontsize(22, 36);
+  }
+
+  &__txt {
+    text-align: center;
+    @include fontsize(20, 24);
+  }
+}
+
 .p-login {}
 
 // footer

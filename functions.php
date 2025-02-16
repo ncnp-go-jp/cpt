@@ -463,3 +463,13 @@ function my_register_heading($heading, $tag)
   return $heading;
 }
 add_action('wpmem_register_heading', 'my_register_heading', 10, 2);
+
+/**
+ * 登録完了後、完了画面に遷移
+ */
+function my_reg_redirect($fields)
+{
+  wp_redirect(home_url() . '/expert/complete');
+  exit();
+}
+add_action('wpmem_register_redirect', 'my_reg_redirect');
