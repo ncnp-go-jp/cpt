@@ -29,6 +29,15 @@
     }
   }
 
+  h1 {
+    @include fontsize(31, 36);
+
+    a {
+      color: $color_font;
+      @include hover;
+    }
+  }
+
   &__btn {
     background: none;
     margin: 0;

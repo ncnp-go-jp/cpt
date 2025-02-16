@@ -406,6 +406,17 @@ main {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
+.p-hdr h1 {
+  font-size: 3.1rem;
+}
+.p-hdr h1 a {
+  color: #555555;
+  transition: opacity linear 0.3s;
+}
+.p-hdr h1 a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
 .p-hdr__btn {
   background: none;
   margin: 0;
@@ -2340,6 +2351,9 @@ main {
   .c-form .link-text-forgot,
   .c-form .link-text-username{
     font-size: 1.6rem;
+  }
+  .p-hdr h1{
+    font-size: 3.6rem;
   }
   .p-hdr h1{
     font-size: 3.6rem;

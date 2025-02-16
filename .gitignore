@@ -41,7 +41,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-assets/css/style.css.map
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -132,3 +131,6 @@ dist
 
 # DS__Store
 .DS_Store
+
+# map
+assets/css/style.css.map
