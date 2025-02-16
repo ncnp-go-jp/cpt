@@ -451,6 +451,7 @@ function my_register_form_args($defaults, $tag)
   return $defaults;
 }
 add_action('wpmem_register_form_args', 'my_register_form_args', 10, 2);
+add_action('wpmem_login_form_args', 'my_register_form_args', 10, 2);
 
 /**
  * WP-Membersのフォームタイトルを変更

@@ -1660,6 +1660,9 @@ main {
   margin-bottom: 1rem;
   font-size: 1.8rem;
 }
+.p-form #wpmem_login {
+  width: 100%;
+}
 .p-form .wpmem_msg {
   margin-left: auto;
   margin-right: auto;
@@ -1673,15 +1676,20 @@ main {
   border-top: none;
   margin-top: -1rem;
 }
-.p-form #wpmem_reg {
+.p-form #wpmem_reg,
+.p-form #wpmem_login {
   width: 100%;
 }
-.p-form #wpmem_reg .p-form__row {
+.p-form #wpmem_reg .p-form__row,
+.p-form #wpmem_login .p-form__row {
   text-align: left;
 }
 .p-form #wpmem_reg .p-form__row label.text,
 .p-form #wpmem_reg .p-form__row label.multicheckbox,
-.p-form #wpmem_reg .p-form__row label.textarea {
+.p-form #wpmem_reg .p-form__row label.textarea,
+.p-form #wpmem_login .p-form__row label.text,
+.p-form #wpmem_login .p-form__row label.multicheckbox,
+.p-form #wpmem_login .p-form__row label.textarea {
   color: #806346;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
@@ -1693,15 +1701,26 @@ main {
   position: relative;
   font-size: 1.6rem;
 }
-.p-form #wpmem_reg .p-form__row label.multicheckbox {
+.p-form #wpmem_reg .p-form__row label.multicheckbox,
+.p-form #wpmem_login .p-form__row label.multicheckbox {
   cursor: pointer;
   transition: opacity linear 0.3s;
 }
-.p-form #wpmem_reg .p-form__row label.multicheckbox:hover {
+.p-form #wpmem_reg .p-form__row label.multicheckbox:hover,
+.p-form #wpmem_login .p-form__row label.multicheckbox:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
-.p-form #wpmem_reg .p-form__row .req {
+.p-form #wpmem_reg .p-form__row label[for=log],
+.p-form #wpmem_reg .p-form__row label[for=pwd],
+.p-form #wpmem_login .p-form__row label[for=log],
+.p-form #wpmem_login .p-form__row label[for=pwd] {
+  color: #555555;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1.4rem;
+}
+.p-form #wpmem_reg .p-form__row .req,
+.p-form #wpmem_login .p-form__row .req {
   color: #fff;
   display: inline-block;
   line-height: 1;
@@ -1710,7 +1729,8 @@ main {
   background: #FABA6B;
   font-size: 1.26rem;
 }
-.p-form #wpmem_reg .p-form__row .req {
+.p-form #wpmem_reg .p-form__row .req,
+.p-form #wpmem_login .p-form__row .req {
   position: absolute;
   bottom: 0.3rem;
   left: 0;
@@ -1718,7 +1738,13 @@ main {
 .p-form #wpmem_reg .p-form__row input[type=text],
 .p-form #wpmem_reg .p-form__row input[type=textarea],
 .p-form #wpmem_reg .p-form__row input[type=email],
-.p-form #wpmem_reg .p-form__row textarea.textarea {
+.p-form #wpmem_reg .p-form__row textarea.textarea,
+.p-form #wpmem_reg .p-form__row input[type=password],
+.p-form #wpmem_login .p-form__row input[type=text],
+.p-form #wpmem_login .p-form__row input[type=textarea],
+.p-form #wpmem_login .p-form__row input[type=email],
+.p-form #wpmem_login .p-form__row textarea.textarea,
+.p-form #wpmem_login .p-form__row input[type=password] {
   width: 100%;
   font-family: "Zen Maru Gothic", sans-serif;
   border-radius: 1rem;
@@ -1729,25 +1755,41 @@ main {
 .p-form #wpmem_reg .p-form__row input[type=text]:-ms-input-placeholder,
 .p-form #wpmem_reg .p-form__row input[type=textarea]:-ms-input-placeholder,
 .p-form #wpmem_reg .p-form__row input[type=email]:-ms-input-placeholder,
-.p-form #wpmem_reg .p-form__row textarea.textarea:-ms-input-placeholder {
+.p-form #wpmem_reg .p-form__row textarea.textarea:-ms-input-placeholder,
+.p-form #wpmem_reg .p-form__row input[type=password]:-ms-input-placeholder,
+.p-form #wpmem_login .p-form__row input[type=text]:-ms-input-placeholder,
+.p-form #wpmem_login .p-form__row input[type=textarea]:-ms-input-placeholder,
+.p-form #wpmem_login .p-form__row input[type=email]:-ms-input-placeholder,
+.p-form #wpmem_login .p-form__row textarea.textarea:-ms-input-placeholder,
+.p-form #wpmem_login .p-form__row input[type=password]:-ms-input-placeholder {
   color: #999999;
 }
 .p-form #wpmem_reg .p-form__row input[type=text]::placeholder,
 .p-form #wpmem_reg .p-form__row input[type=textarea]::placeholder,
 .p-form #wpmem_reg .p-form__row input[type=email]::placeholder,
-.p-form #wpmem_reg .p-form__row textarea.textarea::placeholder {
+.p-form #wpmem_reg .p-form__row textarea.textarea::placeholder,
+.p-form #wpmem_reg .p-form__row input[type=password]::placeholder,
+.p-form #wpmem_login .p-form__row input[type=text]::placeholder,
+.p-form #wpmem_login .p-form__row input[type=textarea]::placeholder,
+.p-form #wpmem_login .p-form__row input[type=email]::placeholder,
+.p-form #wpmem_login .p-form__row textarea.textarea::placeholder,
+.p-form #wpmem_login .p-form__row input[type=password]::placeholder {
   color: #999999;
 }
-.p-form #wpmem_reg .p-form__row textarea.textarea#occupation_others {
+.p-form #wpmem_reg .p-form__row textarea.textarea#occupation_others,
+.p-form #wpmem_login .p-form__row textarea.textarea#occupation_others {
   height: 8rem;
 }
-.p-form #wpmem_reg .p-form__row input[type=checkbox] {
+.p-form #wpmem_reg .p-form__row input[type=checkbox],
+.p-form #wpmem_login .p-form__row input[type=checkbox] {
   display: none;
 }
-.p-form #wpmem_reg .p-form__row input[type=checkbox]:checked + .icon:before {
+.p-form #wpmem_reg .p-form__row input[type=checkbox]:checked + .icon:before,
+.p-form #wpmem_login .p-form__row input[type=checkbox]:checked + .icon:before {
   content: "\f14a";
 }
-.p-form #wpmem_reg .p-form__row .icon {
+.p-form #wpmem_reg .p-form__row .icon,
+.p-form #wpmem_login .p-form__row .icon {
   position: relative;
   background: #fff;
   line-height: 1.4;
@@ -1755,21 +1797,25 @@ main {
   cursor: pointer;
   font-size: 1.9rem;
 }
-.p-form #wpmem_reg .p-form__row .icon {
+.p-form #wpmem_reg .p-form__row .icon,
+.p-form #wpmem_login .p-form__row .icon {
   transition: opacity linear 0.3s;
 }
-.p-form #wpmem_reg .p-form__row .icon:hover {
+.p-form #wpmem_reg .p-form__row .icon:hover,
+.p-form #wpmem_login .p-form__row .icon:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
-.p-form #wpmem_reg .p-form__row .icon:before {
+.p-form #wpmem_reg .p-form__row .icon:before,
+.p-form #wpmem_login .p-form__row .icon:before {
   content: "\f0c8";
   color: #FABA6B;
   font-family: "Font Awesome 6 Free";
   display: inline-block;
   font-weight: 400;
 }
-.p-form #wpmem_reg .p-form__row .icon + label.multicheckbox {
+.p-form #wpmem_reg .p-form__row .icon + label.multicheckbox,
+.p-form #wpmem_login .p-form__row .icon + label.multicheckbox {
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
   color: #555555;
@@ -1779,10 +1825,12 @@ main {
   margin-right: 1rem;
   font-size: 1.4rem;
 }
-.p-form #wpmem_reg .p-form__row label[for=purpose] {
+.p-form #wpmem_reg .p-form__row label[for=purpose],
+.p-form #wpmem_login .p-form__row label[for=purpose] {
   position: relative;
 }
-.p-form #wpmem_reg .p-form__row label[for=purpose]:before {
+.p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=purpose]:before {
   content: "任意";
   background: #A68563;
   color: #fff;
@@ -1792,18 +1840,21 @@ main {
   border-radius: 0.5rem;
   font-size: 1.26rem;
 }
-.p-form #wpmem_reg .p-form__row label[for=purpose]:before {
+.p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=purpose]:before {
   position: absolute;
   bottom: 0.5rem;
   left: 0;
 }
-.p-form #wpmem_reg .p-form__row label[for=occupation_others] {
+.p-form #wpmem_reg .p-form__row label[for=occupation_others],
+.p-form #wpmem_login .p-form__row label[for=occupation_others] {
   display: none !important;
 }
-.p-form #wpmem_reg input[type=submit] {
+.p-form #wpmem_reg input[type=submit],
+.p-form #wpmem_login input[type=submit] {
   font-family: "Zen Maru Gothic", sans-serif;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
@@ -1813,18 +1864,33 @@ main {
   height: 5rem;
   color: #fff;
   border-radius: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   cursor: pointer;
   transition: opacity linear 0.3s;
 }
-.p-form #wpmem_reg input[type=submit]:hover {
+.p-form #wpmem_reg input[type=submit]:hover,
+.p-form #wpmem_login input[type=submit]:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
-.p-form #wpmem_reg .button_div {
+.p-form #wpmem_reg .button_div,
+.p-form #wpmem_login .button_div {
   border-top: 1px solid #C4A07C;
   text-align: center;
   padding-top: 3rem;
+}
+.p-form #wpmem_login .p-form__row,
+.p-form #wpmem_login .button_div {
+  border: none;
+}
+.p-form #wpmem_login .button_div {
+  padding-top: 0;
+}
+.p-form #wpmem_login .button_div label[for=rememberme] {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1.6rem;
 }
 
 .p-comp {
@@ -1841,6 +1907,20 @@ main {
 .p-comp__txt {
   text-align: center;
   font-size: 2rem;
+}
+
+.p-login {
+  font-size: 1.6rem;
+}
+.p-login__txt {
+  text-align: center;
+  line-height: 1.8;
+}
+.p-login__btn-box {
+  margin: 1rem 0 3rem;
+}
+.p-login__note {
+  font-size: 1.6rem;
 }
 
 .p-ftr {
@@ -2791,21 +2871,35 @@ main {
   }
   .p-form #wpmem_reg .p-form__row label.text,
   .p-form #wpmem_reg .p-form__row label.multicheckbox,
-  .p-form #wpmem_reg .p-form__row label.textarea{
+  .p-form #wpmem_reg .p-form__row label.textarea,
+  .p-form #wpmem_login .p-form__row label.text,
+  .p-form #wpmem_login .p-form__row label.multicheckbox,
+  .p-form #wpmem_login .p-form__row label.textarea{
     font-size: 1.8rem;
   }
   .p-form #wpmem_reg .p-form__row label.text,
   .p-form #wpmem_reg .p-form__row label.multicheckbox,
-  .p-form #wpmem_reg .p-form__row label.textarea{
+  .p-form #wpmem_reg .p-form__row label.textarea,
+  .p-form #wpmem_login .p-form__row label.text,
+  .p-form #wpmem_login .p-form__row label.multicheckbox,
+  .p-form #wpmem_login .p-form__row label.textarea{
     width: 22rem;
     padding-left: 6rem;
     margin: 0;
     display: inline-block;
   }
-  .p-form #wpmem_reg .p-form__row .req{
+  .p-form #wpmem_reg .p-form__row label[for=log],
+  .p-form #wpmem_reg .p-form__row label[for=pwd],
+  .p-form #wpmem_login .p-form__row label[for=log],
+  .p-form #wpmem_login .p-form__row label[for=pwd]{
+    font-size: 1.8rem;
+  }
+  .p-form #wpmem_reg .p-form__row .req,
+  .p-form #wpmem_login .p-form__row .req{
     font-size: 1.4rem;
   }
-  .p-form #wpmem_reg .p-form__row .req{
+  .p-form #wpmem_reg .p-form__row .req,
+  .p-form #wpmem_login .p-form__row .req{
     padding: 0.4rem 0.7rem;
     bottom: 50%;
     left: 1rem;
@@ -2814,46 +2908,92 @@ main {
   .p-form #wpmem_reg .p-form__row input[type=text],
   .p-form #wpmem_reg .p-form__row input[type=textarea],
   .p-form #wpmem_reg .p-form__row input[type=email],
-  .p-form #wpmem_reg .p-form__row textarea.textarea{
+  .p-form #wpmem_reg .p-form__row textarea.textarea,
+  .p-form #wpmem_reg .p-form__row input[type=password],
+  .p-form #wpmem_login .p-form__row input[type=text],
+  .p-form #wpmem_login .p-form__row input[type=textarea],
+  .p-form #wpmem_login .p-form__row input[type=email],
+  .p-form #wpmem_login .p-form__row textarea.textarea,
+  .p-form #wpmem_login .p-form__row input[type=password]{
     font-size: 1.6rem;
   }
   .p-form #wpmem_reg .p-form__row input[type=text],
   .p-form #wpmem_reg .p-form__row input[type=textarea],
   .p-form #wpmem_reg .p-form__row input[type=email],
-  .p-form #wpmem_reg .p-form__row textarea.textarea{
+  .p-form #wpmem_reg .p-form__row textarea.textarea,
+  .p-form #wpmem_reg .p-form__row input[type=password],
+  .p-form #wpmem_login .p-form__row input[type=text],
+  .p-form #wpmem_login .p-form__row input[type=textarea],
+  .p-form #wpmem_login .p-form__row input[type=email],
+  .p-form #wpmem_login .p-form__row textarea.textarea,
+  .p-form #wpmem_login .p-form__row input[type=password]{
     padding: 1.8rem 2rem;
     width: calc(100% - 22rem);
   }
-  .p-form #wpmem_reg .p-form__row textarea.textarea#occupation_others{
+  .p-form #wpmem_reg .p-form__row textarea.textarea#occupation_others,
+  .p-form #wpmem_login .p-form__row textarea.textarea#occupation_others{
     margin-left: 22rem;
   }
-  .p-form #wpmem_reg .p-form__row .icon{
+  .p-form #wpmem_reg .p-form__row .icon,
+  .p-form #wpmem_login .p-form__row .icon{
     font-size: 2.2rem;
   }
-  .p-form #wpmem_reg .p-form__row .icon{
+  .p-form #wpmem_reg .p-form__row .icon,
+  .p-form #wpmem_login .p-form__row .icon{
     margin-left: 22rem;
   }
-  .p-form #wpmem_reg .p-form__row .icon + label.multicheckbox{
+  .p-form #wpmem_reg .p-form__row .icon + label.multicheckbox,
+  .p-form #wpmem_login .p-form__row .icon + label.multicheckbox{
     font-size: 1.6rem;
   }
-  .p-form #wpmem_reg .p-form__row label[for=purpose]{
+  .p-form #wpmem_reg .p-form__row label[for=purpose],
+  .p-form #wpmem_login .p-form__row label[for=purpose]{
     vertical-align: top;
   }
-  .p-form #wpmem_reg .p-form__row label[for=purpose]:before{
+  .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=purpose]:before{
     font-size: 1.4rem;
   }
-  .p-form #wpmem_reg .p-form__row label[for=purpose]:before{
+  .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=purpose]:before{
     left: 1rem;
   }
-  .p-form #wpmem_reg .button_div{
+  .p-form #wpmem_reg .button_div,
+  .p-form #wpmem_login .button_div{
     width: 100%;
     padding-top: 4rem;
+  }
+  .p-form #wpmem_login{
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-form #wpmem_login .p-form__row input[type=text],
+  .p-form #wpmem_login .p-form__row input[type=password],
+  .p-form #wpmem_login .button_div input[type=text],
+  .p-form #wpmem_login .button_div input[type=password]{
+    width: 100%;
+  }
+  .p-form #wpmem_login .button_div{
+    padding-top: 0;
+  }
+  .p-form #wpmem_login .button_div label[for=rememberme]{
+    font-size: 1.6rem;
   }
   .p-comp__h1{
     font-size: 3.6rem;
   }
   .p-comp__txt{
     font-size: 2.4rem;
+  }
+  .p-login{
+    font-size: 1.8rem;
+  }
+  .p-login__btn-box{
+    margin-bottom: 5rem;
+  }
+  .p-login__note{
+    font-size: 1.6rem;
   }
   .p-ftr{
     display: -ms-flexbox;

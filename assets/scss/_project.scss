@@ -2232,6 +2232,10 @@
     }
   }
 
+  #wpmem_login {
+    width: 100%;
+  }
+
   .wpmem_msg {
     margin-left: auto;
     margin-right: auto;
@@ -2252,7 +2256,8 @@
     }
   }
 
-  #wpmem_reg {
+  #wpmem_reg,
+  #wpmem_login {
     width: 100%;
 
     .p-form__row {
@@ -2286,6 +2291,14 @@
         @include hover;
       }
 
+      label[for='log'],
+      label[for='pwd'] {
+        color: $color_font;
+        font-family: "Zen Maru Gothic",
+          sans-serif;
+        @include fontsize(14, 18);
+      }
+
       .req {
         color: #fff;
         display: inline-block;
@@ -2310,7 +2323,8 @@
       input[type=text],
       input[type=textarea],
       input[type=email],
-      textarea.textarea {
+      textarea.textarea,
+      input[type=password] {
         width: 100%;
         font-family: "Zen Maru Gothic",
           sans-serif;
@@ -2419,7 +2433,7 @@
     input[type=submit] {
       font-family: "Zen Maru Gothic",
         sans-serif;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       background: $color_light-orange;
@@ -2427,6 +2441,8 @@
       height: 5rem;
       color: #fff;
       border-radius: 2.5rem;
+      margin-left: auto;
+      margin-right: auto;
       border: none;
       cursor: pointer;
       @include hover;
@@ -2440,6 +2456,41 @@
       @include media(tb) {
         width: 100%;
         padding-top: 4rem;
+      }
+    }
+  }
+
+  #wpmem_login {
+    @include media(tb) {
+      width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .p-form__row,
+    .button_div {
+      border: none;
+
+      input[type=text],
+      input[type=password] {
+        @include media(tb) {
+          width: 100%;
+        }
+      }
+    }
+
+
+    .button_div {
+      padding-top: 0;
+
+      @include media(tb) {
+        padding-top: 0;
+      }
+
+      label[for="rememberme"] {
+        font-family: "Zen Maru Gothic",
+          sans-serif;
+        @include fontsize(16, 16);
       }
     }
   }
@@ -2463,7 +2514,26 @@
   }
 }
 
-.p-login {}
+.p-login {
+  @include fontsize(16, 18);
+
+  &__txt {
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  &__btn-box {
+    margin: 1rem 0 3rem;
+
+    @include media(tb) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__note {
+    @include fontsize(16, 16);
+  }
+}
 
 // footer
 .p-ftr {
