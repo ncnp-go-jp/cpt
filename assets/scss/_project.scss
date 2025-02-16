@@ -2101,6 +2101,21 @@
   }
 }
 
+.p-sv-02 {
+  background: $color_light-brown;
+  color: #fff;
+  text-align: center;
+  padding: 3.6rem 0;
+
+  @include media(tb) {
+    padding: 2.9rem 0;
+  }
+
+  h1 {
+    @include fontsize(20, 36);
+  }
+}
+
 .p-wp-pagination {
   padding-bottom: 3.5rem;
 
@@ -2167,6 +2182,270 @@
     }
   }
 }
+
+.p-reg {
+  &__sec {
+    &+& {
+      margin-top: 6rem;
+
+      @include media(tb) {
+        margin-top: 5rem;
+      }
+    }
+
+    h2 {
+      font-weight: bold;
+      color: $color_dark-brown;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      @include fontsize(18, 24);
+
+      @include media(tb) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    p {
+      &+p {
+        margin-top: 1.5em;
+
+        @include media(tb) {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}
+
+.p-form {
+
+  &__h1 {
+    font-weight: bold;
+    color: $color_dark-brown;
+    font-family: "Zen Maru Gothic",
+      sans-serif;
+    margin-bottom: 1rem;
+    @include fontsize(18, 24);
+
+    @include media(tb) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .wpmem_msg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__row {
+    border-top: 1px solid #C4A07C;
+    padding: 1rem 0 1.4rem;
+
+    @include media(tb) {
+      padding: 1.8rem 0;
+    }
+
+    &.-no-border {
+      padding-top: 0;
+      border-top: none;
+      margin-top: -1rem;
+    }
+  }
+
+  #wpmem_reg {
+    width: 100%;
+
+    .p-form__row {
+      text-align: left;
+
+      label.text,
+      label.multicheckbox,
+      label.textarea {
+        color: $color_dark-brown;
+        font-family: "Zen Maru Gothic",
+          sans-serif;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        margin: 0 0 0.7rem;
+        padding: 0 0 0 4rem;
+        text-align: left;
+        position: relative;
+        @include fontsize(16, 18);
+
+        @include media(tb) {
+          width: 22rem;
+          padding-left: 6rem;
+          margin: 0;
+          display: inline-block;
+        }
+      }
+
+      label.multicheckbox {
+        cursor: pointer;
+        @include hover;
+      }
+
+      .req {
+        color: #fff;
+        display: inline-block;
+        line-height: 1;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        background: $color_light-orange;
+        @include fontsize(12.6, 14);
+
+        & {
+          @include absolute($bottom:0.3rem, $left:0);
+        }
+
+        @include media(tb) {
+          padding: 0.4rem 0.7rem;
+          bottom: 50%;
+          left: 1rem;
+          transform: translateY(50%);
+        }
+      }
+
+      input[type=text],
+      input[type=textarea],
+      input[type=email],
+      textarea.textarea {
+        width: 100%;
+        font-family: "Zen Maru Gothic",
+          sans-serif;
+        border-radius: 1rem;
+        border: 1px solid #999999;
+        padding: 2rem 1rem;
+        @include fontsize(14, 16);
+
+        @include media(tb) {
+          padding: 1.8rem 2rem;
+          width: calc(100% - 22rem);
+        }
+
+        &::placeholder {
+          color: #999999;
+        }
+      }
+
+      textarea.textarea#occupation_others {
+        height: 8rem;
+
+        @include media(tb) {
+          margin-left: 22rem;
+        }
+      }
+
+      input[type=checkbox] {
+        display: none;
+
+        &:checked {
+          &+.icon {
+            &::before {
+              content: '\f14a';
+            }
+          }
+        }
+      }
+
+      .icon {
+        position: relative;
+        background: #fff;
+        line-height: 1.4;
+        top: 0.2rem;
+        cursor: pointer;
+        @include fontsize(19, 22);
+
+        @include media(tb) {
+          margin-left: 22rem;
+        }
+
+        & {
+          @include hover;
+        }
+
+        &::before {
+          content: '\f0c8';
+          color: $color_light-orange;
+          @include fontAwesome__reg;
+        }
+
+        &+label.multicheckbox {
+          font-family: "Zen Maru Gothic",
+            sans-serif;
+          font-weight: bold;
+          color: $color_font;
+          width: auto;
+          display: inline-block;
+          padding: 0;
+          margin-right: 1rem;
+          @include fontsize(14, 16);
+        }
+      }
+
+      label[for="purpose"] {
+        position: relative;
+
+        @include media(tb) {
+          vertical-align: top;
+        }
+
+        &::before {
+          content: '任意';
+          background: $color_light-brown;
+          color: #fff;
+          display: inline-block;
+          line-height: 1;
+          padding: 0.2rem 0.5rem;
+          border-radius: 0.5rem;
+          @include fontsize(12.6, 14);
+
+          & {
+            @include absolute($bottom:0.5rem, $left:0);
+          }
+
+          @include media(tb) {
+            left: 1rem;
+          }
+        }
+      }
+
+      label[for="occupation_others"] {
+        display: none !important;
+      }
+    }
+
+    input[type=submit] {
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: $color_light-orange;
+      width: 24rem;
+      height: 5rem;
+      color: #fff;
+      border-radius: 2.5rem;
+      border: none;
+      cursor: pointer;
+      @include hover;
+    }
+
+    .button_div {
+      border-top: 1px solid #C4A07C;
+      text-align: center;
+      padding-top: 3rem;
+
+      @include media(tb) {
+        width: 100%;
+        padding-top: 4rem;
+      }
+    }
+  }
+}
+
+.p-login {}
 
 // footer
 .p-ftr {

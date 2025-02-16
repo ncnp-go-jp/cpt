@@ -422,3 +422,44 @@ function post_has_archive($args, $post_type)
   return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+/**
+ * WP-Membersのフォーム構成をカスタマイズ
+ */
+function my_register_form_args($defaults, $tag)
+{
+  // 外側の fieldset を外す
+  $defaults['fieldset_before'] = '';
+  $defaults['fieldset_after'] = '';
+
+  // 見出しタグの変更
+  $defaults['heading_before'] = '<h1 class="p-form__h1">';
+  $defaults['heading_after'] = '</h1>';
+
+  // 各行に wrapper を追加
+  $defaults['row_before'] = '<div class="p-form__row">';
+  $defaults['row_after'] = '</div>';
+
+  // input タグのラッパーを外す
+  $defaults['wrap_inputs'] = false;
+
+  // [必須項目]の説明文を削除
+  $defaults['req_label'] = '';
+  $defaults['req_label_before'] = '';
+  $defaults['req_label_after'] = '';
+
+  return $defaults;
+}
+add_action('wpmem_register_form_args', 'my_register_form_args', 10, 2);
+
+/**
+ * WP-Membersのフォームタイトルを変更
+ */
+function my_register_heading($heading, $tag)
+{
+  if ($tag == 'new') {
+    $heading = '利用登録';
+  }
+  return $heading;
+}
+add_action('wpmem_register_heading', 'my_register_heading', 10, 2);

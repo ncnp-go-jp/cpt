@@ -244,3 +244,27 @@
     text-align: center;
   }
 }
+
+.c-form {
+  padding: 2rem 0 4rem;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+
+  #wpmem_reg legend {
+    display: none;
+  }
+
+  &__box {
+    border-radius: 1rem;
+    background: #fff;
+    padding: 2rem 1.8rem;
+    text-align: center;
+
+    @include media(tb) {
+      padding: 3.5rem 6rem 2.5rem;
+      border-radius: 3rem;
+    }
+  }
+}

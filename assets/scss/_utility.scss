@@ -88,6 +88,7 @@
 .u-orange-marker {
   text-decoration: underline !important;
   color: $color_dark-orange;
+  @include hover;
 }
 
 // font-weight {

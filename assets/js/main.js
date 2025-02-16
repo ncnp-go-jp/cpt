@@ -158,4 +158,39 @@ jQuery(function ($) {
       $target_el.fadeIn();
     }, 500);
   }
+
+  // WP-Membersで作成されたフォームの必須項目のラベルに対し、
+  // テキストを「必須」へ変更
+  $('#wpmem_reg .req').text('必須');
+
+  // WP-Membersで作成されたフォームの登録ボタンに対し、
+  // テキストを「登録する」へ変更
+  $('#wpmem_reg .button_div .buttons').val('登録する');
+
+  // WP-Membersで作成されたチェックボックス内の改行タグを削除
+  $('.p-form__row').each(function (index, element) {
+    // 改行タグを削除
+    var text = $(element).html();
+    $(element).html(
+      text.replaceAll("<br>", '')
+    );
+
+    // オリジナルのチェックボックスを追加
+    $.when(
+      $(element).find('input[type=checkbox]').after('<span class="icon"></span>')
+    ).done(function () {
+
+    });
+  });
+
+  // WP-Membersで作成されたチェック項目に対し、１つの項目ごとに改行を入れる。
+  // ※input,label,カスタムされたチェックボックスの３つを同じタグで囲むのは難しいため
+  if (windowW < 834) {
+    $("label.multicheckbox:not(:first-of-type)").after('<br>');
+  } else {
+    // 見出しも改行
+    $("label.multicheckbox").after('<br>');
+  }
+  // WP-Membersで作成された「主たる職種」の「その他」のテキストエリアのCSSを調整
+  $('label[for="occupation_others"]').parent().addClass('-no-border');
 });
