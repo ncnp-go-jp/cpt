@@ -15,9 +15,15 @@ get_header();
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
         <div class="c-form">
-          <div class="c-form__box p-mypage">
+          <div class="c-form__box p-form">
 
             <?php echo do_shortcode('[wpmem_profile]'); ?>
+            <?php
+            // 編集画面の場合、マイページに戻るボタンを表示
+            if ($_GET['a'] == 'edit') :
+            ?>
+              <a href="<?php echo home_url() . '/expert/mypage/'; ?>" class="c-btn -orange-rev">マイページに戻る</a>
+            <?php endif; ?>
           </div>
         </div>
       <?php endwhile; ?>
