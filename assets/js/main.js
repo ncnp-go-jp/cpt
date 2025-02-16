@@ -163,10 +163,6 @@ jQuery(function ($) {
   // テキストを「必須」へ変更
   $('#wpmem_reg .req').text('必須');
 
-  // WP-Membersで作成されたフォームの登録ボタンに対し、
-  // テキストを「登録する」へ変更
-  $('#wpmem_reg .button_div .buttons').val('登録する');
-
   // WP-Membersで作成されたチェックボックス内の改行タグを削除
   $('.p-form__row').each(function (index, element) {
     // 改行タグを削除

@@ -466,7 +466,7 @@ function my_register_heading($heading, $tag)
 add_action('wpmem_register_heading', 'my_register_heading', 10, 2);
 
 /**
- * 登録完了後、完了画面に遷移
+ * WP-Membersの登録完了後、完了画面に遷移
  */
 function my_reg_redirect($fields)
 {
@@ -474,3 +474,37 @@ function my_reg_redirect($fields)
   exit();
 }
 add_action('wpmem_register_redirect', 'my_reg_redirect');
+
+/**
+ * WP-Membersのパスワードリセット画面のカスタマイズ
+ */
+function my_resetpassword_args($args)
+{
+  $args = array(
+    'heading'      => 'ご登録されたメールアドレスを<br class="u-sp">入力して送信してください。<br>ご登録メール宛にパスワードの再登録URLを記載したメールが届きます。',
+    'button_text'  => "送信"
+  );
+
+  return $args;
+}
+add_filter('wpmem_inc_resetpassword_args', 'my_resetpassword_args');
+
+/**
+ * WP-Membersのログイン後のリダイレクト先指定
+ */
+function my_login_redirect($redirect_to, $user_id)
+{
+
+  return home_url() . '/expert';
+}
+add_filter('wpmem_login_redirect', 'my_login_redirect', 10, 2);
+
+/**
+ * WP-Membersのデフォルトのダイアログを変更
+ */
+add_filter('wpmem_default_text', function ($text) {
+  $text['register_submit'] = '登録する'; // 会員情報登録ボタン
+  $text['profile_submit'] = '登録内容を変更する'; // 会員情報更新ボタン
+  $text['login_username'] = 'ユーザーIDまたはメールアドレス'; // ログイン画面の項目名
+  return $text;
+});

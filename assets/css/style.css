@@ -328,14 +328,53 @@ main {
 .c-form {
   padding: 2rem 0 4rem;
 }
-.c-form #wpmem_reg legend {
-  display: none;
-}
 .c-form__box {
   border-radius: 1rem;
   background: #fff;
   padding: 2rem 1.8rem;
   text-align: center;
+}
+.c-form input[type=submit] {
+  font-family: "Zen Maru Gothic", sans-serif;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #FABA6B;
+  width: 24rem;
+  height: 5rem;
+  color: #fff;
+  border-radius: 2.5rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: none;
+  cursor: pointer;
+  transition: opacity linear 0.3s;
+}
+.c-form input[type=submit]:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.c-form .link-text-forgot,
+.c-form .link-text-username {
+  color: #555555;
+  display: block;
+  text-align: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1.6rem;
+}
+.c-form .link-text-forgot a,
+.c-form .link-text-username a {
+  color: #FABA6B;
+  text-decoration: underline;
+  transition: opacity linear 0.3s;
+}
+.c-form .link-text-forgot a:hover,
+.c-form .link-text-username a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
 /*---------- Project ----------*/
@@ -499,9 +538,6 @@ main {
   z-index: 8;
   display: none;
 }
-.p-gnav__btn {
-  width: 14rem;
-}
 .p-gnav__btn-box {
   padding: 2rem;
   display: -ms-flexbox;
@@ -511,6 +547,44 @@ main {
   -ms-flex-pack: center;
       justify-content: center;
   gap: 0 1rem;
+}
+.p-gnav__btn-box a {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 14rem;
+  height: 5rem;
+  color: #fff;
+  background: #FABA6B;
+  border-radius: 2.5rem;
+  line-height: 1.25;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.p-gnav__btn-box a {
+  transition: opacity linear 0.3s;
+}
+.p-gnav__btn-box a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.p-gnav__btn-box a + a {
+  background: #A68563;
+}
+.p-gnav__btn-box .logout a {
+  border: 1px solid #FABA6B;
+  background: #fff;
+  color: #FABA6B;
+}
+.p-gnav__btn-box .regist a {
+  background: #806346;
+  color: #fff;
 }
 
 .p-front-mv {
@@ -1899,31 +1973,6 @@ main {
 .p-form #wpmem_login .p-form__row label[for=occupation_others] {
   display: none !important;
 }
-.p-form #wpmem_reg input[type=submit],
-.p-form #wpmem_login input[type=submit] {
-  font-family: "Zen Maru Gothic", sans-serif;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background: #FABA6B;
-  width: 24rem;
-  height: 5rem;
-  color: #fff;
-  border-radius: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  cursor: pointer;
-  transition: opacity linear 0.3s;
-}
-.p-form #wpmem_reg input[type=submit]:hover,
-.p-form #wpmem_login input[type=submit]:hover {
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-}
 .p-form #wpmem_reg .button_div,
 .p-form #wpmem_login .button_div {
   border-top: 1px solid #C4A07C;
@@ -1939,7 +1988,28 @@ main {
 }
 .p-form #wpmem_login .button_div label[for=rememberme] {
   font-family: "Zen Maru Gothic", sans-serif;
+  color: #555555;
   font-size: 1.6rem;
+}
+
+.p-mypage #wpmem_login {
+  width: 100%;
+}
+.p-mypage #wpmem_login label[for=user],
+.p-mypage #wpmem_login label[for=user_email] {
+  color: #A68563;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Zen Maru Gothic", sans-serif;
+  width: 100%;
+  display: inline-block;
+}
+.p-mypage #wpmem_login input.username {
+  font-family: "Zen Maru Gothic", sans-serif;
+  border-radius: 1rem;
+  border: 1px solid #999999;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
 }
 
 .p-comp {
@@ -1968,7 +2038,10 @@ main {
 .p-login__btn-box {
   margin: 1rem 0 3rem;
 }
-.p-login__note {
+
+#wpmem_pwdreset_form .p-form__h1 {
+  text-align: center;
+  color: #555555;
   font-size: 1.6rem;
 }
 
@@ -2264,8 +2337,15 @@ main {
     padding: 3.5rem 6rem 2.5rem;
     border-radius: 3rem;
   }
+  .c-form .link-text-forgot,
+  .c-form .link-text-username{
+    font-size: 1.6rem;
+  }
   .p-hdr h1{
     font-size: 3.6rem;
+  }
+  .p-gnav__btn-box a{
+    font-size: 1.6rem;
   }
   .p-front-mv{
     padding: 5rem 0 0;
@@ -3053,6 +3133,17 @@ main {
   .p-form #wpmem_login .button_div label[for=rememberme]{
     font-size: 1.6rem;
   }
+  .p-mypage #wpmem_login label[for=user],
+  .p-mypage #wpmem_login label[for=user_email]{
+    width: 25rem;
+  }
+  .p-mypage #wpmem_login input.username{
+    font-size: 1.6rem;
+  }
+  .p-mypage #wpmem_login input.username{
+    padding: 1.8rem 2rem;
+    width: calc(100% - 25rem);
+  }
   .p-comp__h1{
     font-size: 3.6rem;
   }
@@ -3065,8 +3156,8 @@ main {
   .p-login__btn-box{
     margin-bottom: 5rem;
   }
-  .p-login__note{
-    font-size: 1.6rem;
+  #wpmem_pwdreset_form .p-form__h1{
+    font-size: 1.8rem;
   }
   .p-ftr{
     display: -ms-flexbox;

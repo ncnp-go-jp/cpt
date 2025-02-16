@@ -275,16 +275,52 @@
     display: none;
   }
 
-  &__btn {
-    width: 14rem;
-  }
-
   &__btn-box {
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 1rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14rem;
+      height: 5rem;
+      color: #fff;
+      background: $color_light-orange;
+      border-radius: 2.5rem;
+      line-height: 1.25;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      font-family: inherit;
+      @include fontsize(16, 16);
+
+      & {
+        @include hover;
+      }
+
+      &+a {
+        background: $color_light-brown;
+      }
+    }
+
+    .logout {
+      a {
+        border: 1px solid $color_light-orange;
+        background: #fff;
+        color: $color_light-orange;
+      }
+    }
+
+    .regist {
+      a {
+        background: $color_dark-brown;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -2547,24 +2583,6 @@
       }
     }
 
-    input[type=submit] {
-      font-family: "Zen Maru Gothic",
-        sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: $color_light-orange;
-      width: 24rem;
-      height: 5rem;
-      color: #fff;
-      border-radius: 2.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      border: none;
-      cursor: pointer;
-      @include hover;
-    }
-
     .button_div {
       border-top: 1px solid #C4A07C;
       text-align: center;
@@ -2596,7 +2614,6 @@
       }
     }
 
-
     .button_div {
       padding-top: 0;
 
@@ -2607,7 +2624,43 @@
       label[for="rememberme"] {
         font-family: "Zen Maru Gothic",
           sans-serif;
+        color: $color_font;
         @include fontsize(16, 16);
+      }
+    }
+  }
+}
+
+.p-mypage {
+  #wpmem_login {
+    width: 100%;
+
+    label[for="user"],
+    label[for="user_email"] {
+      color: $color_light-brown;
+      font-weight: bold;
+      text-align: left;
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      width: 100%;
+      display: inline-block;
+
+      @include media(tb) {
+        width: 25rem;
+      }
+    }
+
+    input.username {
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      border-radius: 1rem;
+      border: 1px solid #999999;
+      padding: 2rem 1rem;
+      @include fontsize(14, 16);
+
+      @include media(tb) {
+        padding: 1.8rem 2rem;
+        width: calc(100% - 25rem);
       }
     }
   }
@@ -2646,9 +2699,13 @@
       margin-bottom: 5rem;
     }
   }
+}
 
-  &__note {
-    @include fontsize(16, 16);
+#wpmem_pwdreset_form {
+  .p-form__h1 {
+    text-align: center;
+    color: $color_font;
+    @include fontsize(16, 18);
   }
 }
 
