@@ -252,10 +252,6 @@
     padding: 4rem 0 6rem;
   }
 
-  #wpmem_reg legend {
-    display: none;
-  }
-
   &__box {
     border-radius: 1rem;
     background: #fff;
@@ -265,6 +261,40 @@
     @include media(tb) {
       padding: 3.5rem 6rem 2.5rem;
       border-radius: 3rem;
+    }
+  }
+
+  input[type=submit] {
+    font-family: "Zen Maru Gothic",
+      sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color_light-orange;
+    width: 24rem;
+    height: 5rem;
+    color: #fff;
+    border-radius: 2.5rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: none;
+    cursor: pointer;
+    @include hover;
+  }
+
+  .link-text-forgot,
+  .link-text-username {
+    color: $color_font;
+    display: block;
+    text-align: center;
+    font-family: "Zen Maru Gothic",
+      sans-serif;
+    @include fontsize(16, 16);
+
+    a {
+      color: $color_light-orange;
+      text-decoration: underline;
+      @include hover;
     }
   }
 }

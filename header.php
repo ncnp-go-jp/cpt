@@ -69,8 +69,8 @@
             </li>
           </ul>
           <div class="p-gnav__btn-box">
-            <a href="<?php echo home_url() . '/expert/login'; ?>" class="c-btn p-gnav__btn">ログイン</a>
-            <a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="c-btn -brown p-gnav__btn">利用登録</a>
+            <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
+            <?php echo do_shortcode('[wpmem_reg_link]利用登録[/wpmem_reg_link]'); ?>
           </div>
         </div>
       </nav>

@@ -30,8 +30,6 @@ get_header();
               ?>
             </div>
 
-            <p class="u-tac p-login__note">パスワードを忘れた場合<br class="u-sp"><a href="<?php echo home_url() . '/expert/reset'; ?>" class="u-orange-marker">パスワードリセット</a></p>
-
           </div>
         </div>
       <?php endwhile; ?>
