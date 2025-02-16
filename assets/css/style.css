@@ -577,6 +577,15 @@ main {
 .p-gnav__btn-box a + a {
   background: #A68563;
 }
+.p-gnav__btn-box .logout a {
+  border: 1px solid #FABA6B;
+  background: #fff;
+  color: #FABA6B;
+}
+.p-gnav__btn-box .regist a {
+  background: #806346;
+  color: #fff;
+}
 
 .p-front-mv {
   width: min(100%, 108.6rem);

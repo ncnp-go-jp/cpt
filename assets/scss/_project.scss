@@ -306,6 +306,21 @@
         background: $color_light-brown;
       }
     }
+
+    .logout {
+      a {
+        border: 1px solid $color_light-orange;
+        background: #fff;
+        color: $color_light-orange;
+      }
+    }
+
+    .regist {
+      a {
+        background: $color_dark-brown;
+        color: #fff;
+      }
+    }
   }
 }
 

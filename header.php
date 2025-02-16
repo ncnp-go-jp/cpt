@@ -69,8 +69,17 @@
             </li>
           </ul>
           <div class="p-gnav__btn-box">
-            <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
-            <?php echo do_shortcode('[wpmem_reg_link]利用登録[/wpmem_reg_link]'); ?>
+            <?php if (is_user_logged_in()): ?>
+              <div class="logout">
+                <?php echo do_shortcode('[wpmem_logout]ログアウト[/wpmem_logout]'); ?>
+              </div>
+              <a href="<?php echo home_url() . '/mypage'; ?>" class="c-btn -brown">マイページ</a>
+            <?php else : ?>
+              <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
+              <div class="regist">
+                <?php echo do_shortcode('[wpmem_reg_link]利用登録[/wpmem_reg_link]'); ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </nav>
