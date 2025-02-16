@@ -10,9 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "browser-sync": "^2.29.3",
     "css-declaration-sorter": "^7.2.0",
+    "css-mqpacker": "^7.0.0",
+    "del": "^8.0.0",
     "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.1.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
     "gulp-pleeease": "^2.0.2",
@@ -24,8 +28,8 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
-    "postcss": "^8.4.41",
-    "sass": "^1.77.8"
+    "postcss": "^8.5.2",
+    "sass": "^1.85.0"
   },
   "dependencies": {
     "fs": "0.0.1-security",
