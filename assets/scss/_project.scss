@@ -711,6 +711,22 @@
     }
   }
 
+  &.-expert {
+    grid-template-columns: auto 35%;
+    color: #fff;
+
+    @include media(tb) {
+      grid-template-columns: 64% 28%;
+      column-gap: 8%;
+    }
+
+    .p-mv__ttl {
+      color: #fff;
+    }
+
+  }
+
+
   &__tag {
     grid-area: tag;
     font-weight: bold;
@@ -2239,6 +2255,16 @@
     @include fontsize(20, 36);
   }
 }
+
+.p-expert {
+  padding: 3rem 0;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+
+}
+
 
 .p-wp-pagination {
   padding-bottom: 3.5rem;
