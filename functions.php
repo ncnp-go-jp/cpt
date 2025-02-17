@@ -433,8 +433,8 @@ function my_register_form_args($defaults, $tag)
   $defaults['fieldset_after'] = '';
 
   // 見出しタグの変更
-  $defaults['heading_before'] = '<h1 class="p-form__h1">';
-  $defaults['heading_after'] = '</h1>';
+  $defaults['heading_before'] = '<h2 class="p-form__h1">';
+  $defaults['heading_after'] = '</h2>';
 
   // 各行に wrapper を追加
   $defaults['row_before'] = '<div class="p-form__row">';
@@ -452,18 +452,6 @@ function my_register_form_args($defaults, $tag)
 }
 add_action('wpmem_register_form_args', 'my_register_form_args', 10, 2);
 add_action('wpmem_login_form_args', 'my_register_form_args', 10, 2);
-
-/**
- * WP-Membersのフォームタイトルを変更
- */
-function my_register_heading($heading, $tag)
-{
-  if ($tag == 'new') {
-    $heading = '利用登録';
-  }
-  return $heading;
-}
-add_action('wpmem_register_heading', 'my_register_heading', 10, 2);
 
 /**
  * WP-Membersの登録完了後、完了画面に遷移
@@ -503,8 +491,10 @@ add_filter('wpmem_login_redirect', 'my_login_redirect', 10, 2);
  * WP-Membersのデフォルトのダイアログを変更
  */
 add_filter('wpmem_default_text', function ($text) {
+  $text['register_heading'] = '利用登録'; // 会員情報見出し
   $text['register_submit'] = '登録する'; // 会員情報登録ボタン
   $text['profile_submit'] = '登録内容を変更する'; // 会員情報更新ボタン
+  $text['profile_edit'] = '利用登録情報編集'; // マイページ会員情報編集ボタン
   $text['login_username'] = 'ユーザーIDまたはメールアドレス'; // ログイン画面の項目名
   return $text;
 });

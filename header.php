@@ -70,13 +70,15 @@
           </ul>
           <div class="p-gnav__btn-box">
             <?php if (is_user_logged_in()): ?>
-              <div class="logout">
+              <div class="c-btn-wrapper -orange-rev">
                 <?php echo do_shortcode('[wpmem_logout]ログアウト[/wpmem_logout]'); ?>
               </div>
               <a href="<?php echo home_url() . '/expert/mypage'; ?>" class="c-btn -brown">マイページ</a>
             <?php else : ?>
-              <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
-              <div class="regist">
+              <div class="c-btn-wrapper">
+                <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
+              </div>
+              <div class="c-btn-wrapper -brown">
                 <?php echo do_shortcode('[wpmem_reg_link]利用登録[/wpmem_reg_link]'); ?>
               </div>
             <?php endif; ?>

@@ -138,7 +138,8 @@ main {
 
 -------------------------------*/
 /*---------- Component ----------*/
-.c-btn {
+.c-btn,
+.c-btn-wrapper > a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-align: center;
@@ -160,35 +161,48 @@ main {
   cursor: pointer;
   font-size: 1.6rem;
 }
-.c-btn {
+.c-btn,
+.c-btn-wrapper > a {
   transition: opacity linear 0.3s;
 }
-.c-btn:hover {
+.c-btn:hover,
+.c-btn-wrapper > a:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
-.c-btn.-brown {
+
+.c-btn.-brown,
+.c-btn-wrapper.-brown > a {
   background: #A68563;
   border-color: #A68563;
 }
-.c-btn.-white {
+
+.c-btn.-white,
+.c-btn-wrapper.-white > a {
   color: #A68563;
   background: #fff;
   border-color: #fff;
 }
-.c-btn.-white.-circle-right:after {
+.c-btn.-white .c-btn.-circle-right:after,
+.c-btn-wrapper.-white > a .c-btn.-circle-right:after {
   color: #A68563;
 }
-.c-btn.-orange-rev {
+
+.c-btn.-orange-rev,
+.c-btn-wrapper.-orange-rev > a {
   background: #fff;
   color: #FABA6B;
 }
-.c-btn.-brown-rev {
+
+.c-btn.-brown-rev,
+.c-btn-wrapper.-brown-rev > a {
   background: #fff;
   color: #806346;
   border-color: #806346;
 }
-.c-btn.-circle-right:after {
+
+.c-btn.-circle-right:after,
+.c-btn-wrapper.-circle-right > a:after {
   content: "\f138";
   color: #fff;
   font-size: 1.8rem;
@@ -560,42 +574,7 @@ main {
   gap: 0 1rem;
 }
 .p-gnav__btn-box a {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
   width: 14rem;
-  height: 5rem;
-  color: #fff;
-  background: #FABA6B;
-  border-radius: 2.5rem;
-  line-height: 1.25;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  font-size: 1.6rem;
-}
-.p-gnav__btn-box a {
-  transition: opacity linear 0.3s;
-}
-.p-gnav__btn-box a:hover {
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-}
-.p-gnav__btn-box a + a {
-  background: #A68563;
-}
-.p-gnav__btn-box .logout a {
-  border: 1px solid #FABA6B;
-  background: #fff;
-  color: #FABA6B;
-}
-.p-gnav__btn-box .regist a {
-  background: #806346;
-  color: #fff;
 }
 
 .p-front-mv {
@@ -1055,6 +1034,7 @@ main {
   text-indent: -1em;
   margin-left: 1em;
 }
+
 .p-sitepolicy-intro {
   padding: 2.5rem 0 4rem;
 }
@@ -1847,8 +1827,12 @@ main {
 }
 .p-form #wpmem_reg .p-form__row label[for=log],
 .p-form #wpmem_reg .p-form__row label[for=pwd],
+.p-form #wpmem_reg .p-form__row label[for=pass1],
+.p-form #wpmem_reg .p-form__row label[for=pass2],
 .p-form #wpmem_login .p-form__row label[for=log],
-.p-form #wpmem_login .p-form__row label[for=pwd] {
+.p-form #wpmem_login .p-form__row label[for=pwd],
+.p-form #wpmem_login .p-form__row label[for=pass1],
+.p-form #wpmem_login .p-form__row label[for=pass2] {
   color: #555555;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 1.4rem;
@@ -2021,6 +2005,74 @@ main {
   border: 1px solid #999999;
   padding: 2rem 1rem;
   font-size: 1.4rem;
+}
+.p-mypage__profile ul li {
+  text-align: center;
+}
+.p-mypage__profile ul li a {
+  font-size: 1.6rem;
+}
+.p-mypage__profile ul li a {
+  transition: opacity linear 0.3s;
+}
+.p-mypage__profile ul li a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.p-mypage__profile ul li:first-of-type a {
+  width: 24rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  background: #FABA6B;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto 2rem;
+}
+.p-mypage__profile ul li:nth-of-type(2) a {
+  color: #FABA6B;
+  text-decoration: underline;
+}
+.p-mypage__btn-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  gap: 0 1rem;
+  padding: 2rem 0;
+}
+.p-mypage__btn-box a {
+  width: 16rem;
+}
+
+.p-mypage-table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.p-mypage-table tr {
+  display: block;
+  border-top: 1px solid #C4A07C;
+}
+.p-mypage-table tr:last-of-type {
+  border-bottom: 1px solid #C4A07C;
+}
+.p-mypage-table th {
+  font-weight: bold;
+  text-align: left;
+  color: #A68563;
+  padding: 1rem 0 0;
+  display: block;
+  font-size: 1.6rem;
+}
+.p-mypage-table td {
+  text-align: left;
+  display: block;
+  color: #555555;
+  padding: 0.8rem 2rem 2rem 1rem;
 }
 
 .p-comp {
@@ -2285,7 +2337,8 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-  .c-btn{
+  .c-btn,
+  .c-btn-wrapper > a{
     font-size: 1.6rem;
   }
   .tippy-box[data-theme~=white]{
@@ -2357,9 +2410,6 @@ main {
   }
   .p-hdr h1{
     font-size: 3.6rem;
-  }
-  .p-gnav__btn-box a{
-    font-size: 1.6rem;
   }
   .p-front-mv{
     padding: 5rem 0 0;
@@ -3057,8 +3107,12 @@ main {
   }
   .p-form #wpmem_reg .p-form__row label[for=log],
   .p-form #wpmem_reg .p-form__row label[for=pwd],
+  .p-form #wpmem_reg .p-form__row label[for=pass1],
+  .p-form #wpmem_reg .p-form__row label[for=pass2],
   .p-form #wpmem_login .p-form__row label[for=log],
-  .p-form #wpmem_login .p-form__row label[for=pwd]{
+  .p-form #wpmem_login .p-form__row label[for=pwd],
+  .p-form #wpmem_login .p-form__row label[for=pass1],
+  .p-form #wpmem_login .p-form__row label[for=pass2]{
     font-size: 1.8rem;
   }
   .p-form #wpmem_reg .p-form__row .req,
@@ -3157,6 +3211,38 @@ main {
   .p-mypage #wpmem_login input.username{
     padding: 1.8rem 2rem;
     width: calc(100% - 25rem);
+  }
+  .p-mypage__profile ul li a{
+    font-size: 1.6rem;
+  }
+  .p-mypage__profile ul li:first-of-type a{
+    margin-bottom: 1rem;
+  }
+  .p-mypage__btn-box{
+    padding: 3rem 0;
+  }
+  .p-mypage__btn-box a{
+    width: 18rem;
+  }
+  .p-mypage-table{
+    margin-bottom: 3.5rem;
+  }
+  .p-mypage-table tr{
+    display: table-row;
+  }
+  .p-mypage-table th{
+    font-size: 1.8rem;
+  }
+  .p-mypage-table th{
+    display: table-cell;
+    width: 19rem;
+    vertical-align: middle;
+    padding: 3.1rem 0 3.1rem 1rem;
+  }
+  .p-mypage-table td{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 0;
   }
   .p-comp__h1{
     font-size: 3.6rem;
