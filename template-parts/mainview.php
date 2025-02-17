@@ -102,34 +102,50 @@ if (is_page('about')) {
   $img_url_sp .= 'resources/resources-topview-sp.webp';
   $txt = '心の傷に触れることや、回復に向けて一歩踏みだすことは、誰にとっても勇気が要ることです。不安なときには、まずは、情報を集めることが役立ちます。<br class="u-pc">ご参考まで、科学的な根拠を示す記事や、理論を詳述する書籍、さまざまな支援団体やその他の資源を示しました。納得するまで知り、あなたにとって必要なアクションへの準備を整える一助にしていただけたら幸いです。';
   $is_parent_page = true;
+} else if (is_page('expert')) {
+  $ttl = 'CPTを実践したい専門家へ';
+  $img_url_pc .= 'expert/expert-topview-pc.webp';
+  $img_url_sp .= 'expert/expert-topview-sp.webp';
+  $txt = '私たちは、CPTを実践する仲間が増えていくことを願っています。<br>ここでは、メンタルヘルスをサポートする臨床家のみなさまへ向けて、<br>より専門的な情報をお伝えいたします。';
+  $is_parent_page = true;
 }
 
 ?>
 
-<div class="l-base p-mv
-  <?php if ($is_parent_page) {
-    echo '-parent-page';
-  } ?>
-  <?php if (is_page('learn') || is_parent_slug() == 'learn') {
-    echo ' -learn';
-  } ?>
-  <?php if (is_page('treatment') || is_parent_slug() == 'treatment' || is_singular('documents')) {
-    echo ' -treatment';
-  } ?>
-  <?php if (is_page('resources')) {
-    echo ' -resources';
-  } ?>
-  ">
-  <?php if ($tag): ?>
-    <span class="p-mv__tag"><?php echo $tag; ?></span>
+
+<?php if (is_page('expert') || is_parent_slug() == 'expert') : ?>
+  <div class="u-bg-ligh-brown">
   <?php endif ?>
-  <h1 class="p-mv__ttl 
+  <div class=" l-base p-mv
+    <?php if ($is_parent_page) {
+      echo '-parent-page';
+    } ?>
+    <?php if (is_page('learn') || is_parent_slug() == 'learn') {
+      echo ' -learn';
+    } ?>
+    <?php if (is_page('treatment') || is_parent_slug() == 'treatment' || is_singular('documents')) {
+      echo ' -treatment';
+    } ?>
+    <?php if (is_page('resources')) {
+      echo ' -resources';
+    } ?> 
+    <?php if (is_page('expert') || is_parent_slug() == 'expert') {
+      echo ' -expert';
+    } ?>
+    ">
+    <?php if ($tag): ?>
+      <span class=" p-mv__tag"><?php echo $tag; ?></span>
+    <?php endif ?>
+    <h1 class="p-mv__ttl 
   <?php if (!$tag) {
     echo '-large';
   } ?>"><?php echo $ttl; ?></h1>
-  <picture class="p-mv__img">
-    <source media="(min-width: 834px)" srcset="<?php echo $img_url_pc; ?>">
-    <img src="<?php echo $img_url_sp; ?>" alt="<?php the_title(); ?>">
-  </picture>
-  <p class="p-mv__txt"><?php echo $txt; ?></p>
-</div>
+    <picture class="p-mv__img">
+      <source media="(min-width: 834px)" srcset="<?php echo $img_url_pc; ?>">
+      <img src="<?php echo $img_url_sp; ?>" alt="<?php the_title(); ?>">
+    </picture>
+    <p class="p-mv__txt"><?php echo $txt; ?></p>
+  </div>
+  <?php if (is_page('expert') || is_parent_slug() == 'expert') : ?>
+  </div>
+<?php endif ?>

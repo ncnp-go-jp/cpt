@@ -827,6 +827,14 @@ main {
   -ms-grid-columns: auto 35%;
       grid-template-columns: auto 35%;
 }
+.p-mv.-expert {
+  -ms-grid-columns: auto 35%;
+      grid-template-columns: auto 35%;
+  color: #fff;
+}
+.p-mv.-expert .p-mv__ttl {
+  color: #fff;
+}
 .p-mv__tag {
   grid-area: tag;
   font-weight: bold;
@@ -1721,6 +1729,10 @@ main {
   font-size: 2rem;
 }
 
+.p-expert {
+  padding: 3rem 0;
+}
+
 .p-wp-pagination {
   padding-bottom: 3.5rem;
 }
@@ -2245,6 +2257,10 @@ main {
   background: #fff;
 }
 
+.u-bd-beige {
+  border: 1px solid #c4a07c;
+}
+
 .u-orange-marker {
   text-decoration: underline !important;
   color: #FF9D26;
@@ -2510,6 +2526,11 @@ main {
   .p-mv.-resources{
     -ms-grid-columns: 62% 30%;
         grid-template-columns: 62% 30%;
+    column-gap: 8%;
+  }
+  .p-mv.-expert{
+    -ms-grid-columns: 64% 28%;
+        grid-template-columns: 64% 28%;
     column-gap: 8%;
   }
   .p-mv__tag{
@@ -2999,6 +3020,9 @@ main {
   }
   .p-sv-02 h1{
     font-size: 3.6rem;
+  }
+  .p-expert{
+    padding: 4rem 0 6rem;
   }
   .p-wp-pagination{
     padding-bottom: 5rem;
