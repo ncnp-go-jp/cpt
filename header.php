@@ -73,7 +73,7 @@
               <div class="logout">
                 <?php echo do_shortcode('[wpmem_logout]ログアウト[/wpmem_logout]'); ?>
               </div>
-              <a href="<?php echo home_url() . '/mypage'; ?>" class="c-btn -brown">マイページ</a>
+              <a href="<?php echo home_url() . '/expert/mypage'; ?>" class="c-btn -brown">マイページ</a>
             <?php else : ?>
               <?php echo do_shortcode('[wpmem_login_link]ログイン[/wpmem_login_link]'); ?>
               <div class="regist">
