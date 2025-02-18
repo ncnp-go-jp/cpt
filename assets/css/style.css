@@ -830,6 +830,10 @@ main {
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
+.p-mv__tag.-expert {
+  background: #fff;
+  color: #A68563;
+}
 .p-mv__ttl {
   grid-area: ttl;
   font-weight: bold;
@@ -1278,6 +1282,9 @@ main {
 .p-img-right-btm-box__img.-ptsd {
   height: 13.8rem;
 }
+.p-img-right-btm-box__img.-references {
+  height: 13.8rem;
+}
 
 .p-modal {
   display: none;
@@ -1712,6 +1719,22 @@ main {
 
 .p-expert {
   padding: 3rem 0;
+}
+
+.p-references {
+  padding: 3rem 0;
+}
+.p-references__box + .p-references__box {
+  border-top: 1px solid #c4a07c;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+.p-references__btn {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .p-wp-pagination {
@@ -2894,6 +2917,10 @@ main {
   .p-img-right-btm-box__img.-ptsd{
     height: 23rem;
   }
+  .p-img-right-btm-box__img.-references{
+    height: 27rem;
+    margin-right: 0;
+  }
   .p-modal__ttl{
     font-size: 3rem;
   }
@@ -3117,6 +3144,17 @@ main {
   }
   .p-expert{
     padding: 4rem 0 6rem;
+  }
+  .p-references{
+    padding: 4rem 0 6rem;
+  }
+  .p-references__box + .p-references__box{
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+  .p-references__btn{
+    margin-top: 2rem;
+    margin-left: 0;
   }
   .p-wp-pagination{
     padding-bottom: 5rem;

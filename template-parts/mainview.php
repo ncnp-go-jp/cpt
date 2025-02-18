@@ -108,6 +108,12 @@ if (is_page('about')) {
   $img_url_sp .= 'expert/expert-topview-sp.webp';
   $txt = '私たちは、CPTを実践する仲間が増えていくことを願っています。<br>ここでは、メンタルヘルスをサポートする臨床家のみなさまへ向けて、<br>より専門的な情報をお伝えいたします。';
   $is_parent_page = true;
+} else if (is_page('references')) {
+  $tag = 'CPTを実践したい専門家へ';
+  $ttl = 'CPTに係る資料';
+  $img_url_pc .= 'expert/expert-topview-pc.webp';
+  $img_url_sp .= 'expert/expert-topview-sp.webp';
+  $txt = 'CPT は各回のセッションで扱う内容が予め決められている、マニュアルベースの心理療法です。一定の訓練を受けた臨床家が、マニュアルに則り実施することで、効果を発揮します。ここでは、CPTの実施に必要なマニュアルを紹介しています。無料公開のものから、出版社で扱っている最新版まで、ニーズに応じてお手にとっていただければ幸いです。';
 }
 
 ?>
@@ -134,7 +140,9 @@ if (is_page('about')) {
     } ?>
     ">
     <?php if ($tag): ?>
-      <span class=" p-mv__tag"><?php echo $tag; ?></span>
+      <span class="p-mv__tag <?php if (is_page('expert') || is_parent_slug() == 'expert') {
+                                echo ' -expert';
+                              } ?>"><?php echo $tag; ?></span>
     <?php endif ?>
     <h1 class="p-mv__ttl 
   <?php if (!$tag) {
