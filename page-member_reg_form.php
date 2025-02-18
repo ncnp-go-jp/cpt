@@ -39,7 +39,9 @@ get_header();
       <?php while (have_posts()) : the_post(); ?>
         <div class="c-form">
           <div class="c-form__box p-form">
-            <?php the_content(); ?>
+            <?php
+            echo do_shortcode('[wpmem_form register]');
+            ?>
           </div>
         </div>
       <?php endwhile; ?>

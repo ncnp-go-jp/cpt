@@ -54,8 +54,8 @@
 .c-btn.-brown-rev,
 .c-btn-wrapper.-brown-rev>a {
   background: #fff;
-  color: $color_dark-brown;
-  border-color: $color_dark-brown;
+  color: $color_light-brown;
+  border-color: $color_light-brown;
 }
 
 .c-btn.-circle-right,
@@ -300,6 +300,7 @@
     a {
       color: $color_light-orange;
       text-decoration: underline;
+      display: inline-block;
       @include hover;
     }
   }

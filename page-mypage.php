@@ -174,6 +174,17 @@ get_header();
 
             <div class="p-mypage__profile">
               <?php
+              // ユーザー名の回復 START
+              if (isset($_GET['a'])):
+                if ($_GET['a'] == 'getusername'):
+              ?>
+                  <p class="u-tac p-mypage__getusername-txt">ご登録されたメールアドレスを<br class="u-sp">入力して送信してください。<br>ご登録メール宛にユーザー名のリセットURLを記載したメールが届きます。</p>
+              <?php
+                endif;
+              endif;
+              // ユーザー名の回復 END
+              ?>
+              <?php
               // [編集][パスワードの変更]ボタンの表示。
               // [編集]クリック時には編集画面と登録ボタンが表示される。
               ?>
@@ -183,9 +194,11 @@ get_header();
             <?php
             // 利用登録情報の編集 START
             if (isset($_GET['a'])):
+              if ($_GET['a'] == 'edit'):
             ?>
-              <a href="<?php echo home_url() . '/expert/mypage'; ?>" class="c-btn -orange-rev">マイページに戻る</a>
+                <a href="<?php echo home_url() . '/expert/mypage'; ?>" class="c-btn -orange-rev">マイページに戻る</a>
             <?php
+              endif;
             endif;
             // 利用登録情報の編集 END
             ?>
@@ -201,9 +214,9 @@ get_header();
                 <?php
                 // 購読者のみに退会ボタンを表示
                 if (current_user_can('subscriber')):
-                  echo do_shortcode('[plugin_delete_me /]');
-                endif;
                 ?>
+                  <a href="<?php echo home_url() . '/expert/delete'; ?>" class="c-btn -brown">退会する</a>
+                <?php endif; ?>
               </div>
             <?php
             endif;
