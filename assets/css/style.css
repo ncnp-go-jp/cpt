@@ -2004,9 +2004,30 @@ main {
 }
 .p-form #wpmem_reg .button_div,
 .p-form #wpmem_login .button_div {
-  border-top: 1px solid #C4A07C;
   text-align: center;
   padding-top: 2rem;
+}
+.p-form #wpmem_reg p > img,
+.p-form #wpmem_login p > img {
+  width: 14rem;
+  margin: 2rem 0 1rem;
+  border: 1px solid #ccc;
+}
+.p-form #wpmem_reg label[for=siteguard_captcha],
+.p-form #wpmem_login label[for=siteguard_captcha] {
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #555555;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+.p-form #wpmem_reg input[name=siteguard_captcha],
+.p-form #wpmem_login input[name=siteguard_captcha] {
+  width: 100%;
+  font-family: "Zen Maru Gothic", sans-serif;
+  border-radius: 1rem;
+  border: 1px solid #999999;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
 }
 .p-form #wpmem_login .p-form__row,
 .p-form #wpmem_login .button_div {
@@ -3293,6 +3314,18 @@ main {
   .p-form #wpmem_login .button_div{
     width: 100%;
     padding-top: 3rem;
+  }
+  .p-form #wpmem_reg label[for=siteguard_captcha],
+  .p-form #wpmem_login label[for=siteguard_captcha]{
+    font-size: 1.6rem;
+  }
+  .p-form #wpmem_reg input[name=siteguard_captcha],
+  .p-form #wpmem_login input[name=siteguard_captcha]{
+    font-size: 1.6rem;
+  }
+  .p-form #wpmem_reg input[name=siteguard_captcha],
+  .p-form #wpmem_login input[name=siteguard_captcha]{
+    padding: 1.8rem 2rem;
   }
   .p-form #wpmem_login{
     width: 50rem;

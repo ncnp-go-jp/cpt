@@ -2637,13 +2637,40 @@
     }
 
     .button_div {
-      border-top: 1px solid #C4A07C;
       text-align: center;
       padding-top: 2rem;
 
       @include media(tb) {
         width: 100%;
         padding-top: 3rem;
+      }
+    }
+
+    p>img {
+      width: 14rem;
+      margin: 2rem 0 1rem;
+      border: 1px solid #ccc;
+    }
+
+    label[for='siteguard_captcha'] {
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      color: $color_font;
+      margin-top: 0.5rem;
+      @include fontsize(14, 16);
+    }
+
+    input[name='siteguard_captcha'] {
+      width: 100%;
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      border-radius: 1rem;
+      border: 1px solid #999999;
+      padding: 2rem 1rem;
+      @include fontsize(14, 16);
+
+      @include media(tb) {
+        padding: 1.8rem 2rem;
       }
     }
   }
