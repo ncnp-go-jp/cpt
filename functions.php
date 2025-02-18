@@ -495,6 +495,5 @@ add_filter('wpmem_default_text', function ($text) {
   $text['register_submit'] = '登録する'; // 会員情報登録ボタン
   $text['profile_submit'] = '登録内容を変更する'; // 会員情報更新ボタン
   $text['profile_edit'] = '利用登録情報編集'; // マイページ会員情報編集ボタン
-  $text['login_username'] = 'ユーザーIDまたはメールアドレス'; // ログイン画面の項目名
   return $text;
 });

@@ -383,6 +383,7 @@ main {
 .c-form .link-text-username a {
   color: #FABA6B;
   text-decoration: underline;
+  display: inline-block;
   transition: opacity linear 0.3s;
 }
 .c-form .link-text-forgot a:hover,
@@ -1998,25 +1999,12 @@ main {
   color: #555555;
   font-size: 1.6rem;
 }
-
-.p-mypage #wpmem_login {
-  width: 100%;
-}
-.p-mypage #wpmem_login label[for=user],
-.p-mypage #wpmem_login label[for=user_email] {
-  color: #A68563;
-  font-weight: bold;
-  text-align: left;
+.p-mypage__profile #wpmem_login .p-form__row label[for=user],
+.p-mypage__profile #wpmem_login .p-form__row label[for=user_email] {
   font-family: "Zen Maru Gothic", sans-serif;
-  width: 100%;
-  display: inline-block;
-}
-.p-mypage #wpmem_login input.username {
-  font-family: "Zen Maru Gothic", sans-serif;
-  border-radius: 1rem;
-  border: 1px solid #999999;
-  padding: 2rem 1rem;
-  font-size: 1.4rem;
+  color: #806346;
+  white-space: nowrap;
+  font-size: 1.6rem;
 }
 .p-mypage__profile ul li {
   text-align: center;
@@ -2059,6 +2047,9 @@ main {
 }
 .p-mypage__btn-box a {
   width: 16rem;
+}
+.p-mypage__getusername-txt {
+  margin-bottom: 3rem;
 }
 
 .p-mypage-table {
@@ -3225,16 +3216,19 @@ main {
   .p-form #wpmem_login .button_div label[for=rememberme]{
     font-size: 1.6rem;
   }
-  .p-mypage #wpmem_login label[for=user],
-  .p-mypage #wpmem_login label[for=user_email]{
-    width: 25rem;
+  .p-mypage__profile #wpmem_login{
+    width: 100%;
   }
-  .p-mypage #wpmem_login input.username{
-    font-size: 1.6rem;
+  .p-mypage__profile #wpmem_login .p-form__row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    gap: 0 3rem;
   }
-  .p-mypage #wpmem_login input.username{
-    padding: 1.8rem 2rem;
-    width: calc(100% - 25rem);
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user_email]{
+    font-size: 1.8rem;
   }
   .p-mypage__profile ul li a{
     font-size: 1.6rem;

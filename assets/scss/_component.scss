@@ -300,6 +300,7 @@
     a {
       color: $color_light-orange;
       text-decoration: underline;
+      display: inline-block;
       @include hover;
     }
   }

@@ -2631,40 +2631,30 @@
 }
 
 .p-mypage {
-  #wpmem_login {
-    width: 100%;
-
-    label[for="user"],
-    label[for="user_email"] {
-      color: $color_light-brown;
-      font-weight: bold;
-      text-align: left;
-      font-family: "Zen Maru Gothic",
-        sans-serif;
-      width: 100%;
-      display: inline-block;
-
-      @include media(tb) {
-        width: 25rem;
-      }
-    }
-
-    input.username {
-      font-family: "Zen Maru Gothic",
-        sans-serif;
-      border-radius: 1rem;
-      border: 1px solid #999999;
-      padding: 2rem 1rem;
-      @include fontsize(14, 16);
-
-      @include media(tb) {
-        padding: 1.8rem 2rem;
-        width: calc(100% - 25rem);
-      }
-    }
-  }
-
   &__profile {
+    #wpmem_login {
+      @include media(tb) {
+        width: 100%;
+      }
+
+      .p-form__row {
+        @include media(tb) {
+          display: flex;
+          align-items: center;
+          gap: 0 3rem;
+        }
+
+        label[for='user'],
+        label[for='user_email'] {
+          font-family: "Zen Maru Gothic",
+            sans-serif;
+          color: $color_dark-brown;
+          white-space: nowrap;
+          @include fontsize(16, 18);
+        }
+      }
+    }
+
     ul {
       li {
         text-align: center;
@@ -2722,6 +2712,10 @@
         width: 18rem;
       }
     }
+  }
+
+  &__getusername-txt {
+    margin-bottom: 3rem;
   }
 }
 
