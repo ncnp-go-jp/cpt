@@ -2394,6 +2394,7 @@
   &__row {
     border-top: 1px solid #C4A07C;
     padding: 1rem 0 1.4rem;
+    position: relative;
 
     @include media(tb) {
       padding: 1.8rem 0;
@@ -2413,8 +2414,12 @@
     .p-form__row {
       text-align: left;
 
+      @include media(tb) {
+        padding-left: 22rem;
+      }
+
       label.text,
-      label.multicheckbox,
+      label.multicheckbox:not([for*="["]),
       label.textarea {
         color: $color_dark-brown;
         font-family: "Zen Maru Gothic",
@@ -2429,25 +2434,32 @@
         @include fontsize(16, 18);
 
         @include media(tb) {
+          @include center(y);
+        }
+
+        @include media(tb) {
           width: 22rem;
+          left: 0;
           padding-left: 6rem;
           margin: 0;
           display: inline-block;
         }
       }
 
-      label.multicheckbox {
+      label.multicheckbox[for*="["] {
         cursor: pointer;
+        width: auto;
+        padding: 0 1.5rem 0 0;
         @include hover;
       }
 
       label[for='log'],
-      label[for='pwd'],
-      label[for='pass1'],
-      label[for='pass2'] {
+      label[for='pwd'] {
         color: $color_font;
         font-family: "Zen Maru Gothic",
           sans-serif;
+        white-space: nowrap;
+        width: 22rem;
         @include fontsize(14, 18);
       }
 
@@ -2487,7 +2499,6 @@
 
         @include media(tb) {
           padding: 1.8rem 2rem;
-          width: calc(100% - 22rem);
         }
 
         &::placeholder {
@@ -2497,17 +2508,13 @@
 
       textarea.textarea#occupation_others {
         height: 8rem;
-
-        @include media(tb) {
-          margin-left: 22rem;
-        }
       }
 
       input[type=checkbox] {
         display: none;
 
         &:checked {
-          &+.icon {
+          &+label .icon {
             &::before {
               content: '\f14a';
             }
@@ -2516,16 +2523,11 @@
       }
 
       .icon {
-        position: relative;
         background: #fff;
         line-height: 1.4;
-        top: 0.2rem;
         cursor: pointer;
+        margin-right: 0.5rem;
         @include fontsize(19, 22);
-
-        @include media(tb) {
-          margin-left: 22rem;
-        }
 
         & {
           @include hover;
@@ -2551,10 +2553,10 @@
       }
 
       label[for="purpose"] {
-        position: relative;
-
         @include media(tb) {
-          vertical-align: top;
+          position: absolute;
+          top: 3rem;
+          left: 0;
         }
 
         &::before {
@@ -2585,11 +2587,11 @@
     .button_div {
       border-top: 1px solid #C4A07C;
       text-align: center;
-      padding-top: 3rem;
+      padding-top: 2rem;
 
       @include media(tb) {
         width: 100%;
-        padding-top: 4rem;
+        padding-top: 3rem;
       }
     }
   }
@@ -2603,6 +2605,7 @@
 
     .p-form__row,
     .button_div {
+      padding-left: 0;
       border: none;
 
       input[type=text],
@@ -2614,11 +2617,6 @@
     }
 
     .button_div {
-      padding-top: 0;
-
-      @include media(tb) {
-        padding-top: 0;
-      }
 
       label[for="rememberme"] {
         font-family: "Zen Maru Gothic",
@@ -2632,6 +2630,8 @@
 
 .p-mypage {
   &__profile {
+    margin-bottom: 1rem;
+
     #wpmem_login {
       @include media(tb) {
         width: 100%;
@@ -2642,15 +2642,29 @@
           display: flex;
           align-items: center;
           gap: 0 3rem;
+          padding-left: 0;
         }
 
         label[for='user'],
-        label[for='user_email'] {
+        label[for='user_email'],
+        label[for='pass1'],
+        label[for='pass2'] {
           font-family: "Zen Maru Gothic",
             sans-serif;
           color: $color_dark-brown;
           white-space: nowrap;
           @include fontsize(16, 18);
+
+          @include media(tb) {
+            width: 22rem;
+            flex-shrink: 0;
+          }
+        }
+
+        label[for='user'] {
+          @include media(tb) {
+            width: auto;
+          }
         }
       }
     }
@@ -2706,7 +2720,8 @@
     }
 
     a {
-      width: 16rem;
+      width: 14rem;
+      flex-shrink: 0;
 
       @include media(tb) {
         width: 18rem;
@@ -2810,6 +2825,87 @@
     text-align: center;
     color: $color_font;
     @include fontsize(16, 18);
+  }
+}
+
+.p-delete {
+  padding-top: 3rem;
+
+  @include media(tb) {
+    padding-top: 6.5rem;
+  }
+
+  &__txt {
+    text-align: center;
+    font-weight: bold;
+    @include fontsize(20, 24);
+
+    &+& {
+      margin-top: 1rem;
+
+      @include media(tb) {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &__txt2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    @include fontsize(14, 24);
+
+    @include media(tb) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn-box {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+
+    @include media(tb) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 0 1rem;
+      margin: 3rem 0 4rem;
+    }
+  }
+}
+
+#plugin_delete_me_shortcode_form {
+  p {
+    font-weight: bold;
+    text-align: center;
+    @include fontsize(20, 24);
+
+    &:nth-of-type(2) {
+      margin: 3rem 0;
+    }
+  }
+
+  label {
+    @include fontsize(16, 18);
+  }
+
+  input[type="password"] {
+    font-family: "Zen Maru Gothic",
+      sans-serif;
+    border-radius: 1rem;
+    border: 1px solid #999999;
+    padding: 2rem 1rem;
+    @include fontsize(14, 16);
+
+    @include media(tb) {
+      padding: 1.8rem 2rem;
+    }
+  }
+
+  input[type="submit"] {
+    background: $color_light-brown;
+    @include fontsize(16, 16);
   }
 }
 

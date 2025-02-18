@@ -171,22 +171,14 @@ jQuery(function ($) {
       text.replaceAll("<br>", '')
     );
 
-    // オリジナルのチェックボックスを追加
-    $.when(
-      $(element).find('input[type=checkbox]').after('<span class="icon"></span>')
-    ).done(function () {
-
-    });
+    // オリジナルのチェックボックスを追加。
+    // ラベルはプラグインによって生成され一見区別を付けにくいが、
+    // 見出しのラベルは for="activity_areas"、
+    // 項目のラベルは for="activity_areas["選択肢の値"] と違いが出るため
+    // それを目印にアイコン用のタグを挿入する。
+    $(element).find('label[for*="["]').prepend('<span class="icon"></span>')
   });
 
-  // WP-Membersで作成されたチェック項目に対し、１つの項目ごとに改行を入れる。
-  // ※input,label,カスタムされたチェックボックスの３つを同じタグで囲むのは難しいため
-  if (windowW < 834) {
-    $("label.multicheckbox:not(:first-of-type)").after('<br>');
-  } else {
-    // 見出しも改行
-    $("label.multicheckbox").after('<br>');
-  }
   // WP-Membersで作成された「主たる職種」の「その他」のテキストエリアのCSSを調整
   $('label[for="occupation_others"]').parent().addClass('-no-border');
 

@@ -197,8 +197,8 @@ main {
 .c-btn.-brown-rev,
 .c-btn-wrapper.-brown-rev > a {
   background: #fff;
-  color: #806346;
-  border-color: #806346;
+  color: #A68563;
+  border-color: #A68563;
 }
 
 .c-btn.-circle-right:after,
@@ -1797,6 +1797,7 @@ main {
 .p-form__row {
   border-top: 1px solid #C4A07C;
   padding: 1rem 0 1.4rem;
+  position: relative;
 }
 .p-form__row.-no-border {
   padding-top: 0;
@@ -1812,10 +1813,10 @@ main {
   text-align: left;
 }
 .p-form #wpmem_reg .p-form__row label.text,
-.p-form #wpmem_reg .p-form__row label.multicheckbox,
+.p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
 .p-form #wpmem_reg .p-form__row label.textarea,
 .p-form #wpmem_login .p-form__row label.text,
-.p-form #wpmem_login .p-form__row label.multicheckbox,
+.p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
 .p-form #wpmem_login .p-form__row label.textarea {
   color: #806346;
   font-family: "Zen Maru Gothic", sans-serif;
@@ -1828,26 +1829,26 @@ main {
   position: relative;
   font-size: 1.6rem;
 }
-.p-form #wpmem_reg .p-form__row label.multicheckbox,
-.p-form #wpmem_login .p-form__row label.multicheckbox {
+.p-form #wpmem_reg .p-form__row label.multicheckbox[for*="["],
+.p-form #wpmem_login .p-form__row label.multicheckbox[for*="["] {
   cursor: pointer;
+  width: auto;
+  padding: 0 1.5rem 0 0;
   transition: opacity linear 0.3s;
 }
-.p-form #wpmem_reg .p-form__row label.multicheckbox:hover,
-.p-form #wpmem_login .p-form__row label.multicheckbox:hover {
+.p-form #wpmem_reg .p-form__row label.multicheckbox[for*="["]:hover,
+.p-form #wpmem_login .p-form__row label.multicheckbox[for*="["]:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-form #wpmem_reg .p-form__row label[for=log],
 .p-form #wpmem_reg .p-form__row label[for=pwd],
-.p-form #wpmem_reg .p-form__row label[for=pass1],
-.p-form #wpmem_reg .p-form__row label[for=pass2],
 .p-form #wpmem_login .p-form__row label[for=log],
-.p-form #wpmem_login .p-form__row label[for=pwd],
-.p-form #wpmem_login .p-form__row label[for=pass1],
-.p-form #wpmem_login .p-form__row label[for=pass2] {
+.p-form #wpmem_login .p-form__row label[for=pwd] {
   color: #555555;
   font-family: "Zen Maru Gothic", sans-serif;
+  white-space: nowrap;
+  width: 22rem;
   font-size: 1.4rem;
 }
 .p-form #wpmem_reg .p-form__row .req,
@@ -1915,17 +1916,16 @@ main {
 .p-form #wpmem_login .p-form__row input[type=checkbox] {
   display: none;
 }
-.p-form #wpmem_reg .p-form__row input[type=checkbox]:checked + .icon:before,
-.p-form #wpmem_login .p-form__row input[type=checkbox]:checked + .icon:before {
+.p-form #wpmem_reg .p-form__row input[type=checkbox]:checked + label .icon:before,
+.p-form #wpmem_login .p-form__row input[type=checkbox]:checked + label .icon:before {
   content: "\f14a";
 }
 .p-form #wpmem_reg .p-form__row .icon,
 .p-form #wpmem_login .p-form__row .icon {
-  position: relative;
   background: #fff;
   line-height: 1.4;
-  top: 0.2rem;
   cursor: pointer;
+  margin-right: 0.5rem;
   font-size: 1.9rem;
 }
 .p-form #wpmem_reg .p-form__row .icon,
@@ -1956,10 +1956,6 @@ main {
   margin-right: 1rem;
   font-size: 1.4rem;
 }
-.p-form #wpmem_reg .p-form__row label[for=purpose],
-.p-form #wpmem_login .p-form__row label[for=purpose] {
-  position: relative;
-}
 .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
 .p-form #wpmem_login .p-form__row label[for=purpose]:before {
   content: "任意";
@@ -1985,22 +1981,26 @@ main {
 .p-form #wpmem_login .button_div {
   border-top: 1px solid #C4A07C;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .p-form #wpmem_login .p-form__row,
 .p-form #wpmem_login .button_div {
+  padding-left: 0;
   border: none;
-}
-.p-form #wpmem_login .button_div {
-  padding-top: 0;
 }
 .p-form #wpmem_login .button_div label[for=rememberme] {
   font-family: "Zen Maru Gothic", sans-serif;
   color: #555555;
   font-size: 1.6rem;
 }
+
+.p-mypage__profile {
+  margin-bottom: 1rem;
+}
 .p-mypage__profile #wpmem_login .p-form__row label[for=user],
-.p-mypage__profile #wpmem_login .p-form__row label[for=user_email] {
+.p-mypage__profile #wpmem_login .p-form__row label[for=user_email],
+.p-mypage__profile #wpmem_login .p-form__row label[for=pass1],
+.p-mypage__profile #wpmem_login .p-form__row label[for=pass2] {
   font-family: "Zen Maru Gothic", sans-serif;
   color: #806346;
   white-space: nowrap;
@@ -2046,7 +2046,9 @@ main {
   padding: 2rem 0;
 }
 .p-mypage__btn-box a {
-  width: 16rem;
+  width: 14rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .p-mypage__getusername-txt {
   margin-bottom: 3rem;
@@ -2108,6 +2110,56 @@ main {
 #wpmem_pwdreset_form .p-form__h1 {
   text-align: center;
   color: #555555;
+  font-size: 1.6rem;
+}
+
+.p-delete {
+  padding-top: 3rem;
+}
+.p-delete__txt {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.p-delete__txt + .p-delete__txt {
+  margin-top: 1rem;
+}
+.p-delete__txt2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.p-delete__btn-box {
+  margin: 3rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 1rem 0;
+}
+
+#plugin_delete_me_shortcode_form p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+#plugin_delete_me_shortcode_form p:nth-of-type(2) {
+  margin: 3rem 0;
+}
+#plugin_delete_me_shortcode_form label {
+  font-size: 1.6rem;
+}
+#plugin_delete_me_shortcode_form input[type=password] {
+  font-family: "Zen Maru Gothic", sans-serif;
+  border-radius: 1rem;
+  border: 1px solid #999999;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
+}
+#plugin_delete_me_shortcode_form input[type=submit] {
+  background: #A68563;
   font-size: 1.6rem;
 }
 
@@ -3101,33 +3153,44 @@ main {
   .p-form__row{
     padding: 1.8rem 0;
   }
+  .p-form #wpmem_reg .p-form__row,
+  .p-form #wpmem_login .p-form__row{
+    padding-left: 22rem;
+  }
   .p-form #wpmem_reg .p-form__row label.text,
-  .p-form #wpmem_reg .p-form__row label.multicheckbox,
+  .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
   .p-form #wpmem_reg .p-form__row label.textarea,
   .p-form #wpmem_login .p-form__row label.text,
-  .p-form #wpmem_login .p-form__row label.multicheckbox,
+  .p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
   .p-form #wpmem_login .p-form__row label.textarea{
     font-size: 1.8rem;
   }
   .p-form #wpmem_reg .p-form__row label.text,
-  .p-form #wpmem_reg .p-form__row label.multicheckbox,
+  .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
   .p-form #wpmem_reg .p-form__row label.textarea,
   .p-form #wpmem_login .p-form__row label.text,
-  .p-form #wpmem_login .p-form__row label.multicheckbox,
+  .p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
+  .p-form #wpmem_login .p-form__row label.textarea{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .p-form #wpmem_reg .p-form__row label.text,
+  .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
+  .p-form #wpmem_reg .p-form__row label.textarea,
+  .p-form #wpmem_login .p-form__row label.text,
+  .p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
   .p-form #wpmem_login .p-form__row label.textarea{
     width: 22rem;
+    left: 0;
     padding-left: 6rem;
     margin: 0;
     display: inline-block;
   }
   .p-form #wpmem_reg .p-form__row label[for=log],
   .p-form #wpmem_reg .p-form__row label[for=pwd],
-  .p-form #wpmem_reg .p-form__row label[for=pass1],
-  .p-form #wpmem_reg .p-form__row label[for=pass2],
   .p-form #wpmem_login .p-form__row label[for=log],
-  .p-form #wpmem_login .p-form__row label[for=pwd],
-  .p-form #wpmem_login .p-form__row label[for=pass1],
-  .p-form #wpmem_login .p-form__row label[for=pass2]{
+  .p-form #wpmem_login .p-form__row label[for=pwd]{
     font-size: 1.8rem;
   }
   .p-form #wpmem_reg .p-form__row .req,
@@ -3164,19 +3227,10 @@ main {
   .p-form #wpmem_login .p-form__row textarea.textarea,
   .p-form #wpmem_login .p-form__row input[type=password]{
     padding: 1.8rem 2rem;
-    width: calc(100% - 22rem);
-  }
-  .p-form #wpmem_reg .p-form__row textarea.textarea#occupation_others,
-  .p-form #wpmem_login .p-form__row textarea.textarea#occupation_others{
-    margin-left: 22rem;
   }
   .p-form #wpmem_reg .p-form__row .icon,
   .p-form #wpmem_login .p-form__row .icon{
     font-size: 2.2rem;
-  }
-  .p-form #wpmem_reg .p-form__row .icon,
-  .p-form #wpmem_login .p-form__row .icon{
-    margin-left: 22rem;
   }
   .p-form #wpmem_reg .p-form__row .icon + label.multicheckbox,
   .p-form #wpmem_login .p-form__row .icon + label.multicheckbox{
@@ -3184,7 +3238,9 @@ main {
   }
   .p-form #wpmem_reg .p-form__row label[for=purpose],
   .p-form #wpmem_login .p-form__row label[for=purpose]{
-    vertical-align: top;
+    position: absolute;
+    top: 3rem;
+    left: 0;
   }
   .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
   .p-form #wpmem_login .p-form__row label[for=purpose]:before{
@@ -3197,7 +3253,7 @@ main {
   .p-form #wpmem_reg .button_div,
   .p-form #wpmem_login .button_div{
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
   .p-form #wpmem_login{
     width: 50rem;
@@ -3209,9 +3265,6 @@ main {
   .p-form #wpmem_login .button_div input[type=text],
   .p-form #wpmem_login .button_div input[type=password]{
     width: 100%;
-  }
-  .p-form #wpmem_login .button_div{
-    padding-top: 0;
   }
   .p-form #wpmem_login .button_div label[for=rememberme]{
     font-size: 1.6rem;
@@ -3225,10 +3278,24 @@ main {
     -ms-flex-align: center;
         align-items: center;
     gap: 0 3rem;
+    padding-left: 0;
   }
   .p-mypage__profile #wpmem_login .p-form__row label[for=user],
-  .p-mypage__profile #wpmem_login .p-form__row label[for=user_email]{
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user_email],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=pass1],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=pass2]{
     font-size: 1.8rem;
+  }
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user_email],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=pass1],
+  .p-mypage__profile #wpmem_login .p-form__row label[for=pass2]{
+    width: 22rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .p-mypage__profile #wpmem_login .p-form__row label[for=user]{
+    width: auto;
   }
   .p-mypage__profile ul li a{
     font-size: 1.6rem;
@@ -3276,6 +3343,44 @@ main {
   }
   #wpmem_pwdreset_form .p-form__h1{
     font-size: 1.8rem;
+  }
+  .p-delete{
+    padding-top: 6.5rem;
+  }
+  .p-delete__txt{
+    font-size: 2.4rem;
+  }
+  .p-delete__txt + .p-delete__txt{
+    margin-top: 0.5rem;
+  }
+  .p-delete__txt2{
+    font-size: 2.4rem;
+  }
+  .p-delete__txt2{
+    margin-bottom: 0;
+  }
+  .p-delete__btn-box{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    gap: 0 1rem;
+    margin: 3rem 0 4rem;
+  }
+  #plugin_delete_me_shortcode_form p{
+    font-size: 2.4rem;
+  }
+  #plugin_delete_me_shortcode_form label{
+    font-size: 1.8rem;
+  }
+  #plugin_delete_me_shortcode_form input[type=password]{
+    font-size: 1.6rem;
+  }
+  #plugin_delete_me_shortcode_form input[type=password]{
+    padding: 1.8rem 2rem;
+  }
+  #plugin_delete_me_shortcode_form input[type=submit]{
+    font-size: 1.6rem;
   }
   .p-ftr{
     display: -ms-flexbox;

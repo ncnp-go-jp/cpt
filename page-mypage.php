@@ -214,9 +214,9 @@ get_header();
                 <?php
                 // 購読者のみに退会ボタンを表示
                 if (current_user_can('subscriber')):
-                  echo do_shortcode('[plugin_delete_me /]');
-                endif;
                 ?>
+                  <a href="<?php echo home_url() . '/expert/delete'; ?>" class="c-btn -brown">退会する</a>
+                <?php endif; ?>
               </div>
             <?php
             endif;
