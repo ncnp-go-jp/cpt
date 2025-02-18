@@ -2447,6 +2447,9 @@
       }
 
       label.multicheckbox[for*="["] {
+        color: $color_font;
+        font-family: "Zen Maru Gothic",
+          sans-serif;
         cursor: pointer;
         width: auto;
         padding: 0 1.5rem 0 0;
@@ -2605,8 +2608,11 @@
 
     .p-form__row,
     .button_div {
-      padding-left: 0;
       border: none;
+
+      @include media(tb) {
+        padding-left: 0;
+      }
 
       input[type=text],
       input[type=password] {

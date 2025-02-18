@@ -1831,6 +1831,8 @@ main {
 }
 .p-form #wpmem_reg .p-form__row label.multicheckbox[for*="["],
 .p-form #wpmem_login .p-form__row label.multicheckbox[for*="["] {
+  color: #555555;
+  font-family: "Zen Maru Gothic", sans-serif;
   cursor: pointer;
   width: auto;
   padding: 0 1.5rem 0 0;
@@ -1985,7 +1987,6 @@ main {
 }
 .p-form #wpmem_login .p-form__row,
 .p-form #wpmem_login .button_div {
-  padding-left: 0;
   border: none;
 }
 .p-form #wpmem_login .button_div label[for=rememberme] {
@@ -3259,6 +3260,10 @@ main {
     width: 50rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .p-form #wpmem_login .p-form__row,
+  .p-form #wpmem_login .button_div{
+    padding-left: 0;
   }
   .p-form #wpmem_login .p-form__row input[type=text],
   .p-form #wpmem_login .p-form__row input[type=password],
