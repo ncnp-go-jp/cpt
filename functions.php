@@ -497,3 +497,41 @@ add_filter('wpmem_default_text', function ($text) {
   $text['profile_edit'] = '利用登録情報編集'; // マイページ会員情報編集ボタン
   return $text;
 });
+
+/**
+ * 非ログイン時に会員情報関連のページにアクセスしたら、ログインページを表示
+ */
+function archive_video_page_redirect()
+{
+  // 非ログイン　かつ　会員情報ページのトップにアクセス時
+  if (! is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
+    redirect_member_reg_form();
+  }
+
+  // 非ログイン　かつ　マイページにアクセス時
+  // ただし、パスワード・ユーザーIDの再登録画面は除く
+  if (isset($_GET['a'])) {
+    $get_para = $_GET['a'];
+    if (! is_user_logged_in() && is_page('mypage')) {
+      if ($get_para == 'pwdreset' || $get_para == 'getusername') {
+        // 何もしない
+      } else {
+        redirect_member_reg_form();
+      }
+    }
+  } else {
+    if (! is_user_logged_in() && is_page('mypage')) {
+      redirect_member_reg_form();
+    }
+  }
+}
+add_action('template_redirect', 'archive_video_page_redirect');
+
+/**
+ * 利用登録画面にリダイレクト
+ */
+function redirect_member_reg_form()
+{
+  wp_redirect(home_url() . '/expert/member_reg_form');
+  exit();
+}
