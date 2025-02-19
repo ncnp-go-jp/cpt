@@ -20,7 +20,8 @@ get_header();
 
             <?php
             // 利用登録情報 START
-            if (!isset($_GET['a'])):
+            // 利用登録後のメール認証URLをクリック直後もこちらに遷移
+            if (!isset($_GET['a']) || (isset($_GET['a']) && $_GET['a'] == 'confirm')):
             ?>
               <h2 class="p-form__h1">利用登録情報</h2>
               <?php
