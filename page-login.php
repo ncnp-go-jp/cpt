@@ -25,9 +25,7 @@ get_header();
             </div>
 
             <div class="p-form">
-              <?php
-              echo do_shortcode('[wpmem_form login]');
-              ?>
+              <?php the_content(); ?>
             </div>
 
           </div>

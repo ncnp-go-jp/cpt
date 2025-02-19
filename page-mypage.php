@@ -189,7 +189,7 @@ get_header();
               // [編集][パスワードの変更]ボタンの表示。
               // [編集]クリック時には編集画面と登録ボタンが表示される。
               ?>
-              <?php echo do_shortcode('[wpmem_profile]'); ?>
+              <?php the_content(); ?>
             </div>
 
             <?php
