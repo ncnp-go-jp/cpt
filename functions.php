@@ -515,24 +515,6 @@ function expert_page_redirect()
     wp_redirect(home_url() . '/expert');
     exit();
   }
-
-  // 非ログイン　かつ　マイページにアクセス時
-  // →利用登録画面へリダイレクト
-  // ただし、メール認証・パスワード・ユーザーIDの再登録画面は除く
-  if (isset($_GET['a'])) {
-    $get_para = $_GET['a'];
-    if (!is_user_logged_in() && is_page('mypage')) {
-      if ($get_para == 'confirm' || $get_para == 'pwdreset' || $get_para == 'getusername') {
-        // 何もしない
-      } else {
-        redirect_member_reg_form();
-      }
-    }
-  } else {
-    if (!is_user_logged_in() && is_page('mypage')) {
-      redirect_member_reg_form();
-    }
-  }
 }
 add_action('template_redirect', 'expert_page_redirect');
 

@@ -17,8 +17,8 @@ get_header();
 
         <?php
         // 利用登録情報 START
-        // 利用登録後のメール認証URLをクリック直後もこちらに遷移
-        if (!isset($_GET['a']) || (isset($_GET['a']) && $_GET['a'] == 'confirm')):
+        // ログイン時のみ表示
+        if (is_user_logged_in()):
         ?>
           <h2 class="p-form__h1">利用登録情報</h2>
           <?php
@@ -167,6 +167,7 @@ get_header();
 
         <?php
         endif;
+        // ログイン時のみ表示
         // 利用登録情報 END
         ?>
 
@@ -204,6 +205,13 @@ get_header();
         endif;
         // 利用登録情報の編集 END
         ?>
+
+        <?php
+        // 未ログインユーザーにログインボタンを表示 START
+        if (!is_user_logged_in() && !isset($_GET['a'])):
+        ?>
+          <a href="<?php echo home_url() . '/expert/login'; ?>" class="c-btn">ログイン</a>
+        <?php endif; ?>
 
         <?php
         // 利用登録情報 START
