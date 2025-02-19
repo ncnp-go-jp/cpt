@@ -3215,7 +3215,7 @@ main {
   }
   .p-form #wpmem_reg .p-form__row,
   .p-form #wpmem_login .p-form__row{
-    padding-left: 22rem;
+    padding-left: 25rem;
   }
   .p-form #wpmem_reg .p-form__row label.text,
   .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
@@ -3231,21 +3231,14 @@ main {
   .p-form #wpmem_login .p-form__row label.text,
   .p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
   .p-form #wpmem_login .p-form__row label.textarea{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .p-form #wpmem_reg .p-form__row label.text,
-  .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
-  .p-form #wpmem_reg .p-form__row label.textarea,
-  .p-form #wpmem_login .p-form__row label.text,
-  .p-form #wpmem_login .p-form__row label.multicheckbox:not([for*="["]),
-  .p-form #wpmem_login .p-form__row label.textarea{
     width: 22rem;
     left: 0;
     padding-left: 6rem;
     margin: 0;
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .p-form #wpmem_reg .p-form__row label[for=log],
   .p-form #wpmem_reg .p-form__row label[for=pwd],

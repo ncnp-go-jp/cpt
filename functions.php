@@ -509,9 +509,9 @@ function archive_video_page_redirect()
     redirect_member_reg_form();
   }
 
-  // ログイン　かつ　ログインページにアクセス時
+  // ログイン　かつ　ログインページ・利用登録画面にアクセス時
   // →会員限定画面のトップへリダイレクト
-  if (is_user_logged_in() && is_page('login')) {
+  if (is_user_logged_in() && is_page(array('login', 'member_reg_form'))) {
     wp_redirect(home_url() . '/expert');
     exit();
   }

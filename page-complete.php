@@ -18,7 +18,7 @@ get_header();
         <p class="p-comp__txt">ご登録ありがとうございました。</p>
 
         <div class="p-tab-box__btn-box">
-          <a href="<?php echo home_url() . '/expert'; ?>" class="c-btn">利用専用の情報を見る</a>
+          <a href="<?php echo home_url() . '/login'; ?>" class="c-btn">ログインする</a>
         </div>
       </div>
     </div>
