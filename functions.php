@@ -503,7 +503,7 @@ add_filter('wpmem_default_text', function ($text) {
  */
 function archive_video_page_redirect()
 {
-  // 非ログイン　かつ　会員情報ページのトップにアクセス時
+  // 非ログイン　かつ　会員情報ページにアクセス時
   // →利用登録画面へリダイレクト
   if (! is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
     redirect_member_reg_form();
@@ -544,3 +544,28 @@ function redirect_member_reg_form()
   wp_redirect(home_url() . '/expert/member_reg_form');
   exit();
 }
+
+/**
+ * 購読者がダッシュボードにアクセスできないようにする
+ */
+function subscriber_go_to_home($user_id)
+{
+  $user = get_userdata($user_id);
+  if (!$user->has_cap('edit_posts')) {
+    wp_redirect(get_home_url());
+    exit();
+  }
+}
+add_action('auth_redirect', 'subscriber_go_to_home');
+
+/**
+ * 購読者のツールバーを非表示にする
+ */
+function subscriber_hide_admin_bar()
+{
+  $user = wp_get_current_user();
+  if (isset($user->data) && !$user->has_cap('edit_posts')) {
+    show_admin_bar(false);
+  }
+}
+add_action('after_setup_theme', 'subscriber_hide_admin_bar');
