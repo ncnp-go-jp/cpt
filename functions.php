@@ -501,11 +501,11 @@ add_filter('wpmem_default_text', function ($text) {
 /**
  * 会員情報関連のページにアクセス時のリダイレクト先設定
  */
-function archive_video_page_redirect()
+function expert_page_redirect()
 {
   // 非ログイン　かつ　会員情報ページにアクセス時
   // →利用登録画面へリダイレクト
-  if (! is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
+  if (!is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
     redirect_member_reg_form();
   }
 
@@ -521,7 +521,7 @@ function archive_video_page_redirect()
   // ただし、メール認証・パスワード・ユーザーIDの再登録画面は除く
   if (isset($_GET['a'])) {
     $get_para = $_GET['a'];
-    if (! is_user_logged_in() && is_page('mypage')) {
+    if (!is_user_logged_in() && is_page('mypage')) {
       if ($get_para == 'confirm' || $get_para == 'pwdreset' || $get_para == 'getusername') {
         // 何もしない
       } else {
@@ -529,12 +529,12 @@ function archive_video_page_redirect()
       }
     }
   } else {
-    if (! is_user_logged_in() && is_page('mypage')) {
+    if (!is_user_logged_in() && is_page('mypage')) {
       redirect_member_reg_form();
     }
   }
 }
-add_action('template_redirect', 'archive_video_page_redirect');
+add_action('template_redirect', 'expert_page_redirect');
 
 /**
  * 利用登録画面にリダイレクト
