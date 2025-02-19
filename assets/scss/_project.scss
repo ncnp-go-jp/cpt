@@ -2438,6 +2438,8 @@
   .wpmem_msg {
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    margin-bottom: 40px;
   }
 
   &__row {
@@ -2508,7 +2510,8 @@
         font-family: "Zen Maru Gothic",
           sans-serif;
         white-space: nowrap;
-        width: 22rem;
+        width: 28rem;
+        flex-shrink: 0;
         @include fontsize(14, 18);
       }
 
@@ -2954,6 +2957,7 @@
   }
 }
 
+// 退会用のプラグイン[delte me]の調整
 #plugin_delete_me_shortcode_form {
   p {
     font-weight: bold;

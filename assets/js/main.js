@@ -182,6 +182,5 @@ jQuery(function ($) {
   // WP-Membersで作成された「主たる職種」の「その他」のテキストエリアのCSSを調整
   $('label[for="occupation_others"]').parent().addClass('-no-border');
 
-  // ログイン画面のデフォルトの「初めての方はこちら」を非表示
-  $('.p-login .link-text-register').parent().hide();
+  $('.link-text-register').parent().hide();
 });

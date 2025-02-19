@@ -469,7 +469,7 @@ add_action('wpmem_register_redirect', 'my_reg_redirect');
 function my_resetpassword_args($args)
 {
   $args = array(
-    'heading'      => 'ご登録されたメールアドレスを<br class="u-sp">入力して送信してください。<br>ご登録メール宛にパスワードの再登録URLを記載したメールが届きます。',
+    'heading'      => 'ご登録されたメールアドレスを<br class="u-sp">入力して送信してください。<br>ご登録メール宛にパスワードの再登録URLを記載したメールが届きます。<br>※メールの到着までに数分掛かることがあります。',
     'button_text'  => "送信"
   );
 
@@ -495,6 +495,12 @@ add_filter('wpmem_default_text', function ($text) {
   $text['register_submit'] = '登録する'; // 会員情報登録ボタン
   $text['profile_submit'] = '登録内容を変更する'; // 会員情報更新ボタン
   $text['profile_edit'] = '利用登録情報編集'; // マイページ会員情報編集ボタン
+  $text['register_link_before'] = ''; // 「初めての方はこちら」を非表示
+  $text['register_link'] = ''; // 「新規ユーザー登録」を非表示
+  $text['username_heading'] = 'ユーザーIDの確認'; // ユーザー名の回復見出し
+  $text['username_heading'] = 'ユーザーIDの確認'; // ユーザー名の回復見出し
+  $text['username_button'] = '送信'; // ユーザー名の回復ボタン
+  $text['username_link_before'] = 'ユーザーIDをお忘れですか？'; // 「ユーザー名をお忘れですか？」
   return $text;
 });
 

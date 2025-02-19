@@ -177,7 +177,7 @@ get_header();
           if (isset($_GET['a'])):
             if ($_GET['a'] == 'getusername'):
           ?>
-              <p class="u-tac p-mypage__getusername-txt">ご登録されたメールアドレスを<br class="u-sp">入力して送信してください。<br>ご登録メール宛にユーザー名のリセットURLを記載したメールが届きます。</p>
+              <p class="u-tac p-mypage__getusername-txt">ご登録されたメールアドレスを<br class="u-sp">入力してください。<br>ユーザーIDをメールにてお知らせいたします。<br>※メールの到着までに数分掛かることがあります。</p>
           <?php
             endif;
           endif;
@@ -205,13 +205,6 @@ get_header();
         endif;
         // 利用登録情報の編集 END
         ?>
-
-        <?php
-        // 未ログインユーザーにログインボタンを表示 START
-        if (!is_user_logged_in() && !isset($_GET['a'])):
-        ?>
-          <a href="<?php echo home_url() . '/expert/login'; ?>" class="c-btn">ログイン</a>
-        <?php endif; ?>
 
         <?php
         // 利用登録情報 START

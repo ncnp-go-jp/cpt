@@ -1816,6 +1816,8 @@ main {
 .p-form .wpmem_msg {
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 .p-form__row {
   border-top: 1px solid #C4A07C;
@@ -1873,7 +1875,9 @@ main {
   color: #555555;
   font-family: "Zen Maru Gothic", sans-serif;
   white-space: nowrap;
-  width: 22rem;
+  width: 28rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 1.4rem;
 }
 .p-form #wpmem_reg .p-form__row .req,
