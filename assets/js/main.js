@@ -96,13 +96,21 @@ jQuery(function ($) {
 
   // モーダルの設定
   $('.js-modal-button-target').modaal({
-    hide_close: true, // 閉じるボタンを非表示
-    overlay_opacity: 0.3, // 背景の透過率
-    after_close: function () { // 閉じたあとのイベント
-      // モーダル内のコンテンツを初期化
-      $('.p-modal').each(function (index, element) {
-        $(element).find('.p-modal__inner').removeClass('active');
-        $(element).find('.p-modal__inner').first().addClass('active');
+    hide_close: true,
+    overlay_opacity: 0.3,
+    before_open: function (modal) {
+      // モーダル内の全てのvideo要素をリセット
+      $(modal).find('video').each(function () {
+        var video = $(this);
+        video.attr('src', video.attr('src')); // 再設定（リセット）
+        video[0].load(); // 動画をリロード
+        video[0].currentTime = 0; // 動画を最初に設定
+        video[0].play(); // 再生を開始
+      });
+    },
+    after_close: function () {
+      $('.p-modal video').each(function () {
+        this.pause(); // モーダル閉じたときに全ての動画を停止
       });
     }
   });
@@ -182,5 +190,6 @@ jQuery(function ($) {
   // WP-Membersで作成された「主たる職種」の「その他」のテキストエリアのCSSを調整
   $('label[for="occupation_others"]').parent().addClass('-no-border');
 
-  $('.link-text-register').parent().hide();
+  // ログイン画面のデフォルトの「初めての方はこちら」を非表示
+  $('.p-login .link-text-register').parent().hide();
 });
