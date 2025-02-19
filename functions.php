@@ -509,11 +509,11 @@ function archive_video_page_redirect()
   }
 
   // 非ログイン　かつ　マイページにアクセス時
-  // ただし、パスワード・ユーザーIDの再登録画面は除く
+  // ただし、メール認証・パスワード・ユーザーIDの再登録画面は除く
   if (isset($_GET['a'])) {
     $get_para = $_GET['a'];
     if (! is_user_logged_in() && is_page('mypage')) {
-      if ($get_para == 'pwdreset' || $get_para == 'getusername') {
+      if ($get_para == 'confirm' || $get_para == 'pwdreset' || $get_para == 'getusername') {
         // 何もしない
       } else {
         redirect_member_reg_form();
