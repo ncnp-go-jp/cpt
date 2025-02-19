@@ -138,6 +138,13 @@ add_action('wp', 'disable_page_wpautop');
 define('THEME_DIR_URI', get_template_directory_uri() . '/assets/images/');
 
 /**
+ * メディアファイルへのURLを定数化
+ */
+if (!defined('MEDIA_DIR_URI')) {
+  define('MEDIA_DIR_URI', wp_upload_dir()['baseurl'] . '/');
+}
+
+/**
  * カスタム投稿タイプを追加
  */
 function create_post_type()

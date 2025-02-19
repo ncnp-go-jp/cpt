@@ -114,6 +114,24 @@ if (is_page('about')) {
   $img_url_pc .= 'expert/expert-topview-pc.webp';
   $img_url_sp .= 'expert/expert-topview-sp.webp';
   $txt = 'CPT は各回のセッションで扱う内容が予め決められている、マニュアルベースの心理療法です。一定の訓練を受けた臨床家が、マニュアルに則り実施することで、効果を発揮します。ここでは、CPTの実施に必要なマニュアルを紹介しています。無料公開のものから、出版社で扱っている最新版まで、ニーズに応じてお手にとっていただければ幸いです。';
+} else if (is_page('movie')) {
+  $tag = 'CPTを実践したい専門家へ';
+  $ttl = '動画教材';
+  $img_url_pc .= 'expert/expert-topview-pc.webp';
+  $img_url_sp .= 'expert/expert-topview-sp.webp';
+  $txt = '国立精神・神経医療研究センターで行った過去の研修動画公開しています。講義の中では、模擬事例を用いたセッションのロールプレイの様子も紹介しています。<br>CPTの全体像と実施のイメージを掴むためにご活用いただけますと幸いです。';
+} else if (is_page('assessment_tool')) {
+  $tag = 'CPTを実践したい専門家へ';
+  $ttl = 'アセスメントツール';
+  $img_url_pc .= 'expert/expert-topview-pc.webp';
+  $img_url_sp .= 'expert/expert-topview-sp.webp';
+  $txt = 'PTSD症状を測るための自己記入式の尺度であるPCL-5を紹介しています。<br>ダウンロードできる質問票も提供していますので、PTSDのスクリーニングや、症状のモニタリングにご活用ください。';
+} else if (is_page('contact')) {
+  $tag = 'CPTを実践したい専門家へ';
+  $ttl = 'お問い合わせ';
+  $img_url_pc .= 'expert/expert-topview-pc.webp';
+  $img_url_sp .= 'expert/expert-topview-sp.webp';
+  $txt = '当サイトに掲載されている情報に関するお問い合わせは、お問い合わせフォームからお願いいたします。なお、トラウマやPTSDに係る相談・診療に関する内容は、原則として受付けておりません。お問い合わせいただいてもお答えしかねますので、予めご了承いただけますと幸いです。';
 }
 
 ?>
