@@ -499,16 +499,25 @@ add_filter('wpmem_default_text', function ($text) {
 });
 
 /**
- * 非ログイン時に会員情報関連のページにアクセスしたら、ログインページを表示
+ * 会員情報関連のページにアクセス時のリダイレクト先設定
  */
 function archive_video_page_redirect()
 {
   // 非ログイン　かつ　会員情報ページのトップにアクセス時
+  // →利用登録画面へリダイレクト
   if (! is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
     redirect_member_reg_form();
   }
 
+  // ログイン　かつ　ログインページにアクセス時
+  // →会員限定画面のトップへリダイレクト
+  if (is_user_logged_in() && is_page('login')) {
+    wp_redirect(home_url() . '/expert');
+    exit();
+  }
+
   // 非ログイン　かつ　マイページにアクセス時
+  // →利用登録画面へリダイレクト
   // ただし、メール認証・パスワード・ユーザーIDの再登録画面は除く
   if (isset($_GET['a'])) {
     $get_para = $_GET['a'];
