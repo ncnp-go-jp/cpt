@@ -16,9 +16,8 @@ get_header();
       <div class="c-form__box p-delete">
         <p class="p-delete__txt">退会処理を行います。</p>
         <p class="p-delete__txt u-brown">よろしいですか？</p>
-
         <div class="p-delete__btn-box">
-          <a href="<?php echo home_url() . 'expert/delete-confirm'; ?>" class="c-btn -brown">退会する</a>
+          <?php echo do_shortcode('[plugin_delete_me]'); ?>
         </div>
       </div>
     </div>
