@@ -18,154 +18,159 @@ get_header();
         <?php
         // 利用登録情報 START
         // ログイン時のみ表示
+        // パスワード変更時などは非表示
         if (is_user_logged_in()):
+          if (isset($_GET['a'])):
+          // 何も表示しない
+          else:
         ?>
-          <h2 class="p-form__h1">利用登録情報</h2>
-          <?php
-          //ユーザー情報を取得
-          $user = wp_get_current_user();
-          $first_name = get_user_meta($user->ID, 'first_name', true);
+            <h2 class="p-form__h1">利用登録情報</h2>
+            <?php
+            //ユーザー情報を取得
+            $user = wp_get_current_user();
+            $first_name = get_user_meta($user->ID, 'first_name', true);
 
-          // 所属機関名
-          $institution = get_the_author_meta('institution', $user->ID);
+            // 所属機関名
+            $institution = get_the_author_meta('institution', $user->ID);
 
-          // 役職・職種
-          $position = get_the_author_meta('position', $user->ID);
+            // 役職・職種
+            $position = get_the_author_meta('position', $user->ID);
 
-          // 主たる活動領域
-          // チェック項目の名称は取得できないため、手動で当てはめる。
-          // 区切り文字は管理画面から[|]と設定済み。
-          $activity_areas = get_the_author_meta('activity_areas', $user->ID);
-          $activity_areas_array = explode("|", $activity_areas);
+            // 主たる活動領域
+            // チェック項目の名称は取得できないため、手動で当てはめる。
+            // 区切り文字は管理画面から[|]と設定済み。
+            $activity_areas = get_the_author_meta('activity_areas', $user->ID);
+            $activity_areas_array = explode("|", $activity_areas);
 
-          $jp_activity_areas = '';
-          if ($activity_areas) {
-            foreach ($activity_areas_array as $area) {
-              if ($area == 'health_care') {
-                $jp_activity_areas .= '保健医療、';
-              } elseif ($area == 'welfare') {
-                $jp_activity_areas .= '福祉、';
-              } elseif ($area == 'education') {
-                $jp_activity_areas .= '教育、';
-              } elseif ($area == 'judiciary_crime') {
-                $jp_activity_areas .= '法・犯罪、';
-              } elseif ($area == 'industry_labor') {
-                $jp_activity_areas .= '産業・労働、';
+            $jp_activity_areas = '';
+            if ($activity_areas) {
+              foreach ($activity_areas_array as $area) {
+                if ($area == 'health_care') {
+                  $jp_activity_areas .= '保健医療、';
+                } elseif ($area == 'welfare') {
+                  $jp_activity_areas .= '福祉、';
+                } elseif ($area == 'education') {
+                  $jp_activity_areas .= '教育、';
+                } elseif ($area == 'judiciary_crime') {
+                  $jp_activity_areas .= '法・犯罪、';
+                } elseif ($area == 'industry_labor') {
+                  $jp_activity_areas .= '産業・労働、';
+                }
               }
+              // 文末の「、」を削除
+              $jp_activity_areas = mb_substr($jp_activity_areas, 0, -1);
             }
-            // 文末の「、」を削除
-            $jp_activity_areas = mb_substr($jp_activity_areas, 0, -1);
-          }
 
-          // 主たる職種
-          // チェック項目の名称は取得できないため、手動で当てはめる。
-          // 区切り文字は管理画面から[|]と設定済み。
-          $occupation = get_the_author_meta('occupation', $user->ID);
-          $occupation_array = explode("|", $occupation);
+            // 主たる職種
+            // チェック項目の名称は取得できないため、手動で当てはめる。
+            // 区切り文字は管理画面から[|]と設定済み。
+            $occupation = get_the_author_meta('occupation', $user->ID);
+            $occupation_array = explode("|", $occupation);
 
-          $jp_occupation = '';
-          if ($occupation_array) {
-            foreach ($occupation_array as $area) {
-              if ($area == 'doctor') {
-                $jp_occupation .= '医師、';
-              } elseif ($area == 'psychologist') {
-                $jp_occupation .= '公認心理師、';
-              } elseif ($area == 'nurse') {
-                $jp_occupation .= '看護師、';
-              } elseif ($area == 'public_health_nurse') {
-                $jp_occupation .= '保健師、';
-              } elseif ($area == 'psw') {
-                $jp_occupation .= '精神保健福祉士、';
-              } elseif ($area == 'social_worker') {
-                $jp_occupation .= '社会福祉士、';
-              } elseif ($area == 'occupational_herapist') {
-                $jp_occupation .= '作業療法士、';
-              } elseif ($area == 'physical_therapist') {
-                $jp_occupation .= '理学療法士、';
-              } elseif ($area == 'nursery_teacher') {
-                $jp_occupation .= '保育士、';
-              } elseif ($area == 'others') {
-                $jp_occupation .= 'その他、';
+            $jp_occupation = '';
+            if ($occupation_array) {
+              foreach ($occupation_array as $area) {
+                if ($area == 'doctor') {
+                  $jp_occupation .= '医師、';
+                } elseif ($area == 'psychologist') {
+                  $jp_occupation .= '公認心理師、';
+                } elseif ($area == 'nurse') {
+                  $jp_occupation .= '看護師、';
+                } elseif ($area == 'public_health_nurse') {
+                  $jp_occupation .= '保健師、';
+                } elseif ($area == 'psw') {
+                  $jp_occupation .= '精神保健福祉士、';
+                } elseif ($area == 'social_worker') {
+                  $jp_occupation .= '社会福祉士、';
+                } elseif ($area == 'occupational_herapist') {
+                  $jp_occupation .= '作業療法士、';
+                } elseif ($area == 'physical_therapist') {
+                  $jp_occupation .= '理学療法士、';
+                } elseif ($area == 'nursery_teacher') {
+                  $jp_occupation .= '保育士、';
+                } elseif ($area == 'others') {
+                  $jp_occupation .= 'その他、';
+                }
               }
+              // 文末の「、」を削除
+              $jp_occupation = mb_substr($jp_occupation, 0, -1);
             }
-            // 文末の「、」を削除
-            $jp_occupation = mb_substr($jp_occupation, 0, -1);
-          }
 
-          // 主たる職種 その他のテキストエリア
-          $occupation_others = get_the_author_meta('occupation_others', $user->ID);
+            // 主たる職種 その他のテキストエリア
+            $occupation_others = get_the_author_meta('occupation_others', $user->ID);
 
-          // 利用登録の目的
-          $purpose = get_the_author_meta('purpose', $user->ID);
-          ?>
-          <table class="p-mypage-table">
-            <tr>
-              <th>ユーザーID</th>
-              <td><?php echo $user->user_login; ?></td>
-            </tr>
-            <tr>
-              <th>お名前</th>
-              <td><?php echo $first_name; ?></td>
-            </tr>
-            <tr>
-              <th>メールアドレス</th>
-              <td><?php echo $user->user_email; ?></td>
-            </tr>
-            <tr>
-              <th>所属機関名</th>
-              <td>
-                <?php if ($institution) {
-                  echo $institution;
-                } else {
-                  echo '未入力';
-                } ?>
-              </td>
-            </tr>
-            <tr>
-              <th>役職・職種</th>
-              <td>
-                <?php if ($position) {
-                  echo $position;
-                } else {
-                  echo '未入力';
-                } ?>
-              </td>
-            </tr>
-            <tr>
-              <th>主たる活動領域</th>
-              <td>
-                <?php if ($jp_activity_areas) {
-                  echo $jp_activity_areas;
-                } else {
-                  echo '未入力';
-                } ?>
-              </td>
-            </tr>
-            <tr>
-              <th>主たる職種</th>
-              <td>
-                <p><?php echo $jp_occupation; ?></p>
-                <?php if ($occupation_others): ?>
-                  <p>その他：<?php echo $occupation_others; ?></p>
-                <?php endif; ?>
-                <?php if (!$jp_occupation && !$occupation_others) {
-                  echo '未入力';
-                } ?>
-              </td>
-            </tr>
-            <tr>
-              <th>利用登録の目的</th>
-              <td>
-                <?php if ($purpose) {
-                  echo $purpose;
-                } else {
-                  echo '未入力';
-                } ?>
-              </td>
-            </tr>
-          </table>
+            // 利用登録の目的
+            $purpose = get_the_author_meta('purpose', $user->ID);
+            ?>
+            <table class="p-mypage-table">
+              <tr>
+                <th>ユーザーID</th>
+                <td><?php echo $user->user_login; ?></td>
+              </tr>
+              <tr>
+                <th>お名前</th>
+                <td><?php echo $first_name; ?></td>
+              </tr>
+              <tr>
+                <th>メールアドレス</th>
+                <td><?php echo $user->user_email; ?></td>
+              </tr>
+              <tr>
+                <th>所属機関名</th>
+                <td>
+                  <?php if ($institution) {
+                    echo $institution;
+                  } else {
+                    echo '未入力';
+                  } ?>
+                </td>
+              </tr>
+              <tr>
+                <th>役職・職種</th>
+                <td>
+                  <?php if ($position) {
+                    echo $position;
+                  } else {
+                    echo '未入力';
+                  } ?>
+                </td>
+              </tr>
+              <tr>
+                <th>主たる活動領域</th>
+                <td>
+                  <?php if ($jp_activity_areas) {
+                    echo $jp_activity_areas;
+                  } else {
+                    echo '未入力';
+                  } ?>
+                </td>
+              </tr>
+              <tr>
+                <th>主たる職種</th>
+                <td>
+                  <p><?php echo $jp_occupation; ?></p>
+                  <?php if ($occupation_others): ?>
+                    <p>その他：<?php echo $occupation_others; ?></p>
+                  <?php endif; ?>
+                  <?php if (!$jp_occupation && !$occupation_others) {
+                    echo '未入力';
+                  } ?>
+                </td>
+              </tr>
+              <tr>
+                <th>利用登録の目的</th>
+                <td>
+                  <?php if ($purpose) {
+                    echo $purpose;
+                  } else {
+                    echo '未入力';
+                  } ?>
+                </td>
+              </tr>
+            </table>
 
         <?php
+          endif;
         endif;
         // ログイン時のみ表示
         // 利用登録情報 END
