@@ -1729,6 +1729,7 @@
     &.active {
       display: block;
     }
+
     &.-movie {
       video {
         width: 100%;
@@ -2473,9 +2474,9 @@
     }
 
     h3 {
-      @include fontsize(18, 22);
       color: $color_dark-brown;
       margin-bottom: 2rem;
+      @include fontsize(18, 22);
 
       @include media(tb) {
         margin-bottom: 2rem;
@@ -2507,6 +2508,7 @@
 
 
 }
+
 .p-wp-pagination {
   padding-bottom: 3.5rem;
 
@@ -2632,6 +2634,15 @@
     margin-right: auto;
     padding: 20px;
     margin-bottom: 40px;
+
+    a {
+      color: $color_light-orange;
+      text-decoration: underline;
+
+      & {
+        @include hover;
+      }
+    }
   }
 
   &__row {
