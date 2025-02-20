@@ -487,7 +487,7 @@
 
   &__list {
     margin: 1.8rem 0 3rem;
-    border-top: 1px solid #C4A07C;
+    border-top: 1px solid $color_beige;
 
     @include media(tb) {
       margin: 1.5rem 0 4rem;
@@ -498,7 +498,7 @@
     }
 
     li {
-      border-bottom: 1px solid #C4A07C;
+      border-bottom: 1px solid $color_beige;
 
       a {
         display: block;
@@ -839,7 +839,7 @@
   }
 
   &__list {
-    border-top: 1px solid #C4A07C;
+    border-top: 1px solid $color_beige;
     margin-top: 1.5rem;
     @include fontsize(12, 14);
 
@@ -848,7 +848,7 @@
     }
 
     li {
-      border-bottom: 1px solid #C4A07C;
+      border-bottom: 1px solid $color_beige;
       padding: 1rem 0 1.1rem;
       display: flex;
       gap: 0 0.5rem;
@@ -1066,7 +1066,7 @@
 
     th {
       display: block;
-      background: #C4A07C;
+      background: $color_beige;
       color: #fff;
       font-weight: bold;
       padding: 0.7rem 1rem;
@@ -1259,7 +1259,7 @@
       }
 
       &+td {
-        border-left: 1px solid #C4A07C;
+        border-left: 1px solid $color_beige;
       }
     }
   }
@@ -1621,7 +1621,7 @@
   &+& {
     margin-top: 3rem;
     padding-top: 3rem;
-    border-top: 1px solid #c4a07c;
+    border-top: 1px solid $color_beige;
 
     @include media(tb) {
       margin-top: 6rem;
@@ -1855,7 +1855,7 @@
   }
 
   &__item {
-    border-top: 1px solid #C4A07C;
+    border-top: 1px solid $color_beige;
     padding: 1.5rem 1.5rem 1.5rem 0.6rem;
     display: flex;
     align-items: center;
@@ -1869,7 +1869,7 @@
     }
 
     &:last-of-type {
-      border-bottom: 1px solid #C4A07C;
+      border-bottom: 1px solid $color_beige;
       margin-bottom: 3rem;
 
       @include media(tb) {
@@ -2646,7 +2646,7 @@
   }
 
   &__row {
-    border-top: 1px solid #C4A07C;
+    border-top: 1px solid $color_beige;
     padding: 1rem 0 1.4rem;
     position: relative;
 
@@ -3029,10 +3029,10 @@
 
   tr {
     display: block;
-    border-top: 1px solid #C4A07C;
+    border-top: 1px solid $color_beige;
 
     &:last-of-type {
-      border-bottom: 1px solid #C4A07C;
+      border-bottom: 1px solid $color_beige;
     }
 
     @include media(tb) {
@@ -3160,38 +3160,100 @@
   }
 }
 
-// 退会用のプラグイン[delte me]の調整
-#plugin_delete_me_shortcode_form {
-  p {
-    font-weight: bold;
-    text-align: center;
-    @include fontsize(20, 24);
-
-    &:nth-of-type(2) {
-      margin: 3rem 0;
-    }
-  }
-
-  label {
-    @include fontsize(16, 18);
-  }
-
-  input[type="password"] {
-    font-family: "Zen Maru Gothic",
-      sans-serif;
-    border-radius: 1rem;
-    border: 1px solid #999999;
-    padding: 2rem 1rem;
-    @include fontsize(14, 16);
+.p-contact {
+  input[type=submit] {
+    margin-top: 2rem;
 
     @include media(tb) {
-      padding: 1.8rem 2rem;
+      margin-top: 4rem;
     }
   }
 
-  input[type="submit"] {
-    background: $color_light-brown;
-    @include fontsize(16, 16);
+  &__h1 {
+    text-align: center;
+    font-weight: bold;
+    color: $color_dark-brown;
+    margin-bottom: 0.5rem;
+    @include fontsize(18, 24);
+
+    @include media(tb) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $color_beige;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    padding: 1.4rem 0;
+
+    @include media(tb) {
+      flex-direction: row;
+      padding: 2rem 1rem;
+    }
+
+    &.-align-start {
+      align-items: flex-start;
+      border-bottom: 1px solid $color_beige;
+
+      label {
+        @include media(tb) {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &>span {
+      flex: 1;
+    }
+
+    label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      gap: 0 1rem;
+      color: $color_dark-brown;
+      width: 21rem;
+      flex-shrink: 0;
+      @include fontsize(16, 18);
+
+      span {
+        background: $color_light-orange;
+        color: #fff;
+        border-radius: 0.5rem;
+        padding: 0.3rem 0.7rem;
+        @include fontsize(12.6, 14);
+      }
+    }
+
+    input,
+    textarea {
+      border: 1px solid #999999;
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 100%;
+      @include fontsize(14, 16);
+
+      &::placeholder {
+        color: #999999;
+      }
+
+      @include media(tb) {
+        padding: 1.7rem 2rem;
+      }
+    }
+
+    textarea {
+      height: 16.5rem;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    text-align: left;
   }
 }
 

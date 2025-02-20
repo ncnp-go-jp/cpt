@@ -285,7 +285,11 @@
     margin-right: auto !important;
     border: none;
     cursor: pointer;
-    @include hover;
+    @include fontsize(16, 16);
+
+    & {
+      @include hover;
+    }
   }
 
   .link-text-forgot,

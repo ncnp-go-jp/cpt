@@ -365,6 +365,9 @@ main {
   margin-right: auto !important;
   border: none;
   cursor: pointer;
+  font-size: 1.6rem;
+}
+.c-form input[type=submit] {
   transition: opacity linear 0.3s;
 }
 .c-form input[type=submit]:hover {
@@ -668,13 +671,13 @@ main {
 }
 .p-news-col__list {
   margin: 1.8rem 0 3rem;
-  border-top: 1px solid #C4A07C;
+  border-top: 1px solid #c4a07c;
 }
 .p-news-col__list.-archive {
   background: #fff;
 }
 .p-news-col__list li {
-  border-bottom: 1px solid #C4A07C;
+  border-bottom: 1px solid #c4a07c;
 }
 .p-news-col__list li a {
   display: block;
@@ -889,12 +892,12 @@ main {
   margin-top: 2.5rem;
 }
 .p-abt-intro__list {
-  border-top: 1px solid #C4A07C;
+  border-top: 1px solid #c4a07c;
   margin-top: 1.5rem;
   font-size: 1.2rem;
 }
 .p-abt-intro__list li {
-  border-bottom: 1px solid #C4A07C;
+  border-bottom: 1px solid #c4a07c;
   padding: 1rem 0 1.1rem;
   display: -ms-flexbox;
   display: flex;
@@ -1015,7 +1018,7 @@ main {
 }
 .p-thought-mem__table th {
   display: block;
-  background: #C4A07C;
+  background: #c4a07c;
   color: #fff;
   font-weight: bold;
   padding: 0.7rem 1rem;
@@ -1109,7 +1112,7 @@ main {
   padding: 0.7rem 1rem;
 }
 .p-table-2col__table td + td {
-  border-left: 1px solid #C4A07C;
+  border-left: 1px solid #c4a07c;
 }
 
 .p-abt-trauma {
@@ -1439,7 +1442,7 @@ main {
   font-size: 1.4rem;
 }
 .p-checklist__item {
-  border-top: 1px solid #C4A07C;
+  border-top: 1px solid #c4a07c;
   padding: 1.5rem 1.5rem 1.5rem 0.6rem;
   display: -ms-flexbox;
   display: flex;
@@ -1450,7 +1453,7 @@ main {
   font-size: 1.4rem;
 }
 .p-checklist__item:last-of-type {
-  border-bottom: 1px solid #C4A07C;
+  border-bottom: 1px solid #c4a07c;
   margin-bottom: 3rem;
 }
 .p-checklist__item input[type=checkbox] {
@@ -1921,7 +1924,7 @@ main {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-form__row {
-  border-top: 1px solid #C4A07C;
+  border-top: 1px solid #c4a07c;
   padding: 1rem 0 1.4rem;
   position: relative;
 }
@@ -2210,10 +2213,10 @@ main {
 }
 .p-mypage-table tr {
   display: block;
-  border-top: 1px solid #C4A07C;
+  border-top: 1px solid #c4a07c;
 }
 .p-mypage-table tr:last-of-type {
-  border-bottom: 1px solid #C4A07C;
+  border-bottom: 1px solid #c4a07c;
 }
 .p-mypage-table th {
   font-weight: bold;
@@ -2290,27 +2293,77 @@ main {
   gap: 1rem 0;
 }
 
-#plugin_delete_me_shortcode_form p {
-  font-weight: bold;
+.p-contact input[type=submit] {
+  margin-top: 2rem;
+}
+.p-contact__h1 {
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  color: #806346;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
-#plugin_delete_me_shortcode_form p:nth-of-type(2) {
-  margin: 3rem 0;
+.p-contact__item {
+  border-top: 1px solid #c4a07c;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 1rem 0;
+  padding: 1.4rem 0;
 }
-#plugin_delete_me_shortcode_form label {
+.p-contact__item.-align-start {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  border-bottom: 1px solid #c4a07c;
+}
+.p-contact__item > span {
+  -ms-flex: 1;
+      flex: 1;
+}
+.p-contact__item label {
+  font-weight: bold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  line-height: 1;
+  gap: 0 1rem;
+  color: #806346;
+  width: 21rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 1.6rem;
 }
-#plugin_delete_me_shortcode_form input[type=password] {
+.p-contact__item label span {
+  background: #FABA6B;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 1.26rem;
+}
+.p-contact__item input,
+.p-contact__item textarea {
+  border: 1px solid #999999;
   font-family: "Zen Maru Gothic", sans-serif;
   border-radius: 1rem;
-  border: 1px solid #999999;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  width: 100%;
   font-size: 1.4rem;
 }
-#plugin_delete_me_shortcode_form input[type=submit] {
-  background: #A68563;
-  font-size: 1.6rem;
+.p-contact__item input:-ms-input-placeholder,
+.p-contact__item textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.p-contact__item input::placeholder,
+.p-contact__item textarea::placeholder {
+  color: #999999;
+}
+.p-contact__item textarea {
+  height: 16.5rem;
+}
+.p-contact .wpcf7-not-valid-tip {
+  text-align: left;
 }
 
 .p-ftr {
@@ -2609,6 +2662,9 @@ main {
   .c-form__box{
     padding: 3.5rem 6rem 2.5rem;
     border-radius: 3rem;
+  }
+  .c-form input[type=submit]{
+    font-size: 1.6rem;
   }
   .c-form .link-text-forgot,
   .c-form .link-text-username{
@@ -3598,20 +3654,36 @@ main {
     gap: 0 1rem;
     margin: 3rem 0 4rem;
   }
-  #plugin_delete_me_shortcode_form p{
+  .p-contact input[type=submit]{
+    margin-top: 4rem;
+  }
+  .p-contact__h1{
     font-size: 2.4rem;
   }
-  #plugin_delete_me_shortcode_form label{
+  .p-contact__h1{
+    margin-bottom: 1.5rem;
+  }
+  .p-contact__item{
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  .p-contact__item.-align-start label{
+    margin-top: 1rem;
+  }
+  .p-contact__item label{
     font-size: 1.8rem;
   }
-  #plugin_delete_me_shortcode_form input[type=password]{
+  .p-contact__item label span{
+    font-size: 1.4rem;
+  }
+  .p-contact__item input,
+  .p-contact__item textarea{
     font-size: 1.6rem;
   }
-  #plugin_delete_me_shortcode_form input[type=password]{
-    padding: 1.8rem 2rem;
-  }
-  #plugin_delete_me_shortcode_form input[type=submit]{
-    font-size: 1.6rem;
+  .p-contact__item input,
+  .p-contact__item textarea{
+    padding: 1.7rem 2rem;
   }
   .p-ftr{
     display: -ms-flexbox;
