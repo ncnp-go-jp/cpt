@@ -31,7 +31,7 @@ get_header();
             傷ついた心を抱えて、どう生きていこうか。</p>
           <p>そんな問いを抱えた方たちとの関わりから生まれた志が<br class="u-pc">このサイトを作りました。</p>
         </div>
-        <a href="" class="c-btn p-front-sec__btn">このサイトについて　<i class="fas fa-angle-right"></i></a>
+        <a href="./about" class="c-btn p-front-sec__btn">このサイトについて　<i class="fas fa-angle-right"></i></a>
       </div>
     </section>
 
@@ -45,7 +45,7 @@ get_header();
           <p>自分の力では対処できないような大きな出来事がもたらす混乱。<br>
             そこから抜け出す鍵の一つは、知識をもって、<br class="u-pc">何が起こったのかをできるだけ冷静な目で見ることです。</p>
         </div>
-        <a href="" class="c-btn p-front-sec__btn">トラウマについて学ぶ　<i class="fas fa-angle-right"></i></a>
+        <a href="./learn" class="c-btn p-front-sec__btn">トラウマについて学ぶ　<i class="fas fa-angle-right"></i></a>
       </div>
     </section>
 
@@ -59,7 +59,7 @@ get_header();
           <p>けがをした時と同じように、<br class="u-pc">心が傷ついた時にも、手当てが必要です。<br>
             自然には癒えない痛みを抱えているなら、<br class="u-pc">専門的な治療が役に立つかもしれません。</p>
         </div>
-        <a href="" class="c-btn p-front-sec__btn">治療を知る　<i class="fas fa-angle-right"></i></a>
+        <a href="./treatment" class="c-btn p-front-sec__btn">治療を知る　<i class="fas fa-angle-right"></i></a>
       </div>
     </section>
 
@@ -72,7 +72,7 @@ get_header();
           <h3>納得するまで知る。準備を整える。</h3>
           <p>心の傷に触れることや、一歩踏みだすには、勇気が要ります。不安なときには、情報を集めることが役立ちます。<br class="u-pc">ご参考まで、科学的な根拠を示す記事や、理論を詳述する書籍、さまざまな支援団体やその他の資源を示しました。</p>
         </div>
-        <a href="" class="c-btn p-front-sec__btn">情報資源を得る　<i class="fas fa-angle-right"></i></a>
+        <a href="./resources" class="c-btn p-front-sec__btn">情報資源を得る　<i class="fas fa-angle-right"></i></a>
       </div>
     </section>
 
@@ -165,7 +165,7 @@ get_header();
       </section>
     </div>
 
-    <a href="" class="c-btn -white">利用登録はこちら　<i class="fas fa-angle-right"></i></a>
+    <a href="./expert/member_reg_form" class="c-btn -white">利用登録はこちら　<i class="fas fa-angle-right"></i></a>
   </article>
 </div>
 <?php get_footer(); ?>
