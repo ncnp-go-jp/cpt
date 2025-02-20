@@ -518,7 +518,7 @@ function expert_page_redirect()
 {
   // 非ログイン　かつ　会員情報ページにアクセス時
   // →利用登録画面へリダイレクト
-  if (!is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact'))) {
+  if (!is_user_logged_in() && is_page(array('expert', 'references', 'movie', 'assessment_tool', 'contact', 'delete'))) {
     redirect_member_reg_form();
   }
 
