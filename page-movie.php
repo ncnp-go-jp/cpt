@@ -79,7 +79,7 @@ get_template_part('template-parts/mainview');
       <div class="p-movie-right-btm-box">
         <div>
           <div class="p-movie-right-btm-box__img">
-            <img src="<?php echo THEME_DIR_URI; ?>movie/movie-04-1.webp" alt="">
+            <img src="<?php echo THEME_DIR_URI; ?>movie/movie-04-2.webp" alt="">
             <a class="js-modal-button-target c-btn p-movie__btn" href="#modal04-1">動画を見る　<i class="fa-solid fa-video"></i></a>
           </div>
           <h2 class="c-h3 p-tab-box__h2">４．スタックポイント、ABC用紙、考え直し用紙<br>
@@ -235,7 +235,7 @@ get_template_part('template-parts/mainview');
 <div id="modal04-1" class="p-modal">
   <div class="p-modal__inner -movie">
     <h3 class="p-modal__ttl">4-1.　第２段階　スタックポイントを見つける</h3>
-    <video controls poster="<?php echo THEME_DIR_URI; ?>movie/movie-04-1b.webp">
+    <video controls poster="<?php echo THEME_DIR_URI; ?>movie/movie-04-2b.webp">
       <source src="<?php echo MEDIA_DIR_URI; ?>2025/02/movie-04-1.mp4" type="video/mp4">
       お使いのブラウザでは動画の再生がサポートされていません。
     </video>
