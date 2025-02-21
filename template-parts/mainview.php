@@ -8,33 +8,33 @@ $is_parent_page = false; // 親ページか否か
 
 if (is_page('about')) {
   $ttl = 'サイトについて';
-  $img_url_pc .= 'about/about-topview-pc.jpg';
-  $img_url_sp .= 'about/about-topview-sp.jpg';
-  $txt = '「知識は、ちから。」生きていれば、誰しも、傷つくことがあります。<br>傷ついたとき、どうしたらよいか。傷ついた心を抱えて、どう生きていこうか。<br>そんな問いを考える時、歩みをすすめる力になる情報を提供することが、<br class="u-pc">このサイトの志です。';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
+  $txt = '「知識は、ちから。」<br>生きていれば、誰しも、傷つくことがあります。<br>傷ついたとき、どうしたらよいか。傷ついた心を抱えて、どう生きていこうか。<br>そんな問いを考える時、歩みをすすめる力になる情報を提供することが、<br class="u-pc">このサイトの志です。';
   $is_parent_page = true;
 } else if (is_page('experienced-person')) {
   $tag = 'サイトについて';
   $ttl = 'トラウマを<br class="u-sp">経験した方へ';
-  $img_url_pc .= 'about/about-topview-pc.jpg';
-  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
   $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
 } else if (is_page('family-friends')) {
   $tag = 'サイトについて';
   $ttl = 'トラウマを<br class="u-sp">経験した方の<br class="u-sp">ご家族やご友人へ';
-  $img_url_pc .= 'about/about-topview-pc.jpg';
-  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
   $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
 } else if (is_page('supporter')) {
   $tag = 'サイトについて';
   $ttl = 'トラウマ経験者の<br class="u-sp">支援を行う方へ';
-  $img_url_pc .= 'about/about-topview-pc.jpg';
-  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
   $txt = 'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト';
 } else if (is_page('thought')) {
   $tag = 'サイトについて';
   $ttl = '想い';
-  $img_url_pc .= 'about/about-topview-pc.jpg';
-  $img_url_sp .= 'about/about-topview-sp.jpg';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
   $txt = '私たちはこれまで、認知処理療法の科学的な検証を慎重に進めてまいりました。<br>これまでの取り組みをもとに、今後は、トラウマティックな体験にあわれ、心的外傷後ストレス症や関連症状で苦しまれている方々に、認知処理療法を少しでも知っていただき、活用していただけたらと願っております。';
 } else if (is_page('learn')) {
   $ttl = 'トラウマについて学ぶ';

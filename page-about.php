@@ -18,7 +18,7 @@ get_template_part('template-parts/mainview');
     <section class="p-abt-intro__sec">
       <h3 class="c-h2 p-abt-intro__h1">安全で有効な治療を届けるために</h3>
       <p>私たちはこれまで、認知処理療法の科学的な検証を慎重に進めてまいりました。これまでの取り組みをもとに、今後は、トラウマティックな体験にあわれ、心的外傷後ストレス症や関連症状で苦しまれている方々に、認知処理療法を少しでも知っていただき、活用していただけたらと願っております。</p>
-      <a href="./thought" class="c-btn p-abt-intro__btn">私たちの想いについて　<i class="fas fa-angle-right"></i></a>
+      <a href="./thought" class="c-btn p-abt-intro__btn">私たちの想い　<i class="fas fa-angle-right"></i></a>
     </section>
 
     <section class="c-white-box-s p-abt-intro__box">
@@ -60,17 +60,17 @@ get_template_part('template-parts/mainview');
 
   <ul class="p-abt-howto__list">
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-01.png" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-01.webp" alt="">
       <a href="./experienced-person" class="c-btn -circle-right">トラウマを<br>経験した方へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-02.png" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-02.webp" alt="">
       <a href="./family-friends" class="c-btn -circle-right">トラウマを経験した方の<br>ご家族やご友人へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
     <li>
-      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-03.png" alt="">
+      <img src="<?php echo THEME_DIR_URI; ?>about/about-common-03.webp" alt="">
       <a href="/supporter" class="c-btn -circle-right">トラウマ経験者の<br>支援を行う方へ</a>
       <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     </li>
