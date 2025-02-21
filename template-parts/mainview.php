@@ -71,7 +71,7 @@ if (is_page('about')) {
   $ttl = 'PTSDの治療';
   $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
   $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
-  $txt = 'これまでの研究から、トラウマに焦点を当てた心理療法と薬物療法の両方が、PTSDの治療に有効であることが証明されています。<br>治療によって、症状が治癒・軽快する可能性があり、PTSDが日常生活や人間関係に与えていた影響が軽減できる可能性があります。';
+  $txt = 'これまでの研究から、トラウマに焦点を当てた心理療法と薬物療法の両方が、PTSDの治療に有効であることが示されています。<br>治療によって、症状が治癒・軽快する可能性があり、PTSDが日常生活や人間関係に与えていた影響が軽減できる可能性があります。';
 } else if (is_page('about-cpt')) {
   $tag = '治療を知る';
   $ttl = 'CPTとは';

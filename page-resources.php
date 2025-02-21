@@ -13,7 +13,7 @@ get_template_part('template-parts/mainview');
   // パンくずリスト
   get_template_part('template-parts/breadcrumb');
   ?>
-  <div class="l-base c-white-box-l__wrapper">
+  <div class="l-base c-white-box-l__wrapper" id="scientific_knowledge">
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">科学的な知見にふれる</h2>
       <div class="p-tab-box__2col -resources">
@@ -73,7 +73,7 @@ get_template_part('template-parts/mainview');
     </script>
   </div>
 
-  <div class="p-table-2col">
+  <div class="p-table-2col" id="ptsd_guidelines">
     <h3 class="p-table-2col__h">【PTSD治療ガイドライン】<br>日本のガイドライン</h3>
     <table class="p-table-2col__table">
       <tr>
