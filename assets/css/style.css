@@ -779,6 +779,74 @@ main {
   left: 0;
 }
 
+.p-single-news {
+  padding: 2rem 0 3rem;
+}
+.p-single-news__contents h1,
+.p-single-news__contents h2,
+.p-single-news__contents h3,
+.p-single-news__contents h4,
+.p-single-news__contents h5,
+.p-single-news__contents h6 {
+  color: #806346;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+.p-single-news__contents h1 {
+  margin-bottom: 0.8em;
+}
+.p-single-news__contents h2,
+.p-single-news__contents h3,
+.p-single-news__contents h4,
+.p-single-news__contents h5,
+.p-single-news__contents h6 {
+  margin-bottom: 0.4em;
+}
+.p-single-news__contents time {
+  color: #806346;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  font-size: 1.6rem;
+}
+.p-single-news__contents p {
+  line-height: 1.86;
+  margin-bottom: 1.5em;
+}
+.p-single-news__contents img {
+  max-width: 100%;
+  width: auto;
+  margin: 1em 0;
+}
+.p-single-news__contents ul {
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+}
+.p-single-news__contents ol {
+  list-style-type: decimal;
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+}
+.p-single-news__contents a {
+  color: #FABA6B;
+  text-decoration: underline;
+  transition: opacity linear 0.3s;
+}
+.p-single-news__contents a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.p-single-news__contents table {
+  margin-bottom: 1.5em;
+}
+.p-single-news__contents table td,
+.p-single-news__contents table th {
+  border: 1px solid #999999;
+  padding: 0.5rem 1rem;
+}
+
 .p-mv {
   display: -ms-grid;
   display: grid;
@@ -2796,6 +2864,23 @@ main {
   }
   .p-front-info__h2{
     margin-bottom: 2rem;
+  }
+  .p-single-news{
+    padding: 1rem 0 5rem;
+  }
+  .p-single-news__contents h1,
+  .p-single-news__contents h2,
+  .p-single-news__contents h3,
+  .p-single-news__contents h4,
+  .p-single-news__contents h5,
+  .p-single-news__contents h6{
+    font-size: 2.4rem;
+  }
+  .p-single-news__contents h1{
+    margin-bottom: 0.5em;
+  }
+  .p-single-news__contents time{
+    font-size: 1.8rem;
   }
   .p-mv{
     -ms-grid-columns: 1fr 36%;

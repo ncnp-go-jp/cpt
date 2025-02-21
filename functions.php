@@ -308,6 +308,27 @@ remove_action('wp_head', 'feed_links_extra', 3);
 add_filter('automatic_updater_disabled', '__return_true');
 
 /**
+ * テキストエディタにカスタムボタンを追加
+ */
+add_action('admin_print_footer_scripts', function () {
+
+  // 押したときに↓このクイックタグAPI(JavaScript)が呼ばれるようにするボタンを作成する
+  // QTags.addButton('①ボタンのhtmlのid', 'エディタのボタンに表示する名前', '開始タグ', '終了タグ', '', 'ボタンの説明', ボタン表示順);
+
+  if (wp_script_is('quicktags')) {
+
+    //設定した値でQTags.addButton(JavaScript)を出力		
+
+    echo <<<EOF
+      <script type="text/javascript">
+        QTags.addButton('h2-button', '見出し', '<h2>', '</h2>\\n', '', '見出しを挿入したい場合に使用します', 1);
+        QTags.addButton('link-button', 'リンク', '<a href="リンク先URL">リンクはこちら</a>', '', '', 'リンクを挿入したい場合に使用します', 2);
+      </script>
+    EOF;
+  }
+}, 100);
+
+/**
  * テキストエディタのボタンを削除
  */
 function custom_quicktags_settings($qtInit)

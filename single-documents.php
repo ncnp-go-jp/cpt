@@ -24,7 +24,6 @@ get_template_part('template-parts/mainview');
         get_template_part('template-parts/contents-manga');
         break;
       case 'video':
-
         get_template_part('template-parts/contents-video');
         break;
       default:
