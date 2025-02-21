@@ -62,39 +62,39 @@ if (is_page('about')) {
   $txt = 'トラウマを経験した後、長い期間反応が続く場合は、特別なケアが必要かもしれません。<br>症状が1か月以上続き、生活に支障をきたしている場合は、心的外傷後ストレス症（PTSD）を患っている可能性があります。';
 } else if (is_page('treatment')) {
   $ttl = '治療を知る';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = 'けがをした時と同じように、心が傷ついた時にも、手当てが必要です。トラウマの経験によって傷ついたとしても、多くの人は数週間で回復に向かっていきます。もし、自然には癒えない痛みを抱えているなら、専門的な治療が役に立つかもしれません。 ';
   $is_parent_page = true;
 } else if (is_page('treatment-ptsd')) {
   $tag = '治療を知る';
   $ttl = 'PTSDの治療';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = 'これまでの研究から、トラウマに焦点を当てた心理療法と薬物療法の両方が、PTSDの治療に有効であることが示されています。<br>治療によって、症状が治癒・軽快する可能性があり、PTSDが日常生活や人間関係に与えていた影響が軽減できる可能性があります。';
 } else if (is_page('about-cpt')) {
   $tag = '治療を知る';
   $ttl = 'CPTとは';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = '認知処理療法（CPT）は、心的外傷後ストレス症（PTSD）や関連症状に対する認知行動療法（思考や感情に焦点を当てた治療）です。PTSDの症状やその他の問題からの回復を滞らせる可能性のある「考え」の傾向に気づき、対処する術を身につけます。';
 } else if (is_page('steps')) {
   $tag = '治療を知る';
   $ttl = 'CPTの進め方';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = 'CPTは、全12回の各セッションの中で、どんなことに取り組むかが決まっている療法です。支援を求める人にとって、今、CPTに取り組むことが役立つかを判断したうえで、決まった手順に則り実施することで、PTSDや関連する症状の改善に効果を発揮します。';
 } else if (is_page('familiarize') || is_singular('documents')) {
   $tag = '治療を知る';
   $ttl = 'CPTに親しむ';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = '当サイトをご覧になって、CPTを活用したい・より詳しく知りたいと思われた方は、下記の資料もご覧ください。自分自身でCPTを理解するほか、PTSDやトラウマにお悩みの方への支援の一助としてもご活用いただけると幸いです。';
 } else if (is_page('voice')) {
   $tag = '治療を知る';
   $ttl = '治療を受けた人の声';
-  $img_url_pc .= 'treatment/treatment-topview-pc.jpg';
-  $img_url_sp .= 'treatment/treatment-topview-sp.jpg';
+  $img_url_pc .= 'treatment/treatment-topview-pc.webp';
+  $img_url_sp .= 'treatment/treatment-topview-sp.webp';
   $txt = '私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTに取り組む体験をイメージする一助としていただければ幸いです。';
 } else if (is_page('resources')) {
   $ttl = '情報資源を得る';

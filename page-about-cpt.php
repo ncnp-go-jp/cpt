@@ -20,8 +20,8 @@ get_template_part('template-parts/mainview');
         これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス障害（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>
         CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
       <picture>
-        <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-pc.jpg">
-        <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-sp.jpg" alt="">
+        <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-pc.webp">
+        <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-sp.webp" alt="">
       </picture>
     </article>
   </div>
@@ -34,8 +34,8 @@ get_template_part('template-parts/mainview');
   <p>CPTは、トラウマとなる出来事からの回復が困難である理由や、PTSDの症状が日常生活にどのような影響を与えるかを理解する方法を提供します。トラウマとなる経験が思考や信念をどのように変化させるか、そして思考が現在の感情や行動にどのように影響を与えるかを特定することに焦点を当てます。<br>
     PTSDの症状やその他の問題からの回復を妨げ、個人が「行き詰まり」状態に陥る可能性のある考えの傾向に対処することで、トラウマの記憶に関する苦痛を軽減し、日常生活の改善を目指します。</p>
   <picture>
-    <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-pc.jpg">
-    <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-sp.jpg" alt="">
+    <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-pc.webp">
+    <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-sp.webp" alt="">
   </picture>
   <p class="c-note u-tar">CPTの公式ウェブサイト（https://cptforptsd.com）をもとに作成</p>
 
@@ -67,7 +67,7 @@ get_template_part('template-parts/mainview');
                 <p>つらい出来事を体験した思春期から青年期（13〜25歳）の方を対象にしたトラウマから回復するための心理療法です。<br>
                   思春期・青年期特有のトラウマによる悩みにも取り組むことができるよう、基本のCPTに、情動コントロールや安全のための対処スキルの学習、安心できる環境構築のために養育者面接を加えて実施します。</p>
               </div>
-              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-01.jpg" alt="">
+              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-01.webp" alt="">
             </div>
             <div class="p-tab-box__btn-box">
               <a href="" target="_blank" class="c-btn">関連サイトへ　<i class="fa-solid fa-window-restore"></i></a>
@@ -83,7 +83,7 @@ get_template_part('template-parts/mainview');
                 <p>アルコール使用症（Alcohol Use Disorder：AUD）は、PTSDを患う人が同時に抱えやすい問題の一つです。AUDがあることで、PTSDの治療も難航しやすいことが知られています。<br>
                   一部の人は、PTSDのつらい症状を和らげるためにお酒を飲むようです。一部の研究では、CPTに取り組み、PTSDの症状が改善することで、AUDの症状も緩和することが報告されています。</p>
               </div>
-              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-02.jpg" alt="">
+              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-02.webp" alt="">
             </div>
             <div class="p-tab-box__btn-box">
               <a href="" target="_blank" class="c-btn">関連サイトへ　<i class="fa-solid fa-window-restore"></i></a>
@@ -98,7 +98,7 @@ get_template_part('template-parts/mainview');
               <div>
                 <p>CPTは、数名を対象としたグループでも実施することができます。治療全体の流れは個人療法と同じですが、１回のセッションは90分であること、グループの中ではトラウマ体験の詳細は話さないといった点が異なります。起こった出来事の詳細を治療担当者と話し合う必要がある場合は、個人のセッションと組み合わせて行う場合があります。</p>
               </div>
-              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-03.jpg" alt="">
+              <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-03.webp" alt="">
             </div>
             <div class="p-tab-box__btn-box">
               <a href="" target="_blank" class="c-btn">関連サイトへ　<i class="fa-solid fa-window-restore"></i></a>
