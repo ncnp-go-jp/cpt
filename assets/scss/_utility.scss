@@ -96,6 +96,12 @@
   @include hover;
 }
 
+.u-em-orange-marker {
+  font-weight: bold;
+  text-decoration: underline !important;
+  color: $color_light-orange;
+}
+
 // font-weight {
 .u-bold {
   font-weight: bold;

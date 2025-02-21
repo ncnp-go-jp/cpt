@@ -38,7 +38,7 @@ get_template_part('template-parts/mainview');
           </div>
         </div>
         <div class="p-result__btn-box">
-          <a href="<?php echo home_url() . '/learn/about-ptsd/#check'; ?>" class="c-btn">PTSDとはを見る</a>
+          <a href="<?php echo home_url() . '/learn/about-ptsd/'; ?>" class="c-btn">PTSDとはを見る</a>
           <a href="<?php echo home_url() . '/treatment/resources#in-trouble'; ?>" class="c-btn -orange-rev">困った時に頼れる場所を見る</a>
         </div>
 

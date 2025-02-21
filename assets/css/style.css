@@ -2648,6 +2648,12 @@ main {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
+.u-em-orange-marker {
+  font-weight: bold;
+  text-decoration: underline !important;
+  color: #FABA6B;
+}
+
 .u-bold {
   font-weight: bold;
 }
