@@ -47,7 +47,7 @@ get_template_part('template-parts/mainview');
 
 </div>
 
-<article class="l-base p-abt-howto">
+<!-- <article class="l-base p-abt-howto">
 
   <section class="p-abt-howto__sec">
     <h3 class="c-h2 p-abt-howto__h1">サイトの使い方</h3>
@@ -76,6 +76,6 @@ get_template_part('template-parts/mainview');
     </li>
   </ul>
 
-</article>
+</article> -->
 
 <?php get_footer(); ?>
