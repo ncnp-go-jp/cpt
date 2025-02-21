@@ -24,7 +24,7 @@ get_template_part('template-parts/mainview');
           <p>
             PTSD Checklist for DSM-5の日本語版で、PTSDの診断基準に対応した 20 の質問項目で構成される自己記入式の質問紙 です。回答者の PSTD にもっとも影響を与えた心的外傷的出来事を念頭において、直近(過去)1 か月間の各症状の程度を回答してもらいます。
           </p>
-          <a href="" class="c-btn p-assessment_tool__btn" target="_blank">PCL-5（質問票）をダウンロード　<i class="fa-solid fa-file-pdf"></i></a>
+          <a href="http://cpt.ncnp.go.jp/wp-content/uploads/2025/02/PCL-5.pdf" class="c-btn p-assessment_tool__btn" target="_blank">PCL-5（質問票）をダウンロード　<i class="fa-solid fa-file-pdf"></i></a>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ get_template_part('template-parts/mainview');
           <h2 class="c-h3 p-tab-box__h2">PCL-5について（解説）</h2>
           <p>PCL-5の使用ガイドです。実施法、採点法、解釈について解説していますPCL-5をご使用になる前にご一読ください。
           </p>
-          <a href="" class="c-btn p-assessment_tool__btn" target="_blank">PCL-5の解説をダウンロード　<i class="fa-solid fa-file-pdf"></i></a>
+          <a href="http://cpt.ncnp.go.jp/wp-content/uploads/2025/02/about_PCL-5.pdf" class="c-btn p-assessment_tool__btn" target="_blank">PCL-5の解説をダウンロード　<i class="fa-solid fa-file-pdf"></i></a>
         </div>
       </div>
     </article>
