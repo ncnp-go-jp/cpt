@@ -135,7 +135,7 @@ get_template_part('template-parts/mainview');
   </div>
 </div>
 
-<article class="l-base p-abt-trauma">
+<article class="l-base p-abt-trauma" id="in-trouble">
   <div class="p-table-2col">
     <h3 class="p-table-2col__h">【困った時に頼れる場所】</h3>
     <table class="p-table-2col__table">

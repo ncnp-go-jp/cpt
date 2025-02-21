@@ -1194,6 +1194,9 @@ main {
 .p-abt-trauma__txt-box {
   margin-bottom: 2.5rem;
 }
+.p-abt-trauma__txt-box p + p {
+  margin-top: 1.5em;
+}
 .p-abt-trauma > picture {
   width: 93%;
   margin: 2rem auto 0;
@@ -1534,7 +1537,15 @@ main {
   position: relative;
   background: #fff;
   line-height: 0.8;
+  cursor: pointer;
   font-size: 2rem;
+}
+.p-checklist__item .icon {
+  transition: opacity linear 0.3s;
+}
+.p-checklist__item .icon:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .p-checklist__item .icon:before {
   content: "\f0c8";

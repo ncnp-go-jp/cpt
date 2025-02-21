@@ -167,6 +167,19 @@ jQuery(function ($) {
     }, 500);
   }
 
+  // 「PTSDとは」のカスタムチェックボックスをクリックに反応させる
+  $('.p-checklist__item .icon').each(function (index, element) {
+    $(element).on('click', function () {
+      var $input = $(this).prev();
+      if ($input.prop('checked')) {
+        $input.prop('checked', false);
+      } else {
+        $input.prop('checked', true);
+      }
+    });
+  });
+
+
   // WP-Membersで作成されたフォームの必須項目のラベルに対し、
   // テキストを「必須」へ変更
   $('#wpmem_reg .req').text('必須');

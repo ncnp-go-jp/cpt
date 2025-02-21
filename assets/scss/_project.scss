@@ -1375,6 +1375,10 @@
     @include media(tb) {
       margin-bottom: 3.5rem;
     }
+
+    p+p {
+      margin-top: 1.5em;
+    }
   }
 
   >picture {
@@ -1980,7 +1984,12 @@
       position: relative;
       background: #fff;
       line-height: 0.8;
+      cursor: pointer;
       @include fontsize(20, 36);
+
+      & {
+        @include hover;
+      }
 
       &::before {
         content: '\f0c8';

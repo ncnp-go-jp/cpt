@@ -33,13 +33,13 @@ get_template_part('template-parts/mainview');
         <div class="p-img-right-btm-box">
           <div>
             <div class="p-img-right-btm-box__space -influence"></div>
-            <img src="<?php echo THEME_DIR_URI; ?>learn/influence-02.png" alt="" class="p-img-right-btm-box__img -influence02">
+            <img src="<?php echo THEME_DIR_URI; ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02">
             <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
           </div>
         </div>
         <div class="p-result__btn-box">
-          <a href="<?php echo home_url() . '/learn/about-ptsd/#check'; ?>" class="c-btn">診断をやり直す</a>
-          <a href="<?php echo home_url() . '/treatment/familiarize'; ?>" class="c-btn -orange-rev">CPTに親しむを見る</a>
+          <a href="<?php echo home_url() . '/learn/about-ptsd/#check'; ?>" class="c-btn">PTSDとはを見る</a>
+          <a href="<?php echo home_url() . '/treatment/resources#in-trouble'; ?>" class="c-btn -orange-rev">困った時に頼れる場所を見る</a>
         </div>
 
       <?php else: ?>
@@ -52,12 +52,12 @@ get_template_part('template-parts/mainview');
         <div class="p-img-right-btm-box">
           <div>
             <div class="p-img-right-btm-box__space -influence"></div>
-            <img src="<?php echo THEME_DIR_URI; ?>learn/result-01.png" alt="" class="p-img-right-btm-box__img -influence02">
+            <img src="<?php echo THEME_DIR_URI; ?>learn/result-01.webp" alt="" class="p-img-right-btm-box__img -influence02">
             <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入テキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
           </div>
         </div>
         <div class="p-result__btn-box">
-          <a href="<?php echo home_url() . '/learn/about-ptsd'; ?>" class="c-btn">PTSDとはを見る</a>
+          <a href="<?php echo home_url() . '/learn/about-ptsd#check'; ?>" class="c-btn">閉じる</a>
         </div>
 
       <?php endif; ?>

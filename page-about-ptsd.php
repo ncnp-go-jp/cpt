@@ -17,8 +17,8 @@ get_template_part('template-parts/mainview');
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">PTSDの症状
       </h2>
-      <p>PTSDは、生命の危機にさらされるような出来事を経験した後に発症する可能性があります。<br>
-        PTSDの症状には、次のような4つのタイプがあります。症状は、トラウマとなる出来事の直後に現れることが多いですが、数ヶ月から数年経ってから現れることもあります。また、何年にもわたって症状が現れたり消えたりすることもあります。4つの症状が1か月以上続き、生活に支障をきたしている場合に、「PTSD」と診断されます。</p>
+      <p><b>PTSDは、生命の危機にさらされるような出来事を経験した後に発症する</b>可能性があります。<br>
+        PTSDの症状には、次のような4つのタイプがあります。症状は、トラウマとなる出来事の直後に現れることが多いですが、数ヶ月から数年経ってから現れることもあります。また、何年にもわたって症状が現れたり消えたりすることもあります。<b>4つの症状が1か月以上続き、生活に支障をきたしている場合に、「PTSD」と診断されます。</b></p>
 
       <ul class="p-modal-btn-list">
         <li><a class="js-modal-button-target" href="#modal01">侵入症状</a></li>
@@ -35,8 +35,8 @@ get_template_part('template-parts/mainview');
   <h2 class="c-h2 p-abt-trauma__h1">PTSDセルフチェック（PC-PTSD）</h2>
   <div class="p-abt-trauma__txt-box">
     <p>いままでに、あなたはトラウマとなるような出来事を経験したことがありますか？<br>
-      もし、トラウマを経験した後に時間が経ってもずっと苦しいままであれば、治療や支援を受けることが、今の苦境から抜け出す鍵になるかもしれません。<br>
-      通常では考えられないような、非常に恐ろしくて、悲惨な出来事を経験した後、その影響からなかなか抜け出せず、普段の生活に不便が生じている方は、下のボタンをクリックして、PTSDの症状をチェックしてみてください。</p>
+      もし、トラウマを経験した後に時間が経ってもずっと苦しいままであれば、治療や支援を受けることが、今の苦境から抜け出す鍵になるかもしれません。</p>
+    <p>通常では考えられないような、非常に恐ろしくて悲惨な出来事を経験した後、その影響からなかなか抜け出せず普段の生活に不便が生じている方は、下のボタンをクリックして、PTSDの症状をチェックしてみてください。</p>
   </div>
 
   <form method="post" action="./result/#result" class="p-checklist">
@@ -103,11 +103,11 @@ get_template_part('template-parts/mainview');
       <div class="p-img-right-btm-box">
         <div>
           <div class="p-img-right-btm-box__space -ptsd"></div>
-          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-01.png" alt="" class="p-img-right-btm-box__img -ptsd">
+          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-01.webp" alt="" class="p-img-right-btm-box__img -ptsd">
           <h2 class="c-h3 p-tab-box__h2">PTSDを患う人の割合</h2>
           <p>
-            人生の中で何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。経験した出来事別で見ると、その経験をした人の中でPTSDを患う確率が高いのは、「他人に殴られた」（5.7％）、「レイプされた」（5.6％）、「子供が重い病気にかかった」（4.4％）といった出来事でした。<br>
-            「トラウマ」と一括りにはできないほど、どのような種類の出来事を、どのように体験したかによって、その人に与える影響の大きさは異なるようです。
+            人生の中で何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。経験した出来事別で見ると、その経験をした人の中で<b>PTSDを患う確率が高いのは、「他人に殴られた」（5.7％）、「レイプされた」（5.6％）、「子供が重い病気にかかった」（4.4％）といった出来事</b>でした。<br>
+            「体験したら必ずPTSDを発症する出来事」というものはなく、出来事から受ける影響は、人によって、あるいはどのように出来事を体験したかによって、さまざまです。
           </p>
         </div>
       </div>
@@ -115,22 +115,11 @@ get_template_part('template-parts/mainview');
       <div class="p-img-right-btm-box">
         <div>
           <div class="p-img-right-btm-box__space -ptsd"></div>
-          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-02.png" alt="" class="p-img-right-btm-box__img -ptsd">
+          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-02.webp" alt="" class="p-img-right-btm-box__img -ptsd">
           <h2 class="c-h3 p-tab-box__h2">PTSDを患う期間</h2>
           <p>
             調査への回答者がPTSDを患っていた期間の平均は、４年９ヶ月余りでした。経験した出来事別で見ると、罹病期間が長いのは、「家庭内で暴力を伴う争いを見た」（49年０ヵ月）、「自分の養育者から身体的虐待を受けた」（25年9ヵ月）出来事でした。一方で、罹病期間が最も短かった「ストーカー被害」「大切な人がトラウマを経験した」出来事でも、罹病期間は約１年間でした。<br>
-            罹病期間は人によって大きく異なり、時に、ごく長い期間にわたり症状が続くことがわかっています。
-          </p>
-        </div>
-      </div>
-
-      <div class="p-img-right-btm-box">
-        <div>
-          <h2 class="c-h3 p-tab-box__h2">PTSDからの回復が難しい理由</h2>
-          <p>
-            上に挙げたようなPTSDの症状は、一時的には、トラウマを経験した人の多くの人に経験されるものです。しかし大抵は、時間が経つにつれて自然と症状が回復していきます。一方で、自然な回復が何らかの理由によって途中で阻まれてしまうと、一部の人はPTSDを発症し、時に長い期間、症状を抱えます。<br>
-            PTSDの症状が長引く原因の一つは、トラウマについて思い出すことを避けたり、自然な感情を避けたりすることで、かえって、脳が未処理の出来事について考え続けようとしてしまうことです。トラウマの記憶が侵入的にあらわれたり、悪夢を見たりするのは、起こったことの意味を心が理解しようとする働きによるものと考えられています。出来事にふれることを避けることで、出来事のことをうまく整理して記憶に留めようとする機会が奪われてしまうのです。<br>
-            ですから、PTSDに対する心理的な支援で効果を発揮しているものの多くは、トラウマに向き合い、記憶の整理を手伝う形をとっています。PTSDから回復するためには、一時的には、トラウマに向き合う機会が必要だと考えられています。
+            <b>罹病期間は人によって大きく異なり、時に、ごく長い期間にわたり症状が続く</b>ことがわかっています。
           </p>
         </div>
       </div>
@@ -138,6 +127,16 @@ get_template_part('template-parts/mainview');
     </article>
   </div>
 </div>
+
+<article class="p-abt-trauma l-base">
+  <h2 class="c-h2 p-abt-trauma__h1">PTSDからの回復が難しい理由</h2>
+  <div class="p-abt-trauma__txt-box">
+    <p>上に挙げたようなPTSDの症状は、一時的には、トラウマを経験した人の多くの人に経験されるものです。しかし大抵は、時間が経つにつれて自然と症状が回復していきます。一方で、自然な回復が何らかの理由によって途中で阻まれてしまうと、一部の人はPTSDを発症し、時に長い期間、症状を抱えます。<br>
+      <b>PTSDの症状が長引く原因の一つは、トラウマについて思い出すことを避けたり、自然な感情を避けたりすることで、かえって、脳が処理できていないの出来事について考え続けようとしてしまうこと</b>です。トラウマの記憶が侵入的にあらわれたり、悪夢を見たりするのは、起こったことの意味を心が理解しようとする働きによるものと考えられています。出来事にふれることを避けることで、出来事のことをうまく整理して記憶に留めようとする機会が奪われてしまうのです。<br>
+      ですから、PTSDに対する心理的な支援で効果を発揮しているものの多くは、トラウマに向き合い、記憶の整理を手伝う形をとっています。PTSDから回復するためには、一時的には、トラウマに向き合う機会が必要だと考えられています。
+    </p>
+  </div>
+</article>
 
 <!-- モーダルの内容　START -->
 <!-- モーダルの各IDは呼び出しボタンの[href]に設定されたIDと一致する -->
@@ -157,7 +156,7 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>その出来事を追体験させるようなものを見たり、聞いたり、匂いをかいだりすることをきっかけに、強い苦痛を感じる</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
+      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -180,7 +179,7 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>出来事について話すことや考えることを避ける</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
+      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -207,7 +206,7 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>もっと何かをしていれば出来事を防げたのではないかと考える</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
+      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -233,7 +232,7 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>集中することが難しい</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.jpg" alt="" class="p-modal__img">
+      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
