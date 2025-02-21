@@ -808,6 +808,7 @@ main {
   font-weight: bold;
   display: block;
   line-height: 1;
+  margin-bottom: 1em;
   font-size: 1.6rem;
 }
 .p-single-news__contents p {
@@ -830,7 +831,7 @@ main {
   margin-bottom: 1.5em;
 }
 .p-single-news__contents a {
-  color: #FABA6B;
+  color: #FF9D26;
   text-decoration: underline;
   transition: opacity linear 0.3s;
 }

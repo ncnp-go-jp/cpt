@@ -692,6 +692,7 @@
       font-weight: bold;
       display: block;
       line-height: 1;
+      margin-bottom: 1em;
       @include fontsize(16, 18);
     }
 
@@ -719,7 +720,7 @@
     }
 
     a {
-      color: $color_light-orange;
+      color: $color_dark-orange;
       text-decoration: underline;
       @include hover;
     }
