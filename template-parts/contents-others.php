@@ -16,7 +16,7 @@
         </h2>
 
         <?php
-        $img_url = THEME_DIR_URI . 'common/no-image.jpg';
+        $img_url = THEME_DIR_URI . 'common/no-image.webp';
         if (get_field('about-cpt-list-thumb')) {
           $img_url = get_field('about-cpt-list-thumb');
         }

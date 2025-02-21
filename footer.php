@@ -56,7 +56,7 @@
 			</dl>
 
 			<div class="p-ftr__info-box">
-				<img src="<?php echo THEME_DIR_URI; ?>common/logo.png" alt="国立研究開発法人 国立精神・神経医療研究センター 認知行動療法センター" class="p-ftr__logo">
+				<img src="<?php echo THEME_DIR_URI; ?>common/logo.webp" alt="国立研究開発法人 国立精神・神経医療研究センター 認知行動療法センター" class="p-ftr__logo">
 				<p>国立研究開発法人<br>
 					国立精神・神経医療研究センター<br>
 					認知行動療法センター</p>

@@ -78,7 +78,7 @@ if ($the_query->have_posts()) :
 
                 <li class="<?php echo $add_class; ?>"><a href="<?php the_permalink(); ?>">
                     <?php
-                    $img_url = THEME_DIR_URI . 'common/no-image.jpg';
+                    $img_url = THEME_DIR_URI . 'common/no-image.webp';
                     if (get_field('about-cpt-list-thumb')) {
                       $img_url = get_field('about-cpt-list-thumb');
                     }

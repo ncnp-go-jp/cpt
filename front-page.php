@@ -5,8 +5,8 @@ get_header();
 <div class="u-bg-orange-gray">
   <div class="p-front-mv">
     <picture class="p-front-mv__img">
-      <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>top/front-topview-pc.png">
-      <img src="<?php echo THEME_DIR_URI; ?>top/front-topview-sp.png" alt="知識は、ちから。">
+      <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>top/front-topview-pc.webp">
+      <img src="<?php echo THEME_DIR_URI; ?>top/front-topview-sp.webp" alt="知識は、ちから。">
     </picture>
 
     <article class="p-front-mv__txt-box">
@@ -22,7 +22,7 @@ get_header();
 
     <section class="p-front-sec__item">
       <figure>
-        <img src="<?php echo THEME_DIR_URI; ?>top/front-01.png" alt="生きていれば、誰しも、傷つくことがある。" class="">
+        <img src="<?php echo THEME_DIR_URI; ?>top/front-01.webp" alt="生きていれば、誰しも、傷つくことがある。" class="">
       </figure>
       <div class="p-front-sec__txt-box">
         <div>
@@ -37,7 +37,7 @@ get_header();
 
     <section class="p-front-sec__item">
       <figure>
-        <img src="<?php echo THEME_DIR_URI; ?>top/front-02.png" alt="知識は、ちから。" class="">
+        <img src="<?php echo THEME_DIR_URI; ?>top/front-02.webp" alt="知識は、ちから。" class="">
       </figure>
       <div class="p-front-sec__txt-box">
         <div>
@@ -51,7 +51,7 @@ get_header();
 
     <section class="p-front-sec__item">
       <figure>
-        <img src="<?php echo THEME_DIR_URI; ?>top/front-03.png" alt="心の傷にも、治療が必要。" class="">
+        <img src="<?php echo THEME_DIR_URI; ?>top/front-03.webp" alt="心の傷にも、治療が必要。" class="">
       </figure>
       <div class="p-front-sec__txt-box">
         <div>
@@ -65,7 +65,7 @@ get_header();
 
     <section class="p-front-sec__item">
       <figure>
-        <img src="<?php echo THEME_DIR_URI; ?>top/front-04.png" alt="納得するまで知る。準備を整える。" class="">
+        <img src="<?php echo THEME_DIR_URI; ?>top/front-04.webp" alt="納得するまで知る。準備を整える。" class="">
       </figure>
       <div class="p-front-sec__txt-box">
         <div>

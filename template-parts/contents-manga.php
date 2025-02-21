@@ -7,8 +7,8 @@
         <h2 class="p-cont-video__ttl"><?php the_title(); ?></h2>
 
         <?php
-        $img_pc_url = THEME_DIR_URI . 'common/no-image.jpg';
-        $img_sp_url = THEME_DIR_URI . 'common/no-image.jpg';
+        $img_pc_url = THEME_DIR_URI . 'common/no-image.webp';
+        $img_sp_url = THEME_DIR_URI . 'common/no-image.webp';
         if (get_field('about-cpt-manga-img-pc')) {
           $img_pc_url = get_field('about-cpt-manga-img-pc');
         }
