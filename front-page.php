@@ -145,8 +145,13 @@ get_header();
         </ul>
       </section>
     </div>
-
-    <a href="./expert/member_reg_form" class="c-btn -white">利用登録はこちら　<i class="fas fa-angle-right"></i></a>
+    <?php
+    // ログイン状態に応じたURLを設定
+    $expert_url = is_user_logged_in() ? home_url('/expert') : './expert/member_reg_form';
+    // ボタンのタイトルもログイン状態によって変更
+    $expert_button_text = is_user_logged_in() ? '専門家向け資料はこちら' : '利用登録はこちら';
+    ?>
+    <a href="<?php echo $expert_url; ?>" class="c-btn -white"><?php echo $expert_button_text; ?>　<i class="fas fa-angle-right"></i></a>
   </article>
 </div>
 <?php get_footer(); ?>
