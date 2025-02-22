@@ -58,7 +58,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01"> -->
               <h2 class="c-h3 p-tab-box__h2">たたかう・逃げる</h2>
               <p>
                 走ったり戦ったりできるように、身体が準備をします。手や足の大きな筋肉に血液と酸素がすばやく送りこまれるため、心臓がドキドキしたり、血の気が引いて気絶しそうになったり、お腹を蹴られたような感覚になります。また、その瞬間に必要のない身体の機能が低下します。つまり、難しいことをじっくり考えたり、食べ物を消化するのは後回しになります。
@@ -69,7 +70,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02"> -->
               <h2 class="c-h3 p-tab-box__h2">かたまる</h2>
               <p>
                 身体の痛みと感情的な痛みを和らげようとするスイッチが、自動的に入ります。痛みを感じなくなったり、まるで映画を見ているかのように、その出来事が他の誰かに起こっているような感覚になる人もいます。感情や時間の感覚が麻痺したり、自分の体から抜け出したような感覚を体験することもあります。
@@ -99,7 +101,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01"> -->
               <h2 class="c-h3 p-tab-box__h2">もともと持っていた考えに則り出来事を解釈する</h2>
               <p>
                 例えば、「悪いことをするとバチが当たる」と教えられて育った人が酷い目に遭うと、「私が何か悪いことをしたから、こんな酷いことが起こった」と、出来事を解釈するかもしれません。予期せぬ出来事が起こって理解しがたいときには、それまで抱いていた考え方のフィルターを通して出来事を解釈することで、自分を納得させようとすることがあります。
@@ -110,7 +113,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02"> -->
               <h2 class="c-h3 p-tab-box__h2">これまで持っていた考えを極端に変える</h2>
               <p>
                 「世の中はいい人ばかり」と捉えていた人が、人に酷い裏切られ方をすると、「世の中は悪い人ばかり」「もう誰も信じられない」と考えるようになるかもしれません。出来事がそれまで抱いてきた世界観と合わない時は、自分の信念をがらりと変えることで、自分を納得させようとすることがあります。
@@ -121,7 +125,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-03.webp" alt="" class="p-img-right-btm-box__img -influence02">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-03.webp" alt="" class="p-img-right-btm-box__img -influence02"> -->
               <h2 class="c-h3 p-tab-box__h2">これまで持っていた考えを強める</h2>
               <p>長い間つらい人生を送ってきて、トラウマを受ける前から自分自身・他者・世界に対して否定的な見方を抱いている人もいます。そのような人々にとっては、出来事は、それまで抱いていた否定的な見方が正しかったことを確信するきっかけになるかもしれません。例えば、「他の人は信用できない」と考えていた人が、他の人から裏切られる体験をすると、より一層人を信じられなくなります。</p>
             </div>
@@ -152,7 +157,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-01.webp" alt="" class="p-img-right-btm-box__img -influence01"> -->
               <h2 class="c-h3 p-tab-box__h2">自然な感情</h2>
               <p>
                 同じような出来事に出会えば誰でも感じるような普遍的な感情は、「自然な感情」です。危険にさらされたときは「恐怖」が、傷つけられたときは「怒り」が、自分にとって良いことがあったら「喜び」が、大事なものを失ったら「悲しみ」が生まれます。<br>
@@ -164,7 +170,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box">
             <div>
               <div class="p-img-right-btm-box__space -influence"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-02.webp" alt="" class="p-img-right-btm-box__img -influence02"> -->
               <h2 class="c-h3 p-tab-box__h2">作られた感情</h2>
               <p>
                 自然な感情とは対照的に、出来事から直接生じるのではなく、その出来事に対する解釈や考えから生じる感情を「作られた感情」と言います。意図的に「作り上げている」からではなく、その感情が、特定の思考によって作り出されるから「作られた感情」と呼ばれます。<br>
@@ -176,7 +183,8 @@ get_template_part('template-parts/mainview');
           <div class="p-img-right-btm-box -influence03">
             <div>
               <div class="p-img-right-btm-box__space -influence03"></div>
-              <img src="<?php echo THEME_DIR_URI; ?>learn/influence-03.webp" alt="" class="p-img-right-btm-box__img -influence02">
+              <!-- <img src="<?php //echo THEME_DIR_URI; 
+                              ?>learn/influence-03.webp" alt="" class="p-img-right-btm-box__img -influence02"> -->
               <h2 class="c-h3 p-tab-box__h2">自然な感情と作られた感情の関係</h2>
               <p>トラウマを経験した後、作られた感情によって、自然な感情を感じるのが妨げられてしまうことがあります。例えば、人からひどい暴力を振るわれた人が、暴力を振るった相手に怒りやひどいことが起こった悲しみを感じるかわりに、自分自身に腹を立てることがあります。「相手を怒らせて暴力を振るうような態度をとった自分が悪い」「相手が怒るのを防げなかった自分は愚かだ」と考えて、自分に腹を立てるのです。<br>
                 出来事の経験から立ち直るには、作られた感情を生みだす考えを見つめ直し、自然な感情を感じるのを自分に許すことが大切です。自然な感情を感じるようにすれば、辛い感情は時間とともに和らぎ、やがて消えていくからです。</p>

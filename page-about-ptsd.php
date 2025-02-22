@@ -157,7 +157,8 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>その出来事を追体験させるようなものを見たり、聞いたり、匂いをかいだりすることをきっかけに、強い苦痛を感じる</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
+      <!-- <img src="<?php //echo THEME_DIR_URI; 
+                      ?>learn/ptsd-03.webp" alt="" class="p-modal__img"> -->
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -180,7 +181,8 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>出来事について話すことや考えることを避ける</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
+      <!-- <img src="<?php //echo THEME_DIR_URI; 
+                      ?>learn/ptsd-03.webp" alt="" class="p-modal__img"> -->
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -207,7 +209,8 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>もっと何かをしていれば出来事を防げたのではないかと考える</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
+      <!-- <img src="<?php //echo THEME_DIR_URI; 
+                      ?>learn/ptsd-03.webp" alt="" class="p-modal__img"> -->
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
@@ -233,7 +236,8 @@ get_template_part('template-parts/mainview');
           <li><span>・</span>集中することが難しい</li>
         </ul>
       </div>
-      <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-03.webp" alt="" class="p-modal__img">
+      <!-- <img src="<?php //echo THEME_DIR_URI; 
+                      ?>learn/ptsd-03.webp" alt="" class="p-modal__img"> -->
     </div>
     <div class="p-modal__btn-box">
       <button class="c-btn p-modal__btn js-modal-close">閉じる</button>
