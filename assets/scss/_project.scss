@@ -892,6 +892,7 @@
 
     @include media(tb) {
       margin-top: 2rem;
+      word-break: normal;
     }
   }
 

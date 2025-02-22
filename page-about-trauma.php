@@ -33,10 +33,7 @@ get_template_part('template-parts/mainview');
   </div>
   <script>
     tippy('.tippy01', {
-
-      content: `
-      Kawakami, N., Tsuchiya, M., Umeda, M., Koenen, K. C., Kessler, R. C., & World Mental Health Survey Japan (2014). Trauma and posttraumatic stress disorder in Japan: results from the World Mental Health Japan Survey. Journal of psychiatric research, 53, 157–165. 
-    `,
+      content: `Kawakami, N., Tsuchiya, M., Umeda, M., Koenen, K. C., Kessler, R. C., & World Mental Health Survey Japan (2014). Trauma and posttraumatic stress disorder in Japan: results from the World Mental Health Japan Survey. Journal of psychiatric research, 53, 157–165.`,
       allowHTML: true, // HTMLを許可
       placement: 'bottom',
       arrow: false,

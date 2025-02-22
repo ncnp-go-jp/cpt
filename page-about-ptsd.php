@@ -86,12 +86,13 @@ get_template_part('template-parts/mainview');
     <h2 class="c-h2 p-abt-trauma__h1">PTSDを患う人の割合、期間</h2>
     <div class="p-abt-trauma__txt-box">
       <p>多くの人は、人生のある時点でトラウマとなる出来事を経験します。そして、一時的にはその出来事に対処するために苦労しても、時間をかけて回復していきます。一部の人はPTSDを発症し、時に長い期間、症状を抱えます。しかし、PTSDを患っている人の正確な数はわかっていません。PTSDについて、全ての人に尋ねた研究は一つもないからです。そのような制約はあるものの、多数の人の協力を得ることで、どれくらいの割合の人がPTSDを経験するのかを推計することができます。<br>
-        ここでは、<span class="c-tooltip tippy01">Kawakami（2014）</span>の調査から、日本ではどれくらいの割合の人がPTSDを発症しているかを紹介します。</p>
+        ここでは、<span class="c-tooltip tippy01">Kawakami（2014）</span>（<a href="https://doi.org/10.1016/j.jpsychires.2014.01.015" target="_blank" class="u-black-link ">参照 <i class="fa-solid fa-window-restore"></i></a>）の調査から、日本ではどれくらいの割合の人がPTSDを発症しているかを紹介します。</p>
     </div>
 
     <script>
-      tippy(' .tippy01', {
-        content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+      tippy('.tippy01', {
+        content: `Kawakami, N., Tsuchiya, M., Umeda, M., Koenen, K. C., Kessler, R. C., & World Mental Health Survey Japan (2014). Trauma and posttraumatic stress disorder in Japan: results from the World Mental Health Japan Survey. Journal of psychiatric research, 53, 157–165.`,
+        allowHTML: true, // HTMLを許可
         placement: 'bottom',
         arrow: false,
         theme: 'white',
@@ -103,7 +104,7 @@ get_template_part('template-parts/mainview');
       <div class="p-img-right-btm-box">
         <div>
           <div class="p-img-right-btm-box__space -ptsd"></div>
-          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-01.webp" alt="" class="p-img-right-btm-box__img -ptsd">
+          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-01.webp" alt="トラウマ経験者のうちPTSDを患う人の割合" class="p-img-right-btm-box__img -ptsd">
           <h2 class="c-h3 p-tab-box__h2">PTSDを患う人の割合</h2>
           <p>
             人生の中で何らかのトラウマを経験した人のうち、PTSDを患った人の割合は1.6%でした。経験した出来事別で見ると、その経験をした人の中で<b class="u-em-orange-marker">PTSDを患う確率が高いのは、「他人に殴られた」（5.7％）、「レイプされた」（5.6％）、「子供が重い病気にかかった」（4.4％）といった出来事</b>でした。<br>
@@ -115,10 +116,10 @@ get_template_part('template-parts/mainview');
       <div class="p-img-right-btm-box">
         <div>
           <div class="p-img-right-btm-box__space -ptsd"></div>
-          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-02.webp" alt="" class="p-img-right-btm-box__img -ptsd">
+          <img src="<?php echo THEME_DIR_URI; ?>learn/ptsd-02.webp" alt="PTSDを患う平均期間 4年9ヶ月" class="p-img-right-btm-box__img -ptsd">
           <h2 class="c-h3 p-tab-box__h2">PTSDを患う期間</h2>
           <p>
-            調査への回答者がPTSDを患っていた期間の平均は、４年９ヶ月余りでした。経験した出来事別で見ると、罹病期間が長いのは、「家庭内で暴力を伴う争いを見た」（49年０ヵ月）、「自分の養育者から身体的虐待を受けた」（25年9ヵ月）出来事でした。一方で、罹病期間が最も短かった「ストーカー被害」「大切な人がトラウマを経験した」出来事でも、罹病期間は約１年間でした。<br>
+            調査への回答者がPTSDを患っていた期間の平均は、４年９ヶ月余りでした。経験した出来事別で見ると、罹病期間が長いのは、「家庭内で暴力を伴う争いを見た」（4年9ヵ月）、「自分の養育者から身体的虐待を受けた」（25年9ヵ月）出来事でした。一方で、罹病期間が最も短かった「ストーカー被害」「大切な人がトラウマを経験した」出来事でも、罹病期間は約1年間でした。<br>
             <b class="u-em-orange-marker">罹病期間は人によって大きく異なり、時に、ごく長い期間にわたり症状が続く</b>ことがわかっています。
           </p>
         </div>
@@ -132,7 +133,7 @@ get_template_part('template-parts/mainview');
   <h2 class="c-h2 p-abt-trauma__h1">PTSDからの回復が難しい理由</h2>
   <div class="p-abt-trauma__txt-box">
     <p>上に挙げたようなPTSDの症状は、一時的には、トラウマを経験した人の多くの人に経験されるものです。しかし大抵は、時間が経つにつれて自然と症状が回復していきます。一方で、自然な回復が何らかの理由によって途中で阻まれてしまうと、一部の人はPTSDを発症し、時に長い期間、症状を抱えます。<br>
-      <b class="u-em-orange-marker">PTSDの症状が長引く原因の一つは、トラウマについて思い出すことを避けたり、自然な感情を避けたりすることで、かえって、脳が処理できていないの出来事について考え続けようとしてしまうこと</b>です。トラウマの記憶が侵入的にあらわれたり、悪夢を見たりするのは、起こったことの意味を心が理解しようとする働きによるものと考えられています。出来事にふれることを避けることで、出来事のことをうまく整理して記憶に留めようとする機会が奪われてしまうのです。<br>
+      <b class="u-em-orange-marker">PTSDの症状が長引く原因の一つは、トラウマについて思い出すことを避けたり、自然な感情を避けたりすることで、かえって、脳がまだ処理できていない出来事について考え続けようとしてしまうこと</b>です。トラウマの記憶が侵入的にあらわれたり、悪夢を見たりするのは、起こったことの意味を心が理解しようとする働きによるものと考えられています。出来事にふれることを避けることで、出来事のことをうまく整理して記憶に留めようとする機会が奪われてしまうのです。<br>
       ですから、<b class="u-em-orange-marker">PTSDに対する心理的な支援で効果を発揮しているものの多くは、トラウマに向き合い、記憶の整理を手伝う</b>形をとっています。PTSDから回復するためには、一時的には、トラウマに向き合う機会が必要だと考えられています。
     </p>
   </div>

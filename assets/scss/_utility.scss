@@ -98,9 +98,18 @@
 
 .u-em-orange-marker {
   font-weight: bold;
-  text-decoration: underline !important;
   color: $color_dark-orange;
 }
+
+.u-em-orange-marker {
+  color: $color_light-brown;
+  text-decoration: underline;
+  text-decoration-thickness: 6px; //マーカーの太さ
+  text-decoration-color: #fbeb64; //マーカーの色
+  text-underline-offset: -4px; //マーカーの位置
+  text-decoration-skip-ink: none; //線がテキストと重なっても途切れさせない
+}
+
 
 // font-weight {
 .u-bold {

@@ -16,7 +16,7 @@ get_template_part('template-parts/mainview');
   <div class="l-base c-white-box-l__wrapper">
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">推奨される治療法</h2>
-      <p>PTSDに対してどのような治療法が推奨できるかは、いくつかの機関が発行している<a href="<?php echo home_url() . '/resources#ptsd_guidelines' ?>" class="u-orange-marker">「治療ガイドライン」</a>で知ることができます。<br>
+      <p>PTSDに対してどのような治療法が推奨できるかは、いくつかの機関が発行している<a href="<?php echo home_url() . '/resources#ptsd_guidelines' ?>" class="u-orange-marker">「治療ガイドライン」</a> で知ることができます。<br>
         2025年2月現在では、<b class="u-em-orange-marker">トラウマに焦点を当てた心理療法と薬物療法の両方が、PTSDの治療に有効</b>であることが示されています。心理療法と薬物療法は、併用することもあります。トラウマに焦点を当てた心理療法（CPT、PE、EMDRなど）では、それぞれの治療に特徴的な技法を用いてトラウマとなる出来事の記憶やその意味に焦点を当てていきます。よく効くけれども治療を途中でやめてしまう人の割合が高いなど、課題もあることから、より良い治療法を開発するための<a href="<?php echo home_url() . '/resources#scientific_knowledge' ?>" class="u-orange-marker">研究が続けられています</a>。</p>
     </article>
   </div>

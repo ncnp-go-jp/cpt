@@ -2668,8 +2668,17 @@ main {
 
 .u-em-orange-marker {
   font-weight: bold;
-  text-decoration: underline !important;
   color: #FF9D26;
+}
+
+.u-em-orange-marker {
+  color: #A68563;
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  -webkit-text-decoration-color: #fbeb64;
+          text-decoration-color: #fbeb64;
+  text-underline-offset: -4px;
+  text-decoration-skip-ink: none;
 }
 
 .u-bold {
@@ -2973,6 +2982,7 @@ main {
   }
   .p-mv__txt{
     margin-top: 2rem;
+    word-break: normal;
   }
   .p-breadcrumb{
     font-size: 1.4rem;
