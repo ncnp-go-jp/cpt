@@ -38,8 +38,8 @@ if (is_page('about')) {
   $txt = '私たちはこれまで、認知処理療法の科学的な検証を慎重に進めてまいりました。<br>これまでの取り組みをもとに、今後は、トラウマティックな体験にあわれ、心的外傷後ストレス症や関連症状で苦しまれている方々に、認知処理療法を少しでも知っていただき、活用していただけたらと願っております。';
 } else if (is_page('learn')) {
   $ttl = 'トラウマについて学ぶ';
-  $img_url_pc .= 'about/about-topview-pc.webp';
-  $img_url_sp .= 'about/about-topview-sp.webp';
+  $img_url_pc .= 'learn/learn-topview-pc.webp';
+  $img_url_sp .= 'learn/learn-topview-sp.webp';
   $txt = '生きていれば、誰しも、傷つくことがあります。もし、自分の力では対処できないような大きな出来事を経験したら、動揺し、混乱します。そこから抜け出す鍵の一つは、知識をもって、何が起こったのかをできるだけ冷静な目で見ることです。<br>ここでは、トラウマとは何か、トラウマが生活にどのような影響を及ぼすのかを紹介します。';
   $is_parent_page = true;
 } else if (is_page('about-trauma')) {
@@ -51,8 +51,8 @@ if (is_page('about')) {
 } else if (is_page('influence')) {
   $tag = 'トラウマについて学ぶ';
   $ttl = 'トラウマの影響';
-  $img_url_pc .= 'learn/learn-topview-pc.webp';
-  $img_url_sp .= 'learn/learn-topview-sp.webp';
+  $img_url_pc .= 'about/about-topview-pc.webp';
+  $img_url_sp .= 'about/about-topview-sp.webp';
   $txt = 'トラウマを経験すると、多くの人は、体の反応や、考えや気持ちの変化など、さまざまな心身の反応を経験します。これは正常なストレス反応で、「心が弱い人間だから」起こるのではありません。<br>そして、トラウマを経験した後の反応は、出来事から時間が経つに従って、次第に落ち着いてきます。';
 } else if (is_page(array('about-ptsd', 'result'))) {
   $tag = 'トラウマについて学ぶ';
