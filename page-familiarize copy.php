@@ -73,15 +73,36 @@ if ($the_query->have_posts()) :
                 // 表示切り替え用に、属するカテゴリをCSSに追加
                 $target = get_field('about-cpt-cat');
                 $add_class = $target['value'];
+
+                // 動画IDを取得
+                $video_id = get_field('about-cpt-video-movie');
               ?>
 
                 <li class="<?php echo $add_class; ?>"><a href="<?php the_permalink(); ?>">
                     <?php
                     //サムネイルの取得
-                    if (get_field('about-cpt-list-thumb')) {
-                      $img_url = get_field('about-cpt-list-thumb');
-                    } else {
+                    //カテゴリが動画の場合
+                    if ($add_class === "video") {
+                      // 新しい方法：サムネイル候補サイズを順にチェック
+                      $sizes = array("maxresdefault", "hqdefault", "default");
+                      $img_url = "";
+                      foreach ($sizes as $size) {
+                        $temp_url = "https://img.youtube.com/vi/" . $video_id . "/" . $size . ".jpg";
+                        // maxresdefaultの画像が存在するか確認
+                        if (@getimagesize($temp_url)) { // もし画像が存在する場合
+                          $img_url = $temp_url;
+                          break;
+                        }
+                      }
+                      // 有効なサムネイルがない場合、common/no-image.webpを設定
+                      if (empty($img_url)) {
+                        $img_url = THEME_DIR_URI . 'common/no-image.webp';
+                      }
+                    } else { //カテゴリが動画以外の場合
                       $img_url = THEME_DIR_URI . 'common/no-image.webp';
+                      if (get_field('about-cpt-list-thumb')) {
+                        $img_url = get_field('about-cpt-list-thumb');
+                      }
                     }
                     ?>
                     <img src="<?php echo $img_url; ?>" alt="<?php the_title(); ?>">
