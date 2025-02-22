@@ -70,7 +70,7 @@ get_header();
       <div class="p-front-sec__txt-box">
         <div>
           <h3>納得するまで知る。準備を整える。</h3>
-          <p>心の傷に触れることや、一歩踏みだすには、勇気が要ります。不安なときには、情報を集めることが役立ちます。<br class="u-pc">ご参考まで、科学的な根拠を示す記事や、理論を詳述する書籍、さまざまな支援団体やその他の資源を示しました。</p>
+          <p>心の傷に触れることや、一歩踏みだすには、勇気が要ります。<br class="u-pc">不安なときには、情報を集めることが役立ちます。<br class="u-pc">ご参考まで、科学的な根拠を示す記事や、理論を詳述する書籍、さまざまな支援団体やその他の資源を示しました。</p>
         </div>
         <a href="./resources" class="c-btn p-front-sec__btn">情報資源を得る　<i class="fas fa-angle-right"></i></a>
       </div>
@@ -107,7 +107,7 @@ get_header();
   <a href="<?php echo home_url() . '/news'; ?>" class="c-btn">お知らせ一覧　<i class="fas fa-angle-right"></i></a>
 </article>
 
-<div class="u-bg-orange-gray">
+<!-- <div class="u-bg-orange-gray">
   <article class="l-base p-column-slide">
     <h2 class="p-front-sec__h1">コラム</h2>
 
@@ -119,30 +119,11 @@ get_header();
           <time datetime="2021-01-01">2024.00.00</time>
           <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
         </a></li>
-      <!-- <li><a href="">
-          <figure>
-            <img src="<?php echo THEME_DIR_URI; ?>top/sample.jpg" alt="">
-          </figure>
-          <time datetime="2021-01-01">2024.00.00</time>
-          <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-        </a></li>
-      <li><a href="">
-          <img src="<?php echo THEME_DIR_URI; ?>top/sample.jpg" alt="">
-          <time datetime="2021-01-01">2024.00.00</time>
-          <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-        </a></li>
-      <li><a href="">
-          <figure>
-            <img src="<?php echo THEME_DIR_URI; ?>top/sample.jpg" alt="">
-          </figure>
-          <time datetime="2021-01-01">2024.00.00</time>
-          <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-        </a></li> -->
     </ul>
 
     <a href="" class="c-btn">コラム一覧　<i class="fas fa-angle-right"></i></a>
   </article>
-</div>
+</div> -->
 
 <div class="u-bg-ligh-brown">
   <article class="p-front-info l-base">
