@@ -67,6 +67,16 @@
                 <a href="<?php echo home_url() . '/news'; ?>">お知らせ</a>
               </div>
             </li>
+            <?php
+            // ログインユーザーのみに表示
+            if (is_user_logged_in()):
+            ?>
+              <li>
+                <div class="p-gnav__expert">
+                  <a href="<?php echo home_url() . '/expert'; ?>">専門家向け資料</a>
+                </div>
+              </li>
+            <?php endif; ?>
           </ul>
           <div class="p-gnav__btn-box">
             <?php if (is_user_logged_in()): ?>

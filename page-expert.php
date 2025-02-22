@@ -21,7 +21,7 @@ get_template_part('template-parts/mainview');
     </article>
   </div>
 </div>
-<article class="p-expert l-base">
+<article class="p-expert">
   <div class="l-base">
     <ul class="c-small-box-list">
       <li class="u-bg-orange-gray">

@@ -568,7 +568,7 @@ main {
   display: none;
 }
 .p-gnav__btn-box {
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -579,6 +579,23 @@ main {
 }
 .p-gnav__btn-box a {
   width: 14rem;
+}
+.p-gnav__expert {
+  background: #FABA6B;
+  border-bottom: 1px solid #EDE8E1;
+}
+.p-gnav__expert a {
+  color: #fff;
+  padding: 1.5rem 1rem;
+  display: block;
+  font-size: 1.6rem;
+}
+.p-gnav__expert a {
+  transition: opacity linear 0.3s;
+}
+.p-gnav__expert a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
 .p-front-mv {
@@ -3879,7 +3896,7 @@ main {
 @media only screen and (min-width: 1000px){
   /* pc-size */
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1310px){
   /* header-size */
   main{
     margin-top: 10rem;
@@ -3971,6 +3988,12 @@ main {
   }
   .p-gnav__sub-list > li + li a{
     border-top: none;
+  }
+  .p-gnav__expert{
+    border-bottom: none;
+  }
+  .p-gnav__expert a{
+    padding: 0.3rem 1rem;
   }
 }
 @media only screen and (min-width: 1366px){
