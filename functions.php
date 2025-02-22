@@ -735,3 +735,7 @@ function documents_filter_query($query)
   }
 }
 add_filter('pre_get_posts', 'documents_filter_query');
+
+
+//固定ページで抜粋を使えるようにする
+add_post_type_support('page', 'excerpt');
