@@ -575,12 +575,24 @@
   &__list {
     margin: 1.8rem 0 3rem;
 
+    @include media(tb) {
+      margin: 1.8rem 0 5rem;
+    }
+
     li {
+      a {
+        @include hover;
+      }
+
       figure {
         aspect-ratio: 300 / 220;
         border-radius: 1rem;
         overflow: hidden;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.5rem;
+
+        @include media(tb) {
+          margin-bottom: 0.5rem;
+        }
 
         img {
           width: 100%;
@@ -597,6 +609,48 @@
 
       p {
         color: $color_font;
+      }
+    }
+  }
+}
+
+.splide__arrows {
+  button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    @include center(y);
+    @include hover;
+
+    i {
+      color: $color_light-orange;
+      @include fontsize(38, 54);
+    }
+
+    &.prev {
+      left: -3rem;
+
+      @include media(tb) {
+        left: -2rem;
+      }
+
+      @include media(header) {
+        left: -6rem;
+      }
+    }
+
+    &.next {
+      right: -3rem;
+
+      @include media(tb) {
+        right: -2rem;
+      }
+
+      @include media(header) {
+        right: -6rem;
       }
     }
   }
@@ -2069,6 +2123,16 @@
     }
   }
 
+  &.-column {
+    li {
+      width: 100%;
+
+      @include media(tb) {
+        width: calc((100% - 6rem) / 3);
+      }
+    }
+  }
+
   a {
     color: $color_font;
     line-height: 1.67;
@@ -2091,6 +2155,12 @@
     dt {
       font-weight: bold;
     }
+  }
+
+  time {
+    font-weight: bold;
+    color: $color_dark-brown;
+    font-size: 1.6rem;
   }
 
   &__tag {

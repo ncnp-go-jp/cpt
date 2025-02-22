@@ -736,11 +736,18 @@ main {
 .p-column-slide__list {
   margin: 1.8rem 0 3rem;
 }
+.p-column-slide__list li a {
+  transition: opacity linear 0.3s;
+}
+.p-column-slide__list li a:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
 .p-column-slide__list li figure {
   aspect-ratio: 300/220;
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 .p-column-slide__list li figure img {
   width: 100%;
@@ -754,6 +761,33 @@ main {
 }
 .p-column-slide__list li p {
   color: #555555;
+}
+
+.splide__arrows button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity linear 0.3s;
+}
+.splide__arrows button:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.splide__arrows button i {
+  color: #FABA6B;
+  font-size: 3.8rem;
+}
+.splide__arrows button.prev {
+  left: -3rem;
+}
+.splide__arrows button.next {
+  right: -3rem;
 }
 
 .p-front-info {
@@ -1604,6 +1638,9 @@ main {
 .p-doc-list li {
   width: calc((100% - 2rem) / 2);
 }
+.p-doc-list.-column li {
+  width: 100%;
+}
 .p-doc-list a {
   color: #555555;
   line-height: 1.67;
@@ -1623,6 +1660,11 @@ main {
 }
 .p-doc-list dl dt {
   font-weight: bold;
+}
+.p-doc-list time {
+  font-weight: bold;
+  color: #806346;
+  font-size: 1.6rem;
 }
 .p-doc-list__tag {
   background: #A68563;
@@ -2884,8 +2926,23 @@ main {
   .p-column-slide{
     padding: 3.5rem 0 5.5rem;
   }
+  .p-column-slide__list{
+    margin: 1.8rem 0 5rem;
+  }
+  .p-column-slide__list li figure{
+    margin-bottom: 0.5rem;
+  }
   .p-column-slide__list li time{
     font-size: 1.8rem;
+  }
+  .splide__arrows button i{
+    font-size: 5.4rem;
+  }
+  .splide__arrows button.prev{
+    left: -2rem;
+  }
+  .splide__arrows button.next{
+    right: -2rem;
   }
   .p-front-info{
     padding: 5rem 0 4.5rem;
@@ -3343,6 +3400,9 @@ main {
     margin-top: 3rem;
   }
   .p-doc-list li{
+    width: calc((100% - 6rem) / 3);
+  }
+  .p-doc-list.-column li{
     width: calc((100% - 6rem) / 3);
   }
   .p-doc-list a{
@@ -4004,6 +4064,12 @@ main {
   }
   .p-gnav__expert a{
     padding: 0.3rem 1rem;
+  }
+  .splide__arrows button.prev{
+    left: -6rem;
+  }
+  .splide__arrows button.next{
+    right: -6rem;
   }
 }
 @media only screen and (min-width: 1366px){

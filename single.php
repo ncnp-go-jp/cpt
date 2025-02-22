@@ -25,10 +25,13 @@ get_template_part('template-parts/subview');
             <?php if (has_post_thumbnail()) : ?>
               <?php the_post_thumbnail(); ?>
             <?php endif; ?>
+            <?php if (get_field('column-list-thumb')): ?>
+              <img src="<?php the_field('column-list-thumb'); ?>" alt="" class="">
+            <?php endif; ?>
             <?php the_content(); ?>
           </div>
           <div class="p-tab-box__btn-box">
-            <a href="../news" class="c-btn">一覧を見る　<i class="fas fa-angle-right"></i></a>
+            <a href="<?php echo is_singular("column") ? '../' : '../news'; ?>" class="c-btn">一覧を見る　<i class="fas fa-angle-right"></i></a>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
