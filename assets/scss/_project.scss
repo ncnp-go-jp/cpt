@@ -285,7 +285,7 @@
   }
 
   &__btn-box {
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,6 +293,30 @@
 
     a {
       width: 14rem;
+    }
+  }
+
+  &__expert {
+    background: $color_light-orange;
+    border-bottom: 1px solid $color_light-gray;
+
+    @include media(header) {
+      border-bottom: none;
+    }
+
+    a {
+      color: #fff;
+      padding: 1.5rem 1rem;
+      display: block;
+      font-size: 1.6rem;
+
+      @include media(header) {
+        padding: 0.3rem 1rem;
+      }
+
+      & {
+        @include hover;
+      }
     }
   }
 }

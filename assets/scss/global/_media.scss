@@ -4,7 +4,7 @@
 // レスポンシブ対応用 メディアクエリ
 $breakpoints: ('tb': '834px',
   'pc': $width + ($width-m-sp * 2),
-  'header': '1200px',
+  'header': '1310px',
   'max': $width-max,
 ) !default;
 
