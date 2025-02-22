@@ -38,6 +38,14 @@ function mytheme_enqueue()
     null
   );
 
+  // スライドのCSS読み込み
+  wp_enqueue_style(
+    'splide',
+    get_theme_file_uri('assets/css/splide-core.min.css'),
+    array(),
+    null
+  );
+
   // モーダルのCSS読み込み
   wp_enqueue_style(
     'modaal',
@@ -60,10 +68,10 @@ function mytheme_enqueue()
   // 新たにjqueryのver3を読み込み
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
 
-  // 高さを揃えるライブラリ[matchHeight.js]
+  // スライドのライブラリ[splide.min.js]
   wp_enqueue_script(
-    'matchHeight',
-    get_theme_file_uri('assets/js/vendor/jquery.matchHeight.js'),
+    'splide',
+    get_theme_file_uri('assets/js/vendor/splide.min.js'),
     array('jquery'),
     ''
   );
@@ -176,33 +184,21 @@ function create_post_type()
     )
   );
 
-  // register_post_type(
-  //   'column',
-  //   array(
-  //     'label' => 'コラム',
-  //     'public' => true,
-  //     'has_archive' => true,
-  //     'show_in_rest' => true,
-  //     'menu_position' => 6,
-  //     'supports' => array(
-  //       'title',
-  //       'editor',
-  //       'thumbnail',
-  //       'revisions',
-  //     ),
-  //   )
-  // );
-
-  // register_taxonomy(
-  //   'column-cat',  // カテゴリーの名前
-  //   'column', // カテゴリーを追加したいカスタム投稿タイプ名
-  //   array(
-  //     'label' => 'カテゴリー',
-  //     'hierarchical' => true,
-  //     'public' => true,
-  //     'show_in_rest' => true,
-  //   )
-  // );
+  register_post_type(
+    'column',
+    array(
+      'label' => 'コラム',
+      'public' => true,
+      'has_archive' => true,
+      'show_in_rest' => true,
+      'menu_position' => 6,
+      'supports' => array(
+        'title',
+        'editor',
+        'revisions',
+      ),
+    )
+  );
 
   // register_post_type(
   //   'movie',
@@ -238,30 +234,17 @@ add_action('init', 'create_post_type');
 /**
  * 管理画面のカスタム投稿一覧にタクソノミー（カテゴリ）の列を表示 START
  */
-// function add_custom_column($defaults)
-// {
-// global $post_type;
-// if ('news' == $post_type) {
-//   $defaults['news-cat'] = 'カテゴリ';
-// } elseif ('column' == $post_type) {
-//   $defaults['column-cat'] = 'カテゴリ';
-// }
-// return $defaults;
-// }
-// add_filter('manage_posts_columns', 'add_custom_column');
-
-// function add_custom_column_id($column_name, $id)
-// {
-// if ($column_name == 'news-cat') {
-//   echo get_the_term_list($id, 'news-cat', '', ', ');
-// } elseif ($column_name == 'column-cat') {
-//   echo get_the_term_list($id, 'column-cat', '', ', ');
-// }
-// }
-// add_action('manage_case_posts_custom_column', 'add_custom_column_id', 10, 2);
-// add_action('manage_facility_posts_custom_column', 'add_custom_column_id', 10, 2);
-// カスタム投稿一覧にタクソノミー（カテゴリ）の列を表示 END
-
+function my_preget_posts($query)
+{
+  if (is_admin() || ! $query->is_main_query()) {
+    return;
+  }
+  if ($query->is_post_type_archive('column')) {
+    $query->set('posts_per_page', -1); // コラムは全件表示
+    return;
+  }
+}
+add_action('pre_get_posts', 'my_preget_posts');
 
 /**
  * テンプレートファイル名を指定して表示させるショートコード
@@ -446,6 +429,9 @@ function post_has_archive($args, $post_type)
   if ('post' == $post_type) {
     $args['rewrite'] = true;
     $args['has_archive'] = 'news'; //任意のスラッグ名
+  } elseif ('column' == $post_type) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'column'; //任意のスラッグ名
   }
   return $args;
 }

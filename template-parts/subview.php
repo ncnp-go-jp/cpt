@@ -5,7 +5,10 @@ $img_url = THEME_DIR_URI; // 画像
 $page = get_post(get_the_ID());
 $slug = $page->post_name;
 
-if (is_archive() || is_single()) {
+if (is_post_type_archive("column") || is_singular("column")) {
+  $ttl = 'コラム';
+  $img_url .= 'column/column-topview.webp';
+} else if (is_archive() || is_single()) {
   $ttl = 'お知らせ';
   $img_url .= 'news/news-topview.webp';
 } elseif (is_page("privacy")) {

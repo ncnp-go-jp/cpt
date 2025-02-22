@@ -25,8 +25,8 @@
 
       <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="CPTへ移動する" href="<?php echo home_url(); ?>" class="home"><span property="name">HOME</span></a>
         <meta property="position" content="1">
-        <i class="fas fa-angle-right"></i><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-documents current-item">お知らせ</span>
-          <meta property="url" content="<?php echo home_url() . '/news'; ?>">
+        <i class="fas fa-angle-right"></i><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-documents current-item"><?php echo is_post_type_archive("column") ?  'コラム' : 'お知らせ'; ?></span>
+          <meta property="url" content="<?php echo home_url(); ?><?php echo is_post_type_archive("column") ? '/column' : '/news'; ?>">
           <meta property="position" content="2">
         </span>
 

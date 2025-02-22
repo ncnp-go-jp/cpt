@@ -111,17 +111,49 @@ get_header();
   <article class="l-base p-column-slide">
     <h2 class="p-front-sec__h1">コラム</h2>
 
-    <ul class="p-column-slide__list">
-      <li><a href="">
-          <figure>
-            <img src="<?php echo THEME_DIR_URI; ?>top/sample.jpg" alt="">
-          </figure>
-          <time datetime="2021-01-01">2024.00.00</time>
-          <p>お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容お知らせの内容</p>
-        </a></li>
-    </ul>
+    <?php
+    $the_query = new WP_Query(
+      array(
+        'post_type' => 'column',
+        'post_status' => 'publish',
+        'posts_per_page' => 6, // 表示件数
+      )
+    );
+    if ($the_query->have_posts()) : ?>
 
-    <a href="" class="c-btn">コラム一覧　<i class="fas fa-angle-right"></i></a>
+      <div class="p-column-slide__list">
+        <div class="splide" id="splide-top" aria-label="トップ画面スライド">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <?php
+              while ($the_query->have_posts()) : $the_query->the_post();
+              ?>
+                <li class="splide__slide"><a href="<?php the_permalink(); ?>">
+                    <?php
+                    $img_url = THEME_DIR_URI . 'common/no-image.webp';
+                    if (get_field('column-list-thumb')) {
+                      $img_url = get_field('column-list-thumb');
+                    }
+                    ?>
+                    <figure>
+                      <img data-splide-lazy="<?php echo $img_url; ?>" alt="">
+                    </figure>
+                    <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                    <p><?php the_field('column-list-txt'); ?></p>
+                  </a></li>
+              <?php endwhile; ?>
+            </ul>
+          </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev button prev"><i class="fas fa-angle-left"></i></button>
+            <button class="splide__arrow splide__arrow--next button next"><i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
+
+    <a href="./column" class="c-btn">コラム一覧　<i class="fas fa-angle-right"></i></a>
   </article>
 </div> -->
 

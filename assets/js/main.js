@@ -34,9 +34,6 @@ jQuery(function ($) {
     return false;
   });
 
-  // 要素の高さを揃える
-  $('.js-matchHeight').matchHeight();
-
   var windowW = $(window).width();
 
   // スマホ：メニューボタン：タッチ時の開閉
@@ -57,6 +54,40 @@ jQuery(function ($) {
   $('.p-gnav__inner').on('click', function (event) {
     event.stopPropagation();
   });
+
+  //イベント・セミナーピックアップ一覧のスライド
+  const options_top_slide = {
+    type: "loop", //スライドの表示方法
+    arrows: true, //矢印ボタンの表示
+    pagination: false, //ページネーション非表示
+    autoplay: true, //自動再生
+    pauseOnFocus: false, //スライドfocus時自動再生停止禁止
+    rewind: true, //スライドの最後のページに行ったら、最初のページに戻れるようにする
+    interval: 5000, //次のスライドに行くまでの速さ
+    speed: 1000, //ページ送りアニメーションの速さ
+    lazyLoad: 'sequential', // 初期化後、最初のスライドから順番にロードする
+    gap: '4%',
+    perPage: 3,
+    perMove: 1,
+    breakpoints: {
+      833: { // 767px以下でスライドの数を変更
+        perPage: 1,
+      },
+    },
+  };
+
+  if ($('#splide-top').length) {
+    //PCでは4個以上でスライド表示
+    if (windowW >= 834) {
+      if ($('#splide-top .splide__slide').length >= 4) {
+        const splide = new Splide("#splide-top", options_top_slide);
+        splide.mount();
+      }
+    } else {
+      const splide = new Splide("#splide-top", options_top_slide);
+      splide.mount();
+    }
+  }
 
   // タブ一覧の個々のタブの横幅を調整する
   $('.p-tab-box__tab-list.js-fit').each(function (index, element) {
