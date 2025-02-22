@@ -50,9 +50,9 @@
               </div>
               <ul class="p-gnav__sub-list">
                 <li><a href="<?php echo home_url() . '/about/thought'; ?>">想い</a></li>
-                <li><a href="<?php echo home_url() . '/about/experienced-person'; ?>">トラウマを経験した方へ</a></li>
-                <li><a href="<?php echo home_url() . '/about/family-friends'; ?>">トラウマを経験した方のご家族やご友人へ</a></li>
-                <li><a href="<?php echo home_url() . '/about/supporter'; ?>">トラウマ経験者の支援を行う方へ</a></li>
+                <!-- <li><a href="<?php echo home_url() . '/about/experienced-person'; ?>">トラウマを経験した方へ</a></li> -->
+                <!-- <li><a href="<?php echo home_url() . '/about/family-friends'; ?>">トラウマを経験した方のご家族やご友人へ</a></li> -->
+                <!-- <li><a href="<?php echo home_url() . '/about/supporter'; ?>">トラウマ経験者の支援を行う方へ</a></li> -->
               </ul>
             </li>
             <li>
