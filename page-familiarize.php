@@ -15,21 +15,20 @@ get_template_part('template-parts/mainview');
   ?>
 
   <div class="l-base c-white-box-l__wrapper">
-    <dvi class="p-abt-trauma__txt-box">
+    <div class="p-abt-trauma__txt-box">
       <p>認知処理療法（CPT）は、 PTSDの症状やその他の問題からの回復を妨げ、個人が「行き詰まり」状態に陥る可能性のある考えの傾向に対処することで、症状や日常生活の改善を図る心理療法です。通常は、治療提供者としての訓練を受けた専門家とともに、全12回のセッションに取り組み、考え直しのスキルを身につけていきます。<br>
         一方で私たちは、CPTで用いられる考え方は、それ自体が、トラウマとの向き合い方の指針になると考えています。また、治療の中で使う資料やワークシートは、トラウマ体験の影響に苦しむ人が、自分で自分を助けるためにも役立つ可能性があると考えます。<br>
         ここには、まずはもう少しCPTのことを知ってみたい、試しに自分で取り組んでみたいと思った時に、手に取っていただきやすい情報をまとめました。パラパラと眺めていただき、もし何かあなたの役立ちそうなものが見つかれば幸いです。</p>
-    </dvi>
+    </div>
   </div>
-
 </div>
 
 <?php
 global $post;
 $the_query = new WP_Query(
   array(
-    'post_type' => 'documents',
-    'post_status' => 'publish',
+    'post_type'      => 'documents',
+    'post_status'    => 'publish',
     'posts_per_page' => -1, // 全件表示
   )
 );
@@ -72,11 +71,11 @@ if ($the_query->have_posts()) :
               while ($the_query->have_posts()) : $the_query->the_post();
 
                 // 表示切り替え用に、属するカテゴリをCSSに追加
-                $target =  get_field('about-cpt-cat');
+                $target = get_field('about-cpt-cat');
                 $add_class = $target['value'];
 
                 // 動画IDを取得
-                $video_id =  get_field('about-cpt-video-movie');
+                $video_id = get_field('about-cpt-video-movie');
               ?>
 
                 <li class="<?php echo $add_class; ?>"><a href="<?php the_permalink(); ?>">
@@ -84,8 +83,19 @@ if ($the_query->have_posts()) :
                     //サムネイルの取得
                     //カテゴリが動画の場合
                     if ($add_class === "video") {
-                      $img_url = "https://img.youtube.com/vi/" . $video_id . "/maxresdefault.jpg";
-                      if ($img_url == "") {
+                      // 新しい方法：サムネイル候補サイズを順にチェック
+                      $sizes = array("maxresdefault", "hqdefault", "default");
+                      $img_url = "";
+                      foreach ($sizes as $size) {
+                        $temp_url = "https://img.youtube.com/vi/" . $video_id . "/" . $size . ".jpg";
+                        // maxresdefaultの画像が存在するか確認
+                        if (@getimagesize($temp_url)) { // もし画像が存在する場合
+                          $img_url = $temp_url;
+                          break;
+                        }
+                      }
+                      // 有効なサムネイルがない場合、common/no-image.webpを設定
+                      if (empty($img_url)) {
                         $img_url = THEME_DIR_URI . 'common/no-image.webp';
                       }
                     } else { //カテゴリが動画以外の場合
