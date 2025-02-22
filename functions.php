@@ -582,28 +582,29 @@ function wpcf7_autop_return_false()
 }
 
 /**
- * カスタムカラムにコンテンツを表示
+ * 投稿のカスタムカラムにコンテンツを追加
  */
-
-/* カラム（カスタムフィールド値「about-cpt-cat」）をセット */
 function manage_documents_columns($columns)
 {
+  // 元のカラムを保持
   $columns['about_cpt_cat'] = "CPTカテゴリ";
   return $columns;
 }
+add_filter('manage_documents_posts_columns', 'manage_documents_columns');
 
+/**
+ * カスタムカラムにコンテンツを表示
+ */
 function add_documents_column($column_name, $post_id)
 {
   if ($column_name == 'about_cpt_cat') {
     $stitle = get_post_meta($post_id, 'about-cpt-cat', true);
-
-    $post_id = get_the_ID(); // または対象の投稿ID
     $field = get_field_object('about-cpt-cat', $post_id);
 
+    // 項目の取得
     if ($field && isset($field['choices'])) {
       $labels = $field['choices'];
     } else {
-      // 万一フィールド情報が取得できなかった場合のフォールバック
       $labels = array(
         'booklet'  => '小冊子',
         'manga'    => 'マンガ',
@@ -613,6 +614,7 @@ function add_documents_column($column_name, $post_id)
       );
     }
 
+    // カラム内容の表示
     if (isset($stitle) && isset($labels[$stitle])) {
       echo esc_html($labels[$stitle]);
     } else {
@@ -620,8 +622,6 @@ function add_documents_column($column_name, $post_id)
     }
   }
 }
-
-add_filter('manage_documents_posts_columns', 'manage_documents_columns');
 add_action('manage_documents_posts_custom_column', 'add_documents_column', 10, 2);
 
 /*============================================
@@ -652,6 +652,7 @@ add_action('pre_get_posts', 'documents_orderby');
 function sort_documents_column($columns)
 {
   $columns = array(
+    'cb' => '<input type="checkbox" />',
     'title' => 'タイトル',
     'about_cpt_cat' => 'CPTカテゴリ',
     'date' => '日時'
