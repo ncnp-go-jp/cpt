@@ -594,3 +594,144 @@ function wpcf7_autop_return_false()
 {
   return false;
 }
+
+/**
+ * カスタムカラムにコンテンツを表示
+ */
+
+/* カラム（カスタムフィールド値「about-cpt-cat」）をセット */
+function manage_documents_columns($columns)
+{
+  $columns['about_cpt_cat'] = "CPTカテゴリ";
+  return $columns;
+}
+
+function add_documents_column($column_name, $post_id)
+{
+  if ($column_name == 'about_cpt_cat') {
+    $stitle = get_post_meta($post_id, 'about-cpt-cat', true);
+
+    $post_id = get_the_ID(); // または対象の投稿ID
+    $field = get_field_object('about-cpt-cat', $post_id);
+
+    if ($field && isset($field['choices'])) {
+      $labels = $field['choices'];
+    } else {
+      // 万一フィールド情報が取得できなかった場合のフォールバック
+      $labels = array(
+        'booklet'  => '小冊子',
+        'manga'    => 'マンガ',
+        'video'    => 'ビデオ',
+        'books'    => '書籍',
+        'workbook' => 'ワークシート',
+      );
+    }
+
+    if (isset($stitle) && isset($labels[$stitle])) {
+      echo esc_html($labels[$stitle]);
+    } else {
+      echo __('なし', 'text-domain');
+    }
+  }
+}
+
+add_filter('manage_documents_posts_columns', 'manage_documents_columns');
+add_action('manage_documents_posts_custom_column', 'add_documents_column', 10, 2);
+
+/*============================================
+ * カラムのソートを可能にする
+============================================*/
+
+function documents_sortable_columns($columns)
+{
+  $columns['about_cpt_cat'] = 'about-cpt-cat'; // ソートを可能にするカラムを登録
+  return $columns;
+}
+add_filter('manage_edit-documents_sortable_columns', 'documents_sortable_columns');
+
+function documents_orderby($query)
+{
+  if (!is_admin()) return;
+  if ($query->get('orderby') == 'about-cpt-cat') {
+    $query->set('meta_key', 'about-cpt-cat'); // ソートするカスタムフィールドのキー
+    $query->set('orderby', 'meta_value'); // メタ値でソート
+  }
+}
+add_action('pre_get_posts', 'documents_orderby');
+
+/*============================================
+ * カスタム投稿タイプ名「documents」のカラムをソートする
+============================================*/
+
+function sort_documents_column($columns)
+{
+  $columns = array(
+    'title' => 'タイトル',
+    'about_cpt_cat' => 'CPTカテゴリ',
+    'date' => '日時'
+  );
+  return $columns;
+}
+add_filter('manage_edit-documents_columns', 'sort_documents_column');
+
+// CPTカテゴリによるフィルターを追加
+function documents_filter_by_cpt_category($query)
+{
+  global $pagenow;
+
+  // 投稿一覧ページかつカスタム投稿タイプが「documents」の場合のみ処理
+  if ($pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'documents') {
+    // GETパラメータから選択された値を取得
+    $value = isset($_GET['cpt_category_filter']) ? $_GET['cpt_category_filter'] : '';
+
+    // ACFが有効の場合、acf_get_field() を使ってフィールドオブジェクトを取得
+    if (function_exists('acf_get_field')) {
+      $field = acf_get_field('about-cpt-cat');
+    } else {
+      $field = false;
+    }
+
+    // フィールド情報が取得でき、choices が設定されていればそれを利用
+    if ($field && !empty($field['choices'])) {
+      $choices = $field['choices'];
+    } else {
+      // 万一取得できない場合のフォールバック（必要に応じて変更してください）
+      $choices = array(
+        'booklet'  => __('小冊子', 'text-domain'),
+        'manga'    => __('マンガ', 'text-domain'),
+        'video'    => __('ビデオ', 'text-domain'),
+        'books'    => __('書籍', 'text-domain'),
+        'workbook' => __('ワークシート', 'text-domain'),
+      );
+    }
+?>
+    <!-- フィルターボックスの出力 -->
+    <select name="cpt_category_filter">
+      <option value=""><?php _e('すべてのCPTカテゴリ', 'text-domain'); ?></option>
+      <?php foreach ($choices as $key => $label) : ?>
+        <option value="<?php echo esc_attr($key); ?>" <?php selected($value, $key); ?>>
+          <?php echo esc_html($label); ?>
+        </option>
+      <?php endforeach; ?>
+    </select>
+<?php
+  }
+}
+add_action('restrict_manage_posts', 'documents_filter_by_cpt_category');
+
+// 絞り込み検索の実行
+function documents_filter_query($query)
+{
+  global $pagenow;
+
+  if ($pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'documents' && !empty($_GET['cpt_category_filter'])) {
+    $query->query_vars['meta_query'] = array(
+      array(
+        'key' => 'about-cpt-cat',
+        'value' => sanitize_text_field($_GET['cpt_category_filter']),
+        'compare' => '='
+      )
+    );
+  }
+}
+add_filter('pre_get_posts', 'documents_filter_query');

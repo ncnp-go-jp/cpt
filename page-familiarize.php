@@ -74,13 +74,25 @@ if ($the_query->have_posts()) :
                 // 表示切り替え用に、属するカテゴリをCSSに追加
                 $target =  get_field('about-cpt-cat');
                 $add_class = $target['value'];
+
+                // 動画IDを取得
+                $video_id =  get_field('about-cpt-video-movie');
               ?>
 
                 <li class="<?php echo $add_class; ?>"><a href="<?php the_permalink(); ?>">
                     <?php
-                    $img_url = THEME_DIR_URI . 'common/no-image.webp';
-                    if (get_field('about-cpt-list-thumb')) {
-                      $img_url = get_field('about-cpt-list-thumb');
+                    //サムネイルの取得
+                    //カテゴリが動画の場合
+                    if ($add_class === "video") {
+                      $img_url = "https://img.youtube.com/vi/" . $video_id . "/maxresdefault.jpg";
+                      if ($img_url == "") {
+                        $img_url = THEME_DIR_URI . 'common/no-image.webp';
+                      }
+                    } else { //カテゴリが動画以外の場合
+                      $img_url = THEME_DIR_URI . 'common/no-image.webp';
+                      if (get_field('about-cpt-list-thumb')) {
+                        $img_url = get_field('about-cpt-list-thumb');
+                      }
                     }
                     ?>
                     <img src="<?php echo $img_url; ?>" alt="<?php the_title(); ?>">
@@ -88,10 +100,8 @@ if ($the_query->have_posts()) :
                       <dt><?php the_field('about-cpt-ttl'); ?></dt>
                       <dd><?php the_field('about-cpt-list-txt'); ?></dd>
                     </dl>
-                    <?php
-                    $tag = get_field('about-cpt-cat');
-                    ?>
-                    <span class="p-doc-list__tag"><?php echo $tag['label']; ?></span>
+
+                    <span class="p-doc-list__tag"><?php echo $target['label']; ?></span>
                   </a></li>
 
               <?php endwhile; ?>
