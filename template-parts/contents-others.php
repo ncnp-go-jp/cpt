@@ -41,15 +41,15 @@
           <?php
           if (get_field('about-cpt-booklet-pdf')):
           ?>
-            <a href="<?php the_field('about-cpt-booklet-pdf'); ?>" target="_blank" class="c-btn -brown-rev">小冊子ダウンロード　<i class="fas fa-file-pdf"></i></a>
+            <a href="<?php the_field('about-cpt-booklet-pdf'); ?>" target="_blank" class="c-btn -brown-rev">小冊子ダウンロード　<i class="fa-regular fa-file-pdf"></i></a>
           <?php
           elseif (get_field('about-cpt-books-link')):
           ?>
-            <a href="<?php the_field('about-cpt-books-link'); ?>" target="_blank" class="c-btn -brown-rev">出版社サイトへ　<i class="fa-solid fa-window-restore"></i></a>
+            <a href="<?php the_field('about-cpt-books-link'); ?>" target="_blank" class="c-btn -brown-rev">出版社サイトへ　<i class="fa-regular fa-window-restore"></i></a>
           <?php
           elseif (get_field('about-cpt-workbook-pdf')):
           ?>
-            <a href="<?php the_field('about-cpt-workbook-pdf'); ?>" target="_blank" class="c-btn -brown-rev">ワークシートダウンロード　<i class="fas fa-file-pdf"></i></a>
+            <a href="<?php the_field('about-cpt-workbook-pdf'); ?>" target="_blank" class="c-btn -brown-rev">ワークシートダウンロード　<i class="fa-regular fa-file-pdf"></i></a>
           <?php endif; ?>
         </div>
 

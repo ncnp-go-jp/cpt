@@ -24,7 +24,7 @@ get_template_part('template-parts/mainview');
           <p>
             CPT実施者必携の包括的な手引き書です。CPTの起源とエビデンス、臨床実践のための準備に始まり、各セッションの進め方が詳述されます。また、実施に際しての考慮事項や治療のバリエーションを、科学的な検証と臨床実践経験に根ざして論じられます。
           </p>
-          <a href="https://www.sogensha.co.jp/productlist/detail?id=3961&srsltid=AfmBOoqec9OTk7uk9rE82c-6q-O7iYAuVvaT1tMDiNMfgNL_3ZHH7FT7" class="c-btn p-references__btn" target="_blank">書籍紹介サイトへ　<i class="fa-solid fa-window-restore"></i></a>
+          <a href="https://www.sogensha.co.jp/productlist/detail?id=3961&srsltid=AfmBOoqec9OTk7uk9rE82c-6q-O7iYAuVvaT1tMDiNMfgNL_3ZHH7FT7" class="c-btn p-references__btn" target="_blank">書籍紹介サイトへ　<i class="fa-regular fa-window-restore"></i></a>
         </div>
       </div>
 
@@ -36,7 +36,7 @@ get_template_part('template-parts/mainview');
           <p>
             包括手引きの改訂版であり、最新版です（2025年２月現在）。治療の概念化に関する新しい章を加えられるとともに、より使いやすい形式になりました。なお、邦訳版はまだ出版されていません。
           </p>
-          <a href="https://www.guilford.com/books/Cognitive-Processing-Therapy-for-PTSD/Resick-Monson-Chard/9781462554270" class="c-btn p-references__btn" target="_blank">書籍紹介サイトへ　<i class="fa-solid fa-window-restore"></i></a>
+          <a href="https://www.guilford.com/books/Cognitive-Processing-Therapy-for-PTSD/Resick-Monson-Chard/9781462554270" class="c-btn p-references__btn" target="_blank">書籍紹介サイトへ　<i class="fa-regular fa-window-restore"></i></a>
         </div>
       </div>
 

@@ -49,17 +49,17 @@ get_template_part('template-parts/mainview');
     <h3>日本語版が作成されている尺度</h3>
     <dl>
       <dt>・PTSD評価尺度（IES-R）</dt>
-      <dd><a href="https://www.jstss.org/" target="_blank" class="u-orange-marker">日本トラウマティック・ストレス学会のサイト <i class="fa-solid fa-window-restore"></i></a> に掲載されています。</dd>
+      <dd><a href="https://www.jstss.org/" target="_blank" class="u-orange-marker">日本トラウマティック・ストレス学会のサイト <i class="fa-regular fa-window-restore"></i></a> に掲載されています。</dd>
     </dl>
     <dl>
       <dt>・PTSD３項目簡易スクリーニング尺度<br>・外傷後ストレス診断尺度DSM-Ⅳ版</dt>
-      <dd><a href="https://saigai-kokoro.ncnp.go.jp/" target="_blank" class="u-orange-marker">国立精神・神経医療研究センター ストレス・災害時こころの情報支援センターのサイト <i class="fa-solid fa-window-restore"></i></a> に掲載されています。
+      <dd><a href="https://saigai-kokoro.ncnp.go.jp/" target="_blank" class="u-orange-marker">国立精神・神経医療研究センター ストレス・災害時こころの情報支援センターのサイト <i class="fa-regular fa-window-restore"></i></a> に掲載されています。
       </dd>
     </dl>
     <h3>英語版のさまざまな尺度</h3>
     <dl>
       <dt>・アメリカの退役軍人局</dt>
-      <dd><a href="https://www.ptsd.va.gov/" target="_blank" class="u-orange-marker">National Center for PTSDのサイト <i class="fa-solid fa-window-restore"></i></a> に、トラウマ及びPTSDに関連したさまざまな尺度の一覧が掲載されています。</dd>
+      <dd><a href="https://www.ptsd.va.gov/" target="_blank" class="u-orange-marker">National Center for PTSDのサイト <i class="fa-regular fa-window-restore"></i></a> に、トラウマ及びPTSDに関連したさまざまな尺度の一覧が掲載されています。</dd>
     </dl>
   </div>
 </article>

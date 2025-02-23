@@ -37,11 +37,15 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td>International Society for Traumatic Stress Studies</td>
+        <td>
+          <a href="https://www.ptsd.va.gov/index.asp" target="_blank" class="u-black-link">International Society for Traumatic Stress Studies <i class="fa-regular fa-window-restore"></i></a>
+        </td>
         <td>トラウマやPTSDに関する研究知見を紹介しています。</td>
       </tr>
       <tr>
-        <td>一般社団法人日本トラウマティック・ストレス学会</td>
+        <td>
+          <a href="https://www.jstss.org/categories/bunya/ptsd/dissertation/" target="_blank" class="u-black-link">一般社団法人日本トラウマティック・ストレス学会 <i class="fa-regular fa-window-restore"></i></a>
+        </td>
         <td>トラウマやPTSDに関する研究知見を紹介しています。</td>
       </tr>
     </table>
@@ -55,20 +59,23 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td>CPTのオフィシャルサイト</td>
+        <td>
+          <a href="https://cptforptsd.com/cpt-resources/" target="_blank" class="u-black-link">CPTのオフィシャルサイト <i class="fa-regular fa-window-restore"></i></a>
+        </td>
         <td>CPTに関連する研究論文が一覧できます。</td>
       </tr>
       <tr>
-        <td><span class="c-tooltip tippy01">日本での成果（プレスリリース）</span></td>
+        <td><span class="c-tooltip tippy01">日本での成果（プレスリリース）</span>（<a href="https://www.ncnp.go.jp/topics/2023/20230105p.html" target="_blank" class="u-black-link ">詳細 <i class="fa-regular fa-window-restore"></i></a>）</td>
         <td>私たちの研究チームで取り組んだ臨床試験の成果です。</td>
       </tr>
     </table>
     <script>
       tippy(' .tippy01', {
-        content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+        content: '2022-12-14 Yuriko Takagishi, Masaya Ito, Ayako Kanie, Nobuaki Morita, Miyuki Makino, Akiko Katayanagi, Tamae Sato, Fumi Imamura, Satomi Nakajima, Yuki Oe, Masami Kashimura, Akiko Kikuchi, Tomomi Narisawa, Masaru Horikoshi：Feasibility, acceptability, and preliminary efficacy of cognitive processing therapy in Japanese patients with posttraumatic stress disorder.　Journal of Traumatic Stress<br><br>2021-01-24<br>片柳章子， 中島聡美， 伊藤正哉， 蟹江絢子， 堀越勝: 性暴力被害者への認知処理療法適用による心的外傷後ストレス障害の回復過程.認知療法研究<br><br>2017-01-02<br>Masaya Ito,Masaru Hrikoshi,Akiko Katayanagi,Mitsuhiro Miyamae,Yriko Takagishi,Yoshitake Takebayashi,Ayako Kanie,Naotsugu Hirabayashi: Study protocol for a randomised controlledtrial of cognitive processing therapy for post - traumatic stress disorder among Japanese patients: the Safety,Power,Intimacy,Esteem,Trust(SPINET) study,BMJ Open,2017.',
         placement: 'bottom',
         arrow: false,
         theme: 'white',
+        allowHTML: true,
       });
     </script>
   </div>
@@ -144,7 +151,7 @@ get_template_part('template-parts/mainview');
         <th>コメント</th>
       </tr>
       <tr>
-        <td><a href="" target="_blank" class="u-black-link">片柳さん提供の資源リスト <i class="fas fa-file-pdf"></i></a></td>
+        <td><a href="" target="_blank" class="u-black-link">片柳さん提供の資源リスト <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>コメントが入りますコメントが入りますコメントが入ります</td>
       </tr>
     </table>

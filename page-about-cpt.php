@@ -46,7 +46,7 @@ get_template_part('template-parts/mainview');
 
     <h2 class="c-h2 p-abt-trauma__h1">CPTのバリエーション</h2>
     <div class="p-abt-trauma__txt-box">
-      <p>個人での12回のセッションを基本とするCPTですが、PTSDを抱えた方のニーズに応えるため、さまざまな形のCPTが開発されてきました。例えば、グループで行うCPTもあり、そこでは、参加者は「体験したトラウマの詳細はセッション中は話さない」というルールの下、安全な環境で互いに学び合うことができます。短期間に集中的に進める方法や、回数を調整して進めるなど、治療により参加しやすく、効果を発揮しやすい方法も模索されています（→詳しく知りたい方は、<a href="" target="_blank" class="u-orange-marker">エビデンス <i class="fa-solid fa-window-restore"></i></a>へ）<br>
+      <p>個人での12回のセッションを基本とするCPTですが、PTSDを抱えた方のニーズに応えるため、さまざまな形のCPTが開発されてきました。例えば、グループで行うCPTもあり、そこでは、参加者は「体験したトラウマの詳細はセッション中は話さない」というルールの下、安全な環境で互いに学び合うことができます。短期間に集中的に進める方法や、回数を調整して進めるなど、治療により参加しやすく、効果を発揮しやすい方法も模索されています（→詳しく知りたい方は、<a href="" target="_blank" class="u-orange-marker">エビデンス <i class="fa-regular fa-window-restore"></i></a>へ）<br>
         日本では、次の３つの形のマニュアルが作られ、研究が進められています。</p>
     </div>
 
@@ -69,7 +69,7 @@ get_template_part('template-parts/mainview');
               <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-01.webp" alt="CAYAP｜PTSD関連の臨床状態にある青年へのCPTの適用">
             </div>
             <div class="p-tab-box__btn-box">
-              <a href="https://cbt.ncnp.go.jp/research_top_detail.php?@uid=bvJVNgQsGeV3qmfu" target="_blank" class="c-btn">関連サイトへ　<i class="fa-solid fa-window-restore"></i></a>
+              <a href="https://cbt.ncnp.go.jp/research_top_detail.php?@uid=bvJVNgQsGeV3qmfu" target="_blank" class="c-btn">関連サイトへ　<i class="fa-regular fa-window-restore"></i></a>
             </div>
           </section>
         </div>
@@ -103,7 +103,7 @@ get_template_part('template-parts/mainview');
 
     <div class="p-ttl-txt-box">
       <h2 class="p-ttl-txt-box__ttl">実施者になるには</h2>
-      <p>CPTが開発された米国では、CPTの実施者になるためのステップが確立され、<a href="https://cptforptsd.com/cpt-provider-roster/" target="_blank" class="u-orange-marker">実施者の登録制度 <i class="fa-solid fa-window-restore"></i></a>も整えられています。<br>
+      <p>CPTが開発された米国では、CPTの実施者になるためのステップが確立され、<a href="https://cptforptsd.com/cpt-provider-roster/" target="_blank" class="u-orange-marker">実施者の登録制度 <i class="fa-regular fa-window-restore"></i></a>も整えられています。<br>
         日本においては、現在、研修や実施者養成の制度を作っている最中です。CPTの実践に関心をお持ちの援助専門職の方は、お知らせから研修情報をご確認いただくとともに、<a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="u-orange-marker">利用登録</a>を行い当サイトでご提供するマテリアルへのリーチをご検討ください。</p>
     </div>
 

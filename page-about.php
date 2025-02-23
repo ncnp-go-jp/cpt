@@ -23,7 +23,7 @@ get_template_part('template-parts/mainview');
 
     <section class="c-white-box-s p-abt-intro__box">
       <h3 class="c-h3 p-abt-intro__h2">運営元</h3>
-      <p><a href="https://cbt.ncnp.go.jp/" target="_blank" class="u-orange-marker">国立研究開発法人国立精神・神経医療研究センター認知行動療法センター <i class="fa-solid fa-window-restore"></i></a>では、設立された2011年より認知行動療法の臨床研究・人材育成・社会実装につとめて参りました。<br>
+      <p><a href="https://cbt.ncnp.go.jp/" target="_blank" class="u-orange-marker">国立研究開発法人国立精神・神経医療研究センター認知行動療法センター <i class="fa-regular fa-window-restore"></i></a>では、設立された2011年より認知行動療法の臨床研究・人材育成・社会実装につとめて参りました。<br>
         研究開発部では、認知処理療法（Cognitive Processing Therapy；CPT）の基礎・臨床研究に励んでおります。</p>
     </section>
 

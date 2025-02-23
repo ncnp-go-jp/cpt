@@ -28,7 +28,7 @@ get_template_part('template-parts/mainview');
   <h2 class="c-h2 p-abt-trauma__h1">どれくらいの人がトラウマを体験するか</h2>
   <div class="p-abt-trauma__txt-box">
     <p>多くの人は、人生のある時点でトラウマとなる出来事を経験します。おそらく、生きていて一度も傷ついた経験のない人はまれでしょうし、かなりの割合の人が、狭い意味でのトラウマも体験しています。<br>
-      1,682名に対する面接調査の結果をまとめた<span class="c-tooltip tippy01">Kawakami（2014）</span>（<a href="https://doi.org/10.1016/j.jpsychires.2014.01.015" target="_blank" class="u-black-link ">参照 <i class="fa-solid fa-window-restore"></i></a>）では、<b class="u-em-orange-marker">日本では約60％の人が、人生において何らかのトラウマ体験をしている</b>ことが明らかになりました。もっとも多くの人が経験した出来事は、身近に起きた悲惨な出来事を見たり聞いたりすること、次いで、自分にとって大事な人が予期せず亡くなったことでした。そして、<b class="u-em-orange-marker">トラウマとなる出来事を経験する回数の平均は、3.5回</b>でした。<br>
+      1,682名に対する面接調査の結果をまとめた<span class="c-tooltip tippy01">Kawakami（2014）</span>（<a href="https://doi.org/10.1016/j.jpsychires.2014.01.015" target="_blank" class="u-black-link ">参照 <i class="fa-regular fa-window-restore"></i></a>）では、<b class="u-em-orange-marker">日本では約60％の人が、人生において何らかのトラウマ体験をしている</b>ことが明らかになりました。もっとも多くの人が経験した出来事は、身近に起きた悲惨な出来事を見たり聞いたりすること、次いで、自分にとって大事な人が予期せず亡くなったことでした。そして、<b class="u-em-orange-marker">トラウマとなる出来事を経験する回数の平均は、3.5回</b>でした。<br>
       トラウマとなる出来事には、さまざまな種類があります。以下に、それぞれの出来事をどれくらいの人が体験しているか、Kawakami（2014）をもとに紹介します。</p>
   </div>
   <script>
@@ -82,7 +82,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal01">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal01">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section>
       </div>
@@ -96,7 +96,7 @@ get_template_part('template-parts/mainview');
               <!-- <img src="<?php echo THEME_DIR_URI; ?>learn/about-trauma-01.webp" alt="" class="p-img-right-btm-box__img"> -->
               <p>
                 物理的に傷がつくわけではなくても、自分の境界線が破られ、性的な安全が損なわれる出来事は、トラウマになり得ます。レイプや痴漢など、自分の意思とは関わりなく性的なことを強要されることで、尊厳が損なわれたように感じるかもしれません。<br>
-                調査では、<b class="u-em-orange-marker">4.3％の人が性的暴力を経験</b>していました。中でも、ストーカー被害の経験率が高かったです。<br>ただし、<span class="c-tooltip tippy02">若年層を対象としたより最近の調査</span> （<a href="https://www.gender.go.jp/policy/no_violence/e-vaw/chousa/pdf/r04_houkoku/01.pdf" target="_blank" class="u-black-link ">参照 <i class="fas fa-file-pdf"></i></a>）では、約4人に1人が何らかの性暴力被害にあったことがあ ると回答するなど、調査によってちがいがあります。
+                調査では、<b class="u-em-orange-marker">4.3％の人が性的暴力を経験</b>していました。中でも、ストーカー被害の経験率が高かったです。<br>ただし、<span class="c-tooltip tippy02">若年層を対象としたより最近の調査</span> （<a href="https://www.gender.go.jp/policy/no_violence/e-vaw/chousa/pdf/r04_houkoku/01.pdf" target="_blank" class="u-black-link ">参照 <i class="fa-regular fa-file-pdf"></i></a>）では、約4人に1人が何らかの性暴力被害にあったことがあ ると回答するなど、調査によってちがいがあります。
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ get_template_part('template-parts/mainview');
           </script>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal02">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal02">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section>
       </div>
@@ -134,7 +134,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal03">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal03">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section class="p-tab-box__inner">
       </div>
@@ -154,7 +154,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal04">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal04">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section>
       </div>
@@ -174,7 +174,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal05">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal05">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section>
       </div>
@@ -194,7 +194,7 @@ get_template_part('template-parts/mainview');
           </div>
 
           <!-- <div class="p-tab-box__btn-box">
-            <a class="c-btn js-modal-button-target" href="#modal06">クイズに挑戦する　<i class="fa-solid fa-window-restore"></i></a>
+            <a class="c-btn js-modal-button-target" href="#modal06">クイズに挑戦する　<i class="fa-regular fa-window-restore"></i></a>
           </div> -->
         </section>
       </div>

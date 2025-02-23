@@ -37,7 +37,7 @@
       <h3 class="p-cont-video__h2">マンガ｜ 認知処理療法応援マンガ</h3>
       <div>
         <p>CPTについて興味があり、概要を知りたい方向けのマンガです。CPTのセッションでよく取り上げられているテーマが描かれています。<br>（監修：久留米大学　大江美佐里先生）</p>
-        <p><a href="https://neuropsy-kurume.jp/production" target="_blank" class="u-orange-marker">応援マンガダウンロード：久留米大学 心理教育テキスト <i class="fa-solid fa-window-restore"></i></a></p>
+        <p><a href="https://neuropsy-kurume.jp/production" target="_blank" class="u-orange-marker">応援マンガダウンロード：久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a></p>
       </div>
     </section>
 

@@ -86,7 +86,7 @@ get_template_part('template-parts/mainview');
     <h2 class="c-h2 p-abt-trauma__h1">PTSDを患う人の割合、期間</h2>
     <div class="p-abt-trauma__txt-box">
       <p>多くの人は、人生のある時点でトラウマとなる出来事を経験します。そして、一時的にはその出来事に対処するために苦労しても、時間をかけて回復していきます。一部の人はPTSDを発症し、時に長い期間、症状を抱えます。しかし、PTSDを患っている人の正確な数はわかっていません。PTSDについて、全ての人に尋ねた研究は一つもないからです。そのような制約はあるものの、多数の人の協力を得ることで、どれくらいの割合の人がPTSDを経験するのかを推計することができます。<br>
-        ここでは、<span class="c-tooltip tippy01">Kawakami（2014）</span>（<a href="https://doi.org/10.1016/j.jpsychires.2014.01.015" target="_blank" class="u-black-link ">参照 <i class="fa-solid fa-window-restore"></i></a>）の調査から、日本ではどれくらいの割合の人がPTSDを発症しているかを紹介します。</p>
+        ここでは、<span class="c-tooltip tippy01">Kawakami（2014）</span>（<a href="https://doi.org/10.1016/j.jpsychires.2014.01.015" target="_blank" class="u-black-link ">参照 <i class="fa-regular fa-window-restore"></i></a>）の調査から、日本ではどれくらいの割合の人がPTSDを発症しているかを紹介します。</p>
     </div>
 
     <script>
