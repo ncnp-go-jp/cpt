@@ -80,6 +80,7 @@
 			<ul class="p-ftr__btm-list">
 				<li><a href="<?php echo home_url() . '/privacy'; ?>">プライバシーポリシー</a></li>
 				<li><a href="<?php echo home_url() . '/sitepolicy'; ?>">サイトポリシー</a></li>
+				<li><a href="<?php echo home_url() . '/cookiepolicy'; ?>">クッキーポリシー</a></li>
 				<!-- <li><a href="<?php //echo home_url() . '/sitemap'; 
 													?>">サイトマップ</a></li> -->
 			</ul>
