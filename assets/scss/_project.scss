@@ -2889,6 +2889,7 @@
     a {
       color: $color_light-orange;
       text-decoration: underline;
+      display: block;
 
       & {
         @include hover;

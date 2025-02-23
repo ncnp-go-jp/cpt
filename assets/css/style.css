@@ -2080,6 +2080,7 @@ main {
 .p-form .wpmem_msg a {
   color: #FABA6B;
   text-decoration: underline;
+  display: block;
 }
 .p-form .wpmem_msg a {
   transition: opacity linear 0.3s;
