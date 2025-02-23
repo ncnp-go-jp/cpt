@@ -2105,6 +2105,10 @@ main {
 .p-form #wpmem_reg .p-form__row,
 .p-form #wpmem_login .p-form__row {
   text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .p-form #wpmem_reg .p-form__row label.text,
 .p-form #wpmem_reg .p-form__row label.multicheckbox:not([for*="["]),
@@ -3681,7 +3685,7 @@ main {
     left: 0;
     padding-left: 6rem;
     margin: 0;
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

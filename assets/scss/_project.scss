@@ -2918,6 +2918,8 @@
 
     .p-form__row {
       text-align: left;
+      display: flex;
+      flex-wrap: wrap;
 
       @include media(tb) {
         padding-left: 25rem;
@@ -2943,7 +2945,7 @@
           left: 0;
           padding-left: 6rem;
           margin: 0;
-          display: inline-block;
+          display: block;
           @include center(y);
         }
       }
