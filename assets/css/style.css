@@ -1346,6 +1346,9 @@ main {
   width: 93%;
   margin: 0 auto;
 }
+.p-tab-box__2col p {
+  word-break: normal;
+}
 
 .p-ttl-txt-box {
   margin-top: 3.5rem;

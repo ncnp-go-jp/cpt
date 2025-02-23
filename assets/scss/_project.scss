@@ -1646,6 +1646,10 @@
       }
     }
 
+    p {
+      word-break: normal;
+    }
+
     &.-resources {
       img {
         @include media(tb) {
