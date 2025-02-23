@@ -17,6 +17,9 @@ if (is_post_type_archive("column") || is_singular("column")) {
 } elseif (is_page("sitepolicy")) {
   $ttl = 'サイトポリシー';
   $img_url .= 'privacy/policy-topview.webp';
+} elseif (is_page("cookiepolicy")) {
+  $ttl = 'クッキー（Cookie）ポリシー';
+  $img_url .= 'privacy/policy-topview.webp';
 } elseif (is_page("sitemap")) {
   $ttl = 'サイトマップ';
   $img_url .= 'sitemap/sitemap-topview.webp';

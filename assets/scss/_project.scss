@@ -1355,6 +1355,61 @@
 
 }
 
+.p-cookiepolicy-intro {
+  padding: 2.5rem 0 4rem;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+
+  &__sec {
+    >p {
+      &:nth-of-type(n+2) {
+        margin-top: 3rem;
+
+        @include media(tb) {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    dl {
+      margin-top: 3rem;
+
+      @include media(tb) {
+        margin-top: 4rem;
+      }
+
+      dt {
+        font-weight: 600;
+      }
+
+      dd {
+        margin-left: 1em;
+
+        p {
+          &:nth-of-type(n+2) {
+            margin-top: 3rem;
+
+            @include media(tb) {
+              margin-top: 4rem;
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        text-indent: -1em;
+        margin-left: 1em;
+      }
+    }
+
+  }
+
+}
+
 
 .p-table-2col {
   &+& {
