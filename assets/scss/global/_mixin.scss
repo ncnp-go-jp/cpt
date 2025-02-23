@@ -37,8 +37,7 @@
 @mixin justify() {
   text-align: justify;
   text-justify: inter-ideograph;
-  // word-break: break-all;
-  word-break: auto-phrase;
+  word-break: break-all;
 }
 
 // フォントサイズ

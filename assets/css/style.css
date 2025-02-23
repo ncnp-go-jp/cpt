@@ -93,7 +93,7 @@ ul li,
 ol li {
   text-align: justify;
   text-justify: inter-ideograph;
-  word-break: auto-phrase;
+  word-break: break-all;
 }
 
 picture,
