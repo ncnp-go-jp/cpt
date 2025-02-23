@@ -72,27 +72,27 @@ get_template_part('template-parts/mainview');
             <p>トラウマを経験した後は、「危ない！」警報が誤作動して、安全な場面でも、体が「戦う・逃げる・固まる」反応をしてしまうことがよくありますが、「もう安全なんだ」とわかると、誤作動は次第に減っていきます。<br>
               しかし、出来事を思い出させるような手がかりを避けると、誤作動に気づかず、何が危険で何が危険ではないか、正確に判断できないままになってしまいます。</p>
             <p class="c-flex u-bold"><span>→</span>CPTでは、「避けるのをやめて、出来事に向き合う」ことを通して、誤作動に気づき、減らすことを目指します。</p>
-            <div class="p-tab-box__btn-box">
+            <!-- <div class="p-tab-box__btn-box">
               <a class="c-btn" href="">詳しくはこちら　<i class="fas fa-angle-right"></i></a>
-            </div>
+            </div> -->
           </div>
 
           <div class="p-ttl-txt-box">
             <h2 class="p-ttl-txt-box__ttl">スタックポイント｜回復の足かせになる考え</h2>
             <p>人は、予想もしなかったショックな出来事に直面した時、その体験を整理しようとして、「考え」を調節します。調節の仕方が極端だったり、実際の出来事の捉え方が現実と離れてしまうと、その考えはPTSDからの回復の足かせになります。</p>
             <p class="c-flex u-bold"><span>→</span>CPTでは、どのように世界やご自身、あるいはトラウマの経験を理解し、整理できるかを考え直していきます。PTSDからの回復の足かせとなる考えを「スタックポイント（引っかかり）」と位置づけ、その人固有の“引っかかり”を見つけ、見直していきます。</p>
-            <div class="p-tab-box__btn-box">
+            <!-- <div class="p-tab-box__btn-box">
               <a class="c-btn" href="">詳しくはこちら　<i class="fas fa-angle-right"></i></a>
-            </div>
+            </div> -->
           </div>
 
           <div class="p-ttl-txt-box">
             <h2 class="p-ttl-txt-box__ttl">２種類の感情</h2>
             <p>人が抱く感情には、２種類あります。出来事をどのように捉えるか次第で生み出される「作られた感情」は、時に、悲惨な出来事が起きたら皆が感じるような「自然な感情」が出てくるのを邪魔してしまいます。</p>
             <p class="c-flex u-bold"><span>→</span>CPTでは、出来事の捉え方を見直すことで、作られた感情を解消し、自然な感情をそのままに感じられる状態を目指します。</p>
-            <div class="p-tab-box__btn-box">
+            <!-- <div class="p-tab-box__btn-box">
               <a class="c-btn" href="">詳しくはこちら　<i class="fas fa-angle-right"></i></a>
-            </div>
+            </div> -->
           </div>
 
         </section>
