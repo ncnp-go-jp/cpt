@@ -215,13 +215,13 @@ jQuery(function ($) {
   // テキストを「必須」へ変更
   $('#wpmem_reg .req').text('必須');
 
-  // WP-Membersで作成されたチェックボックス内の改行タグを削除
+  // WP-Membersで作成されたチェックボックスをカスタム
   $('.p-form__row').each(function (index, element) {
-    // 改行タグを削除
-    var text = $(element).html();
-    $(element).html(
-      text.replaceAll("<br>", '')
-    );
+    // 不要なbrタグと半角スペースを削除
+    $(element).find('br').remove();
+    var $str = $(element).html();
+    $str = $str.replace(/&nbsp;/g, '');
+    $(element).html($str);
 
     // オリジナルのチェックボックスを追加。
     // ラベルはプラグインによって生成され一見区別を付けにくいが、
