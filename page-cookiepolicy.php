@@ -19,7 +19,7 @@ get_template_part('template-parts/subview');
   <article class="l-base p-cookiepolicy-intro">
     <section class="p-cookiepolicy-intro__sec">
 
-      <p>当研究班のウェブサイトでは、利用者の利便性を向上させるためにCookieを使用しています。このクッキーポリシーでは、Cookieの定義、使用目的、種類、および利用者の設定方法について説明します。</p>
+      <p>このウェブサイトでは、利用者の利便性を向上させるためにCookieを使用しています。このクッキーポリシーでは、Cookieの定義、使用目的、種類、および利用者の設定方法について説明します。</p>
 
       <dl>
         <dt>第1条（Cookieの定義）</dt>
@@ -31,7 +31,7 @@ get_template_part('template-parts/subview');
       <dl>
         <dt>第2条（Cookieの使用目的）</dt>
         <dd>
-          <p>当研究班のウェブサイトでは、以下の目的でCookieを使用しています。</p>
+          <p>このウェブサイトでは、以下の目的でCookieを使用しています。</p>
           <ul>
             <li>・利用者のログイン状態を保持するため</li>
             <li>・サービスの利用状況を分析し、改善に役立てるため</li>
@@ -75,7 +75,7 @@ get_template_part('template-parts/subview');
         </dd>
       </dl>
       <dl>
-        <dt>名称：国立研究開発法人 国立精神・神経医療研究センター 認知行動療法センター CPT研究班</dt>
+        <dt>名称：CPTウェブサイト運営事務局（国立精神・神経医療研究センター 認知行動療法センター内）</dt>
       </dl>
     </section>
   </article>
