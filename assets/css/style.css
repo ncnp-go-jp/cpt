@@ -3336,14 +3336,14 @@ main {
     width: 30rem;
   }
   .p-tab-box__ordered-box{
-    margin: 4rem 0 3rem;
+    margin: 5rem 3rem 4rem;
     padding: 2.5rem 2.1rem 2.5rem;
   }
   .p-tab-box__ordered-box__ttl{
     font-size: 2.2rem;
   }
   .p-tab-box__ordered-box ul li{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .p-ttl-txt-box{
     margin-top: 4.5rem;

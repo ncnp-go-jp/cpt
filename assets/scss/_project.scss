@@ -1733,7 +1733,7 @@
     position: relative;
 
     @include media(tb) {
-      margin: 4rem 0 3rem;
+      margin: 5rem 3rem 4rem;
       padding: 2.5rem 2.1rem 2.5rem;
     }
 
@@ -1754,15 +1754,12 @@
       padding: 0 2rem;
       color: $color_dark-brown;
       @include fontsize(16, 22);
-
-      @include media(tb) {}
-
     }
 
     ul {
       li {
         margin-top: 0.5rem;
-        @include fontsize(12, 16);
+        @include fontsize(12, 15);
 
         @include media(tb) {}
 
