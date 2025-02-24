@@ -16,7 +16,7 @@ get_template_part('template-parts/mainview');
   <div class="l-base c-white-box-l__wrapper">
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">CPT｜認知処理療法<br class="u-sp">（Cognitive Processing Therapy）</h2>
-      <p>CPTとは、非常に深刻な出来事の後に、こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>
+      <p>CPTとは、非常に深刻な出来事の後に、<b class="u-em-orange-marker">こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法</b>です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>
         これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス障害（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>
         CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
       <picture>
@@ -43,10 +43,9 @@ get_template_part('template-parts/mainview');
 
 <div class="u-bg-orange-gray">
   <article class="p-abt-trauma l-base">
-
     <h2 class="c-h2 p-abt-trauma__h1">CPTのバリエーション</h2>
     <div class="p-abt-trauma__txt-box">
-      <p>個人での12回のセッションを基本とするCPTですが、PTSDを抱えた方のニーズに応えるため、さまざまな形のCPTが開発されてきました。例えば、グループで行うCPTもあり、そこでは、参加者は「体験したトラウマの詳細はセッション中は話さない」というルールの下、安全な環境で互いに学び合うことができます。短期間に集中的に進める方法や、回数を調整して進めるなど、治療により参加しやすく、効果を発揮しやすい方法も模索されています（→詳しく知りたい方は、<a href="" target="_blank" class="u-orange-marker">エビデンス <i class="fa-regular fa-window-restore"></i></a>へ）<br>
+      <p>個人での12回のセッションを基本としますが、PTSDを抱えた方のニーズに応えるため、さまざまな形のCPTが開発されてきました。例えば、グループで行うCPTもあり、そこでは、参加者は「体験したトラウマの詳細はセッション中は話さない」というルールの下、安全な環境で互いに学び合うことができます。短期間に集中的に進める方法や、回数を調整して進めるなど、治療により参加しやすく、効果を発揮しやすい方法も模索されています（→詳しく知りたい方は、<a href="<?php echo home_url() . '/resources#cpt_guidelines' ?>" class="u-orange-marker">CPTに関する研究</a>へ）<br>
         日本では、次の３つの形のマニュアルが作られ、研究が進められています。</p>
     </div>
 
@@ -79,7 +78,7 @@ get_template_part('template-parts/mainview');
             <h3 class="c-h2 p-tab-box__h1">CPT-AUD｜アルコール使用症を<br class="u-sp">併発するPTSDへのCPTの適用</h3>
             <div class="p-tab-box__2col">
               <div>
-                <p>アルコール使用症（Alcohol Use Disorder：AUD）は、PTSDを患う人が同時に抱えやすい問題の一つです。AUDがあることで、PTSDの治療も難航しやすいことが知られています。<br>一部の人は、PTSDのつらい症状を和らげるためにお酒を飲むようです。一部の研究では、CPTに取り組み、PTSDの症状が改善することで、AUDの症状も緩和することが報告されています。</p>
+                <p>アルコール使用症（Alcohol Use Disorder：AUD）は、PTSDを患う人が同時に抱えやすい問題の一つです。AUDがあることで、PTSDの治療も難航しやすいことが知られています。<br>PTSDのつらさに対処するために、お酒を飲むことで、一時的に症状を和らげようとすることがあります。一部の研究では、CPTに取り組み、PTSDの症状が改善することで、AUDの症状も緩和することが報告されています。</p>
               </div>
               <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-02.webp" alt="CPT-AUD｜アルコール使用症を併発するPTSDへのCPTの適用">
             </div>

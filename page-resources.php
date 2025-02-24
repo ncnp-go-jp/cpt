@@ -28,8 +28,8 @@ get_template_part('template-parts/mainview');
 
 </div>
 
-<article class="l-base p-abt-trauma">
-  <div class="p-table-2col">
+<article class="l-base p-abt-research">
+  <div class="p-table-2col" id="trauma_guidelines">
     <h3 class="p-table-2col__h">【トラウマやPTSDに関する研究】</h3>
     <table class="p-table-2col__table">
       <tr>
@@ -51,7 +51,7 @@ get_template_part('template-parts/mainview');
     </table>
   </div>
 
-  <div class="p-table-2col">
+  <div class="p-table-2col" id="cpt_guidelines">
     <h3 class="p-table-2col__h">【CPTに関する研究】</h3>
     <table class="p-table-2col__table">
       <tr>
@@ -98,7 +98,7 @@ get_template_part('template-parts/mainview');
     </table>
   </div>
 
-  <div class="p-table-2col">
+  <div class="p-table-2col" id="ptsd_guidelines-en">
     <h3 class="p-table-2col__h">【PTSD治療ガイドライン】<br>海外のガイドライン</h3>
     <table class="p-table-2col__table">
       <tr>
