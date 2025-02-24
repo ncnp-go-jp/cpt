@@ -20,10 +20,12 @@ get_template_part('template-parts/mainview');
         <?php if (have_rows('voice-list')): ?>
           <?php while (have_rows('voice-list')) : the_row(); ?>
             <li>
-              <figure class="p-voice__figure">
-                <img src="<?php the_sub_field('voice-img'); ?>" alt="">
-                <figcaption><?php the_sub_field('voice-name'); ?></figcaption>
-              </figure>
+              <!-- <figure class="p-voice__figure">
+                <img src="<?php //the_sub_field('voice-img'); 
+                          ?>" alt="">
+                <figcaption><?php //the_sub_field('voice-name'); 
+                            ?></figcaption>
+              </figure> -->
               <?php the_sub_field('voice-txt'); ?>
             </li>
           <?php endwhile; ?>

@@ -95,7 +95,7 @@ if (is_page('about')) {
   $ttl = '治療を受けた人の声';
   $img_url_pc .= 'treatment/treatment-topview-pc.webp';
   $img_url_sp .= 'treatment/treatment-topview-sp.webp';
-  $txt = '私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTに取り組む体験をイメージする一助としていただければ幸いです。';
+  $txt = '私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTにとり組む体験をイメージする一助としていただければ幸いです。';
 } else if (is_page('resources')) {
   $ttl = '情報資源を得る';
   $img_url_pc .= 'resources/resources-topview-pc.webp';
