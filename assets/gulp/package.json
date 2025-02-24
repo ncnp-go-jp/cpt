@@ -16,7 +16,7 @@
     "css-mqpacker": "^7.0.0",
     "del": "^8.0.0",
     "gulp": "^4.0.2",
-    "gulp-dart-sass": "^1.1.0",
+    "gulp-dart-sass": "^1.5.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
     "gulp-pleeease": "^2.0.2",
@@ -29,9 +29,11 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
     "postcss": "^8.5.3",
-    "sass": "^1.85.0"
+    "sass": "^1.69.5"
   },
   "dependencies": {
+    "cssnano": "^7.0.6",
+    "d": "^1.0.2",
     "fs": "0.0.1-security",
     "gulp-ejs": "^5.1.0",
     "gulp-htmlmin": "^5.0.1",

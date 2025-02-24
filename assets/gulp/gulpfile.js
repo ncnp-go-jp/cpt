@@ -53,18 +53,28 @@ const cssSass = () => {
     return src(srcPath.css, {
             sourcemaps: true
         })
-        .pipe(
-            plumber( //エラーが発生しても処理は止めず
-                {
-                    errorHandler: notify.onError("Error: <%= error.message %>")
-                    // エラー出力設定
-                }
-            )
-        )
+        .pipe(plumber({
+            errorHandler: notify.onError(error => {
+                console.log(JSON.stringify({
+                    title: 'Sass Error',
+                    message: error.message
+                }, null, 2));
+                return {
+                    title: 'Sass Error',
+                    message: error.message
+                };
+            })
+        }))
         .pipe(sassGlob()) // glob機能を使って@useや@forwardを省略する
         .pipe(
             sass()
             .on("error", sass.logError))
+        .pipe(
+            sass.sync({
+                silenceDeprecations: ['legacy-js-api'], // 警告メッセージを出さない
+                outputStyle: 'expanded'
+            }).on('error', sass.logError)
+        )
         .pipe(pleeease({
             rem: false, // pxの自動補完を解除
             autoprefixer: { // ベンダープレフィックスの自動付与

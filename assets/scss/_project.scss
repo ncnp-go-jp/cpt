@@ -2406,6 +2406,19 @@
     }
   }
 
+  &__att {
+    background: $color_light-gray;
+    color: $color_dark-brown;
+    text-align: center;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    @include fontsize(12, 14);
+
+    @include media(tb) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &__txt {
     margin-bottom: 1.5rem;
 
@@ -2418,9 +2431,11 @@
     background: #fff;
     border-radius: 1rem;
     padding: 2rem 2.5rem;
+    margin-top: 3rem;
 
     @include media(tb) {
       border-radius: 3rem;
+      margin-top: 4rem;
       padding: 3.5rem 5.5rem 2rem;
     }
 

@@ -9,7 +9,7 @@ $breakpoints: ('tb': '834px',
 ) !default;
 
 @mixin media ($breakpoint: tb) {
-  @media only screen and (min-width: #{ map-get( $breakpoints, $breakpoint ) }) {
+  @media only screen and (min-width: #{ map.get( $breakpoints, $breakpoint ) }) {
     @content;
   }
 }
