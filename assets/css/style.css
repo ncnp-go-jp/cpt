@@ -1351,7 +1351,12 @@ main {
   margin-bottom: 3.5rem;
 }
 .p-tab-box__btm-txt {
-  margin-top: 8rem;
+  margin-top: 4.5rem;
+}
+.p-tab-box__btm-txt.-pickup {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 .p-tab-box__btn-box {
   margin-top: 2.5rem;
@@ -3272,6 +3277,10 @@ main {
   }
   .p-tab-box__btm-txt{
     margin-top: 5.5rem;
+  }
+  .p-tab-box__btm-txt.-pickup{
+    padding: 3rem;
+    border-radius: 3rem;
   }
   .p-tab-box__btn-box{
     margin-top: 4rem;

@@ -1665,10 +1665,21 @@
   }
 
   &__btm-txt {
-    margin-top: 8rem;
+    margin-top: 4.5rem;
 
     @include media(tb) {
       margin-top: 5.5rem;
+    }
+
+    &.-pickup {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 2rem;
+
+      @include media(tb) {
+        padding: 3rem;
+        border-radius: 3rem;
+      }
     }
   }
 
