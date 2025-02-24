@@ -3374,7 +3374,9 @@
   .p-form__h1 {
     text-align: center;
     color: $color_font;
-    @include fontsize(16, 18);
+    font-weight: normal;
+    line-height: 2;
+    @include fontsize(14, 16);
   }
 }
 

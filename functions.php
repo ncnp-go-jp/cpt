@@ -514,7 +514,8 @@ add_filter('wpmem_default_text', function ($text) {
   $text['username_heading'] = 'ユーザーIDの確認'; // ユーザー名の回復見出し
   $text['username_heading'] = 'ユーザーIDの確認'; // ユーザー名の回復見出し
   $text['username_button'] = '送信'; // ユーザー名の回復ボタン
-  $text['username_link_before'] = 'ユーザーIDをお忘れですか？'; // 「ユーザー名をお忘れですか？」
+  $text['username_link_before'] = 'ユーザーIDを忘れた場合'; // 「ユーザー名をお忘れですか？」
+  $text['username_link'] = 'IDをお知らせ'; // ユーザーID確認画面への遷移ボタン
   return $text;
 });
 

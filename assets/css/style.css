@@ -2438,7 +2438,9 @@ main {
 #wpmem_pwdreset_form .p-form__h1 {
   text-align: center;
   color: #555555;
-  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1.4rem;
 }
 
 .p-delete {
@@ -3871,7 +3873,7 @@ main {
     margin-bottom: 5rem;
   }
   #wpmem_pwdreset_form .p-form__h1{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .p-delete{
     padding-top: 6.5rem;

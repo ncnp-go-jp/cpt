@@ -26,6 +26,7 @@ get_header();
 
             <div class="p-form">
               <?php the_content(); ?>
+              <span class="link-text-username">ユーザーIDを忘れた場合 <a href="<?php echo home_url() . '/expert/mypage/?a=getusername'; ?>">IDをお知らせ</a></span>
             </div>
 
           </div>
