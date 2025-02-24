@@ -121,6 +121,11 @@ function twpp_change_excerpt_length($length)
 add_filter('excerpt_length', 'twpp_change_excerpt_length', 999);
 
 /**
+ * 固定ページで抜粋を使えるようにする
+ */
+add_post_type_support('page', 'excerpt');
+
+/**
  * 抜粋の省略記号を変更
  */
 function twpp_change_excerpt_more($more)
@@ -723,7 +728,3 @@ function documents_filter_query($query)
   }
 }
 add_filter('pre_get_posts', 'documents_filter_query');
-
-
-//固定ページで抜粋を使えるようにする
-add_post_type_support('page', 'excerpt');
