@@ -1724,6 +1724,59 @@
       }
     }
   }
+
+  &__ordered-box {
+    border: 2px solid $color_dark-brown;
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 3rem 0 2rem;
+    position: relative;
+
+    @include media(tb) {
+      margin: 4rem 0 3rem;
+      padding: 2.5rem 2.1rem 2.5rem;
+    }
+
+    &__ttl {
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      transform: translateY(-50%);
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      background: #fff;
+      display: inline;
+      width: fit-content;
+      padding: 0 2rem;
+      color: $color_dark-brown;
+      @include fontsize(16, 22);
+
+      @include media(tb) {}
+
+    }
+
+    ul {
+      li {
+        margin-top: 0.5rem;
+        @include fontsize(12, 16);
+
+        @include media(tb) {}
+
+        span {
+          color: $color_light-brown;
+
+          i {
+            color: $color_light-brown;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .p-ttl-txt-box {

@@ -1377,6 +1377,41 @@ main {
 .p-tab-box__2col p {
   word-break: normal;
 }
+.p-tab-box__ordered-box {
+  border: 2px solid #806346;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin: 3rem 0 2rem;
+  position: relative;
+}
+.p-tab-box__ordered-box__ttl {
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: inline;
+  width: fit-content;
+  padding: 0 2rem;
+  color: #806346;
+  font-size: 1.6rem;
+}
+.p-tab-box__ordered-box ul li {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.p-tab-box__ordered-box ul li span {
+  color: #A68563;
+}
+.p-tab-box__ordered-box ul li span i {
+  color: #A68563;
+}
 
 .p-ttl-txt-box {
   margin-top: 3.5rem;
@@ -3299,6 +3334,16 @@ main {
   }
   .p-tab-box__2col.-resources img{
     width: 30rem;
+  }
+  .p-tab-box__ordered-box{
+    margin: 4rem 0 3rem;
+    padding: 2.5rem 2.1rem 2.5rem;
+  }
+  .p-tab-box__ordered-box__ttl{
+    font-size: 2.2rem;
+  }
+  .p-tab-box__ordered-box ul li{
+    font-size: 1.6rem;
   }
   .p-ttl-txt-box{
     margin-top: 4.5rem;
