@@ -231,7 +231,7 @@ jQuery(function ($) {
     $(element).find('label[for*="["]').prepend('<span class="icon"></span>')
   });
 
-  // WP-Membersで作成された「主たる職種」の「その他」のテキストエリアのCSSを調整
+  // WP-Membersで作成された「資格・免許」の「その他」のテキストエリアのCSSを調整
   $('label[for="occupation_others"]').parent().addClass('-no-border');
 
   // ログイン画面のデフォルトの「初めての方はこちら」を非表示

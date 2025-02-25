@@ -61,7 +61,7 @@ get_header();
               $jp_activity_areas = mb_substr($jp_activity_areas, 0, -1);
             }
 
-            // 主たる職種
+            // 資格・免許
             // チェック項目の名称は取得できないため、手動で当てはめる。
             // 区切り文字は管理画面から[|]と設定済み。
             $occupation = get_the_author_meta('occupation', $user->ID);
@@ -96,7 +96,7 @@ get_header();
               $jp_occupation = mb_substr($jp_occupation, 0, -1);
             }
 
-            // 主たる職種 その他のテキストエリア
+            // 資格・免許 その他のテキストエリア
             $occupation_others = get_the_author_meta('occupation_others', $user->ID);
 
             // 利用登録の目的
@@ -146,7 +146,7 @@ get_header();
                 </td>
               </tr>
               <tr>
-                <th>主たる職種</th>
+                <th>資格・免許</th>
                 <td>
                   <p><?php echo $jp_occupation; ?></p>
                   <?php if ($occupation_others): ?>

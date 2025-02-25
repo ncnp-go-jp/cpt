@@ -18,8 +18,7 @@ get_template_part('template-parts/mainview');
       <h2 class="c-h2 c-white-box-l__h1">科学的な知見にふれる</h2>
       <div class="p-tab-box__2col -resources">
         <div>
-          <p>トラウマやPTSDについて、日々、研究が進められています。トラウマとはどういうものか、PTSDはどのようにして発症し、どうして症状が続くのか、より効果的に治療するためにはどのようにしたら良いか、といった疑問をはじめ、正確な理解と支援を考えるうえで必要な問いが立てられ、データや経験から答えが探られいます。<br>
-            ここには、そうした科学の試みに係る情報を得られるリンクを示しました。新しい視点を得たり、安全性や効果・限界を知ったうえで治療を選ぶためのヒントとして、ご参考いただけると幸いです。</p>
+          <p>トラウマやPTSDについて、日々、研究が進められています。トラウマとはどういうものか、PTSDはどのようにして発症し、どうして症状が続くのか、より効果的に治療するためにはどのようにしたら良いか、といった疑問をはじめ、正確な理解と支援を考えるうえで必要な問いが立てられ、データや経験から答えが探られています。<br>ここには、そうした科学の試みについて情報を得られるリンクを示しました。新しい視点を得たり、安全性や効果、限界を知ったうえで治療を選ぶためのヒントとして、お役立ていただけると幸いです。</p>
         </div>
         <img src="<?php echo THEME_DIR_URI; ?>resources/resources-01.webp" alt="">
       </div>
@@ -33,8 +32,8 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【トラウマやPTSDに関する研究】</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
         <td>
@@ -55,8 +54,8 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【CPTに関する研究】</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
         <td>
@@ -65,7 +64,7 @@ get_template_part('template-parts/mainview');
         <td>CPTに関連する研究論文が一覧できます。</td>
       </tr>
       <tr>
-        <td><span class="c-tooltip tippy01">日本での成果（プレスリリース）</span>（<a href="https://www.ncnp.go.jp/topics/2023/20230105p.html" target="_blank" class="u-black-link ">詳細 <i class="fa-regular fa-window-restore"></i></a>）</td>
+        <td><span class="c-tooltip tippy01">日本での成果</span>（<a href="https://www.ncnp.go.jp/topics/2023/20230105p.html" target="_blank" class="u-black-link ">詳細 <i class="fa-regular fa-window-restore"></i></a>）（<a href="https://www.ncnp.go.jp/topics/detail.php?@uid=3jF5q0KbgWiZmKqt" target="_blank" class="u-black-link ">プレスリリース <i class="fa-regular fa-window-restore"></i></a>）</td>
         <td>私たちの研究チームで取り組んだ臨床試験の成果です。</td>
       </tr>
     </table>
@@ -84,8 +83,8 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【PTSD治療ガイドライン】<br>日本のガイドライン</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
         <td><a href="https://www.jstss.org/docs/2013090600351/" target="_blank" class="u-black-link">PTSDの薬物療法ガイドライン・初期対応マニュアル （JSTSS） <i class="fa-regular fa-window-restore"></i></a></td>
@@ -102,8 +101,8 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【PTSD治療ガイドライン】<br>海外のガイドライン</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
         <td><a href="https://istss.org/clinical-resources/trauma-treatment/new-istss-prevention-and-treatment-guidelines/" target="_blank" class="u-black-link">ISTSS：ISTSS Prevention and Treatment Guidelines <i class="fa-regular fa-window-restore"></i></a></td>
@@ -130,10 +129,10 @@ get_template_part('template-parts/mainview');
 
   <div class="l-base">
     <article class="c-white-box-l">
-      <h2 class="c-h2 c-white-box-l__h1">科学的な知見にふれる</h2>
+      <h2 class="c-h2 c-white-box-l__h1">社会の中にあるさまざまな資源と出会う</h2>
       <div class="p-tab-box__2col -resources">
         <div>
-          <p>傷ついたとき、困ったときこそ、一人で抱え込まず、社会の資源・支援を活用することが大切です。今は自分にどんな支援が必要かわからなくても、誰かに・どこかにアクセスすることで、状況をよくするための糸口がみつかるかもしれません。<br>
+          <p><b class="u-em-orange-marker">傷ついたとき、困ったときこそ、一人で抱え込まず、社会の資源・支援を活用することが大切</b>です。今は自分にどんな支援が必要かわからなくても、誰かに・どこかにアクセスすることで、状況をよくするための糸口がみつかるかもしれません。<br>
             ここには、困った時に相談できる場所や、一歩踏み出すためのヒントとなりそうなサイトのリンクを示しました。「今、どうすれば良いんだろう？」と迷ったときに眺めていただき、あなたに役立ちそうな情報を見つけていただけると幸いです。</p>
         </div>
         <img src="<?php echo THEME_DIR_URI; ?>resources/resources-02.webp" alt="">
@@ -147,12 +146,32 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【困った時に頼れる場所】</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
-        <td><a href="" target="_blank" class="u-black-link">片柳さん提供の資源リスト <i class="fa-regular fa-file-pdf"></i></a></td>
-        <td>コメントが入りますコメントが入りますコメントが入ります</td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-00.pdf" target="_blank" class="u-black-link">社会的サポートリスト（全体） <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会の中にあるさまざまなサポートのうち、無料相談を受けることができる機関がリストされています。</td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-01.pdf" target="_blank" class="u-black-link">電話・SNS相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会的サポートリストから、電話やSNSで相談できる支援機関と、インターネットやSNSに関する相談先を抜粋しています。</td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-02.pdf" target="_blank" class="u-black-link">被害者支援 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会的サポートリストから、被害者支援センターとワンストップ支援センターを抜粋しています。</td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-03.pdf" target="_blank" class="u-black-link">配偶者・身近な人からの暴力等の被害の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会的サポートリストから、配偶者や身近な人からの暴力被害者への支援を行っている施設や、女性センターを抜粋しています。</td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-04.pdf" target="_blank" class="u-black-link">児童に係る相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会的サポートリストから、児童相談所と、児童虐待などに関する相談窓口を抜粋しています。</td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-05.pdf" target="_blank" class="u-black-link">精神保健福祉法センター／物質乱用の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td>社会的サポートリストから、精神保健福祉センターと、物質乱用の電話相談、自助グループを抜粋しています。</td>
       </tr>
     </table>
   </div>
@@ -161,11 +180,11 @@ get_template_part('template-parts/mainview');
     <h3 class="p-table-2col__h">【頼れる・役立つ情報が得られるサイト】</h3>
     <table class="p-table-2col__table">
       <tr>
-        <th>名前</th>
-        <th>コメント</th>
+        <th>名称</th>
+        <th>説明</th>
       </tr>
       <tr>
-        <td><a href="https://neuropsy-kurume.jp/archives/766" target="_blank" class="u-black-link">久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a></td>
+        <td><a href="https://neuropsy-kurume.jp/production" target="_blank" class="u-black-link">久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a></td>
         <td>心理教育テキスト等これまで久留米大学医学部神経精神医学講座関係者が作成した資料を公開しているページ</td>
       </tr>
       <tr>
@@ -174,7 +193,7 @@ get_template_part('template-parts/mainview');
       </tr>
       <tr>
         <td><a href="https://kidsinfost.net" target="_blank" class="u-black-link">子ども情報ステーション <i class="fa-regular fa-window-restore"></i></a></td>
-        <td>精神障がいやこころの不調などをかかえた親と家族、その’子ども’を応援するサイト</td>
+        <td>精神障がいやこころの不調などをかかえた親と家族、その'子ども’を応援するサイト</td>
       </tr>
       <tr>
         <td><a href="https://ptokyo.org" target="_blank" class="u-black-link">ぷれいす東京 <i class="fa-regular fa-window-restore"></i></a></td>
@@ -186,7 +205,7 @@ get_template_part('template-parts/mainview');
       </tr>
       <tr>
         <td><a href="https://ova-japan.org" target="_blank" class="u-black-link">OVA <i class="fa-regular fa-window-restore"></i></a></td>
-        <td>「『助けて』と言えない」を解決するNPO</td>
+        <td>「『助けて』が受け止められる社会をつくる」ことをビジョンとし、テクノロジーやマーケティングを用いて、困っている人に必要な情報と支援を届けるNPO法人</td>
       </tr>
       <tr>
         <td><a href="https://cpc.musashino-u.ac.jp/trauma_support/" target="_blank" class="u-black-link">一緒にトラウマについて知ろう <i class="fa-regular fa-window-restore"></i></a></td>

@@ -3137,7 +3137,9 @@
         }
       }
 
-      label[for="purpose"] {
+      label[for="position"],
+      label[for="purpose"],
+      label[for="occupation"] {
         @include media(tb) {
           position: absolute;
           top: 3rem;

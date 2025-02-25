@@ -2395,8 +2395,12 @@ main {
   margin-right: 1rem;
   font-size: 1.4rem;
 }
+.p-form #wpmem_reg .p-form__row label[for=position]:before,
 .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
-.p-form #wpmem_login .p-form__row label[for=purpose]:before {
+.p-form #wpmem_reg .p-form__row label[for=occupation]:before,
+.p-form #wpmem_login .p-form__row label[for=position]:before,
+.p-form #wpmem_login .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=occupation]:before {
   content: "任意";
   background: #A68563;
   color: #fff;
@@ -2406,8 +2410,12 @@ main {
   border-radius: 0.5rem;
   font-size: 1.26rem;
 }
+.p-form #wpmem_reg .p-form__row label[for=position]:before,
 .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
-.p-form #wpmem_login .p-form__row label[for=purpose]:before {
+.p-form #wpmem_reg .p-form__row label[for=occupation]:before,
+.p-form #wpmem_login .p-form__row label[for=position]:before,
+.p-form #wpmem_login .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=occupation]:before {
   position: absolute;
   bottom: 0.5rem;
   left: 0;
@@ -3915,18 +3923,30 @@ main {
   .p-form #wpmem_login .p-form__row .icon + label.multicheckbox{
     font-size: 1.6rem;
   }
+  .p-form #wpmem_reg .p-form__row label[for=position],
   .p-form #wpmem_reg .p-form__row label[for=purpose],
-  .p-form #wpmem_login .p-form__row label[for=purpose]{
+  .p-form #wpmem_reg .p-form__row label[for=occupation],
+  .p-form #wpmem_login .p-form__row label[for=position],
+  .p-form #wpmem_login .p-form__row label[for=purpose],
+  .p-form #wpmem_login .p-form__row label[for=occupation]{
     position: absolute;
     top: 3rem;
     left: 0;
   }
+  .p-form #wpmem_reg .p-form__row label[for=position]:before,
   .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
-  .p-form #wpmem_login .p-form__row label[for=purpose]:before{
+  .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
+  .p-form #wpmem_login .p-form__row label[for=position]:before,
+  .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=occupation]:before{
     font-size: 1.4rem;
   }
+  .p-form #wpmem_reg .p-form__row label[for=position]:before,
   .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
-  .p-form #wpmem_login .p-form__row label[for=purpose]:before{
+  .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
+  .p-form #wpmem_login .p-form__row label[for=position]:before,
+  .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=occupation]:before{
     left: 1rem;
   }
   .p-form #wpmem_reg .button_div,
