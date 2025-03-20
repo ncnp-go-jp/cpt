@@ -2400,9 +2400,11 @@ main {
 }
 .p-form #wpmem_reg .p-form__row label[for=position]:before,
 .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+.p-form #wpmem_reg .p-form__row label[for=activity_areas]:before,
 .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
 .p-form #wpmem_login .p-form__row label[for=position]:before,
 .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=activity_areas]:before,
 .p-form #wpmem_login .p-form__row label[for=occupation]:before {
   content: "任意";
   background: #A68563;
@@ -2415,9 +2417,11 @@ main {
 }
 .p-form #wpmem_reg .p-form__row label[for=position]:before,
 .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+.p-form #wpmem_reg .p-form__row label[for=activity_areas]:before,
 .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
 .p-form #wpmem_login .p-form__row label[for=position]:before,
 .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+.p-form #wpmem_login .p-form__row label[for=activity_areas]:before,
 .p-form #wpmem_login .p-form__row label[for=occupation]:before {
   position: absolute;
   bottom: 0.5rem;
@@ -3931,9 +3935,11 @@ main {
   }
   .p-form #wpmem_reg .p-form__row label[for=position],
   .p-form #wpmem_reg .p-form__row label[for=purpose],
+  .p-form #wpmem_reg .p-form__row label[for=activity_areas],
   .p-form #wpmem_reg .p-form__row label[for=occupation],
   .p-form #wpmem_login .p-form__row label[for=position],
   .p-form #wpmem_login .p-form__row label[for=purpose],
+  .p-form #wpmem_login .p-form__row label[for=activity_areas],
   .p-form #wpmem_login .p-form__row label[for=occupation]{
     position: absolute;
     top: 3rem;
@@ -3941,17 +3947,21 @@ main {
   }
   .p-form #wpmem_reg .p-form__row label[for=position]:before,
   .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_reg .p-form__row label[for=activity_areas]:before,
   .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
   .p-form #wpmem_login .p-form__row label[for=position]:before,
   .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=activity_areas]:before,
   .p-form #wpmem_login .p-form__row label[for=occupation]:before{
     font-size: 1.4rem;
   }
   .p-form #wpmem_reg .p-form__row label[for=position]:before,
   .p-form #wpmem_reg .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_reg .p-form__row label[for=activity_areas]:before,
   .p-form #wpmem_reg .p-form__row label[for=occupation]:before,
   .p-form #wpmem_login .p-form__row label[for=position]:before,
   .p-form #wpmem_login .p-form__row label[for=purpose]:before,
+  .p-form #wpmem_login .p-form__row label[for=activity_areas]:before,
   .p-form #wpmem_login .p-form__row label[for=occupation]:before{
     left: 1rem;
   }
