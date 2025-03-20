@@ -34,7 +34,7 @@ get_template_part('template-parts/mainview');
       <li class="u-bg-orange-gray">
         <h2 class="c-h3 c-small-box-list__h1">動画教材</h2>
         <div class="c-small-box-list__txt-box">
-          <p>国立精神・神経医療研究センターで過去に行った研修の動画を公開しています。講義の中では、模擬事例を用いたセッションのロールプレイの様子も紹介しています。<br>CPTの全体像と実施のイメージを掴むためにご活用ください。</p>
+          <p>国立精神・神経医療研究センター作成した解説動画を公開しています。講義の中では、模擬事例を用いたセッションのロールプレイの様子も紹介しています。<br>CPTの全体像と実施のイメージを掴むためにご活用ください。</p>
         </div>
         <a href="./movie/" class="c-btn">動画教材を見る　<i class="fas fa-angle-right"></i></a>
       </li>
