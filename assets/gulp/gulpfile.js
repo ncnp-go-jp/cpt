@@ -28,6 +28,8 @@ const imageminMozjpeg = require("imagemin-mozjpeg");
 const imageminPngquant = require("imagemin-pngquant");
 //SVG圧縮
 const imageminSvgo = require("imagemin-svgo");
+//自動リロード
+const browserSync = require("browser-sync");
 
 //フォルダ配置先
 const path = '../';
@@ -65,6 +67,9 @@ const cssSass = () => {
         }))
         .pipe(sassGlob()) // glob機能を使って@useや@forwardを省略する
         .pipe(
+            sass()
+            .on("error", sass.logError))
+        .pipe(
             sass.sync({
                 silenceDeprecations: ['legacy-js-api'], // 警告メッセージを出さない
                 outputStyle: 'expanded'
@@ -79,7 +84,7 @@ const cssSass = () => {
                     "Android >= 5"
                 ],
             },
-            mqpacker: true, // メディアクエリをまとめる
+            mqpacker: true, // メディアクエリをまとめるshimada
             minifier: false, // cssの圧縮はしない
         }))
         .pipe(dest(destPath.css)) //CSSを出力
@@ -113,12 +118,37 @@ const imgImagemin = () => {
         .pipe(dest(destPath.img))
 }
 
+//
+//ファイルの自動監視と自動ブラウザリロードの仕組みを作る
+//
+
+//browser-syncの設定
+const browserSyncFunc = () => {
+    browserSync.init(browserSyncOption);
+}
+
+const browserSyncOption = {
+    proxy: 'https://cpt.local/', // Local by Flywheelのドメイン
+    open: true,
+    watchOptions: {
+        debounceDelay: 1000
+    },
+    reloadOnRestart: true,
+}
+
+//リロードの処理を作る
+const browserSyncReload = (done) => {
+    browserSync.reload();
+    done();
+}
+
 //自動監視の処理を作る
 const watchFiles = () => {
-    watch(srcPath.css, series(cssSass))
-    watch(srcPath.img, series(imgImagemin))
+    watch(srcPath.css, series(cssSass, browserSyncReload))
+    watch(srcPath.img, series(imgImagemin, browserSyncReload))
+    watch(destPath.html, series(browserSyncReload))
 }
 
 //seriesは順番に実行
 //parallelは同時に実行
-exports.default = series(series(cssSass, imgImagemin), watchFiles);
+exports.default = series(series(cssSass, imgImagemin), parallel(watchFiles, browserSyncFunc));

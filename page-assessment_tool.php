@@ -22,7 +22,7 @@ get_template_part('template-parts/mainview');
           <img src="<?php echo THEME_DIR_URI; ?>assessment_tool/assessment_tool-01.jpg" alt="" class="p-img-right-btm-box__img -assessment_tool">
           <h2 class="c-h3 p-tab-box__h2">PCL-5（質問票）</h2>
           <p>
-            PTSD Checklist for DSM-5の日本語版で、PTSDの診断基準に対応した 20 の質問項目で構成される自己記入式の質問紙 です。回答者の PSTD にもっとも影響を与えた心的外傷的出来事を念頭において、直近(過去)1 か月間の各症状の程度を回答してもらいます。
+            PTSD Checklist for DSM-5の日本語版で、PTSDの診断基準に対応した ２０の質問項目で構成される自己記入式の質問紙 です。回答者の PSTD にもっとも影響を与えた心的外傷的出来事を念頭において、直近（過去）１ヶ月間の各症状の程度を回答してもらいます。<br>なお、CPTで毎週のセッションの際にPTSD症状の経過の記録をつけていく際には、過去１週間（※１ヶ月ではなく）の症状についてPCL-5に回答をするようにします。
           </p>
           <a href="http://cpt.ncnp.go.jp/wp-content/uploads/2025/02/PCL-5.pdf" class="c-btn p-assessment_tool__btn" target="_blank">PCL-5（質問票）をダウンロード　<i class="fa-solid fa-file-pdf"></i></a>
         </div>
@@ -30,7 +30,6 @@ get_template_part('template-parts/mainview');
 
       <div class="p-img-right-btm-box p-assessment_tool__box">
         <div>
-
           <h2 class="c-h3 p-tab-box__h2">PCL-5について（解説）</h2>
           <p>PCL-5の使用ガイドです。実施法、採点法、解釈について解説していますPCL-5をご使用になる前にご一読ください。
           </p>
