@@ -1311,6 +1311,9 @@ main {
   border-left: 1px solid #c4a07c;
 }
 
+.p-abt-research {
+  padding: 3rem 0;
+}
 .p-abt-trauma {
   padding: 3rem 0;
 }
@@ -3373,6 +3376,9 @@ main {
   }
   .p-table-2col__table td{
     padding: 0.6rem 2rem;
+  }
+  .p-abt-research{
+    padding: 4rem 0 6rem;
   }
   .p-abt-trauma{
     padding: 4rem 0 6rem;

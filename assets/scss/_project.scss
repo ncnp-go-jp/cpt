@@ -1487,6 +1487,14 @@
   }
 }
 
+.p-abt-research {
+  padding: 3rem 0;
+
+  @include media(tb) {
+    padding: 4rem 0 6rem;
+  }
+}
+
 .p-abt-trauma {
   padding: 3rem 0;
 

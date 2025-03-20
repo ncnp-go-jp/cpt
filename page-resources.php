@@ -37,7 +37,7 @@ get_template_part('template-parts/mainview');
       </tr>
       <tr>
         <td>
-          <a href="https://www.ptsd.va.gov/index.asp" target="_blank" class="u-black-link">International Society for Traumatic Stress Studies <i class="fa-regular fa-window-restore"></i></a>
+          <a href="https://istss.org/" target="_blank" class="u-black-link">International Society for Traumatic Stress Studies <i class="fa-regular fa-window-restore"></i></a>
         </td>
         <td>トラウマやPTSDに関する研究知見を紹介しています。</td>
       </tr>
@@ -64,9 +64,16 @@ get_template_part('template-parts/mainview');
         <td>CPTに関連する研究論文が一覧できます。</td>
       </tr>
       <tr>
-        <td><span class="c-tooltip tippy01">日本での成果</span>（<a href="https://www.ncnp.go.jp/topics/2023/20230105p.html" target="_blank" class="u-black-link ">詳細 <i class="fa-regular fa-window-restore"></i></a>）（<a href="https://www.ncnp.go.jp/topics/detail.php?@uid=3jF5q0KbgWiZmKqt" target="_blank" class="u-black-link ">プレスリリース <i class="fa-regular fa-window-restore"></i></a>）</td>
+        <td><span class="c-tooltip tippy01">日本での成果</span><br>
+          <a href="https://www.ncnp.go.jp/topics/2023/20230105p.html" target="_blank" class="u-black-link ">パイロット試験 <i class="fa-regular fa-window-restore"></i></a>・
+          <a href="https://www.ncnp.go.jp/topics/detail.php?@uid=3jF5q0KbgWiZmKqt" target="_blank" class="u-black-link ">無作為割付試験 <i class="fa-regular fa-window-restore"></i></a>
+        </td>
         <td>私たちの研究チームで取り組んだ臨床試験の成果です。</td>
       </tr>
+
+
+
+
     </table>
     <script>
       tippy(' .tippy01', {
@@ -154,23 +161,23 @@ get_template_part('template-parts/mainview');
         <td>社会の中にあるさまざまなサポートのうち、無料相談を受けることができる機関がリストされています。</td>
       </tr>
       <tr>
-        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-01.pdf" target="_blank" class="u-black-link">電話・SNS相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-01.pdf" target="_blank" class="u-black-link">├ 電話・SNS相談 <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>社会的サポートリストから、電話やSNSで相談できる支援機関と、インターネットやSNSに関する相談先を抜粋しています。</td>
       </tr>
       <tr>
-        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-02.pdf" target="_blank" class="u-black-link">被害者支援 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-02.pdf" target="_blank" class="u-black-link">├ 被害者支援 <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>社会的サポートリストから、被害者支援センターとワンストップ支援センターを抜粋しています。</td>
       </tr>
       <tr>
-        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-03.pdf" target="_blank" class="u-black-link">配偶者・身近な人からの暴力等の被害の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-03.pdf" target="_blank" class="u-black-link">├ 配偶者・身近な人からの暴力等の被害の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>社会的サポートリストから、配偶者や身近な人からの暴力被害者への支援を行っている施設や、女性センターを抜粋しています。</td>
       </tr>
       <tr>
-        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-04.pdf" target="_blank" class="u-black-link">児童に係る相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-04.pdf" target="_blank" class="u-black-link">├ 児童に係る相談 <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>社会的サポートリストから、児童相談所と、児童虐待などに関する相談窓口を抜粋しています。</td>
       </tr>
       <tr>
-        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-05.pdf" target="_blank" class="u-black-link">精神保健福祉法センター／物質乱用の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
+        <td><a href="<?php echo THEME_DIR_URI; ?>resources/resources-05.pdf" target="_blank" class="u-black-link">├ 精神保健福祉法センター／物質乱用の相談 <i class="fa-regular fa-file-pdf"></i></a></td>
         <td>社会的サポートリストから、精神保健福祉センターと、物質乱用の電話相談、自助グループを抜粋しています。</td>
       </tr>
     </table>
