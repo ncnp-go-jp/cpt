@@ -29,7 +29,7 @@ get_template_part('template-parts/mainview');
 
     <section class="c-white-box-s p-abt-intro__box">
       <h3 class="c-h3 p-abt-intro__h2">Funding</h3>
-      <p>このサイトは、三菱財団社会福祉事業・研究助成を受けて作成されました。<br>
+      <p>このサイトは、第55回（2024年度）　三菱財団社会福祉事業・研究助成「エビデンスに基づくトラウマケア及び心的外傷後ストレス症治療の全国実装」を受けて作成されました。<br>
         これまで私たちが行ってきたCPT研究は、日本学術振興会科学研究費助成事業等に支えられて参りました。<br>
         ここに記して、御礼を申し上げます。</p>
       <ul class="p-abt-intro__list">
@@ -41,6 +41,16 @@ get_template_part('template-parts/mainview');
         <li>独立行政法人日本医療研究開発機構　障害者対策総合研究開発事業「新たな認知行動療法プログラムの開発と普及に関する研究（研究分担者：伊藤正哉、課題番号：16769055）」</li>
         <li>日本学術振興会科学研究費補助金　若手研究「アルコール使用障害が併発した心的外傷後ストレス障害に対する認知処理療法の適用（研究分担者：髙岸百合子、課題番号：19K14424）」</li>
       </ul>
+    </section>
+    <section class="c-white-box-s p-abt-intro__box">
+      <h3 class="c-h3 p-abt-intro__h2">サイト制作者</h3>
+      <ul class="p-abt-intro__list">
+        <li>企画、監修：伊藤正哉</li>
+        <li>ディレクション、文：高岸百合子</li>
+        <li>ウェブデザイン：森彬</li>
+        <li>イラスト：野崎ひろこ</li>
+      </ul>
+      <p>上記に加え、PTSDの治療に関する説明は、各治療のKOLの先生方に監修いただきました。<br>ご協力いただいた先生方に御礼申し上げます。</p>
     </section>
 
   </article>
