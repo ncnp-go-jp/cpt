@@ -16,9 +16,7 @@ get_template_part('template-parts/mainview');
   <div class="l-base c-white-box-l__wrapper">
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">CPT｜認知処理療法<br class="u-sp">（Cognitive Processing Therapy）</h2>
-      <p>CPTとは、非常に深刻な出来事の後に、<b class="u-em-orange-marker">こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法</b>です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>
-        これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス障害（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>
-        CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
+      <p>CPTとは、非常に深刻な出来事の後に、<b class="u-em-orange-marker">こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法</b>です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス症害（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
       <picture>
         <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-pc.webp">
         <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-sp.webp" alt="">
@@ -31,8 +29,7 @@ get_template_part('template-parts/mainview');
 <article class="p-abt-trauma l-base">
 
   <h2 class="c-h2 p-abt-trauma__h1">CPTの特徴</h2>
-  <p>CPTは、トラウマとなる出来事からの回復が困難である理由や、PTSDの症状が日常生活にどのような影響を与えるかを理解する方法を提供します。トラウマとなる経験が思考や信念をどのように変化させるか、そして思考が現在の感情や行動にどのように影響を与えるかを特定することに焦点を当てます。<br>
-    PTSDの症状やその他の問題からの回復を妨げ、個人が「行き詰まり」状態に陥る可能性のある考えの傾向に対処することで、トラウマの記憶に関する苦痛を軽減し、日常生活の改善を目指します。</p>
+  <p>CPTは、トラウマとなる出来事からの回復が困難である理由や、PTSDの症状が日常生活にどのような影響を与えるかを理解する方法を提供します。トラウマとなる経験が思考や信念をどのように変化させるか、そして思考が現在の感情や行動にどのように影響を与えるかを特定することに焦点を当てます。<br>PTSDの症状やその他の問題からの回復を妨げ、個人が「行き詰まり」状態に陥る可能性のある考えの傾向に対処することで、トラウマの記憶に関する苦痛を軽減し、日常生活の改善を目指します。</p>
   <picture>
     <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-pc.webp">
     <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-05-sp.webp" alt="CPTの特徴">
@@ -102,8 +99,7 @@ get_template_part('template-parts/mainview');
 
     <div class="p-ttl-txt-box">
       <h2 class="p-ttl-txt-box__ttl">実施者になるには</h2>
-      <p>CPTが開発された米国では、CPTの実施者になるためのステップが確立され、<a href="https://cptforptsd.com/cpt-provider-roster/" target="_blank" class="u-orange-marker">実施者の登録制度 <i class="fa-regular fa-window-restore"></i></a>も整えられています。<br>
-        日本においては、現在、研修や実施者養成の制度を作っている最中です。CPTの実践に関心をお持ちの援助専門職の方は、お知らせから研修情報をご確認いただくとともに、<a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="u-orange-marker">利用登録</a>を行い当サイトでご提供するマテリアルへのリーチをご検討ください。</p>
+      <p>CPTが開発された米国では、CPTの実施者になるためのステップが確立され、<a href="https://cptforptsd.com/cpt-provider-roster/" target="_blank" class="u-orange-marker">実施者の登録制度 <i class="fa-regular fa-window-restore"></i></a>も整えられています。<br>日本においては、現在、研修や実施者養成の制度を作っている最中です。CPTの実践に関心をお持ちの援助専門職の方は、お知らせから研修情報をご確認いただくとともに、<a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="u-orange-marker">利用登録</a>を行い当サイトでご提供するマテリアルへのリーチをご検討ください。</p>
     </div>
 
     <div class="p-ttl-txt-box">
