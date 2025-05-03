@@ -16,7 +16,7 @@ get_template_part('template-parts/mainview');
   <div class="l-base c-white-box-l__wrapper">
     <article class="c-white-box-l">
       <h2 class="c-h2 c-white-box-l__h1">CPT｜認知処理療法<br class="u-sp">（Cognitive Processing Therapy）</h2>
-      <p>CPTとは、非常に深刻な出来事の後に、<b class="u-em-orange-marker">こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法</b>です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス症害（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
+      <p>CPTとは、非常に深刻な出来事の後に、<b class="u-em-orange-marker">こころの傷を受けることによって生じるトラウマの症状、そしてそれに伴って生じてくる抑うつ状態や強い罪悪感に対して効果的な心理療法</b>です。毎週、12回の個人セッション（50分）か、集団セッション（90分）で実施します。<br>これまで、性暴力被害者、子どもの頃からの虐待、戦争体験などによる心的外傷後ストレス症（PTSD）を対象に、その有効性が報告されてきました。その有効性は、米国、オーストラリア、ドイツ、コンゴなど、世界の多くの地域で確認されています。<br>CPTはアメリカのリーシック博士、マンソン博士、チャード博士という、3人の女性の臨床心理学者によって開発されました。</p>
       <picture>
         <source media="(min-width: 834px)" srcset="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-pc.webp">
         <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-04-sp.webp" alt="">
@@ -64,9 +64,9 @@ get_template_part('template-parts/mainview');
               </div>
               <img src="<?php echo THEME_DIR_URI; ?>treatment/about-cpt-01.webp" alt="CAYAP｜PTSD関連の臨床状態にある青年へのCPTの適用">
             </div>
-            <div class="p-tab-box__btn-box">
+            <!-- <div class="p-tab-box__btn-box">
               <a href="https://cbt.ncnp.go.jp/research_top_detail.php?@uid=bvJVNgQsGeV3qmfu" target="_blank" class="c-btn">関連サイトへ　<i class="fa-regular fa-window-restore"></i></a>
-            </div>
+            </div> -->
           </section>
         </div>
 

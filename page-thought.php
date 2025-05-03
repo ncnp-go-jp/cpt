@@ -43,33 +43,117 @@ get_template_part('template-parts/mainview');
   <table class="p-thought-mem__table">
     <tr>
       <th>認知行動療法センター　CPT研究チーム</th>
+      <th>所属</th>
+    </tr>
+    <!-- 認知行動療法センター　CPT研究チーム -->
+    <tr>
       <td>伊藤 正哉　ITO, Masaya</td>
-      <td>片柳 章子　KATAYANAGI, Akiko</td>
-      <td>宮前 光宏　MIYAMAE, Mitsuhiro</td>
-      <td>柳 百合子　YANAGI, Yuriko</td>
-      <td>金子 響介　KANEKO, Kyosuke</td>
-      <td>伊藤 愛　ITO, Ai</td>
+      <td>ー</td>
     </tr>
     <tr>
-      <th>連携機関　パートナー</th>
-      <td>大江 美佐里　OE, Misari</td>
-      <td>菊池 安希子　KIKUCHI, Akiko</td>
-      <td>中島 聡美　NAKAJIMA, Satomi</td>
-      <td>大澤 香織　OSAWA, Kaori</td>
-      <td>山口 慶子　YAMAGUCHI, Keiko</td>
-      <td>高岸 百合子　TAKAGISHI, Yuriko</td>
-      <td>牧田 潔　MAKITA, Kiyoshi</td>
-      <td>中山 千秋　NAKAYAMA, Chiaki</td>
-      <td>今野 理恵子　KONNO Rieko</td>
-      <td>猪俣 珠恵　INOMATA Tamae</td>
-      <td>田中 敏志　TANAKA, Satoshi</td>
-      <td>羽太 裕子　HABUTA, Yuko</td>
+      <td>片柳 章子　KATAYANAGI, Akiko</td>
+      <td>ー</td>
     </tr>
+    <tr>
+      <td>高岸 百合子　TAKAGISHI, Yuriko</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>宮前 光宏　MIYAMAE, Mitsuhiro</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>柳 百合子　YANAGI, Yuriko</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>金子 響介　KANEKO, Kyosuke</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>伊藤 愛　ITO, Ai</td>
+      <td>ー</td>
+    </tr>
+    <!-- パートナー -->
+    <tr>
+      <th>パートナー</th>
+      <th>所属</th>
+    </tr>
+    <tr>
+      <td>大江 美佐里　OE, Misari</td>
+      <td>久留米大学</td>
+    </tr>
+    <tr>
+      <td>菊池 安希子　KIKUCHI, Akiko</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>中島 聡美　NAKAJIMA, Satomi</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>大澤 香織　OSAWA, Kaori</td>
+      <td>甲南大学</td>
+    </tr>
+    <tr>
+      <td>山口 慶子　YAMAGUCHI, Keiko</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>牧田 潔　MAKITA, Kiyoshi</td>
+      <td>愛知学院大学</td>
+    </tr>
+    <tr>
+      <td>中山 千秋　NAKAYAMA, Chiaki</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>今野 理恵子　KONNO Rieko</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>猪俣 珠恵　INOMATA Tamae</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>田中 敏志　TANAKA, Satoshi</td>
+      <td>ー</td>
+    </tr>
+    <tr>
+      <td>羽太 裕子　HABUTA, Yuko</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
+      <td>森田 展彰　NOBUAKI, Morita</td>
+      <td>筑波大学医学医療系</td>
+    </tr>
+    <tr>
+      <td>今村 扶美　FUMI, Imamura</td>
+      <td>国立精神・神経医療研究センター病院</td>
+    </tr>
+    <tr>
+      <td>大江悠樹　YUKI, Oe</td>
+      <td>ー</td>
+    </tr>
+
+
+
+    <!-- アドバイザー／スーパーバイザー -->
     <tr>
       <th>アドバイザー／スーパーバイザー</th>
+      <th>所属</th>
+    </tr>
+    <tr>
       <td>堀越 勝　HORIKOSHI, Masaru</td>
+      <td>武蔵野大学</td>
+    </tr>
+    <tr>
       <td>蟹江 絢子　KANIE, Ayako</td>
+      <td>東京大学医学部附属病院</td>
+    </tr>
+    <tr>
       <td>パトリシア・A・リーシック　Patricia A. Resick</td>
+      <td>Duke University</td>
     </tr>
   </table>
 </article>

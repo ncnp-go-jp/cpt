@@ -50,6 +50,28 @@ get_template_part('template-parts/mainview');
     </table>
   </div>
 
+  <div class="p-table-2col" id="trauma_guidelines">
+    <h3 class="p-table-2col__h">【国立精神・神経医療研究センター<br class="u-sp">での取り組み】</h3>
+    <table class="p-table-2col__table">
+      <tr>
+        <th>名称</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://www.ncnp.go.jp/nimh/behavior/" target="_blank" class="u-black-link">行動医学研究部 <i class="fa-regular fa-window-restore"></i></a>
+        </td>
+        <td>PTSDの病態研究や治療研究に取り組んでいます。</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://cbt.ncnp.go.jp/" target="_blank" class="u-black-link">認知行動療法センター <i class="fa-regular fa-window-restore"></i></a>
+        </td>
+        <td>認知行動療法の研究や実施者の育成を行っています。</td>
+      </tr>
+    </table>
+  </div>
+
   <div class="p-table-2col" id="cpt_guidelines">
     <h3 class="p-table-2col__h">【CPTに関する研究】</h3>
     <table class="p-table-2col__table">
@@ -202,10 +224,10 @@ get_template_part('template-parts/mainview');
         <td><a href="https://kidsinfost.net" target="_blank" class="u-black-link">子ども情報ステーション <i class="fa-regular fa-window-restore"></i></a></td>
         <td>精神障がいやこころの不調などをかかえた親と家族、その'子ども’を応援するサイト</td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td><a href="https://ptokyo.org" target="_blank" class="u-black-link">ぷれいす東京 <i class="fa-regular fa-window-restore"></i></a></td>
         <td>HIV/エイズとともに生きる人たちがありのままに生きられる環境（コミュニティ）を創り出すことをめざして活動するNPO法人</td>
-      </tr>
+      </tr> -->
       <tr>
         <td><a href="https://futures-japan.jp/about/" target="_blank" class="u-black-link">HIV Futures Japanプロジェクト <i class="fa-regular fa-window-restore"></i></a></td>
         <td>HIV陽性者のための総合情報サイト</td>

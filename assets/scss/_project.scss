@@ -1227,33 +1227,35 @@
     width: 100%;
 
     tr {
-      display: block;
+      // display: block;
       text-align: left;
+
+      &:nth-of-type(even) {
+        background: $color_orange-gray;
+      }
     }
 
     th {
-      display: block;
+      // display: block;
       background: $color_beige;
       color: #fff;
       font-weight: bold;
-      padding: 0.7rem 1rem;
+      padding: 0.7rem 2rem;
 
       @include media(tb) {
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 2rem;
       }
     }
 
     td {
-      display: block;
+      // display: block;
       padding: 0.7rem 2rem;
 
       @include media(tb) {
         padding: 0.4rem 2rem;
       }
 
-      &:nth-of-type(even) {
-        background: $color_orange-gray;
-      }
+
     }
   }
 }
@@ -1806,6 +1808,12 @@
 
   &__btn-box {
     margin-top: 2.5rem;
+  }
+
+  &__supervisor {
+    margin-top: 2.5rem;
+    text-align: right;
+    @include fontsize(14, 16);
   }
 }
 
