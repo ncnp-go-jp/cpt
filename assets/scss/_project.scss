@@ -1815,6 +1815,12 @@
     text-align: right;
     @include fontsize(14, 16);
   }
+
+  p {
+    &:nth-of-type(n+2) {
+      margin-top: 2rem;
+    }
+  }
 }
 
 @keyframes fadeinAnime {

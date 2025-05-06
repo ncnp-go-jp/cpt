@@ -1491,6 +1491,10 @@ main {
   text-align: right;
   font-size: 1.4rem;
 }
+.p-ttl-txt-box p:nth-of-type(n+2) {
+  margin-top: 2rem;
+}
+
 @keyframes fadeinAnime {
   from {
     opacity: 0;

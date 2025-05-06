@@ -230,7 +230,7 @@ get_template_part('template-parts/mainview');
       </tr> -->
       <tr>
         <td><a href="https://futures-japan.jp/about/" target="_blank" class="u-black-link">HIV Futures Japanプロジェクト <i class="fa-regular fa-window-restore"></i></a></td>
-        <td>HIV陽性者のための総合情報サイト</td>
+        <td>HIV陽性者に役立つ情報を集約したポータルサイト。同団体が３～５年に１回実施しているHIV陽性者対象大規模調査の結果もリンクさせている</td>
       </tr>
       <tr>
         <td><a href="https://ova-japan.org" target="_blank" class="u-black-link">OVA <i class="fa-regular fa-window-restore"></i></a></td>

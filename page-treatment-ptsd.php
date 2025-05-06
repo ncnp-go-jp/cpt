@@ -168,10 +168,8 @@ get_template_part('template-parts/mainview');
 
           <div class="p-ttl-txt-box">
             <h2 class="p-ttl-txt-box__ttl">リスクや負担</h2>
-            <p>トラウマに関連した記憶や考えに焦点を当てるとき、不快感を感じることがあります。このような感覚が生じるのは通常は短い時間であり、EMDRを続けているうちに気分がよくなる傾向にあります。トラウマを扱う前に、充分な準備が必要な人もいますので、経験を積んだ治療者から治療を受けることは重要です。<br>
-              PTSDに対する他の心理療法のような自宅で取り組む課題はなく、比較的短期的な治療であるため、治療を受ける側にとっての負担は少なめです。<br>
-
-              さらに詳しく知りたい方はこちら：<a href="https://www.emdr.jp/" target="_blank" class="u-black-link ">日本EMDR学会 <i class="fa-regular fa-window-restore"></i></a></p>
+            <p>トラウマに関連した記憶や考えに焦点を当てるとき、不快感を感じることがあります。このような感覚が生じるのは通常は短い時間であり、EMDRを続けているうちに気分がよくなる傾向にあります。トラウマを扱う前に、充分な準備が必要な人もいますので、経験を積んだ治療者から治療を受けることは重要です。<br>PTSDに対する他の心理療法のような自宅で取り組む課題はなく、比較的短期的な治療であるため、治療を受ける側にとっての負担は少なめです。</p>
+            <p>さらに詳しく知りたい方はこちら：<a href="https://www.emdr.jp/" target="_blank" class="u-black-link ">日本EMDR学会 <i class="fa-regular fa-window-restore"></i></a></p>
           </div>
           <p class="p-ttl-txt-box__supervisor">監修：市井雅哉</p>
 
@@ -189,9 +187,8 @@ get_template_part('template-parts/mainview');
 
           <div class="p-ttl-txt-box">
             <h2 class="p-ttl-txt-box__ttl">TF-CBT　トラウマフォーカスト認知行動療法</h2>
-            <p>TF-CBT（ (Trauma-Focused Cognitive Behavioral Therapy）は、Deblinger博士らにより開発された、<b class="u-em-orange-marker">３〜１８歳の子どものトラウマに焦点化した認知行動療法</b>です。いくつかの治療ガイドラインにおいて、子どものトラウマ治療の第一選択として推奨されているプログラムです。週１回、１回は６０〜９０分をかけて行われ、８〜１６週で構成されます。子どもと養育者が、トラウマ体験の記憶を適切に処理し、トラウマに関連する考えや感情、不適応的な行動を、うまく調整できるようになることを目指します。<b class="u-em-orange-marker">養育者だけで行うセッション、保護者だけで行うセッション、親子合同のセッションから構成</b>され、その中で<b class="u-em-orange-marker">感情調整や関わりのスキルをはじめとした、さまざまな知識とスキルを身につけます。</b>TF-CBTは、子どものPTSD症状だけでなく、トラウマに関連したうつや不安症状、行動上の問題、恥や罪悪感といった感情、社会生活能力などの回復が期待できるほか、養育者の抑うつやPTSD症状、養育能力や子どものサポート機能の向上にも効果を発揮します。</p>
-
-            <p>さらに詳しく知りたい方はこちら：<a href="https://tf-cbtlc.com/" target="_blank" class="u-black-link ">TF-CBT LC研究会 <i class="fa-regular fa-window-restore"></i></a></p>
+            <p>TF-CBT（ (Trauma-Focused Cognitive Behavioral Therapy）は、Deblinger博士らにより開発された、<b class="u-em-orange-marker">３〜１８歳の子どものトラウマに焦点化した認知行動療法</b>です。いくつかの治療ガイドラインにおいて、子どものトラウマ治療の第一選択として推奨されているプログラムです。週１回、１回は６０〜９０分をかけて行われ、８〜１６週で構成されます。子どもと養育者が、トラウマ体験の記憶を適切に処理し、トラウマに関連する考えや感情、不適応的な行動を、うまく調整できるようになることを目指します。<b class="u-em-orange-marker">子どもだけで行うセッション、養育者だけで行うセッション、親子合同のセッションから構成</b>され、その中で<b class="u-em-orange-marker">感情調整や関わりのスキルをはじめとした、さまざまな知識とスキルを身につけます。</b>TF-CBTは、子どものPTSD症状だけでなく、トラウマに関連したうつや不安症状、行動上の問題、恥や罪悪感といった感情、社会生活能力などの回復が期待できるほか、養育者の抑うつやPTSD症状、養育能力や子どものサポート機能の向上にも効果を発揮します。</p>
+            <p>さらに詳しく知りたい方はこちら：<a href="https://tf-cbtlc.com/" target="_blank" class="u-black-link">TF-CBT LC研究会 <i class="fa-regular fa-window-restore"></i></a></p>
             <p class="p-ttl-txt-box__supervisor">監修：亀岡智美</p>
           </div>
           <div class="p-ttl-txt-box">
