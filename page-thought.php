@@ -97,7 +97,7 @@ get_template_part('template-parts/mainview');
     </tr>
     <tr>
       <td>山口 慶子　YAMAGUCHI, Keiko</td>
-      <td>ー</td>
+      <td>東京女子大学</td>
     </tr>
     <tr>
       <td>牧田 潔　MAKITA, Kiyoshi</td>
