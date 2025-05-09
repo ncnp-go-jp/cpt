@@ -30,7 +30,6 @@
 						<li><a href="<?php echo home_url() . '/treatment/about-cpt'; ?>">CPTとは</a></li>
 						<li><a href="<?php echo home_url() . '/treatment/steps'; ?>">CPTの進め方</a></li>
 						<li><a href="<?php echo home_url() . '/treatment/familiarize'; ?>">CPTに親しむ</a></li>
-						<li><a href="<?php echo home_url() . '/treatment/voice'; ?>">治療を受けた人の声</a></li>
 					</ul>
 				</dd>
 			</dl>

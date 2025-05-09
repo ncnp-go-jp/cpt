@@ -102,14 +102,6 @@ get_template_part('template-parts/mainview');
       <p>CPTが開発された米国では、CPTの実施者になるためのステップが確立され、<a href="https://cptforptsd.com/cpt-provider-roster/" target="_blank" class="u-orange-marker">実施者の登録制度 <i class="fa-regular fa-window-restore"></i></a>も整えられています。<br>日本においては、現在、研修や実施者養成の制度を作っている最中です。CPTの実践に関心をお持ちの援助専門職の方は、お知らせから研修情報をご確認いただくとともに、<a href="<?php echo home_url() . '/expert/member_reg_form'; ?>" class="u-orange-marker">利用登録</a>を行い当サイトでご提供するマテリアルへのリーチをご検討ください。</p>
     </div>
 
-    <div class="p-ttl-txt-box">
-      <h2 class="p-ttl-txt-box__ttl">治療を受けた人の声</h2>
-      <p>私たちCPTの研究チームでこれまでに実施した研究に参加された方々にご協力いただき、治療を受けた体験を綴っていただきました。CPTに関心を持たれた方、治療を受けてみようか迷っている方が、CPTに取り組む体験をイメージする一助としていただければ幸いです。</p>
-      <div class="p-ttl-txt-box__btn-box">
-        <a href="../voice" class="c-btn">治療を受けた人の声を見る　<i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
-
   </article>
 </div>
 
