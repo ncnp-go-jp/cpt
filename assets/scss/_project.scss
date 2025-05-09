@@ -3805,3 +3805,15 @@
     }
   }
 }
+
+
+.p-404 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include media(tb) {
+    padding: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}

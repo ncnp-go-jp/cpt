@@ -2836,6 +2836,10 @@ main {
   margin-bottom: 2rem;
   font-size: 1rem;
 }
+.p-404 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 /*---------- Utility ----------*/
 .u-sp {
   display: block;
@@ -4212,6 +4216,11 @@ main {
   }
   .p-ftr__cr{
     margin: 0;
+  }
+  .p-404{
+    padding: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   .u-sp{
     display: none;
