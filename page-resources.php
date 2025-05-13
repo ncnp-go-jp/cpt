@@ -222,7 +222,7 @@ get_template_part('template-parts/mainview');
       </tr>
       <tr>
         <td><a href="https://kidsinfost.net" target="_blank" class="u-black-link">子ども情報ステーション <i class="fa-regular fa-window-restore"></i></a></td>
-        <td>精神障がいやこころの不調などをかかえた親と家族、その'子ども’を応援するサイト</td>
+        <td>NPO法人ぷるすあるはが運営する、精神障がいやこころの不調などをかかえた親と家族、その'子ども’を応援するサイト</td>
       </tr>
       <!-- <tr>
         <td><a href="https://ptokyo.org" target="_blank" class="u-black-link">ぷれいす東京 <i class="fa-regular fa-window-restore"></i></a></td>
