@@ -68,12 +68,6 @@ get_template_part('template-parts/mainview');
       <span class="icon"></span>
       <label for="symptom05">その出来事や、その出来事のせいで生じている問題について、罪悪感を感じたり、自分自身や他人を非難せずにはいられなかったりしましたか</label>
     </div>
-    <div class="p-checklist__item">
-      <input type="checkbox" name="symptom[]" value="check06" id="symptom06">
-      <span class="icon"></span>
-      <label for="symptom06">その出来事に関する悪夢をみたり、考えたくないのにその出来事に関する考えが頭に浮かんできたりしましたか</label>
-    </div>
-
     <input type="submit" class="c-btn" value='症状をチェックする'>
   </form>
   <p class="c-note">※【引用元】プライマリ・ケアのための PTSD スクリーニング尺度（ DSM 5 版 日本語版）より一部改変：伊藤正哉・宮前光宏・蟹江絢子・横山 知加 (2019）</p>
