@@ -36,7 +36,7 @@ get_template_part('template-parts/mainview');
   <div class="p-abt-trauma__txt-box">
     <p>いままでに、あなたはトラウマとなるような出来事を経験したことがありますか？<br>
       もし、トラウマを経験した後に時間が経ってもずっと苦しいままであれば、治療や支援を受けることが、今の苦境から抜け出す鍵になるかもしれません。</p>
-    <p>通常では考えられないような、非常に恐ろしくて悲惨な出来事を経験した後、その影響からなかなか抜け出せず普段の生活に不便が生じている方は、下のボタンをクリックして、PTSDの症状をチェックしてみてください。</p>
+    <p>下のボタンをクリックすると、PTSDの症状をチェックしてみることができます。通常では考えられないような、非常に恐ろしくて悲惨な出来事を経験した方が回答することで、PTSDに関して専門的な評価を受けた方がよい状態かを判断する目安になります（PTSDの診断をするものではありません）。</p>
   </div>
 
   <form method="post" action="./result/#result" class="p-checklist">
@@ -70,8 +70,27 @@ get_template_part('template-parts/mainview');
     </div>
     <input type="submit" class="c-btn" value='症状をチェックする'>
   </form>
-  <p class="c-note">※【引用元】プライマリ・ケアのための PTSD スクリーニング尺度（ DSM 5 版 日本語版）より一部改変：伊藤正哉・宮前光宏・蟹江絢子・横山 知加 (2019）</p>
-
+  <ul class="c-note p-checklist__note">
+    <li>※【引用元】プライマリ・ケアのための PTSD スクリーニング尺度（DSM 5 版 日本語版）より一部改変：伊藤正哉・宮前光宏・蟹江絢子・横山 知加（2019）</li>
+    <li>※このチェックリストは、米国で作成された尺度を日本語に訳したものです。日本語版の<span class="c-tooltip tippy02">スクリーニング</span>尺度として、日本国内では未だ検証されておらず、こでは、米国で検証された結果を公表した論文に基づいて<span class="c-tooltip tippy03">カットオフ</span>値を設定しています。自分の状態についての理解を進めるひとつの手段として活用いただけると幸いです。<br>PC-PTSDに関する専門家向けの情報は<a href="https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp" target="_blank" class="u-orange-marker">こちら</a>に掲載されています。（National Center for PTSDサイト内／英語）。
+    </li>
+  </ul>
+  <script>
+    tippy('.tippy02', {
+      content: `まだ病気であると診断されていない人の中から、病気を患っているかもしれない人を簡便に見つけるための方法。診断ではなく、詳しく調べてみる必要がある人を見つけるために用いられる。`,
+      allowHTML: true, // HTMLを許可
+      placement: 'bottom',
+      arrow: false,
+      theme: 'white',
+    });
+    tippy('.tippy03', {
+      content: `検査やチェックリストの点数で、"この点数以上は要注意"という目安の点数のこと`,
+      allowHTML: true, // HTMLを許可
+      placement: 'bottom',
+      arrow: false,
+      theme: 'white',
+    });
+  </script>
 </article>
 
 <div class="u-bg-orange-gray">

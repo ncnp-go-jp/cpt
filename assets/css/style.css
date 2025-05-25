@@ -1748,6 +1748,10 @@ main {
   font-weight: 400;
 }
 
+.p-checklist__note > li {
+  font-size: 1.2rem;
+  text-align: left;
+}
 .p-result__txt-box {
   border: 2px solid #FABA6B;
   text-align: center;
@@ -3631,6 +3635,9 @@ main {
   .p-checklist__item .icon{
     font-size: 3.6rem;
   }
+  .p-checklist__note > li{
+    font-size: 1.4rem;
+  }
   .p-result__txt-box{
     font-size: 2.4rem;
   }
@@ -4179,10 +4186,10 @@ main {
     width: auto;
   }
   .p-ftr__ttl{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .p-ftr__sub-list li{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .p-ftr__sub-list + .p-ftr__ttl{
     margin-top: 3rem;

@@ -2220,6 +2220,13 @@
       }
     }
   }
+
+  &__note {
+    >li {
+      @include fontsize(12, 14);
+      text-align: left;
+    }
+  }
 }
 
 .p-result {
@@ -3687,7 +3694,7 @@
   &__ttl {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    @include fontsize(14, 14);
+    @include fontsize(14, 16);
 
     a {
       color: inherit;
@@ -3700,7 +3707,7 @@
       position: relative;
       padding-left: 1rem;
       line-height: 1.5;
-      @include fontsize(12, 12);
+      @include fontsize(12, 14);
 
       a {
         color: inherit;
