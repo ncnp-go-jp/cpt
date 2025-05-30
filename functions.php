@@ -728,3 +728,16 @@ function documents_filter_query($query)
   }
 }
 add_filter('pre_get_posts', 'documents_filter_query');
+
+
+/*============================================
+ * recaptchaを問い合わせ画面だけに表示させる
+============================================*/
+add_action('wp_enqueue_scripts', function () {
+  // recaptchaを表示させたい固定ページのslugを指定します。複数OK
+  $page_list = [
+    'contact', // お問い合わせフォーム
+  ];
+  if (is_page($page_list)) return;
+  wp_deregister_script('google-recaptcha');
+}, 100);
