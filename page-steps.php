@@ -20,9 +20,11 @@ get_template_part('template-parts/mainview');
       <div class="p-tab-box__ordered-box">
         <h4 class="p-tab-box__ordered-box__ttl">CPTをはじめるまでのステップ</h4>
         <ul>
-          <li><span><i class="fa-solid fa-1"></i>．</span> 事実（出来事）と考え（スタックポイント、意見、仮定）の違いを見分ける。</li>
-          <li><span><i class="fa-solid fa-2"></i>．</span> 状況とつながっている考えを見つける（トラウマティックな出来事につながっている考えも含めて）。</li>
-          <li><span><i class="fa-solid fa-3"></i>．</span> 考えを抱いたときに、どのような感情が出てくるかを理解する。</li>
+          <li><span><i class="fa-solid fa-1"></i>．</span> PTSDや、同時に抱えている問題について情報を集め、PTSDの治療に取り組む方が良いか判断する</li>
+          <li><span><i class="fa-solid fa-2"></i>．</span> PTSDの治療の選択肢を比較して、これから取り組む治療法を選ぶ
+          </li>
+          <li><span><i class="fa-solid fa-3"></i>．</span> 治療を求める人と治療を提供する者の間で、治療の進め方について契約を結ぶ
+          </li>
         </ul>
       </div>
       <p>CPTでは、セッションを進めながら、治療の支えとなる「安全で健全な関係づくり」を行うため、治療提供者との関係作りだけを目的としたセッションは不要とされます。一方で、治療に安心して取り組める環境を整えることや、PTSDでお困りの方ご本人が治療に取り組みたい意欲をお持ちかどうかは、とても大切です。治療に取り組む準備が整っているか、丁寧に確認した上ではじめられることをおすすめします。</p>
