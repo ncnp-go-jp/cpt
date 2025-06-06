@@ -29,17 +29,29 @@
     get_template_part('template-parts/manga-pagination');
     ?>
 
+
     <div class="p-tab-box__btn-box">
       <a class="c-btn" href="<?php echo home_url() . '/treatment/familiarize/'; ?>">一覧を見る　<i class="fas fa-angle-right"></i></a>
     </div>
 
     <section class="p-cont-video__cat-box -manga">
-      <h3 class="p-cont-video__h2">マンガ｜ 認知処理療法応援マンガ</h3>
-      <div>
-        <p>CPTについて興味があり、概要を知りたい方向けのマンガです。CPTのセッションでよく取り上げられているテーマが描かれています。<br>（監修：久留米大学　大江美佐里先生）</p>
-        <p><a href="https://neuropsy-kurume.jp/production" target="_blank" class="u-orange-marker">応援マンガダウンロード：久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a></p>
-      </div>
-    </section>
+      <?php
+      $manga_category = get_field('about-cpt-mangacat');
 
+      if ($manga_category == "認知処理療法応援マンガ") {
+        $manga_txt = "CPTについて興味があり、概要を知りたい方向けのマンガです。CPTのセッションでよく取り上げられているテーマが描かれています。";
+      } else {
+        $manga_txt = "CAYAP（青少年用の認知処理療法）を応援するために作成されたマンガです。「死にたい」気持ちを抱えながらも、今日を生きるコツが紹介されています。";
+      }
+
+      ?>
+      <h3 class="p-cont-video__h2">マンガ｜ <?php echo $manga_category; ?></h3>
+
+      <picture>
+        <div>
+          <p><?php echo $manga_txt; ?><br>（監修：久留米大学　大江美佐里先生）</p>
+          <p><a href="https://neuropsy-kurume.jp/production" target="_blank" class="u-orange-marker">「<?php echo $manga_category; ?>」ダウンロード：久留米大学 心理教育テキスト <i class="fa-regular fa-window-restore"></i></a>
+        </div>
+    </section>
   </article>
 </div>
